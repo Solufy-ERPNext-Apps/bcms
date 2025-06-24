@@ -1,0 +1,396 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "LB-.#####",
+ "creation": "2025-06-23 14:14:25.052366",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_information_section",
+  "zone",
+  "column_break_kusk",
+  "branch",
+  "core_legal_documents_section",
+  "title_deed",
+  "sale_agreement",
+  "giftinheritance_deed",
+  "column_break_lelp",
+  "encumbrance_certificate_ec",
+  "mutation_record",
+  "section_break_bydx",
+  "survey_sketch",
+  "gps_coordinates",
+  "column_break_yjrv",
+  "zoning_certificate",
+  "topographic_map",
+  "section_break_axtn",
+  "property_tax_receipts",
+  "column_break_qqlr",
+  "khatapatta_extract",
+  "column_break_kjty",
+  "no_dues_certificate",
+  "section_break_otbo",
+  "building_approval_plan",
+  "column_break_ddop",
+  "environmental_clearance",
+  "column_break_gaie",
+  "land_conversion_certificate",
+  "section_break_dfvn",
+  "legal_opinion_report",
+  "column_break_zepu",
+  "valuation_report",
+  "column_break_ezwx",
+  "land_inspection_report",
+  "section_break_bnem",
+  "aerialdrone_images",
+  "column_break_mokv",
+  "signed_nocs",
+  "column_break_hbdd",
+  "historical_records",
+  "section_break_qock",
+  "survey_number",
+  "gps_coordinate",
+  "location_address",
+  "column_break_arbv",
+  "ownership_type",
+  "total_area",
+  "currenct_status",
+  "section_break_tgwm",
+  "doc_id",
+  "doctypes",
+  "issuing_authority",
+  "scan_quality",
+  "column_break_bhuu",
+  "issue_date",
+  "expiry_date",
+  "keywords"
+ ],
+ "fields": [
+  {
+   "fieldname": "title_deed",
+   "fieldtype": "Attach",
+   "label": "Title Deed"
+  },
+  {
+   "fieldname": "sale_agreement",
+   "fieldtype": "Attach",
+   "label": "Sale Agreement",
+   "reqd": 1
+  },
+  {
+   "fieldname": "giftinheritance_deed",
+   "fieldtype": "Attach",
+   "label": "Gift/Inheritance Deed\t"
+  },
+  {
+   "fieldname": "encumbrance_certificate_ec",
+   "fieldtype": "Attach",
+   "label": "Encumbrance Certificate (EC)\t",
+   "reqd": 1
+  },
+  {
+   "fieldname": "mutation_record",
+   "fieldtype": "Attach",
+   "label": "Mutation Record"
+  },
+  {
+   "fieldname": "core_legal_documents_section",
+   "fieldtype": "Section Break",
+   "label": "Core Legal Documents"
+  },
+  {
+   "fieldname": "column_break_lelp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_bydx",
+   "fieldtype": "Section Break",
+   "label": "Land Survey & Location Records"
+  },
+  {
+   "fieldname": "survey_sketch",
+   "fieldtype": "Attach",
+   "label": "Survey Sketch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gps_coordinates",
+   "fieldtype": "Small Text",
+   "label": "GPS Coordinates"
+  },
+  {
+   "fieldname": "zoning_certificate",
+   "fieldtype": "Attach",
+   "label": "Zoning Certificate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "topographic_map",
+   "fieldtype": "Attach",
+   "label": "Topographic Map"
+  },
+  {
+   "fieldname": "column_break_yjrv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_axtn",
+   "fieldtype": "Section Break",
+   "label": "Tax & Revenue Records"
+  },
+  {
+   "fieldname": "property_tax_receipts",
+   "fieldtype": "Attach",
+   "label": "Property Tax Receipts",
+   "reqd": 1
+  },
+  {
+   "fieldname": "khatapatta_extract",
+   "fieldtype": "Attach",
+   "label": "Khata/Patta Extract",
+   "reqd": 1
+  },
+  {
+   "fieldname": "no_dues_certificate",
+   "fieldtype": "Attach",
+   "label": "No Dues Certificate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_otbo",
+   "fieldtype": "Section Break",
+   "label": "Approvals & Compliance"
+  },
+  {
+   "fieldname": "building_approval_plan",
+   "fieldtype": "Attach",
+   "label": "Building Approval Plan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "environmental_clearance",
+   "fieldtype": "Attach",
+   "label": "Environmental Clearance"
+  },
+  {
+   "fieldname": "land_conversion_certificate",
+   "fieldtype": "Attach",
+   "label": "Land Conversion Certificate"
+  },
+  {
+   "fieldname": "section_break_dfvn",
+   "fieldtype": "Section Break",
+   "label": "Verification & Due Diligence"
+  },
+  {
+   "fieldname": "legal_opinion_report",
+   "fieldtype": "Attach",
+   "label": "Legal Opinion Report\t",
+   "reqd": 1
+  },
+  {
+   "fieldname": "valuation_report",
+   "fieldtype": "Attach",
+   "label": "Valuation Report",
+   "reqd": 1
+  },
+  {
+   "fieldname": "land_inspection_report",
+   "fieldtype": "Attach",
+   "label": "Land Inspection Report",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_bnem",
+   "fieldtype": "Section Break",
+   "label": "Supporting Documents"
+  },
+  {
+   "fieldname": "aerialdrone_images",
+   "fieldtype": "Attach Image",
+   "label": "Aerial Drone Images\t"
+  },
+  {
+   "fieldname": "signed_nocs",
+   "fieldtype": "Attach",
+   "label": "Signed NOCs",
+   "reqd": 1
+  },
+  {
+   "fieldname": "historical_records",
+   "fieldtype": "Attach",
+   "label": "Historical Records"
+  },
+  {
+   "fieldname": "section_break_qock",
+   "fieldtype": "Section Break",
+   "label": "Land Parcel "
+  },
+  {
+   "fieldname": "survey_number",
+   "fieldtype": "Data",
+   "label": "Survey Number"
+  },
+  {
+   "fieldname": "location_address",
+   "fieldtype": "Small Text",
+   "label": "Location Address"
+  },
+  {
+   "fieldname": "total_area",
+   "fieldtype": "Float",
+   "label": "Total Area (Sq. Ft)"
+  },
+  {
+   "fieldname": "ownership_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Ownership Type",
+   "options": "\nPrivate\nGovernment\nTrust",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_arbv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_tgwm",
+   "fieldtype": "Section Break",
+   "label": "Document-Level "
+  },
+  {
+   "fieldname": "doc_id",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Doc Id"
+  },
+  {
+   "fieldname": "doctypes",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Doctype",
+   "options": "\nDeed\nSurvey\nTax"
+  },
+  {
+   "fieldname": "issue_date",
+   "fieldtype": "Date",
+   "label": "Issue Date"
+  },
+  {
+   "fieldname": "issuing_authority",
+   "fieldtype": "Small Text",
+   "label": "Issuing Authority"
+  },
+  {
+   "fieldname": "expiry_date",
+   "fieldtype": "Date",
+   "label": "Expiry Date"
+  },
+  {
+   "fieldname": "scan_quality",
+   "fieldtype": "Select",
+   "label": "Scan Quality",
+   "options": "\nHigh\nMedium\nLaw"
+  },
+  {
+   "fieldname": "keywords",
+   "fieldtype": "Small Text",
+   "label": "Keywords"
+  },
+  {
+   "fieldname": "column_break_bhuu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ddop",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_gaie",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_qqlr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_kjty",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_zepu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ezwx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_mokv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_hbdd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "currenct_status",
+   "fieldtype": "Select",
+   "label": "Current Status",
+   "options": "\nFree\nLeased\nEncumbered"
+  },
+  {
+   "fieldname": "basic_information_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Information"
+  },
+  {
+   "fieldname": "zone",
+   "fieldtype": "Link",
+   "label": "Zone",
+   "options": "Zone"
+  },
+  {
+   "fieldname": "column_break_kusk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "gps_coordinate",
+   "fieldtype": "Small Text",
+   "label": "GPS Coordinate"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-24 17:04:12.097148",
+ "modified_by": "Administrator",
+ "module": "Building Construction Manufacturing Service",
+ "name": "Land Purchase",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
