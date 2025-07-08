@@ -1,0 +1,126 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "PR-.####",
+ "creation": "2025-07-02 14:38:08.224139",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "project_type",
+  "requested_by",
+  "posting_date",
+  "attachments",
+  "description",
+  "column_break_btdk",
+  "state",
+  "khetra",
+  "unit",
+  "location",
+  "estimated_budget",
+  "workflow_state"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Project Type\t",
+   "options": "Project Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Location",
+   "options": "Location"
+  },
+  {
+   "fieldname": "requested_by",
+   "fieldtype": "Link",
+   "label": "Requested By\t",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "estimated_budget",
+   "fieldtype": "Currency",
+   "label": "Estimated Budget\t"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "attachments",
+   "fieldtype": "Attach",
+   "label": "Attachments\t"
+  },
+  {
+   "fieldname": "column_break_btdk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "workflow_state",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "workflow_state\t",
+   "read_only": 1
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "State",
+   "options": "State"
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Unit",
+   "options": "Unit"
+  },
+  {
+   "fieldname": "khetra",
+   "fieldtype": "Link",
+   "label": "Khetra",
+   "options": "Khetra"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-07-08 17:08:13.425353",
+ "modified_by": "Administrator",
+ "module": "Building Construction Manufacturing Service",
+ "name": "Project Request",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

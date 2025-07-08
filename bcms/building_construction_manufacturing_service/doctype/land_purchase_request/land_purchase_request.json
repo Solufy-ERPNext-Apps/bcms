@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:request_id",
+ "creation": "2025-06-30 17:22:04.484560",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "request_id",
+  "land_area_sqft",
+  "purpose_of_land",
+  "zone",
+  "zi_name",
+  "description",
+  "column_break_fviz",
+  "request_by",
+  "request_date",
+  "approx_budget",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "request_id",
+   "fieldtype": "Data",
+   "label": "Request ID",
+   "unique": 1
+  },
+  {
+   "fieldname": "zone",
+   "fieldtype": "Link",
+   "label": "Zone",
+   "options": "Zone"
+  },
+  {
+   "fieldname": "request_by",
+   "fieldtype": "Link",
+   "label": "Request By ",
+   "options": "User"
+  },
+  {
+   "fieldname": "purpose_of_land",
+   "fieldtype": "Select",
+   "label": "Purpose of Land\t"
+  },
+  {
+   "fieldname": "land_area_sqft",
+   "fieldtype": "Float",
+   "label": "Land Area (Sq.ft)"
+  },
+  {
+   "fieldname": "approx_budget",
+   "fieldtype": "Currency",
+   "label": "Approx Budget"
+  },
+  {
+   "fieldname": "request_date",
+   "fieldtype": "Date",
+   "label": "Request Date"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nDraft\nApproved\nBudget\nAllocated"
+  },
+  {
+   "fieldname": "zi_name",
+   "fieldtype": "Data",
+   "label": "ZI Name"
+  },
+  {
+   "fieldname": "column_break_fviz",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-07-01 15:33:35.263307",
+ "modified_by": "Administrator",
+ "module": "Building Construction Manufacturing Service",
+ "name": "Land Purchase Request",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

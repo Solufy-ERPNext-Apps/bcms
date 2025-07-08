@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-30 16:28:32.956473",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "land_purchase",
+  "allocated_zone",
+  "allocation_date",
+  "purpose",
+  "remark"
+ ],
+ "fields": [
+  {
+   "fieldname": "land_purchase",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Land Purchase",
+   "options": "Land Purchase",
+   "reqd": 1
+  },
+  {
+   "fieldname": "allocated_zone",
+   "fieldtype": "Link",
+   "label": "Allocated Zone\t",
+   "options": "Zone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "allocation_date",
+   "fieldtype": "Datetime",
+   "label": "Allocation Date"
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Select",
+   "label": "Purpose",
+   "options": "Building Construction\nBoundary Wall"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Small Text",
+   "label": "Remark"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-30 16:32:55.581583",
+ "modified_by": "Administrator",
+ "module": "Building Construction Manufacturing Service",
+ "name": "Land Allocation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

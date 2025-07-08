@@ -11,15 +11,15 @@ app_license = "mit"
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "bcms",
-# 		"logo": "/assets/bcms/logo.png",
-# 		"title": "Building Construction Manufacturing Service",
-# 		"route": "/bcms",
-# 		"has_permission": "bcms.api.permission.has_app_permission"
-# 	}
-# ]
+add_to_apps_screen = [
+	{
+		"name": "bcms",
+		"logo": "/assets/bcms/images/BCMS.jpg",
+		"title": "BCMS",
+		"route": "/app/bcms",
+		"has_permission": "bcms.check_app_permission"
+	}
+]
 
 # Includes in <head>
 # ------------------
@@ -43,7 +43,7 @@ app_license = "mit"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {"Land Purchase" : "public/js/land_purchase.js"}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}

@@ -8,21 +8,56 @@
  "field_order": [
   "basic_information_section",
   "zone",
+  "zonal_incharge",
+  "zonal_incharge_name",
+  "total_area",
+  "survey_number",
   "column_break_kusk",
   "branch",
+  "zonal_incharge_email",
+  "ownership_type",
+  "currenct_status",
+  "section_break_tgwm",
+  "doc_id",
+  "doctypes",
+  "issuing_authority",
+  "column_break_bhuu",
+  "scan_quality",
+  "issue_date",
+  "expiry_date",
+  "status",
+  "attach_tab",
   "core_legal_documents_section",
   "title_deed",
   "sale_agreement",
   "giftinheritance_deed",
+  "zoning_certificate",
   "column_break_lelp",
   "encumbrance_certificate_ec",
   "mutation_record",
-  "section_break_bydx",
   "survey_sketch",
-  "gps_coordinates",
+  "section_break_bnem",
+  "aerialdrone_images",
+  "column_break_mokv",
+  "signed_nocs",
+  "column_break_hbdd",
+  "historical_records",
+  "section_break_ekpu",
+  "history",
+  "location_tab",
+  "section_break_bydx",
+  "latitude",
+  "longitude",
+  "map",
   "column_break_yjrv",
-  "zoning_certificate",
   "topographic_map",
+  "section_break_qock",
+  "lattitude",
+  "longgitude",
+  "location",
+  "column_break_arbv",
+  "location_address",
+  "tax_tab",
   "section_break_axtn",
   "property_tax_receipts",
   "column_break_qqlr",
@@ -41,29 +76,240 @@
   "valuation_report",
   "column_break_ezwx",
   "land_inspection_report",
-  "section_break_bnem",
-  "aerialdrone_images",
-  "column_break_mokv",
-  "signed_nocs",
-  "column_break_hbdd",
-  "historical_records",
-  "section_break_qock",
-  "survey_number",
-  "gps_coordinate",
-  "location_address",
-  "column_break_arbv",
-  "ownership_type",
-  "total_area",
-  "currenct_status",
-  "section_break_tgwm",
-  "doc_id",
-  "doctypes",
-  "issuing_authority",
-  "scan_quality",
-  "column_break_bhuu",
-  "issue_date",
-  "expiry_date",
-  "keywords"
+  "global_tab",
+  "global_information_section",
+  "associated_proposal_id",
+  "file_no",
+  "branch_name",
+  "zone_code",
+  "sector_name",
+  "state",
+  "tehsil",
+  "year_of_establishment",
+  "column_break_zyke",
+  "ac_branch_code",
+  "branch_type",
+  "zone_name",
+  "sector_number",
+  "district",
+  "startedestablished_by",
+  "proforma_for_sadh_sangat_tab",
+  "proforma_for_sadh_sangat_details_section",
+  "proposal_id",
+  "nearest_branch",
+  "column_break_dqur",
+  "record_date",
+  "sector",
+  "section_break_xuch",
+  "distance_in_km_of_the_nearest_bhawan_from_your_branch",
+  "nearest_branches_with_distance_in_km",
+  "strength_of_sadh_sangat_from_rural_area_and_names_of_villages",
+  "attached_copy_of_google_map_of_your_area",
+  "attached_statement_of_account_of_last_three_year_of_your_branch",
+  "attendance_in_various_sangats_section",
+  "morning_normal_sangat_strength",
+  "special_sangat_strength",
+  "ladies_sangat_strength",
+  "column_break_vydh",
+  "english_medium_sangat_strength",
+  "bal_sangat_strength",
+  "section_break_nrbb",
+  "column_break_kofs",
+  "is_there_a_sewadal_unit_at_branch_yn",
+  "khetra",
+  "unit",
+  "strength_of_sewadal",
+  "column_break_wsjz",
+  "no_of_females",
+  "no_of_males",
+  "no_of_bal_sewadal",
+  "financial_information_tab",
+  "financial_details_section",
+  "average_monthly_offeringnamaskar",
+  "no_of_receipt_books_used_during_the_year",
+  "do_your_get_receipt_book_from_headquarter_or_branch",
+  "column_break_anmw",
+  "monthly_building_fund",
+  "average_yearly_offeringnamaskar",
+  "gyan_prachar_info_section",
+  "pracharak_name",
+  "pracharak_mobile_number",
+  "column_break_xcfj",
+  "pracharak_age",
+  "section_break_hbhb",
+  "year",
+  "column_break_iwmo",
+  "units_donated",
+  "attached_photocopy_of_cancelled_cheque_section",
+  "cancelled_cheque_photocopy",
+  "primary_proforma_for_land_purchase_tab",
+  "community_impact_is_branch_located_in_section",
+  "community_impact",
+  "negative_point",
+  "headquarter_notes_section",
+  "registered_since",
+  "headquarter_notes",
+  "is_branch_registered",
+  "primary_proforma_tab",
+  "proposer_details_section",
+  "data_vvlf",
+  "section_break_jwel",
+  "mode_of_acquisition",
+  "registered_address",
+  "email_id",
+  "supporting_documents",
+  "column_break_akxt",
+  "name_of_entity",
+  "contact_number",
+  "contact_person_name",
+  "registration_number__pan",
+  "acquisition_remarks_if_any",
+  "land_purchase_through_bank__nbfc_auctions_section",
+  "financial_institution_type",
+  "name_of_institution",
+  "officer_contact_number",
+  "property_auction_address",
+  "column_break_efdw",
+  "auction_date",
+  "auction_reference_number",
+  "authorized_officer_contact_name",
+  "section_break_cipc",
+  "donation_of_land_from_individual",
+  "donor_contact_number",
+  "donor_address",
+  "column_break_elsv",
+  "date_of_donation",
+  "relationship_to_snm_if_any",
+  "donation_deed_document",
+  "description_of_proposed_land_tab",
+  "land_type_section",
+  "land_type",
+  "locationaddressdescription_of_proposed_land_section",
+  "area_of_land_in_unit",
+  "khasrakhatonikhatagatgata_no",
+  "total_area_of_land_in_sqm",
+  "address_for_urban__rural",
+  "column_break_qfuo",
+  "local_unit_of_measure",
+  "demarcateddivisioned",
+  "connected",
+  "verified_with_land_records",
+  "verified_by",
+  "file_no_if_verified",
+  "section_break_skpt",
+  "total_cost_of_land",
+  "govt_value__circle_rate",
+  "cost_of_plant_and_machinery",
+  "registration_expenses",
+  "column_break_xhlr",
+  "stamp_duty",
+  "cost_of_material_stored",
+  "grand_total_cost",
+  "other_costs",
+  "section_break_yrxd",
+  "certificate_of_registration_of_company",
+  "memorandum_of_association",
+  "gram_sabha_committee_resolution",
+  "khasra__khatauni__faraza_for_agricultural_land",
+  "partnership_deed",
+  "copy_of_sizra",
+  "authorized_signatory_and_kyc_documents_for_partnership__company",
+  "column_break_enez",
+  "articles_of_association",
+  "site_plan_in_sq_ft",
+  "registration_document_with_history",
+  "letter_from_gram_sabha_for_snm",
+  "site_map_of_proposed_land",
+  "photocopy_of_khatoni_registry",
+  "tab_12_tab",
+  "land_site_inspection_and_negotiation_section",
+  "advance_amount_to_be",
+  "tentative_date",
+  "visited_by_name",
+  "visited_by__role",
+  "visited_by_mobile_no",
+  "column_break_flsm",
+  "negotiated_by_name",
+  "negotiated_by_mobile_no",
+  "negotiated_by_role",
+  "section_break_rfpc",
+  "name1",
+  "fathers__name",
+  "address",
+  "pin_code",
+  "mobile_number",
+  "_of_share_of_land",
+  "column_break_zwxp",
+  "bank_name",
+  "bank_account_number",
+  "bank_branch",
+  "ifsc_code",
+  "share_of_amount_inr",
+  "aadhaar_upload",
+  "pan_card_upload",
+  "cancelled_cheque_upload",
+  "advance_information_tab",
+  "advance_amount_information_section",
+  "advance_amount_to_be_paid",
+  "column_break_jaqk",
+  "tentative_date_for_payment",
+  "place_visited_and_declared_suitable_by_section",
+  "visitor_name",
+  "visitore_role",
+  "visitor_mobile",
+  "place_negotiated_by_section",
+  "negotiator_name",
+  "negotiator_role",
+  "negotiator_mobile",
+  "tab_13_tab",
+  "liability_stands_against_proposed_land_section",
+  "amount_of_loan",
+  "loan_liability_confirmation_from_bank",
+  "column_break_tycu",
+  "will_the_loan_be_cleared_prior_to_sale",
+  "any_lien_on_the_property_section",
+  "is_there_a_lien_on_property",
+  "details_of_lien",
+  "attach_zbam",
+  "column_break_xwlj",
+  "value_of_lien",
+  "will_the_lien_be_removed_before_sale",
+  "section_break_cuxx",
+  "is_the_land_offerable",
+  "vehicular_access_available",
+  "any_encroachment_on_land",
+  "column_break_vlzt",
+  "subject_to_noc_prior_to_construction",
+  "any_3rd_party_crop_standing_on_the_land",
+  "section_break_vbqf",
+  "is_land_involved_in_litigation",
+  "will_litigation_be_concluded_in_favor_of_owner",
+  "column_break_qapb",
+  "will_litigation_impact_purchase__possession",
+  "expected_date_of_cessation_of_litigation",
+  "section_break_kuux",
+  "is_possession_unobstructed",
+  "if_yes_how_much",
+  "column_break_iczr",
+  "if_not_any_cost_payable_to_secure_possession",
+  "is_land_likely_to_be_acquired_for_any_purpose_section",
+  "is_land_likely_to_be_acquired",
+  "section_break_pavk",
+  "offer_letter_from_sellers_gram",
+  "upload_document_sellers_gram",
+  "time_limit_for_construction_yn",
+  "date_of_time_limit",
+  "column_break_pckq",
+  "offer_letter_from_seller",
+  "upload_document_offer_letter",
+  "any_other_restrictions__transfer_conditions_section",
+  "upload_document_if_yes",
+  "column_break_gsny",
+  "photocopy_of_seller_bank",
+  "section_break_kmcn",
+  "mukhi_name",
+  "mukhi_branch",
+  "tab_break_etvu"
  ],
  "fields": [
   {
@@ -75,6 +321,7 @@
    "fieldname": "sale_agreement",
    "fieldtype": "Attach",
    "label": "Sale Agreement",
+   "length": 10,
    "reqd": 1
   },
   {
@@ -112,11 +359,6 @@
    "fieldtype": "Attach",
    "label": "Survey Sketch",
    "reqd": 1
-  },
-  {
-   "fieldname": "gps_coordinates",
-   "fieldtype": "Small Text",
-   "label": "GPS Coordinates"
   },
   {
    "fieldname": "zoning_certificate",
@@ -186,7 +428,7 @@
    "fieldname": "legal_opinion_report",
    "fieldtype": "Attach",
    "label": "Legal Opinion Report\t",
-   "reqd": 1
+"reqd": 1
   },
   {
    "fieldname": "valuation_report",
@@ -229,7 +471,11 @@
   {
    "fieldname": "survey_number",
    "fieldtype": "Data",
-   "label": "Survey Number"
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Survey Number",
+   "length": 10,
+   "reqd": 1
   },
   {
    "fieldname": "location_address",
@@ -239,13 +485,17 @@
   {
    "fieldname": "total_area",
    "fieldtype": "Float",
-   "label": "Total Area (Sq. Ft)"
+   "in_standard_filter": 1,
+   "label": "Total Area (Sq. Ft)",
+   "reqd": 1
   },
   {
    "fieldname": "ownership_type",
    "fieldtype": "Select",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Ownership Type",
+   "length": 15,
    "options": "\nPrivate\nGovernment\nTrust",
    "reqd": 1
   },
@@ -261,14 +511,16 @@
   {
    "fieldname": "doc_id",
    "fieldtype": "Data",
-   "hidden": 1,
-   "label": "Doc Id"
+   "label": "Doc Id",
+   "length": 240
   },
   {
+   "default": "Deed",
    "fieldname": "doctypes",
    "fieldtype": "Select",
    "hidden": 1,
    "label": "Doctype",
+   "length": 120,
    "options": "\nDeed\nSurvey\nTax"
   },
   {
@@ -279,6 +531,7 @@
   {
    "fieldname": "issuing_authority",
    "fieldtype": "Small Text",
+   "in_standard_filter": 1,
    "label": "Issuing Authority"
   },
   {
@@ -289,13 +542,10 @@
   {
    "fieldname": "scan_quality",
    "fieldtype": "Select",
+   "in_standard_filter": 1,
    "label": "Scan Quality",
-   "options": "\nHigh\nMedium\nLaw"
-  },
-  {
-   "fieldname": "keywords",
-   "fieldtype": "Small Text",
-   "label": "Keywords"
+   "length": 6,
+   "options": "\nHigh\nMedium\nLow"
   },
   {
    "fieldname": "column_break_bhuu",
@@ -334,12 +584,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "currenct_status",
-   "fieldtype": "Select",
-   "label": "Current Status",
-   "options": "\nFree\nLeased\nEncumbered"
-  },
-  {
    "fieldname": "basic_information_section",
    "fieldtype": "Section Break",
    "label": "Basic Information"
@@ -347,8 +591,12 @@
   {
    "fieldname": "zone",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Zone",
-   "options": "Zone"
+   "length": 10,
+   "options": "Zone",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_kusk",
@@ -357,19 +605,917 @@
   {
    "fieldname": "branch",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Branch",
+   "length": 100,
+   "options": "Branch",
+   "reqd": 1
+  },
+  {
+   "fieldname": "currenct_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Current Status",
+   "length": 15,
+   "options": "\nFree\nLeased\nEncumbered",
+   "reqd": 1
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "Latitude",
+   "length": 12
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "Longitude",
+   "length": 12
+  },
+  {
+   "fieldname": "map",
+   "fieldtype": "Geolocation",
+   "label": "Map"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Geolocation",
+   "label": "Location",
+   "read_only": 1
+  },
+  {
+   "fieldname": "lattitude",
+   "fieldtype": "Data",
+   "label": "Latitude",
+   "length": 12,
+   "read_only": 1
+  },
+  {
+   "fieldname": "longgitude",
+   "fieldtype": "Data",
+   "label": "Longitude",
+   "length": 12,
+   "read_only": 1
+  },
+  {
+   "fieldname": "attach_tab",
+   "fieldtype": "Tab Break",
+   "label": "Documents"
+  },
+  {
+   "fieldname": "location_tab",
+   "fieldtype": "Tab Break",
+   "label": "Location"
+  },
+  {
+   "fieldname": "tax_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tax"
+  },
+  {
+   "fieldname": "section_break_ekpu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "history",
+   "fieldtype": "Table",
+   "label": "History",
+   "options": "History"
+  },
+  {
+   "fieldname": "zonal_incharge",
+   "fieldtype": "Link",
+   "label": "Zonal Incharge",
+   "length": 100,
+   "options": "Employee",
+   "read_only": 1
+  },
+  {
+   "fieldname": "zonal_incharge_email",
+   "fieldtype": "Data",
+   "label": "Zonal Incharge Email",
+   "length": 100,
+   "options": "Email",
+   "read_only": 1
+  },
+  {
+   "fieldname": "zonal_incharge_name",
+   "fieldtype": "Data",
+   "label": "Zonal Incharge Name\t",
+   "length": 15
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "length": 4,
+   "options": "\nDraft\nPurchased\nAllocated"
+  },
+  {
+   "fieldname": "global_tab",
+   "fieldtype": "Tab Break",
+   "label": "Global"
+  },
+  {
+   "fieldname": "file_no",
+   "fieldtype": "Data",
+   "label": "File No.",
+   "length": 15
+  },
+  {
+   "fieldname": "associated_proposal_id",
+   "fieldtype": "Data",
+   "label": "Associated Proposal ID",
+   "length": 15
+  },
+  {
+   "fieldname": "branch_type",
+   "fieldtype": "Select",
+   "label": "Branch Type\t",
+   "length": 3,
+   "options": "\nRegistered\nUnregistered"
+  },
+  {
+   "fieldname": "branch_name",
+   "fieldtype": "Link",
+   "label": "Branch Name",
+   "length": 15,
    "options": "Branch"
   },
   {
-   "fieldname": "gps_coordinate",
+   "fieldname": "zone_name",
+   "fieldtype": "Data",
+   "label": "Zone Number",
+   "length": 15
+  },
+  {
+   "fieldname": "sector_name",
+   "fieldtype": "Data",
+   "label": "Sector Name\t",
+   "length": 15
+  },
+  {
+   "fieldname": "ac_branch_code",
+   "fieldtype": "Data",
+   "label": "A/C Branch Code",
+   "length": 20
+  },
+  {
+   "fieldname": "zone_code",
+   "fieldtype": "Link",
+   "label": "Zone Name",
+   "length": 15,
+   "options": "Zone"
+  },
+  {
+   "fieldname": "sector_number",
+   "fieldtype": "Data",
+   "label": "Sector Number",
+   "length": 15
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "length": 15,
+   "options": "State"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District",
+   "length": 15,
+   "options": "District"
+  },
+  {
+   "fieldname": "column_break_zyke",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "global_information_section",
+   "fieldtype": "Section Break",
+   "label": "Global Information"
+  },
+  {
+   "fieldname": "tehsil",
+   "fieldtype": "Link",
+   "label": "Tehsil",
+   "length": 15,
+   "options": "Tehsil"
+  },
+  {
+   "fieldname": "year_of_establishment",
+   "fieldtype": "Date",
+   "label": "Year of Establishment",
+   "length": 10
+  },
+  {
+   "fieldname": "startedestablished_by",
+   "fieldtype": "Data",
+   "label": "Started/Established By",
+   "length": 20
+  },
+  {
+   "fieldname": "proforma_for_sadh_sangat_tab",
+   "fieldtype": "Tab Break",
+   "label": "Proforma For Sadh Sangat "
+  },
+  {
+   "fieldname": "proposal_id",
+   "fieldtype": "Data",
+   "label": "Proposal ID",
+   "length": 80
+  },
+  {
+   "fieldname": "proforma_for_sadh_sangat_details_section",
+   "fieldtype": "Section Break",
+   "label": "Proforma For Sadh Sangat Details"
+  },
+  {
+   "fieldname": "record_date",
+   "fieldtype": "Date",
+   "label": "Record Date"
+  },
+  {
+   "fieldname": "nearest_branch",
+   "fieldtype": "Data",
+   "label": "Nearest Branch",
+   "length": 15
+  },
+  {
+   "fieldname": "sector",
+   "fieldtype": "Data",
+   "label": "Sector",
+   "length": 15
+  },
+  {
+   "fieldname": "column_break_dqur",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "distance_in_km_of_the_nearest_bhawan_from_your_branch",
+   "fieldtype": "Float",
+   "label": "Distance in KM of the nearest Bhawan from your Branch"
+  },
+  {
+   "fieldname": "section_break_xuch",
+   "fieldtype": "Section Break",
+   "label": "Sadh Sangat Information"
+  },
+  {
+   "fieldname": "nearest_branches_with_distance_in_km",
+   "fieldtype": "Data",
+   "label": "Nearest Branches with Distance (in KM)",
+   "length": 12
+  },
+  {
+   "description": "(with Incharges and Mobile Nos.)",
+   "fieldname": "strength_of_sadh_sangat_from_rural_area_and_names_of_villages",
+   "fieldtype": "Text Editor",
+   "label": "Strength of Sadh Sangat from rural area and names of villages "
+  },
+  {
+   "fieldname": "attached_copy_of_google_map_of_your_area",
+   "fieldtype": "Attach",
+   "label": "Attached copy of Google Map of your Area"
+  },
+  {
+   "fieldname": "attached_statement_of_account_of_last_three_year_of_your_branch",
+   "fieldtype": "Attach",
+   "label": "Attached statement of account of last three year of your branch",
+   "length": 10
+  },
+  {
+   "fieldname": "section_break_nrbb",
+   "fieldtype": "Section Break",
+   "label": "DETAILS OF SEWADAL"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_there_a_sewadal_unit_at_branch_yn",
+   "fieldtype": "Check",
+   "label": "Is there a Sewadal Unit at Branch Y/N"
+  },
+  {
+   "depends_on": "eval:doc.is_there_a_sewadal_unit_at_branch_yn==true",
+   "fieldname": "unit",
+   "fieldtype": "Link",
+   "label": "Unit",
+   "length": 10,
+   "options": "Unit"
+  },
+  {
+   "depends_on": "eval:doc.is_there_a_sewadal_unit_at_branch_yn==true",
+   "fieldname": "khetra",
+   "fieldtype": "Link",
+   "label": "Khetra",
+   "length": 10,
+   "options": "Khetra"
+  },
+  {
+   "depends_on": "eval:doc.is_there_a_sewadal_unit_at_branch_yn==true",
+   "fieldname": "strength_of_sewadal",
+   "fieldtype": "Int",
+   "label": "Strength of Sewadal",
+   "length": 10
+  },
+  {
+   "depends_on": "eval:doc.is_there_a_sewadal_unit_at_branch_yn==true",
+   "fieldname": "no_of_males",
+   "fieldtype": "Int",
+   "label": "No. of Males"
+  },
+  {
+   "depends_on": "eval:doc.is_there_a_sewadal_unit_at_branch_yn==true",
+   "fieldname": "no_of_females",
+   "fieldtype": "Int",
+   "label": "No. of Females"
+  },
+  {
+   "depends_on": "eval:doc.is_there_a_sewadal_unit_at_branch_yn==true",
+   "fieldname": "no_of_bal_sewadal",
+   "fieldtype": "Int",
+   "label": "No. of Bal Sewadal",
+   "length": 10
+  },
+  {
+   "depends_on": "eval:doc.is_there_a_sewadal_unit_at_branch_yn==true",
+   "fieldname": "column_break_kofs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_wsjz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attached_photocopy_of_cancelled_cheque_section",
+   "fieldtype": "Section Break",
+   "label": "Attached Photocopy of Cancelled Cheque "
+  },
+  {
+   "fieldname": "cancelled_cheque_photocopy",
+   "fieldtype": "Attach",
+   "label": "Cancelled Cheque (Photocopy)"
+  },
+  {
+   "fieldname": "headquarter_notes",
    "fieldtype": "Small Text",
-   "label": "GPS Coordinate"
+   "label": "Headquarter Notes"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_branch_registered",
+   "fieldtype": "Check",
+   "label": "is_branch_registered\t"
+  },
+  {
+   "fieldname": "registered_since",
+   "fieldtype": "Date",
+   "label": "Registered Since"
+  },
+  {
+   "fieldname": "primary_proforma_for_land_purchase_tab",
+   "fieldtype": "Tab Break",
+   "label": "Community Impact"
+  },
+  {
+   "fieldname": "morning_normal_sangat_strength",
+   "fieldtype": "Int",
+   "label": "Morning Normal Sangat Strength",
+   "length": 10
+  },
+  {
+   "fieldname": "special_sangat_strength",
+   "fieldtype": "Int",
+   "label": "Special Sangat Strength",
+   "length": 10
+  },
+  {
+   "fieldname": "ladies_sangat_strength",
+   "fieldtype": "Int",
+   "label": "Ladies Sangat Strength",
+   "length": 10
+  },
+  {
+   "fieldname": "bal_sangat_strength",
+   "fieldtype": "Int",
+   "label": "Bal Sangat Strength",
+   "length": 10
+  },
+  {
+   "fieldname": "column_break_vydh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "english_medium_sangat_strength",
+   "fieldtype": "Int",
+   "label": "English Medium Sangat Strength",
+   "length": 10
+  },
+  {
+   "fieldname": "attendance_in_various_sangats_section",
+   "fieldtype": "Section Break",
+   "label": "Attendance in Various Sangats"
+  },
+  {
+   "fieldname": "financial_information_tab",
+   "fieldtype": "Tab Break",
+   "label": "Financial Information"
+  },
+  {
+   "fieldname": "average_monthly_offeringnamaskar",
+   "fieldtype": "Currency",
+   "label": "Average Monthly Offering/Namaskar"
+  },
+  {
+   "fieldname": "financial_details_section",
+   "fieldtype": "Section Break",
+   "label": "Financial Details"
+  },
+  {
+   "fieldname": "monthly_building_fund",
+   "fieldtype": "Currency",
+   "label": "Monthly Building Fund"
+  },
+  {
+   "fieldname": "no_of_receipt_books_used_during_the_year",
+   "fieldtype": "Int",
+   "label": "No. of Receipt Books used during the year",
+   "length": 10
+  },
+  {
+   "fieldname": "do_your_get_receipt_book_from_headquarter_or_branch",
+   "fieldtype": "Data",
+   "label": "Do Your Get Receipt book from Headquarter or Branch",
+   "length": 10
+  },
+  {
+   "fieldname": "average_yearly_offeringnamaskar",
+   "fieldtype": "Currency",
+   "label": "Average Yearly Offering/Namaskar"
+  },
+  {
+   "fieldname": "gyan_prachar_info_section",
+   "fieldtype": "Section Break",
+   "label": "Gyan Prachar Info"
+  },
+  {
+   "fieldname": "pracharak_name",
+   "fieldtype": "Data",
+   "label": "Pracharak Name",
+   "length": 20
+  },
+  {
+   "fieldname": "pracharak_age",
+   "fieldtype": "Int",
+   "label": "Pracharak Age",
+   "length": 4
+  },
+  {
+   "fieldname": "pracharak_mobile_number",
+   "fieldtype": "Data",
+   "label": "Pracharak Mobile Number",
+   "length": 15
+  },
+  {
+   "fieldname": "column_break_anmw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_xcfj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_hbhb",
+   "fieldtype": "Section Break",
+   "label": "Blood Donation Record"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Int",
+   "label": "Year",
+   "length": 5
+  },
+  {
+   "fieldname": "column_break_iwmo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "units_donated",
+   "fieldtype": "Int",
+   "label": "Units Donated\t",
+   "length": 5
+  },
+  {
+   "fieldname": "headquarter_notes_section",
+   "fieldtype": "Section Break",
+   "label": "Headquarter Notes"
+  },
+  {
+   "fieldname": "primary_proforma_tab",
+   "fieldtype": "Tab Break",
+   "label": "Primary Proforma "
+  },
+  {
+   "fieldname": "proposer_details_section",
+   "fieldtype": "Section Break",
+   "label": "Proposer Details"
+  },
+  {
+   "fieldname": "data_vvlf",
+   "fieldtype": "Data",
+   "label": "Proposer Name",
+   "length": 20
+  },
+  {
+   "fieldname": "land_type",
+   "fieldtype": "Link",
+   "label": "Land Type",
+   "options": "Land Type",
+   "length":"100"
+  },
+  {
+   "fieldname": "section_break_jwel",
+   "fieldtype": "Section Break",
+   "label": "Land Purchase from Private Entities"
+  },
+  {
+   "fieldname": "mode_of_acquisition",
+   "fieldtype": "Select",
+   "label": "Entity Type\t",
+   "length": 4,
+   "options": "\nIndividuals\nPartnership\nCompany"
+  },
+  {
+   "fieldname": "financial_institution_type",
+   "fieldtype": "Select",
+   "label": "Financial Institution Type",
+   "length": 3,
+   "options": "\nBank\nNBFC"
+  },
+  {
+   "fieldname": "name_of_entity",
+   "fieldtype": "Data",
+   "label": "Name of Entity\t",
+   "length": 20
+  },
+  {
+   "fieldname": "registration_number__pan",
+   "fieldtype": "Data",
+   "label": "Registration Number / PAN\t",
+   "length": 20
+  },
+  {
+   "fieldname": "registered_address",
+   "fieldtype": "Small Text",
+   "label": "Registered Address"
+  },
+  {
+   "fieldname": "contact_person_name",
+   "fieldtype": "Data",
+   "label": "Contact Person Name\t",
+   "length": 20
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Data",
+   "label": "Contact Number\t",
+   "length": 15
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email ID\t",
+   "length": 100
+  },
+  {
+   "fieldname": "supporting_documents",
+   "fieldtype": "Attach",
+   "label": "Supporting Documents"
+  },
+  {
+   "fieldname": "acquisition_remarks_if_any",
+   "fieldtype": "Small Text",
+   "label": "Acquisition Remarks (if any)\t"
+  },
+  {
+   "fieldname": "column_break_akxt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "land_purchase_through_bank__nbfc_auctions_section",
+   "fieldtype": "Section Break",
+   "label": "Land Purchase Through Bank / NBFC Auctions"
+  },
+  {
+   "fieldname": "name_of_institution",
+   "fieldtype": "Data",
+   "label": "Name of Institution\t",
+   "length": 15
+  },
+  {
+   "fieldname": "auction_reference_number",
+   "fieldtype": "Data",
+   "label": "Auction Reference Number",
+   "length": 20
+  },
+  {
+   "fieldname": "auction_date",
+   "fieldtype": "Date",
+   "label": "Auction Date"
+  },
+  {
+   "fieldname": "authorized_officer_contact_name",
+   "fieldtype": "Data",
+   "label": "Authorized Officer Contact Name",
+   "length": 20
+  },
+  {
+   "fieldname": "officer_contact_number",
+   "fieldtype": "Data",
+   "label": "Officer Contact Number",
+   "length": 15
+  },
+  {
+   "fieldname": "property_auction_address",
+   "fieldtype": "Small Text",
+   "label": "Property Auction Address\t"
+  },
+  {
+   "fieldname": "column_break_efdw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_cipc",
+   "fieldtype": "Section Break",
+   "label": "Donation of Land from Individual"
+  },
+  {
+   "fieldname": "donation_of_land_from_individual",
+   "fieldtype": "Data",
+   "label": "Donor Name\t",
+   "length": 10
+  },
+  {
+   "fieldname": "donor_contact_number",
+   "fieldtype": "Data",
+   "label": "Donor Contact Number\t",
+   "length": 15
+  },
+  {
+   "fieldname": "donor_address",
+   "fieldtype": "Small Text",
+   "label": "Donor Address\t"
+  },
+  {
+   "fieldname": "relationship_to_snm_if_any",
+   "fieldtype": "Data",
+   "label": "Relationship to SNM (if any)",
+   "length": 20
+  },
+  {
+   "fieldname": "donation_deed_document",
+   "fieldtype": "Attach",
+   "label": "Donation Deed Document"
+  },
+  {
+   "fieldname": "date_of_donation",
+   "fieldtype": "Date",
+   "label": "Date of Donation"
+  },
+  {
+   "fieldname": "column_break_elsv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "land_type_section",
+   "fieldtype": "Section Break",
+   "label": "Land Type"
+  },
+  {
+   "fieldname": "description_of_proposed_land_tab",
+   "fieldtype": "Tab Break",
+   "label": "Description of Proposed Land"
+  },
+  {
+   "fieldname": "address_for_urban__rural",
+   "fieldtype": "Small Text",
+   "label": "Address For Urban / Rural\t"
+  },
+  {
+   "fieldname": "khasrakhatonikhatagatgata_no",
+   "fieldtype": "Data",
+   "label": "Khasra/Khatoni/Khata/Gat/Gata No.",
+   "length": 20
+  },
+  {
+   "fieldname": "locationaddressdescription_of_proposed_land_section",
+   "fieldtype": "Section Break",
+   "label": "Location/Address/Description of Proposed Land"
+  },
+  {
+   "fieldname": "area_of_land_in_unit",
+   "fieldtype": "Data",
+   "label": "Area of Land in Unit",
+   "length": 10
+  },
+  {
+   "fieldname": "local_unit_of_measure",
+   "fieldtype": "Data",
+   "label": "Local Unit of Measure\t",
+   "length": 20
+  },
+  {
+   "fieldname": "total_area_of_land_in_sqm",
+   "fieldtype": "Data",
+   "label": "Total Area of Land in Sqm.\t",
+   "length": 20
+  },
+  {
+   "fieldname": "column_break_qfuo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "demarcateddivisioned",
+   "fieldtype": "Data",
+   "label": "Demarcated/Divisioned\t",
+   "length": 20
+  },
+  {
+   "default": "0",
+   "fieldname": "connected",
+   "fieldtype": "Check",
+   "label": "Connected "
+  },
+  {
+   "default": "0",
+   "fieldname": "verified_with_land_records",
+   "fieldtype": "Check",
+   "label": "Verified with Land Records"
+  },
+  {
+   "fieldname": "verified_by",
+   "fieldtype": "Data",
+   "label": "Verified By",
+   "length": 20
+  },
+  {
+   "fieldname": "file_no_if_verified",
+   "fieldtype": "Data",
+   "label": "File No. (If Verified)\t",
+   "length": 20
+  },
+  {
+   "fieldname": "section_break_skpt",
+   "fieldtype": "Section Break",
+   "label": "Land Cost Estimation"
+  },
+  {
+   "fieldname": "total_cost_of_land",
+   "fieldtype": "Currency",
+   "label": "Total Cost of Land"
+  },
+  {
+   "fieldname": "tab_12_tab",
+   "fieldtype": "Tab Break",
+   "label": "Inspection and Negotiation"
+  },
+  {
+   "fieldname": "govt_value__circle_rate",
+   "fieldtype": "Currency",
+   "label": "Govt. Value / Circle Rate"
+  },
+  {
+   "fieldname": "stamp_duty",
+   "fieldtype": "Currency",
+   "label": "Stamp Duty"
+  },
+  {
+   "fieldname": "cost_of_plant_and_machinery",
+   "fieldtype": "Currency",
+   "label": "Cost of Plant and Machinery"
+  },
+  {
+   "fieldname": "cost_of_material_stored",
+   "fieldtype": "Currency",
+   "label": "Cost of Material Stored"
+  },
+  {
+   "fieldname": "registration_expenses",
+   "fieldtype": "Currency",
+   "label": "Registration Expenses"
+  },
+  {
+   "fieldname": "other_costs",
+   "fieldtype": "Currency",
+   "label": "Other Costs"
+  },
+  {
+   "fieldname": "grand_total_cost",
+   "fieldtype": "Currency",
+   "label": "Grand Total Cost"
+  },
+  {
+   "fieldname": "column_break_xhlr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_yrxd",
+   "fieldtype": "Section Break",
+   "label": "Land Document List"
+  },
+  {
+   "fieldname": "certificate_of_registration_of_company",
+   "fieldtype": "Attach",
+   "label": "Certificate of Registration of Company"
+  },
+  {
+   "fieldname": "memorandum_of_association",
+   "fieldtype": "Attach",
+   "label": "Memorandum of Association"
+  },
+  {
+   "fieldname": "articles_of_association",
+   "fieldtype": "Attach",
+   "label": "Articles of Association"
+  },
+  {
+   "fieldname": "site_plan_in_sq_ft",
+   "fieldtype": "Attach",
+   "label": "Site Plan in Sq. Ft."
+  },
+  {
+   "fieldname": "gram_sabha_committee_resolution",
+   "fieldtype": "Attach",
+   "label": "Gram Sabha Committee Resolution"
+  },
+  {
+   "fieldname": "letter_from_gram_sabha_for_snm",
+   "fieldtype": "Attach",
+   "label": "Letter From Gram Sabha for SNM"
+  },
+  {
+   "fieldname": "khasra__khatauni__faraza_for_agricultural_land",
+   "fieldtype": "Attach",
+   "label": "Khasra / Khatauni / Faraza for Agricultural Land"
+  },
+  {
+   "fieldname": "registration_document_with_history",
+   "fieldtype": "Attach",
+   "label": "Registration Document with History"
+  },
+  {
+   "fieldname": "partnership_deed",
+   "fieldtype": "Attach",
+   "label": "Partnership Deed"
+  },
+  {
+   "fieldname": "authorized_signatory_and_kyc_documents_for_partnership__company",
+   "fieldtype": "Attach",
+   "label": "Authorized Signatory and KYC Documents (for Partnership / Company)"
+  },
+  {
+   "fieldname": "photocopy_of_khatoni_registry",
+   "fieldtype": "Attach",
+   "label": "Photocopy of Khatoni/ Registry"
+  },
+  {
+   "fieldname": "site_map_of_proposed_land",
+   "fieldtype": "Attach",
+   "label": "Site Map of Proposed Land"
+  },
+   {
+   "fieldname": "copy_of_sizra",
+   "fieldtype": "Attach",
+   "label": "Copy of Sizra"
+  },
+  {
+   "fieldname": "column_break_enez",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "advance_amount_to_be",
+   "fieldtype": "Currency",
+   "label": "Advance Amount To Be"
+  },
+  {
+   "fieldname": "tentative_date",
+   "fieldtype": "Date",
+   "label": "Tentative Date"
+  },
+  {
+   "fieldname": "visited_by_name",
+   "fieldtype": "Data",
+   "label": "Visited By Name",
+   "length": 20
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-24 17:04:12.097148",
+ "modified": "2025-07-04 20:35:01.547133",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Land Purchase",

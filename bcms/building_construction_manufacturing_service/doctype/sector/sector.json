@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-04 18:23:06.624638",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "sector_name",
+  "zone",
+  "mobile_number",
+  "sector_incharge_address",
+  "column_break_szxi",
+  "sector_number",
+  "sector_incharge",
+  "sector_incharge_email",
+  "sector_incharge_name",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "sector_name",
+   "fieldtype": "Data",
+   "label": "Sector Name\t"
+  },
+  {
+   "fieldname": "zone",
+   "fieldtype": "Link",
+   "label": "Zone",
+   "options": "Zone"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number"
+  },
+  {
+   "fieldname": "column_break_szxi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sector_number",
+   "fieldtype": "Data",
+   "label": "Sector Number"
+  },
+  {
+   "fieldname": "sector_incharge",
+   "fieldtype": "Data",
+   "label": "Sector Incharge"
+  },
+  {
+   "fieldname": "sector_incharge_address",
+   "fieldtype": "Data",
+   "label": "Sector Incharge Address"
+  },
+  {
+   "fieldname": "sector_incharge_email",
+   "fieldtype": "Data",
+   "label": "Sector Incharge Email"
+  },
+  {
+   "fieldname": "sector_incharge_name",
+   "fieldtype": "Data",
+   "label": "Sector Incharge Name"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-07-04 18:27:25.916598",
+ "modified_by": "Administrator",
+ "module": "Building Construction Manufacturing Service",
+ "name": "Sector",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,101 @@
+{
+ "charts": [
+  {
+   "chart_name": "Ownership Type",
+   "label": "Ownership Type"
+  },
+  {
+   "chart_name": "Current Status",
+   "label": "Current Status"
+  }
+ ],
+ "content": "[{\"id\":\"0-0QZWz_dU\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Building Construction Management System\",\"col\":12}},{\"id\":\"erAy5sTwcR\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Land Purchase\",\"col\":3}},{\"id\":\"FnoYv8C28i\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Land Purchase List\",\"col\":3}},{\"id\":\"M43QHqkacH\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Report Summary\",\"col\":12}},{\"id\":\"W_BXmgCYaE\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Current Status Free\",\"col\":4}},{\"id\":\"WyJBKEBxlD\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Current Status Lease\",\"col\":4}},{\"id\":\"EYVxM5uTt9\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Current Status Encumbered\",\"col\":4}},{\"id\":\"gb70tM1Lg5\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Ownership Type Private\",\"col\":4}},{\"id\":\"ZhgSUjgFqq\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Ownership Type Government\",\"col\":4}},{\"id\":\"RwWAaPtvjx\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Ownership Type Trust\",\"col\":4}},{\"id\":\"DsTtXBrUpH\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Quality High\",\"col\":4}},{\"id\":\"rPIfbErD23\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Quality Medium\",\"col\":4}},{\"id\":\"rcUAVg1Hru\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Quality Law\",\"col\":4}},{\"id\":\"bNHRK2CujJ\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Ownership Type\",\"col\":12}},{\"id\":\"9MtoqN8Ixr\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Current Status\",\"col\":12}}]",
+ "creation": "2025-06-24 12:47:29.620631",
+ "custom_blocks": [
+  {
+   "custom_block_name": "Building Construction Management System",
+   "label": "Building Construction Management System"
+  },
+  {
+   "custom_block_name": "Report Summary",
+   "label": "Report Summary"
+  }
+ ],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "share-people",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Land Purchases",
+ "links": [],
+ "modified": "2025-07-07 14:45:47.309321",
+ "modified_by": "Administrator",
+ "module": "Building Construction Manufacturing Service",
+ "name": "Land Purchases",
+ "number_cards": [
+  {
+   "label": "Quality High",
+   "number_card_name": "Quality High"
+  },
+  {
+   "label": "Current Status Lease",
+   "number_card_name": "Current Status Lease"
+  },
+  {
+   "label": "Ownership Type Private",
+   "number_card_name": "Ownership Type Private"
+  },
+  {
+   "label": "Ownership Type Trust",
+   "number_card_name": "Ownership Type Trust"
+  },
+  {
+   "label": "Current Status Free",
+   "number_card_name": "Current Status Free"
+  },
+  {
+   "label": "Quality Medium",
+   "number_card_name": "Quality Medium"
+  },
+  {
+   "label": "Current Status Encumbered",
+   "number_card_name": "Current Status Encumbered"
+  },
+  {
+   "label": "Ownership Type Government",
+   "number_card_name": "Ownership Type Government"
+  },
+  {
+   "label": "Quality Law",
+   "number_card_name": "Quality Law"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "BCMS",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Land Purchase List",
+   "link_to": "Land Purchase",
+   "report_ref_doctype": "Land Purchase",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Land Purchase",
+   "link_to": "Land Purchase",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Land Purchases"
+}

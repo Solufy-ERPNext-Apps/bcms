@@ -1,0 +1,110 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-02 10:48:40.368732",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "document_list_section",
+  "certificate_of_registration_of_company",
+  "memorandum_of_association",
+  "articles_of_association",
+  "site_plan_in_sq_ft",
+  "gram_sabha_committee_resolution",
+  "letter_from_gram_sabha_for_snm",
+  "khasra__khatauni__faraza_for_agricultural_land",
+  "registration_document_with_history",
+  "partnership_deed",
+  "authorized_signatory_and_kyc_documents",
+  "photocopy_of_khatoni_registry",
+  "site_map_of_proposed_land",
+  "copy_of_sizra"
+ ],
+ "fields": [
+  {
+   "fieldname": "certificate_of_registration_of_company",
+   "fieldtype": "Attach",
+   "label": "Certificate of Registration of Company"
+  },
+  {
+   "fieldname": "memorandum_of_association",
+   "fieldtype": "Attach",
+   "label": "Memorandum of Association"
+  },
+  {
+   "fieldname": "articles_of_association",
+   "fieldtype": "Attach",
+   "label": "Articles of Association"
+  },
+  {
+   "fieldname": "document_list_section",
+   "fieldtype": "Section Break",
+   "label": "Document List"
+  },
+  {
+   "fieldname": "site_plan_in_sq_ft",
+   "fieldtype": "Attach",
+   "label": "Site Plan in Sq. Ft."
+  },
+  {
+   "fieldname": "gram_sabha_committee_resolution",
+   "fieldtype": "Attach",
+   "label": "Gram Sabha Committee Resolution"
+  },
+  {
+   "fieldname": "letter_from_gram_sabha_for_snm",
+   "fieldtype": "Attach",
+   "label": "Letter From Gram Sabha for SNM"
+  },
+  {
+   "fieldname": "khasra__khatauni__faraza_for_agricultural_land",
+   "fieldtype": "Attach",
+   "label": "Khasra / Khatauni / Faraza for Agricultural Land"
+  },
+  {
+   "fieldname": "registration_document_with_history",
+   "fieldtype": "Attach",
+   "label": "Registration Document with History"
+  },
+  {
+   "fieldname": "partnership_deed",
+   "fieldtype": "Attach",
+   "label": "Partnership Deed"
+  },
+  {
+   "fieldname": "photocopy_of_khatoni_registry",
+   "fieldtype": "Attach",
+   "label": "Photocopy of Khatoni/ Registry"
+  },
+  {
+   "fieldname": "authorized_signatory_and_kyc_documents",
+   "fieldtype": "Attach",
+   "label": "Authorized Signatory and KYC Documents (for Partnership / Company)"
+  },
+  {
+   "fieldname": "site_map_of_proposed_land",
+   "fieldtype": "Attach",
+   "label": "Site Map of Proposed Land"
+  },
+  {
+   "fieldname": "copy_of_sizra",
+   "fieldtype": "Attach",
+   "label": "Copy of Sizra"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-02 11:05:29.933847",
+ "modified_by": "Administrator",
+ "module": "Building Construction Manufacturing Service",
+ "name": "Land Document List",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

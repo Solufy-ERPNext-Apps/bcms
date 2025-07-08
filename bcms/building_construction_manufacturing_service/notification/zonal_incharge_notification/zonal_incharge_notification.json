@@ -1,0 +1,34 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.zonal_incharge_email",
+ "creation": "2025-06-29 21:36:03.707333",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Land Purchase",
+ "enabled": 1,
+ "event": "Save",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>Dear Zonal Incharge,</p>\n\n<p>A new <strong>Land Purchase</strong> request has been created.</p>\n\n<strong>Request ID:</strong> {{doc.name}}\n<strong>Zone:</strong> {{doc.zone}}\n<strong>Requested By:</strong>\n<strong>Request Date:</strong> {{doc.request_date}}</p>\n\n<p>Please log in to the system to review the details.</p>\n\n<p>Regards,<br />\n<strong>BCMS Land Purchase System</strong></p>\n",
+ "message_type": "Markdown",
+ "modified": "2025-06-30 11:26:40.931421",
+ "modified_by": "Administrator",
+ "module": "Building Construction Manufacturing Service",
+ "name": "Zonal Incharge Notification",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "condition": "doc.zonal_incharge_email",
+   "receiver_by_document_field": "zonal_incharge_email",
+   "receiver_by_role": "Zonal Incharge"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "sender": "Shivangi G Solufy",
+ "sender_email": "shivangi.g.solufy@gmail.com",
+ "set_property_after_alert": "zonal_incharge_email",
+ "subject": "New Land Purchase Created: {{ doc.name }}"
+}

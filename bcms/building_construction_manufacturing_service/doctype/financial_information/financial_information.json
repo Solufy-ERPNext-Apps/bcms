@@ -1,0 +1,62 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-01 16:54:02.454312",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "financial_details_section",
+  "average_monthly_offeringnamaskar",
+  "monthly_building_fund",
+  "no_of_receipt_books_used_during_the_year",
+  "do_your_get_receipt_book_from_headquarter_or_branch",
+  "average_yearly_offeringnamaskar"
+ ],
+ "fields": [
+  {
+   "fieldname": "average_monthly_offeringnamaskar",
+   "fieldtype": "Currency",
+   "label": "Average Monthly Offering/Namaskar"
+  },
+  {
+   "fieldname": "monthly_building_fund",
+   "fieldtype": "Currency",
+   "label": "Monthly Building Fund"
+  },
+  {
+   "fieldname": "no_of_receipt_books_used_during_the_year",
+   "fieldtype": "Int",
+   "label": "No. of Receipt Books used during the year"
+  },
+  {
+   "fieldname": "do_your_get_receipt_book_from_headquarter_or_branch",
+   "fieldtype": "Data",
+   "label": "Do Your Get Receipt book from Headquarter or Branch"
+  },
+  {
+   "fieldname": "average_yearly_offeringnamaskar",
+   "fieldtype": "Currency",
+   "label": "Average Yearly Offering/Namaskar"
+  },
+  {
+   "fieldname": "financial_details_section",
+   "fieldtype": "Section Break",
+   "label": "Financial Details"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-01 16:57:06.665482",
+ "modified_by": "Administrator",
+ "module": "Building Construction Manufacturing Service",
+ "name": "Financial Information",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

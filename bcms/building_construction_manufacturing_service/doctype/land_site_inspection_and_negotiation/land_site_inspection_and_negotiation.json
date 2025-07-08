@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-02 11:17:57.434443",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "inspection_and_negotiation_section",
+  "advance_amount_to_be",
+  "tentative_date",
+  "visited_by_name",
+  "visited_by__role",
+  "visited_by_mobile_no",
+  "negotiated_by_name",
+  "negotiated_by_role",
+  "negotiated_by_mobile_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "advance_amount_to_be",
+   "fieldtype": "Currency",
+   "label": "Advance Amount To Be"
+  },
+  {
+   "fieldname": "tentative_date",
+   "fieldtype": "Date",
+   "label": "Tentative Date"
+  },
+  {
+   "fieldname": "visited_by_name",
+   "fieldtype": "Data",
+   "label": "Visited By Name"
+  },
+  {
+   "fieldname": "visited_by__role",
+   "fieldtype": "Data",
+   "label": "Visited By  Role"
+  },
+  {
+   "fieldname": "visited_by_mobile_no",
+   "fieldtype": "Data",
+   "label": "Visited By Mobile No."
+  },
+  {
+   "fieldname": "negotiated_by_name",
+   "fieldtype": "Data",
+   "label": "Negotiated By Name"
+  },
+  {
+   "fieldname": "negotiated_by_role",
+   "fieldtype": "Data",
+   "label": "Negotiated By Role"
+  },
+  {
+   "fieldname": "negotiated_by_mobile_no",
+   "fieldtype": "Data",
+   "label": "Negotiated By Mobile No."
+  },
+  {
+   "fieldname": "inspection_and_negotiation_section",
+   "fieldtype": "Section Break",
+   "label": "Inspection and Negotiation"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-02 11:21:32.035339",
+ "modified_by": "Administrator",
+ "module": "Building Construction Manufacturing Service",
+ "name": "Land Site Inspection and Negotiation",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
