@@ -1,37 +1,26 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:impact_area",
- "creation": "2025-07-02 11:33:39.372468",
+ "creation": "2025-07-08 21:23:34.417038",
  "doctype": "DocType",
- "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "community_impact_and_social_negative_considerations_section",
-  "impact_area"
+  "rental_assets"
  ],
  "fields": [
   {
-   "fieldname": "impact_area",
+   "fieldname": "rental_assets",
    "fieldtype": "Data",
-   "label": "Impact Area",
-   "options": "\n",
-   "unique": 1
-  },
-  {
-   "fieldname": "community_impact_and_social_negative_considerations_section",
-   "fieldtype": "Section Break",
-   "label": "Community Impact "
+   "label": "Rental Assets"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-09 15:14:34.963467",
+ "modified": "2025-07-08 21:24:04.675588",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
- "name": "Community Impact",
- "naming_rule": "By fieldname",
+ "name": "Rental Assets",
  "owner": "Administrator",
  "permissions": [
   {

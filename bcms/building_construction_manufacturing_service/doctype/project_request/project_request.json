@@ -8,7 +8,12 @@
  "field_order": [
   "project_type",
   "requested_by",
+  "zone",
+  "zonal_incharge_name",
+  "zone_email",
   "posting_date",
+  "member_inchargepp",
+  "pp_email",
   "attachments",
   "description",
   "column_break_btdk",
@@ -16,8 +21,17 @@
   "khetra",
   "unit",
   "location",
+  "member_incharge",
+  "member_incharge_name",
+  "member_incharge_email",
   "estimated_budget",
-  "workflow_state"
+  "workflow_state",
+  "member_inchargebcm",
+  "bcm_email",
+  "member_inchargehq",
+  "secratoryhq",
+  "member_inchargefinance",
+  "finance"
  ],
  "fields": [
   {
@@ -94,12 +108,106 @@
    "fieldtype": "Link",
    "label": "Khetra",
    "options": "Khetra"
+  },
+  {
+   "fieldname": "zone",
+   "fieldtype": "Link",
+   "label": "Zone",
+   "options": "Zone"
+  },
+  {
+   "fieldname": "zonal_incharge_name",
+   "fieldtype": "Link",
+   "label": "Zonal Incharge Name",
+   "link_filters": "[[\"User\",\"role\",\"=\",\"PP\"]]",
+   "options": "User"
+  },
+  {
+   "fieldname": "zone_email",
+   "fieldtype": "Data",
+   "label": "Zone Email"
+  },
+  {
+   "fetch_from": "member_inchargepp.email",
+   "fieldname": "pp_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "PP Email",
+   "link_filters": "[[\"User\",\"role\",\"=\",\"PP\"]]",
+   "options": "Email"
+  },
+  {
+   "fieldname": "bcm_email",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "BCM Email",
+   "link_filters": "[[\"User\",\"role\",\"=\",\"BCM\"]]",
+   "options": "User"
+  },
+  {
+   "fieldname": "secratoryhq",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": " secratory(HQ)",
+   "options": "User"
+  },
+  {
+   "fieldname": "finance",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Finance",
+   "options": "User"
+  },
+  {
+   "fieldname": "member_inchargepp",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Member Incharge(PP)",
+   "options": "User"
+  },
+  {
+   "depends_on": "eval:doc.workflow_state == \"Draft\" || doc.workflow_state == \"Approved By PP\"",
+   "fieldname": "member_inchargebcm",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Member Incharge(BCM)",
+   "options": "User"
+  },
+  {
+   "fieldname": "member_inchargehq",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Member Incharge(HQ)"
+  },
+  {
+   "fieldname": "member_inchargefinance",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Member Incharge(Finance)",
+   "options": "User"
+  },
+  {
+   "fieldname": "member_incharge",
+   "fieldtype": "Link",
+   "label": "Member Incharge",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "member_incharge_name",
+   "fieldtype": "Data",
+   "label": "Member Incharge Name"
+  },
+  {
+   "fieldname": "member_incharge_email",
+   "fieldtype": "Data",
+   "label": "Member incharge Email",
+   "options": "Email"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-08 17:08:13.425353",
+ "modified": "2025-07-11 10:45:56.984208",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Project Request",

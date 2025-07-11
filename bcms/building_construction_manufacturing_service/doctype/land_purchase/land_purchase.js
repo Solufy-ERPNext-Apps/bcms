@@ -23,6 +23,16 @@ frappe.ui.form.on("Land Purchase", {
 			"historical_records",
 			//last updated
 			"attached_copy_of_google_map_of_your_area",
+			"ownership_document",
+			"khatoni_attachment",
+			"recommendation",
+			"letter_document",
+			"search_report",
+			"bank_ac",
+			"pan_card",
+			"aadhaar_card",
+			"sizrasite_plan",
+			"letter_of_offer_agreement",
 			"attached_statement_of_account_of_last_three_year_of_your_branch",
 			"cancelled_cheque_photocopy",
 			"supporting_documents",
@@ -47,7 +57,8 @@ frappe.ui.form.on("Land Purchase", {
 			"attach_zbam",
 			"upload_document_sellers_gram",
 			"upload_document_offer_letter",
-			"upload_document_if_yes"
+			"upload_document_if_yes",
+			"copy_of_resolution"
 
 		];
 

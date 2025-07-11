@@ -1,36 +1,35 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:impact_area",
- "creation": "2025-07-02 11:33:39.372468",
+ "autoname": "field:mode_of_acquisition",
+ "creation": "2025-07-08 21:12:20.608182",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "community_impact_and_social_negative_considerations_section",
-  "impact_area"
+  "mode_of_acquisition_section",
+  "mode_of_acquisition"
  ],
  "fields": [
   {
-   "fieldname": "impact_area",
+   "fieldname": "mode_of_acquisition",
    "fieldtype": "Data",
-   "label": "Impact Area",
-   "options": "\n",
+   "label": "Mode of Acquisition",
    "unique": 1
   },
   {
-   "fieldname": "community_impact_and_social_negative_considerations_section",
+   "fieldname": "mode_of_acquisition_section",
    "fieldtype": "Section Break",
-   "label": "Community Impact "
+   "label": "Mode of Acquisition"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-09 15:14:34.963467",
+ "modified": "2025-07-09 13:03:25.440970",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
- "name": "Community Impact",
+ "name": "Mode of Acquisition",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [

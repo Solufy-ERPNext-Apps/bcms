@@ -1,36 +1,28 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:impact_area",
- "creation": "2025-07-02 11:33:39.372468",
+ "autoname": "field:risk_covered",
+ "creation": "2025-07-09 12:23:41.240047",
  "doctype": "DocType",
- "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "community_impact_and_social_negative_considerations_section",
-  "impact_area"
+  "risk_covered"
  ],
  "fields": [
   {
-   "fieldname": "impact_area",
+   "fieldname": "risk_covered",
    "fieldtype": "Data",
-   "label": "Impact Area",
-   "options": "\n",
+   "label": "Risk Covered",
    "unique": 1
-  },
-  {
-   "fieldname": "community_impact_and_social_negative_considerations_section",
-   "fieldtype": "Section Break",
-   "label": "Community Impact "
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-09 15:14:34.963467",
+ "modified": "2025-07-09 12:24:32.966439",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
- "name": "Community Impact",
+ "name": "Risk Covered",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [

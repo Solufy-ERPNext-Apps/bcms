@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:negative_point",
  "creation": "2025-07-04 16:36:32.272602",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -11,16 +12,18 @@
   {
    "fieldname": "negative_point",
    "fieldtype": "Data",
-   "label": "Negative Point"
+   "label": "Negative Point",
+   "unique": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-04 16:36:45.183176",
+ "modified": "2025-07-09 15:16:46.966332",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Negative Point",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
