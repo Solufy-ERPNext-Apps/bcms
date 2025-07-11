@@ -1,0 +1,478 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-06-18 15:35:25.709263",
+  "name": "Reject",
+  "workflow_action_name": "Reject"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-06-18 15:35:25.710047",
+  "name": "Review",
+  "workflow_action_name": "Review"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-06-30 17:31:51.055122",
+  "name": "Approved",
+  "workflow_action_name": "Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-06-30 17:35:24.535453",
+  "name": "Send to Approval",
+  "workflow_action_name": "Send to Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-06-30 18:38:48.070185",
+  "name": "Final Allocated",
+  "workflow_action_name": "Final Allocated"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 13:09:23.275967",
+  "name": "Forward to PP",
+  "workflow_action_name": "Forward to PP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 13:11:08.260558",
+  "name": "Start Project",
+  "workflow_action_name": "Start Project"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 17:29:04.258919",
+  "name": "Send to ZI",
+  "workflow_action_name": "Send to ZI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 17:30:23.568998",
+  "name": "Send For ZI Approved",
+  "workflow_action_name": "Send For ZI Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 17:32:19.364110",
+  "name": "Approved By PP",
+  "workflow_action_name": "Approved By PP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 17:33:45.090926",
+  "name": "Approved by ZI",
+  "workflow_action_name": "Approved by ZI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 18:02:39.612689",
+  "name": "Sent for ZI Approved",
+  "workflow_action_name": "Sent for ZI Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 18:03:58.915790",
+  "name": "Reject For ZI Approved",
+  "workflow_action_name": "Reject For ZI Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 18:27:57.486627",
+  "name": "Sent For PP Approved",
+  "workflow_action_name": "Sent For PP Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 18:29:06.213822",
+  "name": "Reject For PP Approved",
+  "workflow_action_name": "Reject For PP Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 18:30:39.364832",
+  "name": "Send For HQ Approved",
+  "workflow_action_name": "Send For HQ Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 18:31:45.684399",
+  "name": "Sent For BCM Approved",
+  "workflow_action_name": "Sent For BCM Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 18:32:42.323370",
+  "name": "Reject For BCM Approved",
+  "workflow_action_name": "Reject For BCM Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 18:33:31.620428",
+  "name": "Sent For HQ Approved",
+  "workflow_action_name": "Sent For HQ Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 18:34:49.597557",
+  "name": "Reject For HQ Approved",
+  "workflow_action_name": "Reject For HQ Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 18:37:53.676026",
+  "name": "Sent for Finance Approved",
+  "workflow_action_name": "Sent for Finance Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 18:56:08.582348",
+  "name": "Send For ZI Approval",
+  "workflow_action_name": "Send For ZI Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 18:59:26.097590",
+  "name": "Reject For ZI approval",
+  "workflow_action_name": "Reject For ZI approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 19:03:15.985907",
+  "name": "Approval By ZI",
+  "workflow_action_name": "Approval By ZI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 19:20:06.234065",
+  "name": "Send For HQ Approval",
+  "workflow_action_name": "Send For HQ Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 19:24:56.484731",
+  "name": "Rejection By HQ",
+  "workflow_action_name": "Rejection By HQ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-11 14:33:23.354482",
+  "name": "Sent For Recommandation",
+  "workflow_action_name": "Sent For Recommandation"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-11 14:34:09.773886",
+  "name": "Send For Recommendation",
+  "workflow_action_name": "Send For Recommendation"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-11 14:38:17.663619",
+  "name": "Recommend",
+  "workflow_action_name": "Recommend"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-11 14:49:50.416550",
+  "name": "Drawing Approval",
+  "workflow_action_name": "Drawing Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-11 14:50:44.993315",
+  "name": "Send for Financial Approval",
+  "workflow_action_name": "Send for Financial Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-11 14:51:40.751634",
+  "name": "Approve Budget",
+  "workflow_action_name": "Approve Budget"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-11 14:54:38.515461",
+  "name": "Form Committee",
+  "workflow_action_name": "Form Committee"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-11 14:59:36.429684",
+  "name": "Planning & Designing Approve",
+  "workflow_action_name": "Planning & Designing Approve"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-11 15:13:16.134313",
+  "name": "Financial Approval",
+  "workflow_action_name": "Financial Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-11 15:15:49.754852",
+  "name": "Approve Committee",
+  "workflow_action_name": "Approve Committee"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-11 15:18:44.666639",
+  "name": "Confirm Fund Transfer",
+  "workflow_action_name": "Confirm Fund Transfer"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-11 16:02:11.817228",
+  "name": "Constitution Construction Committee",
+  "workflow_action_name": "Constitution Construction Committee"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-11 16:04:09.431395",
+  "name": "Building Committee Constitution",
+  "workflow_action_name": "Building Committee Constitution"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-11 16:04:30.597915",
+  "name": "Building Committee Constitution Approval",
+  "workflow_action_name": "Building Committee Constitution Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-11 16:08:18.183401",
+  "name": "Fund Transfer Initiated",
+  "workflow_action_name": "Fund Transfer Initiated"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-11 16:21:45.785545",
+  "name": "Send to Account & Fin.",
+  "workflow_action_name": "Send to Account & Fin."
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-11 16:23:00.198159",
+  "name": "Financial Approved",
+  "workflow_action_name": "Financial Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-11 16:32:49.088900",
+  "name": "Approve Recommendation",
+  "workflow_action_name": "Approve Recommendation"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-11 18:19:54.537136",
+  "name": "Submit BOQ & Drawing",
+  "workflow_action_name": "Submit BOQ & Drawing"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-06-18 15:35:25.708322",
+  "name": "Approve",
+  "workflow_action_name": "Approve"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 13:09:53.906511",
+  "name": "Send to Sec HQ",
+  "workflow_action_name": "Send to Sec HQ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 13:10:29.182832",
+  "name": "Send to FA",
+  "workflow_action_name": "Send to FA"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 19:06:20.414806",
+  "name": "Rejection By ZI",
+  "workflow_action_name": "Rejection By ZI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 19:17:32.806514",
+  "name": "Rejection By BCM",
+  "workflow_action_name": "Rejection By BCM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 19:25:36.742148",
+  "name": "Send For Finance Approval",
+  "workflow_action_name": "Send For Finance Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 19:26:31.372038",
+  "name": "Approval By Finance",
+  "workflow_action_name": "Approval By Finance"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-11 15:17:40.289467",
+  "name": "Start Fund Transfer Process",
+  "workflow_action_name": "Start Fund Transfer Process"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-11 15:19:43.910391",
+  "name": "Work Completion Initiated",
+  "workflow_action_name": "Work Completion Initiated"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-11 15:20:49.128447",
+  "name": "Submit Work Completion Certificate",
+  "workflow_action_name": "Submit Work Completion Certificate"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-11 16:18:26.026704",
+  "name": "Secretary Approved",
+  "workflow_action_name": "Secretary Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-06-30 17:34:24.075405",
+  "name": "Allocate Budget",
+  "workflow_action_name": "Allocate Budget"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 13:08:20.203158",
+  "name": "Submit for ZI Approval",
+  "workflow_action_name": "Submit for ZI Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 13:47:49.908541",
+  "name": "Mark as Complete",
+  "workflow_action_name": "Mark as Complete"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 19:09:51.763661",
+  "name": "Approval By BCM",
+  "workflow_action_name": "Approval By BCM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 19:24:07.314431",
+  "name": "Approval By HQ",
+  "workflow_action_name": "Approval By HQ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-11 14:40:39.653088",
+  "name": "Reject Recommendation",
+  "workflow_action_name": "Reject Recommendation"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-11 15:29:26.370536",
+  "name": "create building Commitee",
+  "workflow_action_name": "create building Commitee"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 19:08:15.739486",
+  "name": "Send For PP Approval",
+  "workflow_action_name": "Send For PP Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 19:11:10.552617",
+  "name": "Approval By PP",
+  "workflow_action_name": "Approval By PP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 19:11:31.405307",
+  "name": "Rejection By PP",
+  "workflow_action_name": "Rejection By PP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 19:26:50.433153",
+  "name": "Rejection By Finance",
+  "workflow_action_name": "Rejection By Finance"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 19:14:08.584129",
+  "name": "Send For BCM Approval",
+  "workflow_action_name": "Send For BCM Approval"
+ }
+]
