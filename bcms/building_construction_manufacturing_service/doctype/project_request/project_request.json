@@ -117,10 +117,9 @@
   },
   {
    "fieldname": "zonal_incharge_name",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
    "label": "Zonal Incharge Name",
-   "link_filters": "[[\"User\",\"role\",\"=\",\"PP\"]]",
-   "options": "User"
+   "link_filters": "[[\"User\",\"role\",\"=\",\"PP\"]]"
   },
   {
    "fieldname": "zone_email",
@@ -206,7 +205,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-11 11:46:09.853962",
+ "modified": "2025-07-15 18:14:05.749529",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Project Request",

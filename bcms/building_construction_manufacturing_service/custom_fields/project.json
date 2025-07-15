@@ -1,6 +1,287 @@
 {
  "Project": [
   {
+   "dt": "Project",
+   "fieldname": "custom_recommendation",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "insert_after": "custom_land_details",
+   "label": "Recommendation",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_fund_transfer_procedure",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_construction_committee_form",
+   "label": "Fund Transfer Procedure",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_work_completion",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_column_break_dmuok",
+   "label": "Work Completion\t",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_constitution_of_building_construction_committee",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_financial_approval_form",
+   "label": "Constitution of Building Construction Committee",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_govt_approval_letter",
+   "fieldtype": "Attach",
+   "insert_after": "custom_drawing_covering_letter",
+   "label": "Govt. Approval Letter",
+   "mandatory_depends_on": "eval:doc.workflow_state==\"Planning & Designing Approved\"",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_progress_photo",
+   "fieldtype": "Attach",
+   "insert_after": "custom_legal__government_documents",
+   "label": "Progress Photo",
+   "mandatory_depends_on": "eval:doc.workflow_state==\"Committee Approved\"",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_progress_tracking",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_govt_approved_drawing_file",
+   "label": "Financial Approval",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_vuiwk",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_drawing_file_all_blocks",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_proforma_for_sadh_sangat",
+   "fieldtype": "Attach",
+   "insert_after": "custom_column_break_mg58e",
+   "label": "Proforma for Sadh Sangat",
+   "mandatory_depends_on": "eval:doc.workflow_state==\"Sent For Recommendation\"",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_l6e2a",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_govt_approval_letter",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_boq_estimate",
+   "fieldtype": "Attach",
+   "insert_after": "custom_column_break_wozmg",
+   "label": "BOQ/ Estimate",
+   "mandatory_depends_on": "eval:doc.workflow_state==\"Approved Recommendation\"",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_section_break_nqd0s",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_column_break_ozsvx",
+   "label": "Approved Drawing",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_work_completion_certificate",
+   "fieldtype": "Attach",
+   "insert_after": "custom_work_completion",
+   "label": "Work Completion Certificate",
+   "mandatory_depends_on": "eval:doc.workflow_state==\"Fund Transfer Initiated\"",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_dmuok",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_expenditure_form",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_govt_approved_drawing_file",
+   "fieldtype": "Attach",
+   "insert_after": "custom_column_break_vuiwk",
+   "label": "Govt. Approved Drawing File",
+   "mandatory_depends_on": "eval:doc.workflow_state==\"Planning & Designing Approved\"",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_hdcto",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_progress_photo",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_land_details",
+   "fieldtype": "Attach",
+   "insert_after": "custom_column_break_yyynj",
+   "label": "Land Details",
+   "mandatory_depends_on": "eval:doc.workflow_state==\"Sent For Recommendation\"",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_legal__government_documents",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_transfer_order_form",
+   "label": "Next Fund Transfer",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_standard_planning__designing",
+   "fieldtype": "Attach",
+   "insert_after": "custom_site__layout_plans",
+   "label": "Standard Planning & Designing",
+   "mandatory_depends_on": "eval:doc.workflow_state==\"Approved Recommendation\"",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_ozsvx",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_boq_estimate",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_drawing_covering_letter",
+   "fieldtype": "Attach",
+   "insert_after": "custom_section_break_nqd0s",
+   "label": "Drawing Covering Letter",
+   "mandatory_depends_on": "eval:doc.workflow_state==\"Planning & Designing Approved\"",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_wozmg",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_standard_planning__designing",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_drawing_file_all_blocks",
+   "fieldtype": "Attach",
+   "insert_after": "custom_column_break_l6e2a",
+   "label": "Drawing File (All Blocks)",
+   "mandatory_depends_on": "eval:doc.workflow_state==\"Planning & Designing Approved\"",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_site_plan",
+   "fieldtype": "Attach",
+   "insert_after": "custom_recommendation_letter",
+   "label": "Site Plan",
+   "mandatory_depends_on": "eval:doc.workflow_state==\"Sent For Recommendation\"",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_site__layout_plans",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_recommendation",
+   "label": "Planning & Designing",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_transfer_order_form",
+   "fieldtype": "Attach",
+   "insert_after": "custom_fund_transfer_procedure",
+   "label": "Transfer Order Form",
+   "mandatory_depends_on": "eval:doc.workflow_state==\"Committee Form Created\"",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_yyynj",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_proforma_for_sadh_sangat",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_expenditure_form",
+   "fieldtype": "Attach",
+   "insert_after": "custom_column_break_hdcto",
+   "label": "Expenditure Form",
+   "mandatory_depends_on": "eval:doc.workflow_state==\"Committee Approved\"",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_mg58e",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_site_plan",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_planning__approval_documents",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_sub_process",
+   "label": "Initiation Work",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_construction_committee_form",
+   "fieldtype": "Attach",
+   "insert_after": "custom_constitution_of_building_construction_committee",
+   "label": "Construction Committee Form",
+   "mandatory_depends_on": "eval:doc.workflow_state==\"Financial Approved\"",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_financial_approval_form",
+   "fieldtype": "Attach",
+   "insert_after": "custom_progress_tracking",
+   "label": "Financial Approval Form",
+   "mandatory_depends_on": "eval:doc.workflow_state==\"Drawing Approved\"",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_recommendation_letter",
+   "fieldtype": "Attach",
+   "insert_after": "custom_planning__approval_documents",
+   "label": "Recommendation Letter",
+   "mandatory_depends_on": "eval:doc.workflow_state==\"Sent For Recommendation\"",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_sub_process",
+   "fieldtype": "Tab Break",
+   "insert_after": "message",
+   "label": "Sub Process",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
    "allow_on_submit": 1,
    "dt": "Project",
    "fieldname": "workflow_state",
@@ -13,8 +294,7 @@
   },
   {
    "dt": "Project",
-   "fieldname"
-   : "total_expense_claim",
+   "fieldname": "total_expense_claim",
    "fieldtype": "Currency",
    "insert_after": "total_costing_amount",
    "is_system_generated": 1,
