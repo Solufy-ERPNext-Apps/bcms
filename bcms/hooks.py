@@ -45,7 +45,9 @@ add_to_apps_screen = [
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-doctype_js = {"Land Purchase" : "public/js/land_purchase.js"}
+doctype_js = {"Land Purchase" : "public/js/land_purchase.js",
+			"Project":"building_construction_manufacturing_service/customization/project/project.js"
+}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}

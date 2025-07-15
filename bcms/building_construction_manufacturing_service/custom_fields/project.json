@@ -1,0 +1,26 @@
+{
+ "Project": [
+  {
+   "allow_on_submit": 1,
+   "dt": "Project",
+   "fieldname": "workflow_state",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Workflow State",
+   "module": "Building Construction Manufacturing Service",
+   "no_copy": 1,
+   "options": "Workflow State"
+  },
+  {
+   "dt": "Project",
+   "fieldname"
+   : "total_expense_claim",
+   "fieldtype": "Currency",
+   "insert_after": "total_costing_amount",
+   "is_system_generated": 1,
+   "label": "Total Expense Claim (via Expense Claims)",
+   "module": "Building Construction Manufacturing Service",
+   "read_only": 1
+  }
+ ]
+}
