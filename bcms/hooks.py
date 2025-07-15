@@ -141,13 +141,14 @@ doctype_js = {"Land Purchase" : "public/js/land_purchase.js",
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"Project": {
+        "before_save":"bcms.building_construction_manufacturing_service.customization.project.project.validate_pro"
+# 		# "on_update": "method",
+# 		# "on_cancel": "method",
+# 		# "on_trash": "method"
+	}
+}
 
 # Scheduled Tasks
 # ---------------

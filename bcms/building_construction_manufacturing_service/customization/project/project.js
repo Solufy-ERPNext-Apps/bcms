@@ -6,13 +6,13 @@ frappe.ui.form.on("Project",{
       }
 })
 
-frappe.ui.form.on('Project', {
-    refresh: function(frm) {
-        if (frm.doc.workflow_state === "Sent For Recommendation" && !frm.doc.custom_recommendation_letter ) {
-               frappe.throw(",test");
-        }
-    }
-});
+// frappe.ui.form.on('Project', {
+//     refresh: function(frm) {
+//         if (frm.doc.workflow_state === "Sent For Recommendation" && !frm.doc.custom_recommendation_letter ) {
+//                frappe.throw(",test");
+//         }
+//     }
+// });
 
 
 // frappe.ui.form.on('Project', {

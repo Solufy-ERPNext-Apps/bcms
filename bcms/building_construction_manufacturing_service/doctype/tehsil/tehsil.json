@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:tehsil",
  "creation": "2025-07-01 17:58:24.218530",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -11,16 +12,18 @@
   {
    "fieldname": "tehsil",
    "fieldtype": "Data",
-   "label": "tehsil"
+   "label": "tehsil",
+   "unique": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-01 17:58:33.574712",
+ "modified": "2025-07-15 13:57:00.917223",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Tehsil",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

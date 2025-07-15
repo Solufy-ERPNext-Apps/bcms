@@ -1,0 +1,234 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-08 18:40:16.643604",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "particulars_section",
+  "particular",
+  "column_break_pqqq",
+  "member_incharge",
+  "status_of_work_section",
+  "total_work",
+  "work_remarks",
+  "fund_transferred",
+  "transfer_remarks",
+  "column_break_jasc",
+  "sanction_awaited",
+  "remark_awaited",
+  "sanction_obtained",
+  "remark_obtained",
+  "complete_section",
+  "till_date",
+  "till_date_remarks",
+  "column_break_qmsj",
+  "completed_by_this_month",
+  "this_month_remarks",
+  "column_break_zhtu",
+  "completed_by_last_month",
+  "last_month_remarks",
+  "section_break_ksgy",
+  "work_in_progress",
+  "progress_remarks",
+  "balance",
+  "balance_remarks",
+  "column_break_hcor",
+  "court_case",
+  "court_remarks",
+  "section_break_qsix",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "total_work",
+   "fieldtype": "Int",
+   "label": "Total Work"
+  },
+  {
+   "fieldname": "work_remarks",
+   "fieldtype": "Small Text",
+   "label": "Work Remarks"
+  },
+  {
+   "fieldname": "column_break_jasc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sanction_obtained",
+   "fieldtype": "Int",
+   "label": "Sanction obtained"
+  },
+  {
+   "fieldname": "remark_obtained",
+   "fieldtype": "Small Text",
+   "label": "Remark Obtained"
+  },
+  {
+   "fieldname": "sanction_awaited",
+   "fieldtype": "Int",
+   "label": "Sanction Awaited"
+  },
+  {
+   "fieldname": "remark_awaited",
+   "fieldtype": "Small Text",
+   "label": "Remark Awaited"
+  },
+  {
+   "fieldname": "fund_transferred",
+   "fieldtype": "Int",
+   "label": "Fund Transferred"
+  },
+  {
+   "fieldname": "transfer_remarks",
+   "fieldtype": "Small Text",
+   "label": "Transfer remarks"
+  },
+  {
+   "fieldname": "status_of_work_section",
+   "fieldtype": "Section Break",
+   "label": "Status of Work"
+  },
+  {
+   "fieldname": "complete_section",
+   "fieldtype": "Section Break",
+   "label": "Complete"
+  },
+  {
+   "fieldname": "till_date",
+   "fieldtype": "Date",
+   "label": "Completed Till Date"
+  },
+  {
+   "fieldname": "column_break_qmsj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_zhtu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ksgy",
+   "fieldtype": "Section Break",
+   "label": "Other Information"
+  },
+  {
+   "fieldname": "work_in_progress",
+   "fieldtype": "Int",
+   "label": "Work in progress"
+  },
+  {
+   "fieldname": "progress_remarks",
+   "fieldtype": "Small Text",
+   "label": "Progress Remarks"
+  },
+  {
+   "fieldname": "column_break_hcor",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "court_case",
+   "fieldtype": "Int",
+   "label": "Court Case"
+  },
+  {
+   "fieldname": "balance",
+   "fieldtype": "Int",
+   "label": "Balance"
+  },
+  {
+   "fieldname": "balance_remarks",
+   "fieldtype": "Small Text",
+   "label": "Balance Remarks"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "completed_by_this_month",
+   "fieldtype": "Date",
+   "label": "Completed By This Month"
+  },
+  {
+   "fieldname": "completed_by_last_month",
+   "fieldtype": "Date",
+   "label": "Completed By Last Month"
+  },
+  {
+   "fieldname": "till_date_remarks",
+   "fieldtype": "Small Text",
+   "label": "Till Date Remarks"
+  },
+  {
+   "fieldname": "this_month_remarks",
+   "fieldtype": "Small Text",
+   "label": "This Month Remarks"
+  },
+  {
+   "fieldname": "last_month_remarks",
+   "fieldtype": "Small Text",
+   "label": "Last Month Remarks"
+  },
+  {
+   "fieldname": "section_break_qsix",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "court_remarks",
+   "fieldtype": "Small Text",
+   "label": "Court Remarks"
+  },
+  {
+   "fieldname": "particulars_section",
+   "fieldtype": "Section Break",
+   "label": "Particulars"
+  },
+  {
+   "fieldname": "particular",
+   "fieldtype": "Link",
+   "label": "Particular",
+   "options": "Particulars",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_pqqq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "User",
+   "fieldname": "member_incharge",
+   "fieldtype": "Link",
+   "label": "Member Incharge",
+   "options": "User"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-07-09 17:02:29.500413",
+ "modified_by": "Administrator",
+ "module": "Building Construction Manufacturing Service",
+ "name": "Maintenance Work",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
