@@ -2,6 +2,22 @@
  "Project": [
   {
    "dt": "Project",
+   "fieldname": "custom_disbursement_amount_",
+   "fieldtype": "Currency",
+   "insert_after": "estimated_costing",
+   "label": "Total Disbursement Amount ",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_last_disbursement_amount",
+   "fieldtype": "Currency",
+   "insert_after": "custom_disbursement_amount_",
+   "label": "Last Disbursement Amount",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
    "fieldname": "custom_recommendation",
    "fieldtype": "Check",
    "hidden": 1,

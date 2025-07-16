@@ -10,6 +10,7 @@ frappe.ui.form.on('Project Request', {
 		}
 	},
 	zone: function(frm) { 
+		if(frm.doc.zone){
 			frappe.db.get_doc('Zone', frm.doc.zone).then(zone => {
 				frm.set_value('zonal_incharge_name', zone.zonal_incharge_name);
 				frm.set_value('zone_email', zone.zone_email);
@@ -17,5 +18,6 @@ frappe.ui.form.on('Project Request', {
 				frm.set_value('member_incharge_email',zone.member_incharge_email);
 				frm.set_value('member_incharge_name',zone.member_incharge_name);		
 		});
+	}
 	}
 });
