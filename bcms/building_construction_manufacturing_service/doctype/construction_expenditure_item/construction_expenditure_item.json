@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-16 16:23:14.275091",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "sr_no",
+  "supplier__party_name",
+  "bill_no__date",
+  "voucher_no",
+  "amount",
+  "payment_mode",
+  "items",
+  "unit",
+  "qty"
+ ],
+ "fields": [
+  {
+   "fieldname": "sr_no",
+   "fieldtype": "Int",
+   "label": "Sr. No.\t"
+  },
+  {
+   "fieldname": "supplier__party_name",
+   "fieldtype": "Data",
+   "label": "Supplier / Party Name\t"
+  },
+  {
+   "fieldname": "bill_no__date",
+   "fieldtype": "Data",
+   "label": "Bill No / Date\t"
+  },
+  {
+   "fieldname": "voucher_no",
+   "fieldtype": "Data",
+   "label": "Voucher No.\t"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount\t"
+  },
+  {
+   "fieldname": "payment_mode",
+   "fieldtype": "Select",
+   "label": "Payment Mode\t",
+   "options": "\nCash\nCheque"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Data",
+   "label": "Items\t"
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Data",
+   "label": "Unit"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Data",
+   "label": "Qty"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-16 16:25:42.348858",
+ "modified_by": "Administrator",
+ "module": "Building Construction Manufacturing Service",
+ "name": "Construction Expenditure Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

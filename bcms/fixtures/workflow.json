@@ -646,7 +646,7 @@
   "doctype": "Workflow",
   "document_type": "Project",
   "is_active": 1,
-  "modified": "2025-07-11 16:35:18.677949",
+  "modified": "2025-07-19 02:20:11.819352",
   "name": "Project",
   "override_status": 0,
   "send_email_alert": 0,
@@ -668,7 +668,7 @@
     "workflow_builder_id": null
    },
    {
-    "allow_edit": "All",
+    "allow_edit": "Member Incharge",
     "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
@@ -684,7 +684,7 @@
     "workflow_builder_id": null
    },
    {
-    "allow_edit": "All",
+    "allow_edit": "Member Incharge",
     "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
@@ -700,7 +700,7 @@
     "workflow_builder_id": null
    },
    {
-    "allow_edit": "All",
+    "allow_edit": "Member Incharge",
     "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
@@ -716,7 +716,7 @@
     "workflow_builder_id": null
    },
    {
-    "allow_edit": "All",
+    "allow_edit": "Building Department",
     "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
@@ -732,7 +732,7 @@
     "workflow_builder_id": null
    },
    {
-    "allow_edit": "All",
+    "allow_edit": "Building Department",
     "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
@@ -748,7 +748,55 @@
     "workflow_builder_id": null
    },
    {
-    "allow_edit": "All",
+    "allow_edit": "Building Department",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Project",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "send_email": 1,
+    "state": "Sent to Member Incharge (PP)",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Member Incharge",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Project",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "send_email": 1,
+    "state": "Sent to Secretary (SNM)",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Building Department",
+    "avoid_status_override": 0,
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": null,
+    "parent": "Project",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "send_email": 1,
+    "state": "Sent to Member Incharge A&F",
+    "update_field": null,
+    "update_value": null,
+    "workflow_builder_id": null
+   },
+   {
+    "allow_edit": "Finance Authority",
     "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
@@ -764,7 +812,7 @@
     "workflow_builder_id": null
    },
    {
-    "allow_edit": "All",
+    "allow_edit": "Building Department",
     "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
@@ -780,7 +828,7 @@
     "workflow_builder_id": null
    },
    {
-    "allow_edit": "All",
+    "allow_edit": "Member Incharge",
     "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
@@ -796,7 +844,7 @@
     "workflow_builder_id": null
    },
    {
-    "allow_edit": "All",
+    "allow_edit": "Finance Authority",
     "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
@@ -812,7 +860,7 @@
     "workflow_builder_id": null
    },
    {
-    "allow_edit": "All",
+    "allow_edit": "Finance Authority",
     "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
@@ -828,7 +876,7 @@
     "workflow_builder_id": null
    },
    {
-    "allow_edit": "All",
+    "allow_edit": "Building Department",
     "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
@@ -844,7 +892,7 @@
     "workflow_builder_id": null
    },
    {
-    "allow_edit": "All",
+    "allow_edit": "Member Incharge",
     "avoid_status_override": 0,
     "doc_status": "0",
     "is_optional_state": 0,
@@ -937,6 +985,58 @@
     "parenttype": "Workflow",
     "send_email_to_creator": 0,
     "state": "Drawing Approved",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send to Member Incharge(PP)",
+    "allow_self_approval": 1,
+    "allowed": "Member Incharge",
+    "condition": null,
+    "next_state": "Sent to Member Incharge (PP)",
+    "parent": "Project",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "send_email_to_creator": 0,
+    "state": "Financial Approved",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send to Secretary (SNM)",
+    "allow_self_approval": 1,
+    "allowed": "Member Incharge",
+    "condition": null,
+    "next_state": "Sent to Secretary (SNM)",
+    "parent": "Project",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "send_email_to_creator": 0,
+    "state": "Sent to Member Incharge (PP)",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Send to Member Incharge A&F",
+    "allow_self_approval": 1,
+    "allowed": "Secretary HQ",
+    "condition": null,
+    "next_state": "Sent to Member Incharge A&F",
+    "parent": "Project",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "send_email_to_creator": 0,
+    "state": "Sent to Secretary (SNM)",
+    "workflow_builder_id": null
+   },
+   {
+    "action": "Financial Approval",
+    "allow_self_approval": 1,
+    "allowed": "Finance Authority",
+    "condition": null,
+    "next_state": "Financial Approved",
+    "parent": "Project",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "send_email_to_creator": 0,
+    "state": "Sent to Member Incharge A&F",
     "workflow_builder_id": null
    },
    {

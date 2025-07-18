@@ -1,0 +1,595 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-16 16:13:10.462208",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "general_details_section",
+  "branch",
+  "zone_no",
+  "zone_name",
+  "zonal_vc_name",
+  "mobile_no_zonal_vc",
+  "period_from",
+  "name_of_station",
+  "column_break_ogtm",
+  "mukhiji__sanyojak",
+  "mobile_no_mukhiji",
+  "accountant_name",
+  "mobile_no_accountant",
+  "work_status",
+  "period_to",
+  "expenditure_item_table_section",
+  "expenditure_item_table",
+  "section_break_ruxn",
+  "cartage",
+  "misc_expenses",
+  "labor_expenses",
+  "grand_total",
+  "income_summary_tab",
+  "expenditure_section",
+  "expenditure_column",
+  "previous_expenses",
+  "current_expenses",
+  "expenditure_total",
+  "income_column",
+  "current_amount_received",
+  "previous_amount_received",
+  "income_total",
+  "total_balance_section",
+  "balance",
+  "email_details_section",
+  "email_id",
+  "column_break_uukh",
+  "email_id_of_branch",
+  "progress_report_tab",
+  "hall_progress_section",
+  "hall_progress_column",
+  "excavation",
+  "upto_dpc",
+  "upto_doors",
+  "upto_roof",
+  "electric_fitting",
+  "plaster_outside",
+  "plaster_inside",
+  "plumbing",
+  "flooring",
+  "finishing",
+  "rooms_progress_column",
+  "excavation_rooms",
+  "upto_dpc_rooms",
+  "upto_doors_rooms",
+  "upto_roof_rooms",
+  "electric_fitting_rooms",
+  "plaster_outside_rooms",
+  "plaster_inside_rooms",
+  "plumbing_rooms",
+  "flooring_rooms",
+  "finishing_rooms",
+  "lab_block_progress_column",
+  "excavation_block",
+  "upto_dpc_block",
+  "upto_doors_block",
+  "upto_roof_block",
+  "electric_fitting_block",
+  "plaster_outside_block",
+  "plaster_inside_block",
+  "plumbing_block",
+  "check_otxj",
+  "finishing_block",
+  "boundary_wall_section",
+  "excavation_wall",
+  "upto_dpc_wall",
+  "upto_three_ft_height",
+  "upto_6_ft_height",
+  "plaster_b",
+  "finish_b",
+  "column_break_zglp",
+  "other_work_done",
+  "section_break_wmry",
+  "committee_members_for_purchase",
+  "persons_dealing_with_cashaccounts_section",
+  "cash_accounts_signatory"
+ ],
+ "fields": [
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch\t",
+   "options": "Branch"
+  },
+  {
+   "fetch_from": "zone_no.zone_name",
+   "fieldname": "zone_name",
+   "fieldtype": "Data",
+   "label": "Zone Name"
+  },
+  {
+   "fieldname": "zone_no",
+   "fieldtype": "Link",
+   "label": "Zone No.",
+   "options": "Zone"
+  },
+  {
+   "fieldname": "mukhiji__sanyojak",
+   "fieldtype": "Link",
+   "label": "Mukhiji / Sanyojak\t",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "mukhiji__sanyojak.cell_number",
+   "fieldname": "mobile_no_mukhiji",
+   "fieldtype": "Data",
+   "label": "Mobile No. (Mukhiji)\t"
+  },
+  {
+   "fieldname": "zonal_vc_name",
+   "fieldtype": "Data",
+   "label": "Zonal VC Name\t"
+  },
+  {
+   "fieldname": "mobile_no_zonal_vc",
+   "fieldtype": "Data",
+   "label": "Mobile No. (Zonal VC)\t"
+  },
+  {
+   "fieldname": "accountant_name",
+   "fieldtype": "Data",
+   "label": "Accountant Name\t"
+  },
+  {
+   "fieldname": "mobile_no_accountant",
+   "fieldtype": "Data",
+   "label": "Mobile No. (Accountant)\t"
+  },
+  {
+   "fieldname": "name_of_station",
+   "fieldtype": "Data",
+   "label": "Name of Station\t"
+  },
+  {
+   "fieldname": "period_from",
+   "fieldtype": "Date",
+   "label": "Period From\t"
+  },
+  {
+   "fieldname": "column_break_ogtm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "work_status",
+   "fieldtype": "Data",
+   "label": "Work Status\t"
+  },
+  {
+   "fieldname": "period_to",
+   "fieldtype": "Date",
+   "label": "Period To\t"
+  },
+  {
+   "fieldname": "expenditure_item_table_section",
+   "fieldtype": "Section Break",
+   "label": "Expenditure Item Table\t"
+  },
+  {
+   "fieldname": "expenditure_item_table",
+   "fieldtype": "Table",
+   "label": "Expenditure Item Table\t",
+   "options": "Construction Expenditure Item"
+  },
+  {
+   "fieldname": "section_break_ruxn",
+   "fieldtype": "Section Break",
+   "label": "Other Deatils"
+  },
+  {
+   "fieldname": "cartage",
+   "fieldtype": "Currency",
+   "label": "Cartage\t"
+  },
+  {
+   "fieldname": "misc_expenses",
+   "fieldtype": "Currency",
+   "label": "Misc. Expenses\t"
+  },
+  {
+   "fieldname": "labor_expenses",
+   "fieldtype": "Currency",
+   "label": "Labor Expenses\t"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total\t"
+  },
+  {
+   "fieldname": "general_details_section",
+   "fieldtype": "Section Break",
+   "label": "General Details"
+  },
+  {
+   "fieldname": "income_summary_tab",
+   "fieldtype": "Tab Break",
+   "label": "Income Summary"
+  },
+  {
+   "fieldname": "expenditure_section",
+   "fieldtype": "Section Break",
+   "label": "Expenditure and Income"
+  },
+  {
+   "fieldname": "previous_expenses",
+   "fieldtype": "Currency",
+   "label": "Previous Expenses"
+  },
+  {
+   "fieldname": "current_expenses",
+   "fieldtype": "Currency",
+   "label": "Current Expenses"
+  },
+  {
+   "fieldname": "expenditure_total",
+   "fieldtype": "Currency",
+   "label": "Expenditure Total\t"
+  },
+  {
+   "fieldname": "previous_amount_received",
+   "fieldtype": "Currency",
+   "label": "Previous Amount Received\t"
+  },
+  {
+   "fieldname": "current_amount_received",
+   "fieldtype": "Currency",
+   "label": "Current Amount Received\t"
+  },
+  {
+   "fieldname": "income_total",
+   "fieldtype": "Currency",
+   "label": "Income Total\t"
+  },
+  {
+   "fieldname": "expenditure_column",
+   "fieldtype": "Column Break",
+   "label": "Expenditure"
+  },
+  {
+   "fieldname": "income_column",
+   "fieldtype": "Column Break",
+   "label": "Income"
+  },
+  {
+   "fieldname": "total_balance_section",
+   "fieldtype": "Section Break",
+   "label": "Total Balance"
+  },
+  {
+   "fieldname": "balance",
+   "fieldtype": "Currency",
+   "label": "Balance"
+  },
+  {
+   "fieldname": "progress_report_tab",
+   "fieldtype": "Tab Break",
+   "label": "Progress Report"
+  },
+  {
+   "fieldname": "hall_progress_section",
+   "fieldtype": "Section Break",
+   "label": "PROGRESS"
+  },
+  {
+   "default": "0",
+   "fieldname": "excavation",
+   "fieldtype": "Check",
+   "label": "Excavation\t"
+  },
+  {
+   "default": "0",
+   "fieldname": "upto_dpc",
+   "fieldtype": "Check",
+   "label": "Upto D.P.C\t"
+  },
+  {
+   "default": "0",
+   "fieldname": "upto_doors",
+   "fieldtype": "Check",
+   "label": "Upto Doors\t"
+  },
+  {
+   "default": "0",
+   "fieldname": "upto_roof",
+   "fieldtype": "Check",
+   "label": "Upto Roof\t"
+  },
+  {
+   "default": "0",
+   "fieldname": "electric_fitting",
+   "fieldtype": "Check",
+   "label": "Electric Fitting"
+  },
+  {
+   "default": "0",
+   "fieldname": "plaster_outside",
+   "fieldtype": "Check",
+   "label": "Plaster Outside\t"
+  },
+  {
+   "default": "0",
+   "fieldname": "plaster_inside",
+   "fieldtype": "Check",
+   "label": "Plaster Inside\t"
+  },
+  {
+   "default": "0",
+   "fieldname": "plumbing",
+   "fieldtype": "Check",
+   "label": "Plumbing\t"
+  },
+  {
+   "default": "0",
+   "fieldname": "flooring",
+   "fieldtype": "Check",
+   "label": "Flooring\t"
+  },
+  {
+   "default": "0",
+   "fieldname": "finishing",
+   "fieldtype": "Check",
+   "label": "Finishing\t"
+  },
+  {
+   "default": "0",
+   "fieldname": "excavation_rooms",
+   "fieldtype": "Check",
+   "label": "Excavation"
+  },
+  {
+   "default": "0",
+   "fieldname": "upto_dpc_rooms",
+   "fieldtype": "Check",
+   "label": "Upto D.P.C "
+  },
+  {
+   "default": "0",
+   "fieldname": "upto_doors_rooms",
+   "fieldtype": "Check",
+   "label": "Upto Doors"
+  },
+  {
+   "default": "0",
+   "fieldname": "upto_roof_rooms",
+   "fieldtype": "Check",
+   "label": "Upto Roof "
+  },
+  {
+   "default": "0",
+   "fieldname": "electric_fitting_rooms",
+   "fieldtype": "Check",
+   "label": "Electric Fitting"
+  },
+  {
+   "default": "0",
+   "fieldname": "plaster_outside_rooms",
+   "fieldtype": "Check",
+   "label": "Plaster Outside "
+  },
+  {
+   "default": "0",
+   "fieldname": "plaster_inside_rooms",
+   "fieldtype": "Check",
+   "label": "Plaster Inside "
+  },
+  {
+   "default": "0",
+   "fieldname": "plumbing_rooms",
+   "fieldtype": "Check",
+   "label": "Plumbing"
+  },
+  {
+   "default": "0",
+   "fieldname": "flooring_rooms",
+   "fieldtype": "Check",
+   "label": "Flooring "
+  },
+  {
+   "default": "0",
+   "fieldname": "finishing_rooms",
+   "fieldtype": "Check",
+   "label": "Finishing "
+  },
+  {
+   "default": "0",
+   "fieldname": "excavation_block",
+   "fieldtype": "Check",
+   "label": "Excavation "
+  },
+  {
+   "default": "0",
+   "fieldname": "upto_dpc_block",
+   "fieldtype": "Check",
+   "label": "Upto D.P.C "
+  },
+  {
+   "default": "0",
+   "fieldname": "upto_doors_block",
+   "fieldtype": "Check",
+   "label": "Upto Doors "
+  },
+  {
+   "default": "0",
+   "fieldname": "upto_roof_block",
+   "fieldtype": "Check",
+   "label": "Upto Roof"
+  },
+  {
+   "default": "0",
+   "fieldname": "electric_fitting_block",
+   "fieldtype": "Check",
+   "label": "Electric Fitting"
+  },
+  {
+   "default": "0",
+   "fieldname": "plaster_outside_block",
+   "fieldtype": "Check",
+   "label": "Plaster Outside"
+  },
+  {
+   "default": "0",
+   "fieldname": "plaster_inside_block",
+   "fieldtype": "Check",
+   "label": "Plaster Inside"
+  },
+  {
+   "default": "0",
+   "fieldname": "plumbing_block",
+   "fieldtype": "Check",
+   "label": "Plumbing"
+  },
+  {
+   "default": "0",
+   "fieldname": "check_otxj",
+   "fieldtype": "Check",
+   "label": "Flooring"
+  },
+  {
+   "default": "0",
+   "fieldname": "finishing_block",
+   "fieldtype": "Check",
+   "label": "Finishing "
+  },
+  {
+   "fieldname": "boundary_wall_section",
+   "fieldtype": "Section Break",
+   "label": "BOUNDARY WALL"
+  },
+  {
+   "default": "0",
+   "fieldname": "excavation_wall",
+   "fieldtype": "Check",
+   "label": "Excavation wall"
+  },
+  {
+   "default": "0",
+   "fieldname": "upto_dpc_wall",
+   "fieldtype": "Check",
+   "label": "Upto DPC wall"
+  },
+  {
+   "default": "0",
+   "fieldname": "upto_three_ft_height",
+   "fieldtype": "Check",
+   "label": "Upto 3 Ft Height"
+  },
+  {
+   "default": "0",
+   "fieldname": "upto_6_ft_height",
+   "fieldtype": "Check",
+   "label": "Upto 6 Ft Height"
+  },
+  {
+   "default": "0",
+   "fieldname": "plaster_b",
+   "fieldtype": "Check",
+   "label": "Plaster b"
+  },
+  {
+   "default": "0",
+   "fieldname": "finish_b",
+   "fieldtype": "Check",
+   "label": "Finish b"
+  },
+  {
+   "fieldname": "column_break_zglp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "other_work_done",
+   "fieldtype": "Small Text",
+   "label": "Other Work Done "
+  },
+  {
+   "fieldname": "section_break_wmry",
+   "fieldtype": "Section Break",
+   "label": "Authorized Purchase Committee Signatures"
+  },
+  {
+   "fieldname": "committee_members_for_purchase",
+   "fieldtype": "Table",
+   "label": "Committee Members for Purchase\t",
+   "options": "Purchase Committee Member"
+  },
+  {
+   "fieldname": "persons_dealing_with_cashaccounts_section",
+   "fieldtype": "Section Break",
+   "label": "Persons Dealing with Cash/Accounts"
+  },
+  {
+   "fieldname": "cash_accounts_signatory",
+   "fieldtype": "Table",
+   "label": "Cash Accounts Signatory",
+   "options": "Cash Accounts Signatory"
+  },
+  {
+   "fieldname": "email_details_section",
+   "fieldtype": "Section Break",
+   "label": "Signature and Email Section"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email Id((Zonal)",
+   "options": "Email"
+  },
+  {
+   "fieldname": "email_id_of_branch",
+   "fieldtype": "Data",
+   "label": "Email Id of Branch"
+  },
+  {
+   "fieldname": "hall_progress_column",
+   "fieldtype": "Column Break",
+   "label": "HALL PROGRESS"
+  },
+  {
+   "fieldname": "rooms_progress_column",
+   "fieldtype": "Column Break",
+   "label": "ROOMS PROGRESS"
+  },
+  {
+   "fieldname": "lab_block_progress_column",
+   "fieldtype": "Column Break",
+   "label": "LAB BLOCK PROGRESS"
+  },
+  {
+   "fieldname": "column_break_uukh",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-07-17 15:07:03.751991",
+ "modified_by": "Administrator",
+ "module": "Building Construction Manufacturing Service",
+ "name": "Construction Maintenance Expenditure Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

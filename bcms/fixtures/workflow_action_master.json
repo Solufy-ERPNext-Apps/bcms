@@ -2,6 +2,41 @@
  {
   "docstatus": 0,
   "doctype": "Workflow Action Master",
+  "modified": "2025-07-18 20:03:40.323186",
+  "name": "Send to Member Incharge(PP)",
+  "workflow_action_name": "Send to Member Incharge(PP)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-18 20:05:00.484828",
+  "name": "Send to Secretary (SNM)",
+  "workflow_action_name": "Send to Secretary (SNM)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-18 20:06:31.008811",
+  "name": "Send to Member Incharge A&F",
+  "workflow_action_name": "Send to Member Incharge A&F"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-18 20:31:37.911605",
+  "name": "Send To Building Department",
+  "workflow_action_name": "Send To Building Department"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-18 22:56:46.342480",
+  "name": "Sent to Member Incharge(pp)",
+  "workflow_action_name": "Sent to Member Incharge(pp)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
   "modified": "2025-06-18 15:35:25.709263",
   "name": "Reject",
   "workflow_action_name": "Reject"

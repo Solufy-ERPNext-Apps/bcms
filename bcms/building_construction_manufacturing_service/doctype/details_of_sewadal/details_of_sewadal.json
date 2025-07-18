@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-16 16:01:40.440708",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "unit_no_of_sewadal",
+  "strength_of_sewadal",
+  "no_of_males",
+  "no_of_females",
+  "no_of_bal_sewadal"
+ ],
+ "fields": [
+  {
+   "fieldname": "unit_no_of_sewadal",
+   "fieldtype": "Data",
+   "label": "Unit No. of Sewadal\t"
+  },
+  {
+   "fieldname": "strength_of_sewadal",
+   "fieldtype": "Int",
+   "label": "Strength of Sewadal\t"
+  },
+  {
+   "fieldname": "no_of_males",
+   "fieldtype": "Int",
+   "label": "No. of Males\t"
+  },
+  {
+   "fieldname": "no_of_females",
+   "fieldtype": "Int",
+   "label": "No. of Females\t"
+  },
+  {
+   "fieldname": "no_of_bal_sewadal",
+   "fieldtype": "Int",
+   "label": "No. of Bal Sewadal\t"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-16 16:02:27.069225",
+ "modified_by": "Administrator",
+ "module": "Building Construction Manufacturing Service",
+ "name": "DETAILS OF SEWADAL",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

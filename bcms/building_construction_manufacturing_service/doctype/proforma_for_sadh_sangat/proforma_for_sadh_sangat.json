@@ -1,0 +1,211 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "PFSS-.#####",
+ "creation": "2025-07-16 15:31:46.593757",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_information_section",
+  "branch",
+  "zone_no",
+  "date",
+  "tehsil",
+  "column_break_rfxv",
+  "branch_code",
+  "state",
+  "district",
+  "general_details_section",
+  "in_which_year_sadh_sangat_started_there",
+  "whether_branch_is_registered_if_so_since_when",
+  "registration_year",
+  "distance_in_km_to_the_nearest_bhawan_from_your_branch",
+  "nearest_branch_with_distance",
+  "strength_of_sadh_sangat_from_urban_area_and_rural_area",
+  "details_of_sangat_section",
+  "details_of_sangat",
+  "receipt_book_section",
+  "no_of_receipt_books_used_during_this_year",
+  "receipt_book_received_from_headquarters_branch",
+  "blood_donation_section",
+  "blood_donation",
+  "details_of_sewadal_section",
+  "details_of_sewadal",
+  "recommendation_of_members_section",
+  "recommendation_of_members"
+ ],
+ "fields": [
+  {
+   "fieldname": "basic_information_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Information"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch\t",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "zone_no",
+   "fieldtype": "Data",
+   "label": "Zone No.\t"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date\t"
+  },
+  {
+   "fieldname": "tehsil",
+   "fieldtype": "Link",
+   "label": "Tehsil",
+   "options": "Tehsil"
+  },
+  {
+   "fieldname": "column_break_rfxv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "branch_code",
+   "fieldtype": "Data",
+   "label": "Branch Code\t"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "State"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Link",
+   "label": "District\t",
+   "options": "District"
+  },
+  {
+   "fieldname": "general_details_section",
+   "fieldtype": "Section Break",
+   "label": "General Details"
+  },
+  {
+   "default": "0",
+   "fieldname": "whether_branch_is_registered_if_so_since_when",
+   "fieldtype": "Check",
+   "label": "Whether Branch is Registered if so since when?"
+  },
+  {
+   "depends_on": "eval:doc.whether_branch_is_registered_if_so_since_when",
+   "fieldname": "registration_year",
+   "fieldtype": "Int",
+   "label": "Registration Year\t"
+  },
+  {
+   "fieldname": "distance_in_km_to_the_nearest_bhawan_from_your_branch",
+   "fieldtype": "Float",
+   "label": "Distance in KM to the nearest Bhawan from your Branch"
+  },
+  {
+   "fieldname": "nearest_branch_with_distance",
+   "fieldtype": "Data",
+   "label": "Nearest Branch with Distance \t"
+  },
+  {
+   "fieldname": "strength_of_sadh_sangat_from_urban_area_and_rural_area",
+   "fieldtype": "Small Text",
+   "label": "Strength of Sadh Sangat From Urban Area and Rural Area"
+  },
+  {
+   "fieldname": "details_of_sangat_section",
+   "fieldtype": "Section Break",
+   "label": "Details of sangat"
+  },
+  {
+   "fieldname": "details_of_sangat",
+   "fieldtype": "Table",
+   "label": "DETAILS OF SANGAT ",
+   "options": "DETAILS OF SANGAT"
+  },
+  {
+   "fieldname": "receipt_book_section",
+   "fieldtype": "Section Break",
+   "label": "Receipt Book"
+  },
+  {
+   "fieldname": "no_of_receipt_books_used_during_this_year",
+   "fieldtype": "Int",
+   "label": "No. of Receipt Books Used during this year\t"
+  },
+  {
+   "default": "0",
+   "fieldname": "receipt_book_received_from_headquarters_branch",
+   "fieldtype": "Check",
+   "label": "Receipt book received from Headquarters Branch\t"
+  },
+  {
+   "fieldname": "blood_donation_section",
+   "fieldtype": "Section Break",
+   "label": "Blood Donation "
+  },
+  {
+   "fieldname": "blood_donation",
+   "fieldtype": "Table",
+   "label": "Blood Donation ",
+   "options": "Blood Donation Record"
+  },
+  {
+   "fieldname": "details_of_sewadal_section",
+   "fieldtype": "Section Break",
+   "label": "DETAILS OF SEWADAL"
+  },
+  {
+   "fieldname": "details_of_sewadal",
+   "fieldtype": "Table",
+   "label": "DETAILS OF SEWADAL",
+   "options": "DETAILS OF SEWADAL"
+  },
+  {
+   "fieldname": "recommendation_of_members_section",
+   "fieldtype": "Section Break",
+   "label": "Recommendation of Members"
+  },
+  {
+   "fieldname": "recommendation_of_members",
+   "fieldtype": "Table",
+   "label": "Recommendation of Members",
+   "options": "Recommendation of Members"
+  },
+  {
+   "fieldname": "in_which_year_sadh_sangat_started_there",
+   "fieldtype": "Date",
+   "label": "In Which Year Sadh Sangat Started There?\t"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-07-17 17:09:05.695495",
+ "modified_by": "Administrator",
+ "module": "Building Construction Manufacturing Service",
+ "name": "Proforma For Sadh Sangat",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

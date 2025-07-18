@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-16 16:09:55.079304",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "branch",
+  "column_break_yqgf",
+  "zone_no",
+  "column_break_1zxi",
+  "date",
+  "section_break_6k9m",
+  "name_of_the_committee_members",
+  "section_break_9hdg",
+  "branch_bank_account_name",
+  "branch_bank_account_no",
+  "civil_engineerdraftsmanarchitect_name",
+  "civil_engineerdraftsmanarchitect_no",
+  "section_break_jwh0",
+  "verified_by_zonal_incharge",
+  "column_break_eiz1",
+  "mukhisanyojak"
+ ],
+ "fields": [
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "column_break_yqgf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "zone_no",
+   "fieldtype": "Link",
+   "label": "Zone No",
+   "options": "Zone"
+  },
+  {
+   "fieldname": "column_break_1zxi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_6k9m",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "name_of_the_committee_members",
+   "fieldtype": "Table",
+   "label": "Name of the Committee Members",
+   "options": "Committee Members"
+  },
+  {
+   "fieldname": "section_break_9hdg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "branch_bank_account_name",
+   "fieldtype": "Data",
+   "label": "Branch Bank Account Name"
+  },
+  {
+   "fieldname": "branch_bank_account_no",
+   "fieldtype": "Int",
+   "label": "Branch Bank Account No"
+  },
+  {
+   "fieldname": "civil_engineerdraftsmanarchitect_name",
+   "fieldtype": "Data",
+   "label": "Civil Engineer/Draftsman/Architect Name"
+  },
+  {
+   "fieldname": "civil_engineerdraftsmanarchitect_no",
+   "fieldtype": "Int",
+   "label": "Civil Engineer/Draftsman/Architect No"
+  },
+  {
+   "fieldname": "verified_by_zonal_incharge",
+   "fieldtype": "Signature",
+   "label": "Verified by Zonal Incharge"
+  },
+  {
+   "fieldname": "column_break_eiz1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mukhisanyojak",
+   "fieldtype": "Signature",
+   "label": "Mukhi/Sanyojak"
+  },
+  {
+   "fieldname": "section_break_jwh0",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-07-16 16:42:33.362759",
+ "modified_by": "Administrator",
+ "module": "Building Construction Manufacturing Service",
+ "name": "Construction Committee Form",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

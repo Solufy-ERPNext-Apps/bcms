@@ -1,0 +1,151 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "LD-.#####",
+ "creation": "2025-07-16 15:27:50.480262",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "land_details_section",
+  "land_in_the_name_of_sant_nirankari_mandal",
+  "mutation_in_the_name_of_sant_nirankari_mandal",
+  "land_is_free_from_the_court_case_other_dispute",
+  "boundary_wall_construction_work_completed",
+  "setback_for_bhavan",
+  "noc_approval",
+  "land_inspection_ion_by_supervisor",
+  "drawing_approval",
+  "any_river",
+  "temporary_electricity",
+  "type_of_soil",
+  "land_level_should_be_mentioned_in_letter",
+  "section_break_mdk0",
+  "signature_wjjv",
+  "column_break_g4ou",
+  "zonal_incharge"
+ ],
+ "fields": [
+  {
+   "fieldname": "land_details_section",
+   "fieldtype": "Section Break",
+   "label": "Land Details"
+  },
+  {
+   "default": "0",
+   "fieldname": "land_in_the_name_of_sant_nirankari_mandal",
+   "fieldtype": "Check",
+   "label": "Land in the name of Sant Nirankari Mandal."
+  },
+  {
+   "default": "0",
+   "fieldname": "mutation_in_the_name_of_sant_nirankari_mandal",
+   "fieldtype": "Check",
+   "label": "Mutation in the name of Sant Nirankari Mandal."
+  },
+  {
+   "default": "0",
+   "fieldname": "land_is_free_from_the_court_case_other_dispute",
+   "fieldtype": "Check",
+   "label": "Land is free from the court case & other dispute."
+  },
+  {
+   "default": "0",
+   "fieldname": "boundary_wall_construction_work_completed",
+   "fieldtype": "Check",
+   "label": "Boundary Wall Construction work completed."
+  },
+  {
+   "default": "0",
+   "fieldname": "setback_for_bhavan",
+   "fieldtype": "Check",
+   "label": "Setback for Bhavan Construction as per local Government authorities & National-State highway."
+  },
+  {
+   "default": "0",
+   "fieldname": "noc_approval",
+   "fieldtype": "Check",
+   "label": "NOC approval procedure from National Highway Authorities."
+  },
+  {
+   "default": "0",
+   "fieldname": "land_inspection_ion_by_supervisor",
+   "fieldtype": "Check",
+   "label": "Land inspection ion by supervisor /Engineer of Building Department & Demarcation done by Supervisor /Engineer."
+  },
+  {
+   "default": "0",
+   "fieldname": "drawing_approval",
+   "fieldtype": "Check",
+   "label": "Drawing approval procedure from local Garam Panchayat/ Municipal Council/ Town Planner & other government departments."
+  },
+  {
+   "default": "0",
+   "fieldname": "any_river",
+   "fieldtype": "Check",
+   "label": "Any River , Nalla, Railway lines, HT electricity line in KVA."
+  },
+  {
+   "default": "0",
+   "fieldname": "temporary_electricity",
+   "fieldtype": "Check",
+   "label": "Temporary Electricity Connection install at site."
+  },
+  {
+   "default": "0",
+   "fieldname": "type_of_soil",
+   "fieldtype": "Check",
+   "label": "Type of Soil."
+  },
+  {
+   "fieldname": "signature_wjjv",
+   "fieldtype": "Signature",
+   "label": "Mukhi/Sanyojak"
+  },
+  {
+   "fieldname": "section_break_mdk0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_g4ou",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "zonal_incharge",
+   "fieldtype": "Signature",
+   "label": "Zonal Incharge"
+  },
+  {
+   "default": "0",
+   "fieldname": "land_level_should_be_mentioned_in_letter",
+   "fieldtype": "Check",
+   "label": "Land level should be mentioned in letter"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-07-17 11:55:41.097571",
+ "modified_by": "Administrator",
+ "module": "Building Construction Manufacturing Service",
+ "name": "Land Details",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

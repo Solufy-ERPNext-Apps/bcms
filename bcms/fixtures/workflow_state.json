@@ -3,6 +3,33 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
+  "modified": "2025-07-18 20:06:39.896258",
+  "name": "Sent to Member Incharge A&F",
+  "style": "",
+  "workflow_state_name": "Sent to Member Incharge A&F"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-18 20:31:59.315567",
+  "name": "Sent To Building Department",
+  "style": "",
+  "workflow_state_name": "Sent To Building Department"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-18 23:22:42.806055",
+  "name": "Sent to Member Incharge(PP)",
+  "style": "",
+  "workflow_state_name": "Sent to Member Incharge(PP)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
   "modified": "2025-06-30 17:33:41.219410",
   "name": "Pending Approved",
   "style": "",
@@ -318,15 +345,6 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-07-11 15:20:04.483676",
-  "name": "Work Completion Started",
-  "style": "",
-  "workflow_state_name": "Work Completion Started"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
   "modified": "2025-07-02 18:29:19.552850",
   "name": "Rejected by PP",
   "style": "",
@@ -376,15 +394,6 @@
   "name": "Approved",
   "style": "Success",
   "workflow_state_name": "Approved"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
-  "modified": "2025-07-11 15:13:45.892156",
-  "name": "Financial Approved",
-  "style": "",
-  "workflow_state_name": "Financial Approved"
  },
  {
   "docstatus": 0,
@@ -507,15 +516,6 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-07-11 15:16:37.729858",
-  "name": "Committee Approved",
-  "style": "",
-  "workflow_state_name": "Committee Approved"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
   "modified": "2025-07-11 15:15:13.477638",
   "name": "Committee Form Created",
   "style": "",
@@ -547,5 +547,50 @@
   "name": "Sent For Recommendation",
   "style": "",
   "workflow_state_name": "Sent For Recommendation"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-18 20:04:05.546523",
+  "name": "Sent to Member Incharge (PP)",
+  "style": "",
+  "workflow_state_name": "Sent to Member Incharge (PP)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-11 15:20:04.483676",
+  "name": "Work Completion Started",
+  "style": "",
+  "workflow_state_name": "Work Completion Started"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-11 15:13:45.892156",
+  "name": "Financial Approved",
+  "style": "",
+  "workflow_state_name": "Financial Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-11 15:16:37.729858",
+  "name": "Committee Approved",
+  "style": "",
+  "workflow_state_name": "Committee Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-18 20:05:14.556785",
+  "name": "Sent to Secretary (SNM)",
+  "style": "",
+  "workflow_state_name": "Sent to Secretary (SNM)"
  }
 ]

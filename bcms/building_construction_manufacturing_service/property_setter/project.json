@@ -6,7 +6,42 @@
    "module": "Building Construction Manufacturing Service",
    "property": "field_order",
    "property_type": "Data",
-   "value": "[\"workflow_state\", \"naming_series\", \"project_name\", \"status\", \"project_type\", \"is_active\", \"percent_complete_method\", \"percent_complete\", \"column_break_5\", \"project_template\", \"expected_start_date\", \"expected_end_date\", \"priority\", \"department\", \"estimated_costing\", \"custom_disbursement_amount_\", \"custom_last_disbursement_amount\", \"customer_details\", \"customer\", \"column_break_14\", \"sales_order\", \"users_section\", \"users\", \"copied_from\", \"section_break0\", \"notes\", \"section_break_18\", \"actual_start_date\", \"actual_time\", \"column_break_20\", \"actual_end_date\", \"project_details\", \"total_costing_amount\", \"total_expense_claim\", \"total_purchase_cost\", \"company\", \"column_break_28\", \"total_sales_amount\", \"total_billable_amount\", \"total_billed_amount\", \"total_consumed_material_cost\", \"cost_center\", \"margin\", \"gross_margin\", \"column_break_37\", \"per_gross_margin\", \"monitor_progress\", \"collect_progress\", \"holiday_list\", \"frequency\", \"from_time\", \"to_time\", \"first_email\", \"second_email\", \"daily_time_to_send\", \"day_to_send\", \"weekly_time_to_send\", \"column_break_45\", \"message\", \"custom_sub_process\", \"custom_planning__approval_documents\", \"custom_recommendation_letter\", \"custom_site_plan\", \"custom_column_break_mg58e\", \"custom_proforma_for_sadh_sangat\", \"custom_column_break_yyynj\", \"custom_land_details\", \"custom_recommendation\", \"custom_site__layout_plans\", \"custom_standard_planning__designing\", \"custom_column_break_wozmg\", \"custom_boq_estimate\", \"custom_column_break_ozsvx\", \"custom_section_break_nqd0s\", \"custom_drawing_covering_letter\", \"custom_govt_approval_letter\", \"custom_column_break_l6e2a\", \"custom_drawing_file_all_blocks\", \"custom_column_break_vuiwk\", \"custom_govt_approved_drawing_file\", \"custom_progress_tracking\", \"custom_financial_approval_form\", \"custom_constitution_of_building_construction_committee\", \"custom_construction_committee_form\", \"custom_fund_transfer_procedure\", \"custom_transfer_order_form\", \"custom_legal__government_documents\", \"custom_progress_photo\", \"custom_column_break_hdcto\", \"custom_expenditure_form\", \"custom_column_break_dmuok\", \"custom_work_completion\", \"custom_work_completion_certificate\"]"
+   "value": "[\"naming_series\", \"project_name\", \"project_type\", \"status\", \"is_active\", \"percent_complete_method\", \"percent_complete\", \"workflow_state\", \"column_break_5\", \"project_template\", \"expected_start_date\", \"expected_end_date\", \"priority\", \"department\", \"customer_details\", \"customer\", \"column_break_14\", \"sales_order\", \"users_section\", \"users\", \"copied_from\", \"section_break0\", \"notes\", \"section_break_18\", \"actual_start_date\", \"actual_time\", \"column_break_20\", \"actual_end_date\", \"project_details\", \"estimated_costing\", \"custom_disbursement_amount_\", \"custom_last_disbursement_amount\", \"total_costing_amount\", \"total_expense_claim\", \"total_purchase_cost\", \"company\", \"column_break_28\", \"total_sales_amount\", \"total_billable_amount\", \"total_billed_amount\", \"total_consumed_material_cost\", \"cost_center\", \"margin\", \"gross_margin\", \"column_break_37\", \"per_gross_margin\", \"monitor_progress\", \"collect_progress\", \"holiday_list\", \"frequency\", \"from_time\", \"to_time\", \"first_email\", \"second_email\", \"daily_time_to_send\", \"day_to_send\", \"weekly_time_to_send\", \"column_break_45\", \"message\", \"custom_recommendation_letter_and_sites_plansss\", \"custom_recommendation_letter\", \"custom_column_break_5ijpr\", \"custom_site_plan\", \"custom_proforma_for_sadh_sangats\", \"custom_planning__approval_documents\", \"custom_column_break_mg58e\", \"custom_is_from_checkbox__\", \"custom_proforma_for_sadh_sangat\", \"custom_add_sadh_sangat_info\", \"custom_proforma_for_sadh_sangat_form\", \"custom_section_break_cylmr\", \"custom_sadh_sangat_previewss\", \"custom_land_deatils\", \"custom_column_break_yyynj\", \"custom_is_form_land_details\", \"custom_land_details\", \"custom_land_details_forms\", \"custom_land_details_form\", \"custom_site__layout_plans\", \"custom_land_details_preview\", \"custom_tab_14\", \"custom_standard_planning__designing\", \"custom_boq_estimates\", \"custom_column_break_9o6xq\", \"custom_is_form_boq\", \"custom_boq_estimate\", \"custom_boqestimates\", \"custom_boqestimate_form\", \"custom_section_break_nqd0s\", \"custom_boqestimate_previous\", \"custom_drawing_approval\", \"custom_drawing_approval_procedure\", \"custom_drawing_covering_letter\", \"custom_govt_approval_letter\", \"custom_column_break_l6e2a\", \"custom_drawing_file_all_blocks\", \"custom_govt_approved_drawing_file\", \"custom_financial_approval\", \"custom_progress_tracking\", \"custom_is_form_financial\", \"custom_financial_approval_form\", \"custom_financial_approvals\", \"custom_financial_approval_forms\", \"custom_finance_approval_deatils\", \"custom_financial_approval_preview\", \"custom_construction_committee\", \"custom_constitution_of_building_construction_committee\", \"custom_is_form_committee\", \"custom_construction_committee_form\", \"custom_construction_committees\", \"custom_construction_committee_forms\", \"custom_constriction_committee_details\", \"custom_construction_committees_perview\", \"custom_fund_transfer_procedures\", \"custom_fund_transfer_procedure\", \"custom_transfer_order_form\", \"custom_next_fund_transfer\", \"custom_legal__government_documents\", \"custom_column_break_eie02\", \"custom_progress_photo\", \"custom_expenditures\", \"custom_column_break_hdcto\", \"custom_is_form_expenditure\", \"custom_expenditure_form\", \"custom_expenditure_formsss\", \"custom_expenditure_forms\", \"custom_expenditure_details\", \"custom_expenditure_preview\", \"custom_work_completions\", \"custom_work_completion\", \"custom_work_completion_certificate\"]"
+  },
+  {
+   "doctype": "Project",
+   "doctype_or_field": "DocField",
+   "field_name": "priority",
+   "module": "Building Construction Manufacturing Service",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Project",
+   "doctype_or_field": "DocField",
+   "field_name": "is_active",
+   "module": "Building Construction Manufacturing Service",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Project",
+   "doctype_or_field": "DocField",
+   "field_name": "status",
+   "module": "Building Construction Manufacturing Service",
+   "property": "hidden",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Project",
+   "doctype_or_field": "DocType",
+   "module": "Building Construction Manufacturing Service",
+   "property": "max_attachments",
+   "property_type": "Int",
+   "value": "20"
   },
   {
    "doctype": "Project",

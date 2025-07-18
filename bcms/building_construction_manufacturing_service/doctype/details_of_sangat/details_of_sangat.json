@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-16 15:51:08.159354",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "normal_sangat",
+  "special_sangat",
+  "ladies_sangat",
+  "bal_sangat",
+  "english_sangat",
+  "average_monthly",
+  "monthly_building"
+ ],
+ "fields": [
+  {
+   "fieldname": "normal_sangat",
+   "fieldtype": "Int",
+   "label": "Normal Sangat\t"
+  },
+  {
+   "fieldname": "special_sangat",
+   "fieldtype": "Int",
+   "label": "Special Sangat\t"
+  },
+  {
+   "fieldname": "ladies_sangat",
+   "fieldtype": "Int",
+   "label": "Ladies Sangat\t"
+  },
+  {
+   "fieldname": "average_monthly",
+   "fieldtype": "Int",
+   "label": "Average Monthly\t"
+  },
+  {
+   "fieldname": "monthly_building",
+   "fieldtype": "Int",
+   "label": "Monthly Building\t"
+  },
+  {
+   "fieldname": "bal_sangat",
+   "fieldtype": "Int",
+   "label": "Bal Sangat"
+  },
+  {
+   "fieldname": "english_sangat",
+   "fieldtype": "Int",
+   "label": "English Sangat\t"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-17 10:46:57.722192",
+ "modified_by": "Administrator",
+ "module": "Building Construction Manufacturing Service",
+ "name": "DETAILS OF SANGAT",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "BOQ-.#####",
+ "creation": "2025-07-16 15:43:05.702002",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "estimate_for_construction_work_of_satsang_bhawan_at",
+  "bill_of_quantity",
+  "total_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "estimate_for_construction_work_of_satsang_bhawan_at",
+   "fieldtype": "Link",
+   "label": "Estimate for Construction work of Satsang Bhawan at ",
+   "options": "Bhavan"
+  },
+  {
+   "fieldname": "bill_of_quantity",
+   "fieldtype": "Table",
+   "label": "Bill of Quantity",
+   "options": "Estimate"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Int",
+   "label": "Total Amount"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-07-16 17:22:40.926511",
+ "modified_by": "Administrator",
+ "module": "Building Construction Manufacturing Service",
+ "name": "BOQ Estimate Form",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
