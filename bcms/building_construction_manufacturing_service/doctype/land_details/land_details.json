@@ -21,8 +21,10 @@
   "land_level_should_be_mentioned_in_letter",
   "section_break_mdk0",
   "signature_wjjv",
+  "user_name",
   "column_break_g4ou",
-  "zonal_incharge"
+  "zonal_incharge",
+  "date"
  ],
  "fields": [
   {
@@ -91,14 +93,15 @@
    "label": "Temporary Electricity Connection install at site."
   },
   {
-   "default": "0",
    "fieldname": "type_of_soil",
-   "fieldtype": "Check",
-   "label": "Type of Soil."
+   "fieldtype": "Select",
+   "label": "Type of Soil.",
+   "options": "\nSandy Soil\nClay Soil"
   },
   {
    "fieldname": "signature_wjjv",
    "fieldtype": "Signature",
+   "hidden": 1,
    "label": "Mukhi/Sanyojak"
   },
   {
@@ -112,19 +115,30 @@
   {
    "fieldname": "zonal_incharge",
    "fieldtype": "Signature",
+   "hidden": 1,
    "label": "Zonal Incharge"
   },
   {
    "default": "0",
    "fieldname": "land_level_should_be_mentioned_in_letter",
-   "fieldtype": "Check",
+   "fieldtype": "Int",
    "label": "Land level should be mentioned in letter"
+  },
+  {
+   "fieldname": "user_name",
+   "fieldtype": "Data",
+   "label": "User Name"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-17 11:55:41.097571",
+ "modified": "2025-07-21 20:06:19.484974",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Land Details",

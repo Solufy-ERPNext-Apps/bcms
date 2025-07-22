@@ -54,3 +54,4 @@ def create_or_update_land_details_doc(data):
 		"name": doc.name,
 		"doctype": doc.doctype
 	}
+

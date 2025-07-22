@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:project",
  "creation": "2025-07-16 12:48:18.333827",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -28,14 +29,16 @@
   "disbursement_date",
   "total_expense",
   "additional_info_section",
-  "remarks"
+  "remarks",
+  "amended_from"
  ],
  "fields": [
   {
    "fieldname": "project",
    "fieldtype": "Link",
    "label": "Project",
-   "options": "Project"
+   "options": "Project",
+   "unique": 1
   },
   {
    "fieldname": "disbursement_date",
@@ -153,15 +156,27 @@
    "fieldname": "additional_info_section",
    "fieldtype": "Section Break",
    "label": "Additional Info"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Disbursement",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2025-07-16 13:11:00.524115",
+ "modified": "2025-07-22 10:25:55.198777",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Disbursement",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

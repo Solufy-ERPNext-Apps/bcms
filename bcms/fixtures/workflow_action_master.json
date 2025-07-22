@@ -2,6 +2,153 @@
  {
   "docstatus": 0,
   "doctype": "Workflow Action Master",
+  "modified": "2025-07-11 14:34:09.773886",
+  "name": "Recommendation",
+  "workflow_action_name": "Recommendation"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-21 18:17:57.968299",
+  "name": "Project Requested",
+  "workflow_action_name": "Project Requested"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-21 18:34:47.170514",
+  "name": "Approve Land Clearance",
+  "workflow_action_name": "Approve Land Clearance"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-21 18:41:35.488349",
+  "name": "Approve Member Review",
+  "workflow_action_name": "Approve Member Review"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-21 18:42:18.077495",
+  "name": "Approve Secretary Review",
+  "workflow_action_name": "Approve Secretary Review"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-21 18:58:41.878677",
+  "name": "Constitution Construction Committee approved",
+  "workflow_action_name": "Constitution Construction Committee approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-21 19:05:50.594933",
+  "name": "Once 100% fund transfer is completed",
+  "workflow_action_name": "Once 100% fund transfer is completed"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-21 19:06:23.163071",
+  "name": "Member Incharge Prachar Prasar to submit work completion proof",
+  "workflow_action_name": "Member Incharge Prachar Prasar to submit work completion proof"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-21 19:07:10.629833",
+  "name": "Member Incharge Prachar Prasar to send fund request to BMC",
+  "workflow_action_name": "Member Incharge Prachar Prasar to send fund request to BMC"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-21 19:10:25.431818",
+  "name": "Building department to prepare Transfer Order",
+  "workflow_action_name": "Building department to prepare Transfer Order"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-21 19:10:58.239930",
+  "name": "send to Member Incharge Prachar Prasar",
+  "workflow_action_name": "send to Member Incharge Prachar Prasar"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-21 19:11:37.255365",
+  "name": "send to Member Incharge Account & Finance",
+  "workflow_action_name": "send to Member Incharge Account & Finance"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-21 19:13:12.538775",
+  "name": "send to Fund Transfer Notification",
+  "workflow_action_name": "send to Fund Transfer Notification"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-21 19:15:21.198678",
+  "name": "Send To Expenditure Form",
+  "workflow_action_name": "Send To Expenditure Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-21 19:16:07.116719",
+  "name": "Sent To Progress Photo",
+  "workflow_action_name": "Sent To Progress Photo"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-21 23:16:58.703483",
+  "name": "Drawing Approvaled",
+  "workflow_action_name": "Drawing Approvaled"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-22 08:47:28.209049",
+  "name": "Review transfer order and confirm",
+  "workflow_action_name": "Review transfer order and confirm"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-22 08:49:00.199843",
+  "name": "Building Dept. sends confirmation email to MI PP and ZI",
+  "workflow_action_name": "Building Dept. sends confirmation email to MI PP and ZI"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-22 08:49:31.643133",
+  "name": "Submit expenditure and progress photos",
+  "workflow_action_name": "Submit expenditure and progress photos"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-22 08:58:52.046589",
+  "name": "Auto-update once 100% transfer done",
+  "workflow_action_name": "Auto-update once 100% transfer done"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-22 10:23:11.063189",
+  "name": "Approve Disbursement",
+  "workflow_action_name": "Approve Disbursement"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
   "modified": "2025-07-18 20:03:40.323186",
   "name": "Send to Member Incharge(PP)",
   "workflow_action_name": "Send to Member Incharge(PP)"
@@ -509,5 +656,26 @@
   "modified": "2025-07-02 19:14:08.584129",
   "name": "Send For BCM Approval",
   "workflow_action_name": "Send For BCM Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-21 19:04:43.155106",
+  "name": "Triggered after prerequisite approvals",
+  "workflow_action_name": "Triggered after prerequisite approvals"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-21 20:20:07.153026",
+  "name": "Building Dept. prepares and uploads transfer order",
+  "workflow_action_name": "Building Dept. prepares and uploads transfer order"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-22 08:48:16.829135",
+  "name": "Finance team verifies and approves fund transfer",
+  "workflow_action_name": "Finance team verifies and approves fund transfer"
  }
 ]
