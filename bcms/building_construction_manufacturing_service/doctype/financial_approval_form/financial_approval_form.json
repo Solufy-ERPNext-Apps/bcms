@@ -1,25 +1,106 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-07-17 13:58:36.990097",
+ "autoname": "field:refno",
+ "creation": "2025-07-16 15:39:37.785082",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section_break_3uml"
+  "proposal_for_financial_approval_for_the_section",
+  "refno",
+  "satsang_bhavan",
+  "column_break_qjro",
+  "dates",
+  "section_break_ipnd",
+  "financial_approvals",
+  "total_amount",
+  "section_break_qhup",
+  "member_incharge",
+  "prachar_prasar",
+  "column_break_adgy",
+  "signature_khjv",
+  "building_department"
  ],
  "fields": [
   {
-   "fieldname": "section_break_3uml",
+   "fieldname": "proposal_for_financial_approval_for_the_section",
+   "fieldtype": "Section Break",
+   "label": "Proposal for FInancial Approval for the Construction  Work of Satsang bhavan At"
+  },
+  {
+   "fieldname": "refno",
+   "fieldtype": "Data",
+   "label": "Ref.No",
+   "unique": 1
+  },
+  {
+   "fieldname": "satsang_bhavan",
+   "fieldtype": "Link",
+   "label": "Work of Satsang Bhavan at",
+   "options": "Bhavan"
+  },
+  {
+   "fieldname": "column_break_qjro",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dates",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_ipnd",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "financial_approvals",
+   "fieldtype": "Table",
+   "label": "Financial Approvals",
+   "options": "Financial Approval"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Int",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "section_break_qhup",
+   "fieldtype": "Section Break",
+   "label": "Signatures"
+  },
+  {
+   "fieldname": "member_incharge",
+   "fieldtype": "Signature",
+   "label": "Member Incharge, Accounts & Finance"
+  },
+  {
+   "fieldname": "prachar_prasar",
+   "fieldtype": "Signature",
+   "label": "Member Incharge,Prachar Prasar"
+  },
+  {
+   "fieldname": "column_break_adgy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "signature_khjv",
+   "fieldtype": "Signature",
+   "label": "Secretary SNM"
+  },
+  {
+   "fieldname": "building_department",
+   "fieldtype": "Signature",
+   "label": "Building Department"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-17 13:58:36.990097",
+ "modified": "2025-07-22 16:13:57.630301",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Financial Approval Form",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {

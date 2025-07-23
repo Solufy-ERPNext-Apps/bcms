@@ -1,121 +1,65 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:refno",
- "creation": "2025-07-16 15:39:37.785082",
+ "creation": "2025-07-17 13:49:47.894375",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "proposal_for_financial_approval_for_the_section",
-  "refno",
-  "satsang_bhavan",
-  "column_break_qjro",
-  "dates",
-  "section_break_ipnd",
-  "financial_approvals",
-  "total_amount",
-  "section_break_qhup",
-  "member_incharge",
-  "prachar_prasar",
-  "column_break_adgy",
-  "signature_khjv",
-  "building_department"
+  "name_of_station",
+  "zone_no",
+  "zone_name",
+  "description_of_works",
+  "estimated_cost",
+  "remark"
  ],
  "fields": [
   {
-   "fieldname": "proposal_for_financial_approval_for_the_section",
-   "fieldtype": "Section Break",
-   "label": "Proposal for FInancial Approval for the Construction  Work of Satsang bhavan At"
-  },
-  {
-   "fieldname": "refno",
+   "fieldname": "name_of_station",
    "fieldtype": "Data",
-   "label": "Ref.No",
-   "unique": 1
+   "in_list_view": 1,
+   "label": "Name of Station"
   },
   {
-   "fieldname": "column_break_qjro",
-   "fieldtype": "Column Break"
+   "fieldname": "zone_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Zone No"
   },
   {
-   "fieldname": "dates",
-   "fieldtype": "Date",
-   "label": "Date: "
+   "fieldname": "zone_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Zone Name"
   },
   {
-   "fieldname": "section_break_ipnd",
-   "fieldtype": "Section Break"
+   "fieldname": "description_of_works",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description of Works"
   },
   {
-   "fieldname": "financial_approvals",
-   "fieldtype": "Table",
-   "label": "Financial Approvals",
-   "options": "Financial Approval"
+   "fieldname": "estimated_cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Estimated Cost"
   },
   {
-   "fieldname": "total_amount",
-   "fieldtype": "Int",
-   "label": "Total Amount"
-  },
-  {
-   "fieldname": "section_break_qhup",
-   "fieldtype": "Section Break",
-   "label": "Signatures"
-  },
-  {
-   "fieldname": "member_incharge",
-   "fieldtype": "Signature",
-   "label": "Member Incharge, Accounts & Finance"
-  },
-  {
-   "fieldname": "column_break_adgy",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "signature_khjv",
-   "fieldtype": "Signature",
-   "label": "Secretary SNM"
-  },
-  {
-   "fieldname": "prachar_prasar",
-   "fieldtype": "Signature",
-   "label": "Member Incharge,Prachar Prasar"
-  },
-  {
-   "fieldname": "building_department",
-   "fieldtype": "Signature",
-   "label": "Building Department"
-  },
-  {
-   "fieldname": "satsang_bhavan",
-   "fieldtype": "Link",
-   "label": "Work of Satsang Bhavan at",
-   "options": "Bhavan"
+   "fieldname": "remark",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Remark"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
+ "istable": 1,
  "links": [],
- "modified": "2025-07-17 10:14:44.394140",
+ "modified": "2025-07-22 18:26:37.903495",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
- "name": "Financial Approval Form",
- "naming_rule": "By fieldname",
+ "name": "Financial Approval",
  "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  }
- ],
+ "permissions": [],
  "row_format": "Dynamic",
  "sort_field": "modified",
  "sort_order": "DESC",

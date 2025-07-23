@@ -8,832 +8,832 @@ frappe.ui.form.on("Project", {
 
 
 
-frappe.ui.form.on('Project', {
-	custom_land_details_forms(frm) {
-		const dialog = new frappe.ui.Dialog({
-			title: 'Create / Update Land Details Document',
-			fields: [
-				{ label: 'Document Name', fieldname: 'docname', fieldtype: 'Data', hidden: true, default: '' },
-				{ label: 'Land in the Name of Sant Nirankari Mandal', fieldname: 'land_in_the_name_of_sant_nirankari_mandal', fieldtype: 'Check' },
-				{ label: 'Boundary Wall Construction Work Completed', fieldname: 'boundary_wall_construction_work_completed', fieldtype: 'Check' },
-				{ label: 'Setback for Bhavan', fieldname: 'setback_for_bhavan', fieldtype: 'Check' },
-				{ label: 'NOC Approval', fieldname: 'noc_approval', fieldtype: 'Check' },
-				{ label: 'Land Inspection by Supervisor', fieldname: 'land_inspection_ion_by_supervisor', fieldtype: 'Check' },
-				{ label: 'Drawing Approval', fieldname: 'drawing_approval', fieldtype: 'Check' },
-				{ label: 'Any River', fieldname: 'any_river', fieldtype: 'Check' },
-				{ label: 'Temporary Electricity', fieldname: 'temporary_electricity', fieldtype: 'Check' },
-				{ label: 'Type of Soil', fieldname: 'type_of_soil', fieldtype: 'Check' },
-				{ label: 'Land Level Should Be Mentioned in Letter', fieldname: 'land_level_should_be_mentioned_in_letter', fieldtype: 'Check' },
-				// { label: 'Signature', fieldname: 'signature_wjjv', fieldtype: 'Signature' }
-				{label:"User Name",fieldname:"user_name",fieldtype:"data"},
-				{label:"Date",fieldname:"date",fieldtype:"date"},
+// frappe.ui.form.on('Project', {
+// 	custom_land_details_forms(frm) {
+// 		const dialog = new frappe.ui.Dialog({
+// 			title: 'Create / Update Land Details Document',
+// 			fields: [
+// 				{ label: 'Document Name', fieldname: 'docname', fieldtype: 'Data', hidden: true, default: '' },
+// 				{ label: 'Land in the Name of Sant Nirankari Mandal', fieldname: 'land_in_the_name_of_sant_nirankari_mandal', fieldtype: 'Check' },
+// 				{ label: 'Boundary Wall Construction Work Completed', fieldname: 'boundary_wall_construction_work_completed', fieldtype: 'Check' },
+// 				{ label: 'Setback for Bhavan', fieldname: 'setback_for_bhavan', fieldtype: 'Check' },
+// 				{ label: 'NOC Approval', fieldname: 'noc_approval', fieldtype: 'Check' },
+// 				{ label: 'Land Inspection by Supervisor', fieldname: 'land_inspection_ion_by_supervisor', fieldtype: 'Check' },
+// 				{ label: 'Drawing Approval', fieldname: 'drawing_approval', fieldtype: 'Check' },
+// 				{ label: 'Any River', fieldname: 'any_river', fieldtype: 'Check' },
+// 				{ label: 'Temporary Electricity', fieldname: 'temporary_electricity', fieldtype: 'Check' },
+// 				{ label: 'Type of Soil', fieldname: 'type_of_soil', fieldtype: 'Check' },
+// 				{ label: 'Land Level Should Be Mentioned in Letter', fieldname: 'land_level_should_be_mentioned_in_letter', fieldtype: 'Check' },
+// 				// { label: 'Signature', fieldname: 'signature_wjjv', fieldtype: 'Signature' }
+// 				{label:"User Name",fieldname:"user_name",fieldtype:"data"},
+// 				{label:"Date",fieldname:"date",fieldtype:"date"},
 
-			],
-			primary_action_label: 'Save',
-			primary_action(values) {
-				frappe.call({
-					method: 'bcms.building_construction_manufacturing_service.customization.project.project.create_or_update_land_details_doc',
-					args: { data: values },
-					callback: (r) => {
-						if (!r.exc) {
-							const docname = r.message.name;
-							frm.set_value('custom_land_details_form', docname);
+// 			],
+// 			primary_action_label: 'Save',
+// 			primary_action(values) {
+// 				frappe.call({
+// 					method: 'bcms.building_construction_manufacturing_service.customization.project.project.create_or_update_land_details_doc',
+// 					args: { data: values },
+// 					callback: (r) => {
+// 						if (!r.exc) {
+// 							const docname = r.message.name;
+// 							frm.set_value('custom_land_details_form', docname);
 
-							// Render preview HTML
-							const table_html = `
-								<style>
-									.custom-details-table {
-										width: 100%;
-										border-collapse: collapse;
-										font-family: Arial, sans-serif;
-										font-size: 14px;
-									}
-									.custom-details-table th, .custom-details-table td {
-										border: 1px solid #ccc;
-										padding: 10px 12px;
-									}
-									.custom-details-table thead tr {
-										background-color: #f7f7f7;
-										font-weight: bold;
-										text-align: left;
-									}
-									.custom-details-table tbody tr:nth-child(even) {
-										background-color: #fafafa;
-									}
-									.custom-details-table td {
-										vertical-align: middle;
-									}
-									.custom-details-table td img {
-										max-height: 80px;
-									}
-								</style>
-								<table class="custom-details-table">
-									<tbody>
-										<tr><td>Land in the Name of Sant Nirankari Mandal</td><td style="text-align:center;">${values.land_in_the_name_of_sant_nirankari_mandal ? 'Yes' : 'No'}</td></tr>
-										<tr><td>Boundary Wall Construction Work Completed</td><td style="text-align:center;">${values.boundary_wall_construction_work_completed ? 'Yes' : 'No'}</td></tr>
-										<tr><td>Setback for Bhavan</td><td style="text-align:center;">${values.setback_for_bhavan ? 'Yes' : 'No'}</td></tr>
-										<tr><td>NOC Approval</td><td style="text-align:center;">${values.noc_approval ? 'Yes' : 'No'}</td></tr>
-										<tr><td>Land Inspection by Supervisor</td><td style="text-align:center;">${values.land_inspection_ion_by_supervisor ? 'Yes' : 'No'}</td></tr>
-										<tr><td>Drawing Approval</td><td style="text-align:center;">${values.drawing_approval ? 'Yes' : 'No'}</td></tr>
-										<tr><td>Any River</td><td style="text-align:center;">${values.any_river ? 'Yes' : 'No'}</td></tr>
-										<tr><td>Temporary Electricity</td><td style="text-align:center;">${values.temporary_electricity ? 'Yes' : 'No'}</td></tr>
-										<tr><td>Type of Soil</td><td style="text-align:center;">${values.type_of_soil ? 'Yes' : 'No'}</td></tr>
-										<tr><td>Land Level Should Be Mentioned in Letter</td><td style="text-align:center;">${values.land_level_should_be_mentioned_in_letter ? 'Yes' : 'No'}</td></tr>
-										<tr><td>Zonal Incharge</td><td style="text-align:center;">${values.signature_wjjv ? `<img src="${values.signature_wjjv}" alt="Signature" />` : 'No'}</td></tr>
-									</tbody>
-								</table>`;
+// 							// Render preview HTML
+// 							const table_html = `
+// 								<style>
+// 									.custom-details-table {
+// 										width: 100%;
+// 										border-collapse: collapse;
+// 										font-family: Arial, sans-serif;
+// 										font-size: 14px;
+// 									}
+// 									.custom-details-table th, .custom-details-table td {
+// 										border: 1px solid #ccc;
+// 										padding: 10px 12px;
+// 									}
+// 									.custom-details-table thead tr {
+// 										background-color: #f7f7f7;
+// 										font-weight: bold;
+// 										text-align: left;
+// 									}
+// 									.custom-details-table tbody tr:nth-child(even) {
+// 										background-color: #fafafa;
+// 									}
+// 									.custom-details-table td {
+// 										vertical-align: middle;
+// 									}
+// 									.custom-details-table td img {
+// 										max-height: 80px;
+// 									}
+// 								</style>
+// 								<table class="custom-details-table">
+// 									<tbody>
+// 										<tr><td>Land in the Name of Sant Nirankari Mandal</td><td style="text-align:center;">${values.land_in_the_name_of_sant_nirankari_mandal ? 'Yes' : 'No'}</td></tr>
+// 										<tr><td>Boundary Wall Construction Work Completed</td><td style="text-align:center;">${values.boundary_wall_construction_work_completed ? 'Yes' : 'No'}</td></tr>
+// 										<tr><td>Setback for Bhavan</td><td style="text-align:center;">${values.setback_for_bhavan ? 'Yes' : 'No'}</td></tr>
+// 										<tr><td>NOC Approval</td><td style="text-align:center;">${values.noc_approval ? 'Yes' : 'No'}</td></tr>
+// 										<tr><td>Land Inspection by Supervisor</td><td style="text-align:center;">${values.land_inspection_ion_by_supervisor ? 'Yes' : 'No'}</td></tr>
+// 										<tr><td>Drawing Approval</td><td style="text-align:center;">${values.drawing_approval ? 'Yes' : 'No'}</td></tr>
+// 										<tr><td>Any River</td><td style="text-align:center;">${values.any_river ? 'Yes' : 'No'}</td></tr>
+// 										<tr><td>Temporary Electricity</td><td style="text-align:center;">${values.temporary_electricity ? 'Yes' : 'No'}</td></tr>
+// 										<tr><td>Type of Soil</td><td style="text-align:center;">${values.type_of_soil ? 'Yes' : 'No'}</td></tr>
+// 										<tr><td>Land Level Should Be Mentioned in Letter</td><td style="text-align:center;">${values.land_level_should_be_mentioned_in_letter ? 'Yes' : 'No'}</td></tr>
+// 										<tr><td>Zonal Incharge</td><td style="text-align:center;">${values.signature_wjjv ? `<img src="${values.signature_wjjv}" alt="Signature" />` : 'No'}</td></tr>
+// 									</tbody>
+// 								</table>`;
 
-							frm.set_value('custom_land_details_preview', table_html);
-							frm.refresh_fields(['custom_land_details_form', 'custom_land_details_preview']);
+// 							frm.set_value('custom_land_details_preview', table_html);
+// 							frm.refresh_fields(['custom_land_details_form', 'custom_land_details_preview']);
 
-							setTimeout(() => {
-								fix_text_editor_style(frm);
-							}, 300);
+// 							setTimeout(() => {
+// 								fix_text_editor_style(frm);
+// 							}, 300);
 
-							dialog.hide();
-						}
-					}
-				});
-			}
-		});
+// 							dialog.hide();
+// 						}
+// 					}
+// 				});
+// 			}
+// 		});
 
-		dialog.show();
-	},
+// 		dialog.show();
+// 	},
 
-	refresh(frm) {
-		setTimeout(() => {
-			fix_text_editor_style(frm);
-		}, 300);
-	}
-});
+// 	refresh(frm) {
+// 		setTimeout(() => {
+// 			fix_text_editor_style(frm);
+// 		}, 300);
+// 	}
+// });
 
-function fix_text_editor_style(frm) {
-	if (!frm.fields_dict.custom_land_details_preview) return;
+// function fix_text_editor_style(frm) {
+// 	if (!frm.fields_dict.custom_land_details_preview) return;
 
-	const wrapper = frm.fields_dict.custom_land_details_preview.$wrapper;
-	wrapper.find('.ql-toolbar').hide();
+// 	const wrapper = frm.fields_dict.custom_land_details_preview.$wrapper;
+// 	wrapper.find('.ql-toolbar').hide();
 
-	const editor = wrapper.find('.ql-container');
-	editor.css({
-		'pointer-events': 'none',
-		'background-color': 'transparent',
-		'border': '1px solid #ccc',
-		'box-shadow': 'none',
-		'max-height': '600px',
-		'height': 'auto',
-		'overflow-y': 'auto',
-		'width': '100%',
-		'resize': 'vertical',
-		'min-height': '300px'
-	});
+// 	const editor = wrapper.find('.ql-container');
+// 	editor.css({
+// 		'pointer-events': 'none',
+// 		'background-color': 'transparent',
+// 		'border': '1px solid #ccc',
+// 		'box-shadow': 'none',
+// 		'max-height': '600px',
+// 		'height': 'auto',
+// 		'overflow-y': 'auto',
+// 		'width': '100%',
+// 		'resize': 'vertical',
+// 		'min-height': '300px'
+// 	});
 
-	wrapper.find('.ql-editor').css({
-		'height': 'auto',
-		'min-height': '300px',
-		'max-height': '600px',
-		'overflow': 'visible'
-	});
-}
+// 	wrapper.find('.ql-editor').css({
+// 		'height': 'auto',
+// 		'min-height': '300px',
+// 		'max-height': '600px',
+// 		'overflow': 'visible'
+// 	});
+// }
 
 
 
 
 ///BOQ Estimate form listttttttttt
-frappe.ui.form.on("Project", {
-	custom_boqestimates: function (frm) {
-		open_boq_estimate_dialog(frm);
-	}
-});
+// frappe.ui.form.on("Project", {
+// 	custom_boqestimates: function (frm) {
+// 		open_boq_estimate_dialog(frm);
+// 	}
+// });
 
-function open_boq_estimate_dialog(frm) {
-	let boq_rows = [];
-	let editing_index = null;
+// function open_boq_estimate_dialog(frm) {
+// 	let boq_rows = [];
+// 	let editing_index = null;
 
-	const dialog = new frappe.ui.Dialog({
-		title: "Create BOQ Estimate Form",
-		fields: [
-			{
-				label: "Estimate For Construction Work Of Satsang Bhawan At",
-				fieldname: "estimate_for_construction_work_of_satsang_bhawan_at",
-				fieldtype: "Link",
-				options: "Bhavan"
-			},
-			{
-				label: "Total Amount",
-				fieldname: "total_amount",
-				fieldtype: "Int"
-			},
-			{ fieldtype: "Section Break", label: "Add BOQ Row" },
-			{ label: "Work", fieldname: "work", fieldtype: "Data" },
-			{ label: "Area", fieldname: "area", fieldtype: "Data" },
-			{ label: "Rate", fieldname: "rate", fieldtype: "Float" },
-			{ label: "Quantity", fieldname: "quantity", fieldtype: "Float" },
-			{ label: "Unit", fieldname: "unit", fieldtype: "Link", options: "Unit" },
-			{ label: "Amount", fieldname: "amount", fieldtype: "Int" },
-			{
-				fieldtype: "Button",
-				label: "➕ Add Row to BOQ",
-				fieldname: "add_row_btn",
-				click() {
-					const values = dialog.get_values();
-					if (!values.work) {
-						frappe.msgprint("❗ Please fill all BOQ fields.");
-						return;
-					}
+// 	const dialog = new frappe.ui.Dialog({
+// 		title: "Create BOQ Estimate Form",
+// 		fields: [
+// 			{
+// 				label: "Estimate For Construction Work Of Satsang Bhawan At",
+// 				fieldname: "estimate_for_construction_work_of_satsang_bhawan_at",
+// 				fieldtype: "Link",
+// 				options: "Bhavan"
+// 			},
+// 			{
+// 				label: "Total Amount",
+// 				fieldname: "total_amount",
+// 				fieldtype: "Int"
+// 			},
+// 			{ fieldtype: "Section Break", label: "Add BOQ Row" },
+// 			{ label: "Work", fieldname: "work", fieldtype: "Data" },
+// 			{ label: "Area", fieldname: "area", fieldtype: "Data" },
+// 			{ label: "Rate", fieldname: "rate", fieldtype: "Float" },
+// 			{ label: "Quantity", fieldname: "quantity", fieldtype: "Float" },
+// 			{ label: "Unit", fieldname: "unit", fieldtype: "Link", options: "Unit" },
+// 			{ label: "Amount", fieldname: "amount", fieldtype: "Int" },
+// 			{
+// 				fieldtype: "Button",
+// 				label: "➕ Add Row to BOQ",
+// 				fieldname: "add_row_btn",
+// 				click() {
+// 					const values = dialog.get_values();
+// 					if (!values.work) {
+// 						frappe.msgprint("❗ Please fill all BOQ fields.");
+// 						return;
+// 					}
 
-					const new_row = {
-						work: values.work,
-						area: values.area,
-						rate: values.rate,
-						quantity: values.quantity,
-						unit: values.unit,
-						amount: values.amount || 0
-					};
+// 					const new_row = {
+// 						work: values.work,
+// 						area: values.area,
+// 						rate: values.rate,
+// 						quantity: values.quantity,
+// 						unit: values.unit,
+// 						amount: values.amount || 0
+// 					};
 
-					if (editing_index !== null) {
-						boq_rows[editing_index] = new_row;
-						editing_index = null;
-						dialog.fields_dict.add_row_btn.input.innerText = "➕ Add Row to BOQ";
-					} else {
-						boq_rows.push(new_row);
-					}
+// 					if (editing_index !== null) {
+// 						boq_rows[editing_index] = new_row;
+// 						editing_index = null;
+// 						dialog.fields_dict.add_row_btn.input.innerText = "➕ Add Row to BOQ";
+// 					} else {
+// 						boq_rows.push(new_row);
+// 					}
 
-					update_preview_table();
+// 					update_preview_table();
 
-					dialog.set_value("work", "");
-					dialog.set_value("area", "");
-					dialog.set_value("rate", "");
-					dialog.set_value("quantity", "");
-					dialog.set_value("unit", "");
-					dialog.set_value("amount", "");
-				}
-			},
-			{ fieldtype: "HTML", fieldname: "boq_table_preview" },
-			{ fieldtype: "Hidden", fieldname: "project", default: frm.doc.name }
-		],
+// 					dialog.set_value("work", "");
+// 					dialog.set_value("area", "");
+// 					dialog.set_value("rate", "");
+// 					dialog.set_value("quantity", "");
+// 					dialog.set_value("unit", "");
+// 					dialog.set_value("amount", "");
+// 				}
+// 			},
+// 			{ fieldtype: "HTML", fieldname: "boq_table_preview" },
+// 			{ fieldtype: "Hidden", fieldname: "project", default: frm.doc.name }
+// 		],
 
-		primary_action_label: "Create BOQ Estimate",
-		primary_action(values) {
-			if (boq_rows.length === 0) {
-				frappe.msgprint("Please add at least one BOQ item.");
-				return;
-			}
+// 		primary_action_label: "Create BOQ Estimate",
+// 		primary_action(values) {
+// 			if (boq_rows.length === 0) {
+// 				frappe.msgprint("Please add at least one BOQ item.");
+// 				return;
+// 			}
 
-			let html = `
-				<div>
-					<p><b>Bhavan:</b> ${values.estimate_for_construction_work_of_satsang_bhawan_at}</p>
-					<p><b>Total Amount:</b> ₹ ${values.total_amount}</p>
-					<table style="width:100%; border-collapse: collapse; margin-top:10px;" border="1" cellpadding="8" cellspacing="0">
-						<thead style="background-color: #eaeaea;">
-						  <tr>
-							<td style="text-align:left; font-weight: bold;">Work</td>
-							<td style="text-align:left; font-weight: bold;">Area</td>
-							<td style="text-align:left; font-weight: bold;">Rate</td>
-							<td style="text-align:left; font-weight: bold;">Quantity</td>
-							<td style="text-align:left; font-weight: bold;">Unit</td>
-							<td style="text-align:left; font-weight: bold;">Amount</td>
-						</tr>
-						</thead>
-						<tbody>`;
+// 			let html = `
+// 				<div>
+// 					<p><b>Bhavan:</b> ${values.estimate_for_construction_work_of_satsang_bhawan_at}</p>
+// 					<p><b>Total Amount:</b> ₹ ${values.total_amount}</p>
+// 					<table style="width:100%; border-collapse: collapse; margin-top:10px;" border="1" cellpadding="8" cellspacing="0">
+// 						<thead style="background-color: #eaeaea;">
+// 						  <tr>
+// 							<td style="text-align:left; font-weight: bold;">Work</td>
+// 							<td style="text-align:left; font-weight: bold;">Area</td>
+// 							<td style="text-align:left; font-weight: bold;">Rate</td>
+// 							<td style="text-align:left; font-weight: bold;">Quantity</td>
+// 							<td style="text-align:left; font-weight: bold;">Unit</td>
+// 							<td style="text-align:left; font-weight: bold;">Amount</td>
+// 						</tr>
+// 						</thead>
+// 						<tbody>`;
 
-			boq_rows.forEach(row => {
-				html += `
-					<tr>
-						<td>${row.work}</td>
-						<td>${row.area}</td>
-						<td>${row.rate}</td>
-						<td>${row.quantity}</td>
-						<td>${row.unit || ""}</td>
-						<td>${row.amount}</td>
-					</tr>`;
-			});
+// 			boq_rows.forEach(row => {
+// 				html += `
+// 					<tr>
+// 						<td>${row.work}</td>
+// 						<td>${row.area}</td>
+// 						<td>${row.rate}</td>
+// 						<td>${row.quantity}</td>
+// 						<td>${row.unit || ""}</td>
+// 						<td>${row.amount}</td>
+// 					</tr>`;
+// 			});
 
-			html += `</tbody></table></div>`;
+// 			html += `</tbody></table></div>`;
 
-			const doc_data = {
-				doctype: "BOQ Estimate Form",
-				project: values.project,
-				estimate_for_construction_work_of_satsang_bhawan_at: values.estimate_for_construction_work_of_satsang_bhawan_at,
-				total_amount: values.total_amount,
-				bill_of_quantity: boq_rows
-			};
+// 			const doc_data = {
+// 				doctype: "BOQ Estimate Form",
+// 				project: values.project,
+// 				estimate_for_construction_work_of_satsang_bhawan_at: values.estimate_for_construction_work_of_satsang_bhawan_at,
+// 				total_amount: values.total_amount,
+// 				bill_of_quantity: boq_rows
+// 			};
 
-			frappe.call({
-				method: "frappe.client.insert",
-				args: { doc: doc_data },
-				callback: function (r) {
-					if (!r.exc) {
-						const boq_name = r.message.name;
-						frappe.msgprint("✅ BOQ Estimate Form created: " + boq_name);
-						dialog.hide();
-						frappe.call({
-							method: "frappe.client.set_value",
-							args: {
-								doctype: "Project",
-								name: frm.doc.name,
-								fieldname: "custom_boqestimate_previous",
-								value: html
-							},
-							callback: function () {
-								frm.reload_doc();
-							}
-						});
-						frappe.call({
-							method: "frappe.client.set_value",
-							args: {
-								doctype: "Project",
-								name: frm.doc.name,
-								fieldname: "custom_boqestimate_form",
-								value: boq_name
-							}
-						});
+// 			frappe.call({
+// 				method: "frappe.client.insert",
+// 				args: { doc: doc_data },
+// 				callback: function (r) {
+// 					if (!r.exc) {
+// 						const boq_name = r.message.name;
+// 						frappe.msgprint("✅ BOQ Estimate Form created: " + boq_name);
+// 						dialog.hide();
+// 						frappe.call({
+// 							method: "frappe.client.set_value",
+// 							args: {
+// 								doctype: "Project",
+// 								name: frm.doc.name,
+// 								fieldname: "custom_boqestimate_previous",
+// 								value: html
+// 							},
+// 							callback: function () {
+// 								frm.reload_doc();
+// 							}
+// 						});
+// 						frappe.call({
+// 							method: "frappe.client.set_value",
+// 							args: {
+// 								doctype: "Project",
+// 								name: frm.doc.name,
+// 								fieldname: "custom_boqestimate_form",
+// 								value: boq_name
+// 							}
+// 						});
 						
-					}
-				}
-			});
-		}
-	});
+// 					}
+// 				}
+// 			});
+// 		}
+// 	});
 
-	dialog.show();
+// 	dialog.show();
 
-	function update_preview_table() {
-		let html = `
-			<table class="table table-bordered" style="margin-top:15px;">
-				<thead>
-					<tr>
-						<th>Work</th>
-						<th>Area</th>
-						<th>Rate</th>
-						<th>Quantity</th>
-						<th>Unit</th>
-						<th>Amount</th>
-						<th>Actions</th>
-					</tr>
-				</thead>
-				<tbody>`;
+// 	function update_preview_table() {
+// 		let html = `
+// 			<table class="table table-bordered" style="margin-top:15px;">
+// 				<thead>
+// 					<tr>
+// 						<th>Work</th>
+// 						<th>Area</th>
+// 						<th>Rate</th>
+// 						<th>Quantity</th>
+// 						<th>Unit</th>
+// 						<th>Amount</th>
+// 						<th>Actions</th>
+// 					</tr>
+// 				</thead>
+// 				<tbody>`;
 
-		boq_rows.forEach((row, index) => {
-			html += `<tr>
-				<td>${row.work}</td>
-				<td>${row.area}</td>
-				<td>${row.rate}</td>
-				<td>${row.quantity}</td>
-				<td>${row.unit || ""}</td>
-				<td>${row.amount}</td>
-				<td>
-					<button class="btn btn-sm btn-primary edit-row" data-index="${index}">Edit</button>
-					<button class="btn btn-sm btn-danger delete-row" data-index="${index}">Delete</button>
-				</td>
-			</tr>`;
-		});
+// 		boq_rows.forEach((row, index) => {
+// 			html += `<tr>
+// 				<td>${row.work}</td>
+// 				<td>${row.area}</td>
+// 				<td>${row.rate}</td>
+// 				<td>${row.quantity}</td>
+// 				<td>${row.unit || ""}</td>
+// 				<td>${row.amount}</td>
+// 				<td>
+// 					<button class="btn btn-sm btn-primary edit-row" data-index="${index}">Edit</button>
+// 					<button class="btn btn-sm btn-danger delete-row" data-index="${index}">Delete</button>
+// 				</td>
+// 			</tr>`;
+// 		});
 
-		html += "</tbody></table>";
+// 		html += "</tbody></table>";
 
-		dialog.fields_dict.boq_table_preview.$wrapper.html(html);
-		dialog.fields_dict.boq_table_preview.$wrapper.find(".edit-row").on("click", function () {
-			editing_index = parseInt($(this).data("index"));
-			const row = boq_rows[editing_index];
-			dialog.set_value("work", row.work);
-			dialog.set_value("area", row.area);
-			dialog.set_value("rate", row.rate);
-			dialog.set_value("quantity", row.quantity);
-			dialog.set_value("unit", row.unit);
-			dialog.set_value("amount", row.amount);
-			dialog.fields_dict.add_row_btn.input.innerText = "🔄 Update Row";
-		});
+// 		dialog.fields_dict.boq_table_preview.$wrapper.html(html);
+// 		dialog.fields_dict.boq_table_preview.$wrapper.find(".edit-row").on("click", function () {
+// 			editing_index = parseInt($(this).data("index"));
+// 			const row = boq_rows[editing_index];
+// 			dialog.set_value("work", row.work);
+// 			dialog.set_value("area", row.area);
+// 			dialog.set_value("rate", row.rate);
+// 			dialog.set_value("quantity", row.quantity);
+// 			dialog.set_value("unit", row.unit);
+// 			dialog.set_value("amount", row.amount);
+// 			dialog.fields_dict.add_row_btn.input.innerText = "🔄 Update Row";
+// 		});
 
-		dialog.fields_dict.boq_table_preview.$wrapper.find(".delete-row").on("click", function () {
-			const idx = parseInt($(this).data("index"));
-			boq_rows.splice(idx, 1);
-			editing_index = null;
-			dialog.fields_dict.add_row_btn.input.innerText = "➕ Add Row to BOQ";
-			dialog.set_value("work", "");
-			dialog.set_value("area", "");
-			dialog.set_value("rate", "");
-			dialog.set_value("quantity", "");
-			dialog.set_value("unit", "");
-			dialog.set_value("amount", "");
-			update_preview_table();
-		});
-	}
-}
+// 		dialog.fields_dict.boq_table_preview.$wrapper.find(".delete-row").on("click", function () {
+// 			const idx = parseInt($(this).data("index"));
+// 			boq_rows.splice(idx, 1);
+// 			editing_index = null;
+// 			dialog.fields_dict.add_row_btn.input.innerText = "➕ Add Row to BOQ";
+// 			dialog.set_value("work", "");
+// 			dialog.set_value("area", "");
+// 			dialog.set_value("rate", "");
+// 			dialog.set_value("quantity", "");
+// 			dialog.set_value("unit", "");
+// 			dialog.set_value("amount", "");
+// 			update_preview_table();
+// 		});
+// 	}
+// }
 
-frappe.ui.form.on('Project', {
-	refresh(frm) {
-		setTimeout(() => {
-			fix_text_editor_style(frm);
-		}, 500);
-	}
-});
+// frappe.ui.form.on('Project', {
+// 	refresh(frm) {
+// 		setTimeout(() => {
+// 			fix_text_editor_style(frm);
+// 		}, 500);
+// 	}
+// });
 
-function fix_text_editor_style(frm) {
-	if (!frm.fields_dict.custom_boqestimate_previous) return;
+// function fix_text_editor_style(frm) {
+// 	if (!frm.fields_dict.custom_boqestimate_previous) return;
 
-	const wrapper = frm.fields_dict.custom_boqestimate_previous.$wrapper;
+// 	const wrapper = frm.fields_dict.custom_boqestimate_previous.$wrapper;
 
-	wrapper.find('.ql-toolbar').hide();
+// 	wrapper.find('.ql-toolbar').hide();
 
-	const editor = wrapper.find('.ql-container');
-	editor.css({
-		'pointer-events': 'none',
-		'background-color': 'transparent',
-		'border': '1px solid #ccc',
-		'box-shadow': 'none',
-		'max-height': '600px',
-		'height': 'auto',
-		'overflow-y': 'auto',
-		'overflow-x': 'hidden',
-		'width': '100%',
-		'resize': 'vertical',
-		'min-height': '300px'
-	});
+// 	const editor = wrapper.find('.ql-container');
+// 	editor.css({
+// 		'pointer-events': 'none',
+// 		'background-color': 'transparent',
+// 		'border': '1px solid #ccc',
+// 		'box-shadow': 'none',
+// 		'max-height': '600px',
+// 		'height': 'auto',
+// 		'overflow-y': 'auto',
+// 		'overflow-x': 'hidden',
+// 		'width': '100%',
+// 		'resize': 'vertical',
+// 		'min-height': '300px'
+// 	});
 
-	wrapper.find('.ql-editor').css({
-		'height': 'auto',
-		'min-height': '300px',
-		'max-height': '600px',
-		'overflow': 'visible'
-	});
-}
+// 	wrapper.find('.ql-editor').css({
+// 		'height': 'auto',
+// 		'min-height': '300px',
+// 		'max-height': '600px',
+// 		'overflow': 'visible'
+// 	});
+// }
 
 
 //financial approval form
 // Final Updated Code for Financial Approval Form
 
-frappe.ui.form.on("Project", {
-	custom_financial_approvals(frm) {
-		open_dialog(frm);
-	},
+// frappe.ui.form.on("Project", {
+// 	custom_financial_approvals(frm) {
+// 		open_dialog(frm);
+// 	},
 
-	refresh(frm) {
-		setTimeout(() => {
-			fix_text_editor_style(frm);
-		}, 500);
-	}
-});
+// 	refresh(frm) {
+// 		setTimeout(() => {
+// 			fix_text_editor_style(frm);
+// 		}, 500);
+// 	}
+// });
 
-function open_dialog(frm) {
-	let boq_rows = [];
-	let editing_index = null;
+// function open_dialog(frm) {
+// 	let boq_rows = [];
+// 	let editing_index = null;
 
-	const dialog = new frappe.ui.Dialog({
-		title: "Create Financial Approval Form",
-		fields: [
-			{ label: "Ref No.", fieldname: "refno", fieldtype: "Data" },
-			{ label: "Work of Satsang Bhavan at", fieldname: "satsang_bhavan", fieldtype: "Link", options: "Bhavan" },
-			{ label: "Date", fieldname: "dates", fieldtype: "Date" },
-			{ label: "Total Amount", fieldname: "total_amount", fieldtype: "Int" },
-			{ fieldtype: "Section Break", label: "Add Financial Details Row" },
-			{ label: "District Name", fieldname: "distict_name", fieldtype: "Link", options: "District" },
-			{ label: "State Name", fieldname: "state_name", fieldtype: "Link", options: "State" },
-			{ label: "Zone", fieldname: "zone", fieldtype: "Link", options: "Zone" },
-			{ label: "Estimated Cost", fieldname: "estimated_cost", fieldtype: "Int" },
-			{ label: "Zone Name", fieldname: "zone_name", fieldtype: "Data" },
-			{ label: "Remarks", fieldname: "remarks", fieldtype: "Small Text" },
-			{
-				fieldtype: "Button",
-				label: "➕ Add Row to Financial Approval Form",
-				fieldname: "add_row_btn",
-				click() {
-					const values = dialog.get_values();
-					if (!values.zone) {
-						frappe.msgprint("❗ Please fill all Financial Approval fields.");
-						return;
-					}
+// 	const dialog = new frappe.ui.Dialog({
+// 		title: "Create Financial Approval Form",
+// 		fields: [
+// 			{ label: "Ref No.", fieldname: "refno", fieldtype: "Data" },
+// 			{ label: "Work of Satsang Bhavan at", fieldname: "satsang_bhavan", fieldtype: "Link", options: "Bhavan" },
+// 			{ label: "Date", fieldname: "dates", fieldtype: "Date" },
+// 			{ label: "Total Amount", fieldname: "total_amount", fieldtype: "Int" },
+// 			{ fieldtype: "Section Break", label: "Add Financial Details Row" },
+// 			{ label: "District Name", fieldname: "distict_name", fieldtype: "Link", options: "District" },
+// 			{ label: "State Name", fieldname: "state_name", fieldtype: "Link", options: "State" },
+// 			{ label: "Zone", fieldname: "zone", fieldtype: "Link", options: "Zone" },
+// 			{ label: "Estimated Cost", fieldname: "estimated_cost", fieldtype: "Int" },
+// 			{ label: "Zone Name", fieldname: "zone_name", fieldtype: "Data" },
+// 			{ label: "Remarks", fieldname: "remarks", fieldtype: "Small Text" },
+// 			{
+// 				fieldtype: "Button",
+// 				label: "➕ Add Row to Financial Approval Form",
+// 				fieldname: "add_row_btn",
+// 				click() {
+// 					const values = dialog.get_values();
+// 					if (!values.zone) {
+// 						frappe.msgprint("❗ Please fill all Financial Approval fields.");
+// 						return;
+// 					}
 
-					const new_row = {
-						distict_name: values.distict_name,
-						state_name: values.state_name,
-						zone: values.zone,
-						estimated_cost: values.estimated_cost,
-						zone_name: values.zone_name,
-						remarks: values.remarks
-					};
+// 					const new_row = {
+// 						distict_name: values.distict_name,
+// 						state_name: values.state_name,
+// 						zone: values.zone,
+// 						estimated_cost: values.estimated_cost,
+// 						zone_name: values.zone_name,
+// 						remarks: values.remarks
+// 					};
 
-					if (editing_index !== null) {
-						boq_rows[editing_index] = new_row;
-						editing_index = null;
-						dialog.fields_dict.add_row_btn.input.innerText = "➕ Add Row to Financial Approval Form";
-					} else {
-						boq_rows.push(new_row);
-					}
+// 					if (editing_index !== null) {
+// 						boq_rows[editing_index] = new_row;
+// 						editing_index = null;
+// 						dialog.fields_dict.add_row_btn.input.innerText = "➕ Add Row to Financial Approval Form";
+// 					} else {
+// 						boq_rows.push(new_row);
+// 					}
 
-					update_preview_table();
+// 					update_preview_table();
 
-					dialog.set_value("distict_name", "");
-					dialog.set_value("state_name", "");
-					dialog.set_value("zone", "");
-					dialog.set_value("estimated_cost", "");
-					dialog.set_value("zone_name", "");
-					dialog.set_value("remarks", "");
-				}
-			},
-			{ fieldtype: "HTML", fieldname: "boq_table_preview" },
-			{ fieldtype: "Hidden", fieldname: "project", default: frm.doc.name }
-		],
+// 					dialog.set_value("distict_name", "");
+// 					dialog.set_value("state_name", "");
+// 					dialog.set_value("zone", "");
+// 					dialog.set_value("estimated_cost", "");
+// 					dialog.set_value("zone_name", "");
+// 					dialog.set_value("remarks", "");
+// 				}
+// 			},
+// 			{ fieldtype: "HTML", fieldname: "boq_table_preview" },
+// 			{ fieldtype: "Hidden", fieldname: "project", default: frm.doc.name }
+// 		],
 
-		primary_action_label: "Create Financial Approvals",
-		primary_action(values) {
-			if (boq_rows.length === 0) {
-				frappe.msgprint("Please add at least one item.");
-				return;
-			}
+// 		primary_action_label: "Create Financial Approvals",
+// 		primary_action(values) {
+// 			if (boq_rows.length === 0) {
+// 				frappe.msgprint("Please add at least one item.");
+// 				return;
+// 			}
 
-			let html = `
-				<div>
-					<p><b>Ref No.:</b> ${values.refno}</p>
-					<p><b>Estimate For Construction Work Of Satsang Bhawan At:</b> ${values.satsang_bhavan}</p> 
-					<p><b>Date:</b> ${values.dates}</p>
-					<p><b>Total Amount:</b> ${values.total_amount}</p>
-					<table style="width:100%; border-collapse: collapse; margin-top:10px;" border="1" cellpadding="8" cellspacing="0">
-						<thead style="background-color: #eaeaea;">
-						  <tr>
-							<td><b>District Name</b></td>
-							<td><b>State Name</b></td>
-							<td><b>Zone</b></td>
-							<td><b>Estimated Cost</b></td>
-							<td><b>Zone Name</b></td>
-							<td><b>Remarks</b></td>
-						</tr>
-						</thead>
-						<tbody>`;
+// 			let html = `
+// 				<div>
+// 					<p><b>Ref No.:</b> ${values.refno}</p>
+// 					<p><b>Estimate For Construction Work Of Satsang Bhawan At:</b> ${values.satsang_bhavan}</p> 
+// 					<p><b>Date:</b> ${values.dates}</p>
+// 					<p><b>Total Amount:</b> ${values.total_amount}</p>
+// 					<table style="width:100%; border-collapse: collapse; margin-top:10px;" border="1" cellpadding="8" cellspacing="0">
+// 						<thead style="background-color: #eaeaea;">
+// 						  <tr>
+// 							<td><b>District Name</b></td>
+// 							<td><b>State Name</b></td>
+// 							<td><b>Zone</b></td>
+// 							<td><b>Estimated Cost</b></td>
+// 							<td><b>Zone Name</b></td>
+// 							<td><b>Remarks</b></td>
+// 						</tr>
+// 						</thead>
+// 						<tbody>`;
 
-			boq_rows.forEach(row => {
-				html += `
-					<tr>
-						<td>${row.distict_name}</td>
-						<td>${row.state_name}</td>
-						<td>${row.zone}</td>
-						<td>${row.estimated_cost}</td>
-						<td>${row.zone_name || ""}</td>
-						<td>${row.remarks}</td>
-					</tr>`;
-			});
+// 			boq_rows.forEach(row => {
+// 				html += `
+// 					<tr>
+// 						<td>${row.distict_name}</td>
+// 						<td>${row.state_name}</td>
+// 						<td>${row.zone}</td>
+// 						<td>${row.estimated_cost}</td>
+// 						<td>${row.zone_name || ""}</td>
+// 						<td>${row.remarks}</td>
+// 					</tr>`;
+// 			});
 
-			html += `</tbody></table></div>`;
+// 			html += `</tbody></table></div>`;
 
-			const doc_data = {
-				doctype: "Financial Approval Form",
-				project: values.project,
-				refno: values.refno,
-				satsang_bhavan: values.satsang_bhavan,
-				dates: values.dates,
-				total_amount: values.total_amount,
-				financial_approvals: boq_rows
-			};
+// 			const doc_data = {
+// 				doctype: "Financial Approval Form",
+// 				project: values.project,
+// 				refno: values.refno,
+// 				satsang_bhavan: values.satsang_bhavan,
+// 				dates: values.dates,
+// 				total_amount: values.total_amount,
+// 				financial_approvals: boq_rows
+// 			};
 
-			frappe.call({
-				method: "frappe.client.insert",
-				args: { doc: doc_data },
-				callback(r) {
-					if (!r.exc) {
-						const docname = r.message.name;
+// 			frappe.call({
+// 				method: "frappe.client.insert",
+// 				args: { doc: doc_data },
+// 				callback(r) {
+// 					if (!r.exc) {
+// 						const docname = r.message.name;
 
-						frappe.call({
-							method: "frappe.client.set_value",
-							args: {
-								doctype: "Project",
-								name: frm.doc.name,
-								fieldname: "custom_financial_approval_preview",
-								value: html
-							},
-							callback: function () {
-								frm.reload_doc();
-							}
-						});
+// 						frappe.call({
+// 							method: "frappe.client.set_value",
+// 							args: {
+// 								doctype: "Project",
+// 								name: frm.doc.name,
+// 								fieldname: "custom_financial_approval_preview",
+// 								value: html
+// 							},
+// 							callback: function () {
+// 								frm.reload_doc();
+// 							}
+// 						});
 
-						frappe.call({
-							method: "frappe.client.set_value",
-							args: {
-								doctype: "Project",
-								name: frm.doc.name,
-								fieldname: "custom_fin_aproval_id",
-								value: docname
-							}
-						});
+// 						frappe.call({
+// 							method: "frappe.client.set_value",
+// 							args: {
+// 								doctype: "Project",
+// 								name: frm.doc.name,
+// 								fieldname: "custom_fin_aproval_id",
+// 								value: docname
+// 							}
+// 						});
 
-						dialog.hide();
-					}
-				}
-			});
-		}
-	});
+// 						dialog.hide();
+// 					}
+// 				}
+// 			});
+// 		}
+// 	});
 
-	dialog.show();
+// 	dialog.show();
 
-	setTimeout(() => {
-		dialog.$wrapper.css({
-			"display": "flex",
-			"align-items": "center",
-			"justify-content": "center",
-			"padding": "10px",
-			"height": "100vh",
-			"overflow": "hidden"
-		});
+// 	setTimeout(() => {
+// 		dialog.$wrapper.css({
+// 			"display": "flex",
+// 			"align-items": "center",
+// 			"justify-content": "center",
+// 			"padding": "10px",
+// 			"height": "100vh",
+// 			"overflow": "hidden"
+// 		});
 
-		dialog.$wrapper.find('.modal-dialog').css({
-			"max-width": "900px",
-			"width": "80%",
-			"max-height": "80vh",
-			"margin": "auto"
-		});
+// 		dialog.$wrapper.find('.modal-dialog').css({
+// 			"max-width": "900px",
+// 			"width": "80%",
+// 			"max-height": "80vh",
+// 			"margin": "auto"
+// 		});
 
-		dialog.$wrapper.find('.modal-content').css({
-			"max-height": "80vh",
-			"overflow-y": "auto"
-		});
-	}, 100);
+// 		dialog.$wrapper.find('.modal-content').css({
+// 			"max-height": "80vh",
+// 			"overflow-y": "auto"
+// 		});
+// 	}, 100);
 
-	function update_preview_table() {
-		let html = `
-			<table class="table table-bordered" style="margin-top:15px;">
-				<thead>
-					<tr>
-						<th>District</th>
-						<th>State</th>
-						<th>Zone</th>
-						<th>Estimated Cost</th>
-						<th>Zone Name</th>
-						<th>Remarks</th>
-						<th>Actions</th>
-					</tr>
-				</thead>
-				<tbody>`;
+// 	function update_preview_table() {
+// 		let html = `
+// 			<table class="table table-bordered" style="margin-top:15px;">
+// 				<thead>
+// 					<tr>
+// 						<th>District</th>
+// 						<th>State</th>
+// 						<th>Zone</th>
+// 						<th>Estimated Cost</th>
+// 						<th>Zone Name</th>
+// 						<th>Remarks</th>
+// 						<th>Actions</th>
+// 					</tr>
+// 				</thead>
+// 				<tbody>`;
 
-		boq_rows.forEach((row, index) => {
-			html += `<tr>
-				<td>${row.distict_name}</td>
-				<td>${row.state_name}</td>
-				<td>${row.zone}</td>
-				<td>${row.estimated_cost}</td>
-				<td>${row.zone_name}</td>
-				<td>${row.remarks}</td>
-				<td>
-					<button class="btn btn-sm btn-primary edit-row" data-index="${index}">Edit</button>
-					<button class="btn btn-sm btn-danger delete-row" data-index="${index}">Delete</button>
-				</td>
-			</tr>`;
-		});
+// 		boq_rows.forEach((row, index) => {
+// 			html += `<tr>
+// 				<td>${row.distict_name}</td>
+// 				<td>${row.state_name}</td>
+// 				<td>${row.zone}</td>
+// 				<td>${row.estimated_cost}</td>
+// 				<td>${row.zone_name}</td>
+// 				<td>${row.remarks}</td>
+// 				<td>
+// 					<button class="btn btn-sm btn-primary edit-row" data-index="${index}">Edit</button>
+// 					<button class="btn btn-sm btn-danger delete-row" data-index="${index}">Delete</button>
+// 				</td>
+// 			</tr>`;
+// 		});
 
-		html += `</tbody></table>`;
+// 		html += `</tbody></table>`;
 
-		dialog.fields_dict.boq_table_preview.$wrapper.html(html);
+// 		dialog.fields_dict.boq_table_preview.$wrapper.html(html);
 
-		dialog.fields_dict.boq_table_preview.$wrapper.find(".edit-row").on("click", function () {
-			editing_index = parseInt($(this).data("index"));
-			const row = boq_rows[editing_index];
-			dialog.set_value("distict_name", row.distict_name);
-			dialog.set_value("state_name", row.state_name);
-			dialog.set_value("zone", row.zone);
-			dialog.set_value("estimated_cost", row.estimated_cost);
-			dialog.set_value("zone_name", row.zone_name);
-			dialog.set_value("remarks", row.remarks);
-			dialog.fields_dict.add_row_btn.input.innerText = "🔄 Update Row";
-		});
+// 		dialog.fields_dict.boq_table_preview.$wrapper.find(".edit-row").on("click", function () {
+// 			editing_index = parseInt($(this).data("index"));
+// 			const row = boq_rows[editing_index];
+// 			dialog.set_value("distict_name", row.distict_name);
+// 			dialog.set_value("state_name", row.state_name);
+// 			dialog.set_value("zone", row.zone);
+// 			dialog.set_value("estimated_cost", row.estimated_cost);
+// 			dialog.set_value("zone_name", row.zone_name);
+// 			dialog.set_value("remarks", row.remarks);
+// 			dialog.fields_dict.add_row_btn.input.innerText = "🔄 Update Row";
+// 		});
 
-		dialog.fields_dict.boq_table_preview.$wrapper.find(".delete-row").on("click", function () {
-			const idx = parseInt($(this).data("index"));
-			boq_rows.splice(idx, 1);
-			editing_index = null;
-			dialog.fields_dict.add_row_btn.input.innerText = "➕ Add Row to Financial Approval Form";
-			dialog.set_value("distict_name", "");
-			dialog.set_value("state_name", "");
-			dialog.set_value("zone", "");
-			dialog.set_value("estimated_cost", "");
-			dialog.set_value("zone_name", "");
-			dialog.set_value("remarks", "");
-			update_preview_table();
-		});
-	}
-}
+// 		dialog.fields_dict.boq_table_preview.$wrapper.find(".delete-row").on("click", function () {
+// 			const idx = parseInt($(this).data("index"));
+// 			boq_rows.splice(idx, 1);
+// 			editing_index = null;
+// 			dialog.fields_dict.add_row_btn.input.innerText = "➕ Add Row to Financial Approval Form";
+// 			dialog.set_value("distict_name", "");
+// 			dialog.set_value("state_name", "");
+// 			dialog.set_value("zone", "");
+// 			dialog.set_value("estimated_cost", "");
+// 			dialog.set_value("zone_name", "");
+// 			dialog.set_value("remarks", "");
+// 			update_preview_table();
+// 		});
+// 	}
+// }
 
-function fix_text_editor_style(frm) {
-	if (!frm.fields_dict.custom_financial_approval_preview) return;
+// function fix_text_editor_style(frm) {
+// 	if (!frm.fields_dict.custom_financial_approval_preview) return;
 
-	const wrapper = frm.fields_dict.custom_financial_approval_preview.$wrapper;
-	wrapper.find('.ql-toolbar').hide();
+// 	const wrapper = frm.fields_dict.custom_financial_approval_preview.$wrapper;
+// 	wrapper.find('.ql-toolbar').hide();
 
-	const editor = wrapper.find('.ql-container');
-	editor.css({
-		'pointer-events': 'none',
-		'background-color': 'transparent',
-		'border': '1px solid #ccc',
-		'box-shadow': 'none',
-		'max-height': '800px',
-		'height': 'auto',
-		'overflow-y': 'auto',
-		'overflow-x': 'hidden',
-		'width': '100%',
-		'resize': 'vertical',
-		'min-height': '300px'
-	});
+// 	const editor = wrapper.find('.ql-container');
+// 	editor.css({
+// 		'pointer-events': 'none',
+// 		'background-color': 'transparent',
+// 		'border': '1px solid #ccc',
+// 		'box-shadow': 'none',
+// 		'max-height': '800px',
+// 		'height': 'auto',
+// 		'overflow-y': 'auto',
+// 		'overflow-x': 'hidden',
+// 		'width': '100%',
+// 		'resize': 'vertical',
+// 		'min-height': '300px'
+// 	});
 
-	wrapper.find('.ql-editor').css({
-		'height': 'auto',
-		'min-height': '300px',
-		'max-height': '600px',
-		'overflow': 'visible'
-	});
-}
+// 	wrapper.find('.ql-editor').css({
+// 		'height': 'auto',
+// 		'min-height': '300px',
+// 		'max-height': '600px',
+// 		'overflow': 'visible'
+// 	});
+// }
 
 //Construction committe Form
-frappe.ui.form.on('Project', {
-    custom_construction_committees: function (frm) {
-        let boq_rows = [];
+// frappe.ui.form.on('Project', {
+//     custom_construction_committees: function (frm) {
+//         let boq_rows = [];
 
-        const dialog = new frappe.ui.Dialog({
-            title: 'Construction Committee Form',
-            size: 'extra-large',
-            fields: [
-                { label: "Branch", fieldname: "branch", fieldtype: "Link", options: "Branch", reqd: 1 },
-                { label: "Zone", fieldname: "zone_no", fieldtype: "Link", options: "Zone", reqd: 1 },
-                { label: "Date", fieldname: "date", fieldtype: "Date", reqd: 1 },
+//         const dialog = new frappe.ui.Dialog({
+//             title: 'Construction Committee Form',
+//             size: 'extra-large',
+//             fields: [
+//                 { label: "Branch", fieldname: "branch", fieldtype: "Link", options: "Branch", reqd: 1 },
+//                 { label: "Zone", fieldname: "zone_no", fieldtype: "Link", options: "Zone", reqd: 1 },
+//                 { label: "Date", fieldname: "date", fieldtype: "Date", reqd: 1 },
 
-                { fieldtype: "Section Break", label: "Committee Member Entry" },
-                { label: "Name", fieldname: "name1", fieldtype: "Data" },
-                { label: "Father Name", fieldname: "fathers_name", fieldtype: "Data" },
-                { label: "Age", fieldname: "age", fieldtype: "Int" },
-                { label: "Education", fieldname: "education", fieldtype: "Data" },
-                { label: "Occupation", fieldname: "occupation", fieldtype: "Data" },
-                { label: "Address", fieldname: "address", fieldtype: "Small Text" },
-                { label: "Signature", fieldname: "signature", fieldtype: "Signature" },
-                { fieldtype: "Column Break" },
-                {
-                    fieldtype: "Button",
-                    label: "Add Row",
-                    click() {
-                        const values = dialog.get_values();
-                        if (!(values.name1 && values.fathers_name)) {
-                            frappe.msgprint("Please enter at least Name and Father's Name.");
-                            return;
-                        }
+//                 { fieldtype: "Section Break", label: "Committee Member Entry" },
+//                 { label: "Name", fieldname: "name1", fieldtype: "Data" },
+//                 { label: "Father Name", fieldname: "fathers_name", fieldtype: "Data" },
+//                 { label: "Age", fieldname: "age", fieldtype: "Int" },
+//                 { label: "Education", fieldname: "education", fieldtype: "Data" },
+//                 { label: "Occupation", fieldname: "occupation", fieldtype: "Data" },
+//                 { label: "Address", fieldname: "address", fieldtype: "Small Text" },
+//                 { label: "Signature", fieldname: "signature", fieldtype: "Signature" },
+//                 { fieldtype: "Column Break" },
+//                 {
+//                     fieldtype: "Button",
+//                     label: "Add Row",
+//                     click() {
+//                         const values = dialog.get_values();
+//                         if (!(values.name1 && values.fathers_name)) {
+//                             frappe.msgprint("Please enter at least Name and Father's Name.");
+//                             return;
+//                         }
 
-                        const signature_canvas = dialog.fields_dict.signature.$wrapper.find("canvas")[0];
-                        const signature_data = signature_canvas ? signature_canvas.toDataURL("image/png") : "";
+//                         const signature_canvas = dialog.fields_dict.signature.$wrapper.find("canvas")[0];
+//                         const signature_data = signature_canvas ? signature_canvas.toDataURL("image/png") : "";
 
-                        boq_rows.push({
-                            name1: values.name1,
-                            fathers_name: values.fathers_name,
-                            age: values.age,
-                            education: values.education,
-                            occupation: values.occupation,
-                            address: values.address,
-                            signature: signature_data
-                        });
+//                         boq_rows.push({
+//                             name1: values.name1,
+//                             fathers_name: values.fathers_name,
+//                             age: values.age,
+//                             education: values.education,
+//                             occupation: values.occupation,
+//                             address: values.address,
+//                             signature: signature_data
+//                         });
 
-                        update_html_table();
-                        ["name1", "fathers_name", "age", "education", "occupation", "address", "signature"].forEach(f => {
-                            dialog.set_value(f, "");
-                        });
-                    }
-                },
+//                         update_html_table();
+//                         ["name1", "fathers_name", "age", "education", "occupation", "address", "signature"].forEach(f => {
+//                             dialog.set_value(f, "");
+//                         });
+//                     }
+//                 },
 
-                { fieldtype: "Section Break", label: "Bank & Verification" },
-                { label: "Image", fieldname: "image", fieldtype: "Attach" },
-                { label: "Branch Bank Account Name", fieldname: "branch_bank_account_name", fieldtype: "Data" },
-                { label: "Branch Bank Account No", fieldname: "branch_bank_account_no", fieldtype: "Data" },
-                { label: "Engineer/Architect Name", fieldname: "civil_engineerdraftsmanarchitect_name", fieldtype: "Data" },
-                { label: "Engineer/Architect No", fieldname: "civil_engineerdraftsmanarchitect_no", fieldtype: "Data" },
-                { label: "Verified by Zonal Incharge", fieldname: "verified_by_zonal_incharge", fieldtype: "Signature" },
-                { label: "Mukhisanyojak", fieldname: "mukhisanyojak", fieldtype: "Signature" }
-            ],
-            primary_action_label: "Save",
-            primary_action(values) {
-                const zonal_signature_canvas = dialog.fields_dict.verified_by_zonal_incharge.$wrapper.find("canvas")[0];
-                const mukhisanyojak_signature_canvas = dialog.fields_dict.mukhisanyojak.$wrapper.find("canvas")[0];
+//                 { fieldtype: "Section Break", label: "Bank & Verification" },
+//                 { label: "Image", fieldname: "image", fieldtype: "Attach" },
+//                 { label: "Branch Bank Account Name", fieldname: "branch_bank_account_name", fieldtype: "Data" },
+//                 { label: "Branch Bank Account No", fieldname: "branch_bank_account_no", fieldtype: "Data" },
+//                 { label: "Engineer/Architect Name", fieldname: "civil_engineerdraftsmanarchitect_name", fieldtype: "Data" },
+//                 { label: "Engineer/Architect No", fieldname: "civil_engineerdraftsmanarchitect_no", fieldtype: "Data" },
+//                 { label: "Verified by Zonal Incharge", fieldname: "verified_by_zonal_incharge", fieldtype: "Signature" },
+//                 { label: "Mukhisanyojak", fieldname: "mukhisanyojak", fieldtype: "Signature" }
+//             ],
+//             primary_action_label: "Save",
+//             primary_action(values) {
+//                 const zonal_signature_canvas = dialog.fields_dict.verified_by_zonal_incharge.$wrapper.find("canvas")[0];
+//                 const mukhisanyojak_signature_canvas = dialog.fields_dict.mukhisanyojak.$wrapper.find("canvas")[0];
 
-                const zonal_signature_data = zonal_signature_canvas ? zonal_signature_canvas.toDataURL("image/png") : "";
-                const mukhisanyojak_signature_data = mukhisanyojak_signature_canvas ? mukhisanyojak_signature_canvas.toDataURL("image/png") : "";
+//                 const zonal_signature_data = zonal_signature_canvas ? zonal_signature_canvas.toDataURL("image/png") : "";
+//                 const mukhisanyojak_signature_data = mukhisanyojak_signature_canvas ? mukhisanyojak_signature_canvas.toDataURL("image/png") : "";
 
-                update_html_table(zonal_signature_data, mukhisanyojak_signature_data);
-                dialog.hide();
-                frappe.call({
-                    method: "frappe.client.insert",
-                    args: {
-                        doc: {
-                            doctype: "Construction Committee Form",
-                            project: frm.doc.name,
-                            branch: values.branch,
-                            zone_no: values.zone_no,
-                            date: values.date,
-                            image: values.image,
-                            branch_bank_account_name: values.branch_bank_account_name,
-                            branch_bank_account_no: values.branch_bank_account_no,
-                            civil_engineerdraftsmanarchitect_name: values.civil_engineerdraftsmanarchitect_name,
-                            civil_engineerdraftsmanarchitect_no: values.civil_engineerdraftsmanarchitect_no,
-                            verified_by_zonal_incharge: zonal_signature_data,
-                            mukhisanyojak: mukhisanyojak_signature_data,
-                            name_of_the_committee_members: boq_rows.map(r => ({
-                                ...r,
-                                parentfield: "name_of_the_committee_members"
-                            }))
-                        }
-                    },
-                    callback(res) {
-                        if (!res.exc) {
-                            frappe.msgprint("Construction Committee Form successfully created.");
-                        }
-                    }
-                });
-            }
-        });
+//                 update_html_table(zonal_signature_data, mukhisanyojak_signature_data);
+//                 dialog.hide();
+//                 frappe.call({
+//                     method: "frappe.client.insert",
+//                     args: {
+//                         doc: {
+//                             doctype: "Construction Committee Form",
+//                             project: frm.doc.name,
+//                             branch: values.branch,
+//                             zone_no: values.zone_no,
+//                             date: values.date,
+//                             image: values.image,
+//                             branch_bank_account_name: values.branch_bank_account_name,
+//                             branch_bank_account_no: values.branch_bank_account_no,
+//                             civil_engineerdraftsmanarchitect_name: values.civil_engineerdraftsmanarchitect_name,
+//                             civil_engineerdraftsmanarchitect_no: values.civil_engineerdraftsmanarchitect_no,
+//                             verified_by_zonal_incharge: zonal_signature_data,
+//                             mukhisanyojak: mukhisanyojak_signature_data,
+//                             name_of_the_committee_members: boq_rows.map(r => ({
+//                                 ...r,
+//                                 parentfield: "name_of_the_committee_members"
+//                             }))
+//                         }
+//                     },
+//                     callback(res) {
+//                         if (!res.exc) {
+//                             frappe.msgprint("Construction Committee Form successfully created.");
+//                         }
+//                     }
+//                 });
+//             }
+//         });
 
-        function update_html_table(zonal_sig = "", mukhisig = "") {
-            let html = `
-                <table class="table table-bordered" style="margin-top:20px;">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Father's Name</th>
-                            <th>Age</th>
-                            <th>Education</th>
-                            <th>Occupation</th>
-                            <th>Address</th>
-                            <th>Signature</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>`;
+//         function update_html_table(zonal_sig = "", mukhisig = "") {
+//             let html = `
+//                 <table class="table table-bordered" style="margin-top:20px;">
+//                     <thead>
+//                         <tr>
+//                             <th>Name</th>
+//                             <th>Father's Name</th>
+//                             <th>Age</th>
+//                             <th>Education</th>
+//                             <th>Occupation</th>
+//                             <th>Address</th>
+//                             <th>Signature</th>
+//                             <th>Actions</th>
+//                         </tr>
+//                     </thead>
+//                     <tbody>`;
 
-            boq_rows.forEach((r, index) => {
-                html += `
-                    <tr>
-                        <td>${r.name1}</td>
-                        <td>${r.fathers_name}</td>
-                        <td>${r.age || ""}</td>
-                        <td>${r.education || ""}</td>
-                        <td>${r.occupation || ""}</td>
-                        <td>${r.address || ""}</td>
-                        <td><img src="${r.signature}" width="100"/></td>
-                        <td>
-                            <button class="btn btn-xs btn-danger" onclick="deleteRow(${index})">Delete</button>
-                        </td>
-                    </tr>`;
-            });
+//             boq_rows.forEach((r, index) => {
+//                 html += `
+//                     <tr>
+//                         <td>${r.name1}</td>
+//                         <td>${r.fathers_name}</td>
+//                         <td>${r.age || ""}</td>
+//                         <td>${r.education || ""}</td>
+//                         <td>${r.occupation || ""}</td>
+//                         <td>${r.address || ""}</td>
+//                         <td><img src="${r.signature}" width="100"/></td>
+//                         <td>
+//                             <button class="btn btn-xs btn-danger" onclick="deleteRow(${index})">Delete</button>
+//                         </td>
+//                     </tr>`;
+//             });
 
-            html += `</tbody></table>`;
+//             html += `</tbody></table>`;
 
-            if (zonal_sig || mukhisig) {
-                html += `<div style="margin-top:20px;">
-                    <strong>Verified by Zonal Incharge:</strong><br/>
-                    ${zonal_sig ? `<img src="${zonal_sig}" width="150"/>` : "N/A"}
-                    <br/><br/>
-                    <strong>Mukhisanyojak:</strong><br/>
-                    ${mukhisig ? `<img src="${mukhisig}" width="150"/>` : "N/A"}
-                </div>`;
-            }
+//             if (zonal_sig || mukhisig) {
+//                 html += `<div style="margin-top:20px;">
+//                     <strong>Verified by Zonal Incharge:</strong><br/>
+//                     ${zonal_sig ? `<img src="${zonal_sig}" width="150"/>` : "N/A"}
+//                     <br/><br/>
+//                     <strong>Mukhisanyojak:</strong><br/>
+//                     ${mukhisig ? `<img src="${mukhisig}" width="150"/>` : "N/A"}
+//                 </div>`;
+//             }
 
-            frm.set_value("custom_construction_committee_forms", html);
-            frm.refresh_field("custom_construction_committee_forms");
-        }
-        window.deleteRow = (index) => {
-            boq_rows.splice(index, 1);
-            update_html_table();
-        };
+//             frm.set_value("custom_construction_committee_forms", html);
+//             frm.refresh_field("custom_construction_committee_forms");
+//         }
+//         window.deleteRow = (index) => {
+//             boq_rows.splice(index, 1);
+//             update_html_table();
+//         };
 
-        dialog.show();
-    }
-});
+//         dialog.show();
+//     }
+// });
 // frappe.ui.form.on('Project', {
 //     	custom_add_sadh_sangat_info(frm) {
 //         const dialog = new frappe.ui.Dialog({
@@ -1158,6 +1158,79 @@ function customize_attach_field(frm) {
 //     }
 // });
 
+frappe.ui.form.on('Project', {
+    onload(frm) {
+        frm.no_timeline = true; 
+    },
+
+    refresh(frm) {
+        if (frm.timeline && frm.timeline.wrapper) {
+            frm.timeline.wrapper.hide();
+        }
+        if (frm.fields_dict.__connections__) {
+            frm.fields_dict.__connections__.wrapper.hide();
+        }
+    }
+});
+
+frappe.ui.form.on('Project', {
+    refresh: function(frm) {
+        frappe.after_ajax(() => {
+            setTimeout(() => {
+                if (frm.page.sidebar) {
+                    const sidebar = frm.page.sidebar;
+                    
+                    sidebar.find('.sidebar-menu a:contains("See on Website")').hide();
+                    sidebar.find('.form-stats-likes').hide();
+                    sidebar.find('.comment-icon').hide();
+                    sidebar.find('.ml-2').hide();
+                    sidebar.find('.modified-by').hide();
+                    sidebar.find('.mx-2').hide();
+                    sidebar.find('.created-by').hide();
+                    sidebar.find('.comments').hide();
+                    sidebar.find('.form-tags').hide();
+                    sidebar.find('.form-shared').hide();
+                    sidebar.find('.form-follow').hide();
+                    frm.page.wrapper.find(".comment-box").css({'display':'none'});
+                    $(".form-assignments").hide()
+                    frm.page.wrapper.find('.scroll-to-top btn btn-default icon-btn').css({'display':'none'})
+                    frm.page.wrapper.find('button.btn.btn-primary:visible').first().css({'display':'none'});
+                }   
+
+            }, 0); 
+        });
+    }
+});
 
 
+
+frappe.ui.form.on('Project',{
+    refresh:function(frm){
+        if (!frm.is_new()) {
+            rj_btn=frm.add_custom_button(__("Reject"), function () {
+
+});
+apr_btn=frm.add_custom_button(__("Approve"), function () {
+});
+            r_review_btn=frm.add_custom_button(__("Request For Review"), function () {
+});
+}
+        rj_btn.css({
+'background-color':'Red',
+'color':'White  ',
+'font-weight': 'bold'
+});
+        apr_btn.css({
+'background-color':'Green',
+'color':'White  ',
+'font-weight': 'bold'
+});
+        r_review_btn.css({
+'background-color':'DarkBlue',
+'color':'White  ',
+'font-weight': 'bold'
+});
+ 
+    }
+})
 

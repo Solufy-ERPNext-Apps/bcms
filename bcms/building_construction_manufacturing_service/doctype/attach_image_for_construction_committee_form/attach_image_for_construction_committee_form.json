@@ -1,36 +1,28 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-07-22 11:14:26.894210",
+ "creation": "2025-07-22 19:07:03.100672",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "recommendation_letter_section",
-  "recommendation_letter"
+  "attach_image_for_construction_committee_form"
  ],
  "fields": [
   {
-   "fieldname": "recommendation_letter",
+   "fieldname": "attach_image_for_construction_committee_form",
    "fieldtype": "Attach",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Recommendation Letter"
-  },
-  {
-   "fieldname": "recommendation_letter_section",
-   "fieldtype": "Section Break",
-   "label": "Recommendation Letter"
+   "label": "Attach Image for Construction Committee Form"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-22 17:51:52.410134",
+ "modified": "2025-07-22 19:07:18.661416",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
- "name": "Recommendation Letter",
+ "name": "Attach Image for Construction Committee Form",
  "owner": "Administrator",
  "permissions": [],
  "row_format": "Dynamic",

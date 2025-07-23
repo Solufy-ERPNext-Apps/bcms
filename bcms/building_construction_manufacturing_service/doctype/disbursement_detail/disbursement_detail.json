@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-22 17:00:28.212208",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "requested_amount",
+  "posted_on",
+  "approved_amount",
+  "current_state",
+  "requested_by",
+  "approved_on"
+ ],
+ "fields": [
+  {
+   "fieldname": "requested_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Requested Amount",
+   "mandatory_depends_on": "eval: doc.fieldname == \"requested_amount\";"
+  },
+  {
+   "fieldname": "approved_amount",
+   "fieldtype": "Data",
+   "label": "Approved Amount",
+   "mandatory_depends_on": "eval: doc.fieldname == \"approved_amount\";"
+  },
+  {
+   "fieldname": "current_state",
+   "fieldtype": "Data",
+   "label": "Current State",
+   "mandatory_depends_on": "eval: doc.fieldname == \"current_state\";"
+  },
+  {
+   "default": "__user",
+   "fieldname": "requested_by",
+   "fieldtype": "Link",
+   "label": "Requested by",
+   "mandatory_depends_on": "eval: doc.fieldname == \"requested_by\";",
+   "options": "Employee"
+  },
+  {
+   "default": "__today",
+   "fieldname": "posted_on",
+   "fieldtype": "Date",
+   "label": "Posting Date",
+   "mandatory_depends_on": "eval: doc.fieldname == \"posted_on\";"
+  },
+  {
+   "fieldname": "approved_on",
+   "fieldtype": "Date",
+   "label": "Approved On",
+   "mandatory_depends_on": "eval: doc.fieldname == \"approved_on\";"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-22 17:52:09.940375",
+ "modified_by": "Administrator",
+ "module": "Building Construction Manufacturing Service",
+ "name": "Disbursement Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

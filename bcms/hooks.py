@@ -247,3 +247,6 @@ doc_events = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+override_doctype_dashboards = {
+"Project": "bcms.building_construction_manufacturing_service.customization.project.project_dashboard.get_data"
+}

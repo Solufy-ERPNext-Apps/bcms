@@ -9,6 +9,7 @@
   "project_type",
   "requested_by",
   "zone",
+  "zone_abbreviation",
   "zonal_incharge_name",
   "zone_email",
   "posting_date",
@@ -17,6 +18,8 @@
   "attachments",
   "description",
   "column_break_btdk",
+  "branch",
+  "branch_abbreviation",
   "state",
   "khetra",
   "unit",
@@ -113,7 +116,8 @@
    "fieldname": "zone",
    "fieldtype": "Link",
    "label": "Zone",
-   "options": "Zone"
+   "options": "Zone",
+   "reqd": 1
   },
   {
    "fieldname": "zonal_incharge_name",
@@ -200,12 +204,33 @@
    "fieldtype": "Data",
    "label": "Member incharge Email",
    "options": "Email"
+  },
+  {
+   "fetch_from": "zone.abbreviation",
+   "fieldname": "zone_abbreviation",
+   "fieldtype": "Data",
+   "label": "Zone Abbreviation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "branch.custom_abbreviation",
+   "fieldname": "branch_abbreviation",
+   "fieldtype": "Data",
+   "label": "Branch Abbreviation",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-15 18:14:05.749529",
+ "modified": "2025-07-22 16:22:10.576969",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Project Request",

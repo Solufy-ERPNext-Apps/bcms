@@ -34,24 +34,24 @@ def validate_pro(doc, method=None):
 	elif doc.workflow_state == "Work Completion Started" and not doc.custom_work_completion_certificate:
 		frappe.throw("Please Attach Fund Transfer Completed")
 
-@frappe.whitelist()
-def create_or_update_land_details_doc(data):
-	import json
-	if isinstance(data, str):
-		data = json.loads(data)
+# @frappe.whitelist()
+# def create_or_update_land_details_doc(data):
+# 	import json
+# 	if isinstance(data, str):
+# 		data = json.loads(data)
 
-	docname = data.get('docname')
+# 	docname = data.get('docname')
 
-	if docname:
-		doc = frappe.get_doc("Land Details", docname)
-		doc.update(data)
-		doc.save()
-	else:
-		doc = frappe.new_doc("Land Details")
-		doc.update(data)
-		doc.insert()
-	return {
-		"name": doc.name,
-		"doctype": doc.doctype
-	}
+# 	if docname:
+# 		doc = frappe.get_doc("Land Details", docname)
+# 		doc.update(data)
+# 		doc.save()
+# 	else:
+# 		doc = frappe.new_doc("Land Details")
+# 		doc.update(data)
+# 		doc.insert()
+# 	return {
+# 		"name": doc.name,
+# 		"doctype": doc.doctype
+# 	}
 
