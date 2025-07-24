@@ -12,24 +12,6 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-07-21 18:31:01.469525",
-  "name": "Member Incharge A&F(Financial Approval)",
-  "style": "",
-  "workflow_state_name": "Member Incharge A&F(Financial Approval)"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
-  "modified": "2025-07-21 19:04:58.788286",
-  "name": "100% Fund Transfer",
-  "style": "",
-  "workflow_state_name": "100% Fund Transfer"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
   "modified": "2025-07-21 19:12:08.790890",
   "name": "Fund Transfer Notification",
   "style": "",
@@ -273,15 +255,6 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-07-11 14:55:17.102275",
-  "name": "Construction Committee Formed",
-  "style": "",
-  "workflow_state_name": "Construction Committee Formed"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
   "modified": "2025-07-11 15:53:12.707384",
   "name": "Rejected Recommendation",
   "style": "",
@@ -331,15 +304,6 @@
   "name": "Sent to Finance Approval",
   "style": "",
   "workflow_state_name": "Sent to Finance Approval"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
-  "modified": "2025-07-11 18:19:42.222601",
-  "name": "Drawing Approval",
-  "style": "",
-  "workflow_state_name": "Drawing Approval"
  },
  {
   "docstatus": 0,
@@ -502,15 +466,6 @@
   "name": "Approved",
   "style": "Success",
   "workflow_state_name": "Approved"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
-  "modified": "2025-07-11 15:21:14.848412",
-  "name": "Work Completed",
-  "style": "",
-  "workflow_state_name": "Work Completed"
  },
  {
   "docstatus": 0,
@@ -705,15 +660,6 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-07-21 18:57:23.783507",
-  "name": "Financial Approval",
-  "style": "",
-  "workflow_state_name": "Financial Approval"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
   "modified": "2025-07-21 19:00:35.769704",
   "name": "Work completion Certificate",
   "style": "",
@@ -750,24 +696,6 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-07-21 18:28:04.591626",
-  "name": "Member Incharge (Financial Approval)",
-  "style": "",
-  "workflow_state_name": "Member Incharge (Financial Approval)"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
-  "modified": "2025-07-21 19:04:28.072612",
-  "name": "Start of Sub Process for Fund Transfer",
-  "style": "",
-  "workflow_state_name": "Start of Sub Process for Fund Transfer"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
   "modified": "2025-07-21 19:11:11.034075",
   "name": "Member Incharge Account & Finance",
   "style": "",
@@ -786,15 +714,6 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-07-21 18:30:09.671539",
-  "name": "Secretary (Financial Approval)",
-  "style": "",
-  "workflow_state_name": "Secretary (Financial Approval)"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
   "modified": "2025-07-19 15:37:10.734469",
   "name": "Financial Approved By HQ",
   "style": "",
@@ -804,10 +723,37 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-07-21 18:15:17.166571",
-  "name": "Land Clearance",
+  "modified": "2025-07-22 15:13:43.367791",
+  "name": "Under Disbursement",
   "style": "",
-  "workflow_state_name": "Land Clearance"
+  "workflow_state_name": "Under Disbursement"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-11 14:55:17.102275",
+  "name": "Construction Committee Formed",
+  "style": "",
+  "workflow_state_name": "Construction Committee Formed"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-11 15:21:14.848412",
+  "name": "Work Completed",
+  "style": "",
+  "workflow_state_name": "Work Completed"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-21 18:30:09.671539",
+  "name": "Secretary (Financial Approval)",
+  "style": "",
+  "workflow_state_name": "Secretary (Financial Approval)"
  },
  {
   "docstatus": 0,
@@ -822,9 +768,72 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-07-21 18:15:52.857598",
-  "name": "Planning & Designing",
+  "modified": "2025-07-21 19:04:58.788286",
+  "name": "100% Fund Transfer",
   "style": "",
+  "workflow_state_name": "100% Fund Transfer"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-21 18:28:04.591626",
+  "name": "Member Incharge (Financial Approval)",
+  "style": "",
+  "workflow_state_name": "Member Incharge (Financial Approval)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-21 19:04:28.072612",
+  "name": "Start of Sub Process for Fund Transfer",
+  "style": "",
+  "workflow_state_name": "Start of Sub Process for Fund Transfer"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-21 18:15:17.166571",
+  "name": "Land Clearance",
+  "style": "",
+  "workflow_state_name": "Land Clearance"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-22 16:34:02.053991",
+  "name": "Planning & Designing",
+  "style": "Primary",
   "workflow_state_name": "Planning & Designing"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-11 18:19:42.222601",
+  "name": "Drawing Approval",
+  "style": "",
+  "workflow_state_name": "Drawing Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-21 18:31:01.469525",
+  "name": "Member Incharge A&F(Financial Approval)",
+  "style": "",
+  "workflow_state_name": "Member Incharge A&F(Financial Approval)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-21 18:57:23.783507",
+  "name": "Financial Approval",
+  "style": "",
+  "workflow_state_name": "Financial Approval"
  }
 ]

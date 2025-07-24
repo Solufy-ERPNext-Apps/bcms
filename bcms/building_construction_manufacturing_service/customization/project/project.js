@@ -1234,3 +1234,18 @@ apr_btn=frm.add_custom_button(__("Approve"), function () {
     }
 })
 
+
+
+frappe.ui.form.on('Project', {
+    branch: function(frm) {
+        if (frm.doc.branch) {
+            frappe.db.get_doc('Branch', frm.doc.branch).then(function(doc) {
+                frm.set_value('custom_branch', doc.branch);
+                frm.set_value('custom_state', doc.state);
+                frm.set_value('custom_zone_no', doc.zone);
+                frm.set_value('custom_district', doc.district);
+                frm.set_value('custom_branch_code', doc.branch_code);
+            });
+        }
+    }
+});
