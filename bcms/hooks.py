@@ -10,7 +10,7 @@ app_license = "mit"
 
 # required_apps = []
 # after_migrate = "bcms.migrate.after_migrate"
-fixtures=["Workflow","Dashboard","Workspace","Workflow Action Master","Workflow State","Website Theme","Role",{"dt": "Custom Field", "filters": [["module", "in", ["Building Construction Manufacturing Service"]]]},]
+fixtures=["Workflow","Dashboard","Workspace","Workflow Action Master","Workflow State","Website Theme","Role",]
 
 add_to_apps_screen = [
 	{
@@ -142,7 +142,6 @@ doctype_js = {"Land Purchase" : "public/js/land_purchase.js",
 
 doc_events = {
 	"Project": {
-        "before_save":"bcms.building_construction_manufacturing_service.customization.project.project.validate_pro"
 # 		# "on_update": "method",
 # 		# "on_cancel": "method",
 # 		# "on_trash": "method"
