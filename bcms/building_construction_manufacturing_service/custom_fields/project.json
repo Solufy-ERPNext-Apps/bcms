@@ -2,6 +2,14 @@
  "Project": [
   {
    "dt": "Project",
+   "fieldname": "custom_boqestimate_form",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_boq_estimate11",
+   "label": "BOQ/Estimate Form",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
    "fieldname": "custom_additional_request_details",
    "fieldtype": "Table",
    "insert_after": "custom_disbursement_detail",
@@ -545,14 +553,6 @@
    "label": "Suggested by Member Incharge (PP)",
    "module": "Building Construction Manufacturing Service",
    "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge (Financial Approval)\""
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_boqestimate_form",
-   "fieldtype": "Section Break",
-   "insert_after": "custom_boq_estimate11",
-   "label": "BOQ/Estimate Form",
-   "module": "Building Construction Manufacturing Service"
   },
   {
    "dt": "Project",
