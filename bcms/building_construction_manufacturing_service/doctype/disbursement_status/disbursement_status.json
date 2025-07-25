@@ -7,7 +7,11 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "disbursement_status"
+  "total_allocated_amount",
+  "disbursement_amount",
+  "remaining_amount",
+  "project_allocated_amount",
+  "addition_require_amount"
  ],
  "fields": [
   {
@@ -20,7 +24,10 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
+
  "modified": "2025-07-24 13:09:58.643512",
+
+
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Disbursement Status",
