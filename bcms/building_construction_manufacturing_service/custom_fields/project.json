@@ -2,6 +2,65 @@
  "Project": [
   {
    "dt": "Project",
+   "fieldname": "custom_boqestimate_form",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_boq_estimate11",
+   "label": "BOQ/Estimate Form",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_additional_request_details",
+   "fieldtype": "Table",
+   "insert_after": "custom_disbursement_detail",
+   "label": "Additional Request Details",
+   "module": "Building Construction Manufacturing Service",
+   "options": "Additional Request Details"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_disbursement_information",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_disbursement",
+   "label": "Disbursement Information",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_disbursement_detail",
+   "fieldtype": "Table",
+   "insert_after": "custom_disbursement_information",
+   "label": "Disbursement Detail",
+   "module": "Building Construction Manufacturing Service",
+   "options": "Disbursement Detail"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_disbursement_status",
+   "fieldtype": "Link",
+   "insert_after": "custom_section_break_xztpe",
+   "label": "Disbursement Status",
+   "module": "Building Construction Manufacturing Service",
+   "options": "Disbursement Status"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_section_break_xztpe",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_remaining_amount",
+   "label": "Disbursement Status",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_project_allocated_amount",
+   "fieldtype": "Currency",
+   "insert_after": "custom_additional_require_amount",
+   "label": "Project Allocated Amount",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
    "fieldname": "custom_section_break_4etbj",
    "fieldtype": "Section Break",
    "insert_after": "sales_order",
@@ -246,26 +305,9 @@
   },
   {
    "dt": "Project",
-   "fieldname": "custom_additional_require_status11",
-   "fieldtype": "Table",
-   "insert_after": "custom_section_break_tjrrb",
-   "label": "Additional Require Status",
-   "module": "Building Construction Manufacturing Service",
-   "options": "Additional Require Status"
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_section_break_tjrrb",
-   "fieldtype": "Section Break",
-   "insert_after": "custom_disbursement_status1",
-   "label": "Additional Require Status",
-   "module": "Building Construction Manufacturing Service"
-  },
-  {
-   "dt": "Project",
    "fieldname": "custom_additional_require_amount",
    "fieldtype": "Currency",
-   "insert_after": "custom_column_break_nnjnj",
+   "insert_after": "custom_total_allocated_amount",
    "label": "Additional Require Amount",
    "module": "Building Construction Manufacturing Service"
   },
@@ -273,24 +315,7 @@
    "dt": "Project",
    "fieldname": "custom_column_break_nnjnj",
    "fieldtype": "Column Break",
-   "insert_after": "custom_remaining_amount",
-   "module": "Building Construction Manufacturing Service"
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_disbursement_status1",
-   "fieldtype": "Table",
-   "insert_after": "custom_disbursement_statuss",
-   "label": "Disbursement Status",
-   "module": "Building Construction Manufacturing Service",
-   "options": "Disbursement Status"
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_disbursement_statuss",
-   "fieldtype": "Section Break",
-   "insert_after": "custom_disbursement",
-   "label": "Disbursement Status",
+   "insert_after": "custom_project_allocated_amount",
    "module": "Building Construction Manufacturing Service"
   },
   {
@@ -409,7 +434,7 @@
    "dt": "Project",
    "fieldname": "custom_disbursement_amount",
    "fieldtype": "Currency",
-   "insert_after": "custom_total_allocated_amount",
+   "insert_after": "custom_column_break_nnjnj",
    "label": "Disbursement Amount",
    "module": "Building Construction Manufacturing Service"
   },
@@ -425,7 +450,7 @@
    "dt": "Project",
    "fieldname": "custom_disbursement_details",
    "fieldtype": "Section Break",
-   "insert_after": "custom_additional_require_status11",
+   "insert_after": "custom_additional_request_details",
    "label": "Disbursement Detail's",
    "module": "Building Construction Manufacturing Service"
   },
@@ -528,14 +553,6 @@
    "label": "Suggested by Member Incharge (PP)",
    "module": "Building Construction Manufacturing Service",
    "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge (Financial Approval)\""
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_boqestimate_form",
-   "fieldtype": "Section Break",
-   "insert_after": "custom_boq_estimate11",
-   "label": "BOQ/Estimate Form",
-   "module": "Building Construction Manufacturing Service"
   },
   {
    "dt": "Project",
@@ -1005,7 +1022,7 @@
    "dt": "Project",
    "fieldname": "custom_work_completions",
    "fieldtype": "Tab Break",
-   "insert_after": "custom_additional_require_amount",
+   "insert_after": "custom_disbursement_status",
    "label": "Work Completion",
    "module": "Building Construction Manufacturing Service"
   },

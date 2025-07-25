@@ -7,34 +7,21 @@
  "engine": "InnoDB",
  "field_order": [
   "project_type",
-  "requested_by",
   "zone",
   "zone_abbreviation",
   "zonal_incharge_name",
-  "zone_email",
-  "posting_date",
-  "member_inchargepp",
-  "pp_email",
-  "attachments",
-  "description",
+  "zonal_incharge_mobile_no",
+  "location",
   "column_break_btdk",
+  "posting_date",
+  "requested_by",
   "branch",
   "branch_abbreviation",
-  "state",
-  "khetra",
-  "unit",
-  "location",
-  "member_incharge",
-  "member_incharge_name",
-  "member_incharge_email",
-  "estimated_budget",
+  "branch_mukhisanyojak_name",
   "workflow_state",
-  "member_inchargebcm",
-  "bcm_email",
-  "member_inchargehq",
-  "secratoryhq",
-  "member_inchargefinance",
-  "finance"
+  "section_break_upv2",
+  "description",
+  "estimated_budget"
  ],
  "fields": [
   {
@@ -63,17 +50,12 @@
   {
    "fieldname": "estimated_budget",
    "fieldtype": "Currency",
-   "label": "Estimated Budget\t"
+   "label": "Estimated Amount"
   },
   {
    "fieldname": "description",
    "fieldtype": "Small Text",
    "label": "Description"
-  },
-  {
-   "fieldname": "attachments",
-   "fieldtype": "Attach",
-   "label": "Attachments\t"
   },
   {
    "fieldname": "column_break_btdk",
@@ -88,29 +70,8 @@
   },
   {
    "fieldname": "posting_date",
-   "fieldtype": "Date",
-   "label": "Posting Date"
-  },
-  {
-   "fieldname": "state",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "State",
-   "options": "State"
-  },
-  {
-   "fieldname": "unit",
-   "fieldtype": "Link",
-   "in_standard_filter": 1,
-   "label": "Unit",
-   "options": "Unit"
-  },
-  {
-   "fieldname": "khetra",
-   "fieldtype": "Link",
-   "label": "Khetra",
-   "options": "Khetra"
+   "fieldtype": "Datetime",
+   "label": "Posting Date & Time"
   },
   {
    "fieldname": "zone",
@@ -124,86 +85,6 @@
    "fieldtype": "Data",
    "label": "Zonal Incharge Name",
    "link_filters": "[[\"User\",\"role\",\"=\",\"PP\"]]"
-  },
-  {
-   "fieldname": "zone_email",
-   "fieldtype": "Data",
-   "label": "Zone Email"
-  },
-  {
-   "fetch_from": "member_inchargepp.email",
-   "fieldname": "pp_email",
-   "fieldtype": "Data",
-   "label": "PP Email",
-   "link_filters": "[[\"User\",\"role\",\"=\",\"PP\"]]",
-   "options": "Email"
-  },
-  {
-   "fieldname": "bcm_email",
-   "fieldtype": "Link",
-   "hidden": 1,
-   "label": "BCM Email",
-   "link_filters": "[[\"User\",\"role\",\"=\",\"BCM\"]]",
-   "options": "User"
-  },
-  {
-   "fieldname": "secratoryhq",
-   "fieldtype": "Link",
-   "hidden": 1,
-   "label": " secratory(HQ)",
-   "options": "User"
-  },
-  {
-   "fieldname": "finance",
-   "fieldtype": "Link",
-   "hidden": 1,
-   "label": "Finance",
-   "options": "User"
-  },
-  {
-   "fieldname": "member_inchargepp",
-   "fieldtype": "Link",
-   "hidden": 1,
-   "label": "Member Incharge(PP)",
-   "options": "User"
-  },
-  {
-   "depends_on": "eval:doc.workflow_state == \"Draft\" || doc.workflow_state == \"Approved By PP\"",
-   "fieldname": "member_inchargebcm",
-   "fieldtype": "Link",
-   "hidden": 1,
-   "label": "Member Incharge(BCM)",
-   "options": "User"
-  },
-  {
-   "fieldname": "member_inchargehq",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "label": "Member Incharge(HQ)"
-  },
-  {
-   "fieldname": "member_inchargefinance",
-   "fieldtype": "Link",
-   "hidden": 1,
-   "label": "Member Incharge(Finance)",
-   "options": "User"
-  },
-  {
-   "fieldname": "member_incharge",
-   "fieldtype": "Link",
-   "label": "Member Incharge",
-   "options": "Employee"
-  },
-  {
-   "fieldname": "member_incharge_name",
-   "fieldtype": "Data",
-   "label": "Member Incharge Name"
-  },
-  {
-   "fieldname": "member_incharge_email",
-   "fieldtype": "Data",
-   "label": "Member incharge Email",
-   "options": "Email"
   },
   {
    "fetch_from": "zone.abbreviation",
@@ -225,12 +106,27 @@
    "fieldtype": "Data",
    "label": "Branch Abbreviation",
    "reqd": 1
+  },
+  {
+   "fieldname": "zonal_incharge_mobile_no",
+   "fieldtype": "Phone",
+   "label": "Zonal Incharge Mobile No"
+  },
+  {
+   "fieldname": "section_break_upv2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "branch_mukhisanyojak_name",
+   "fieldtype": "Link",
+   "label": "Branch Mukhi/Sanyojak Name",
+   "options": "User"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-22 16:22:10.576969",
+ "modified": "2025-07-25 16:53:32.705820",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Project Request",

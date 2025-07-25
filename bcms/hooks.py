@@ -12,7 +12,6 @@ app_license = "mit"
 # after_migrate = "bcms.migrate.after_migrate"
 fixtures=["Workflow","Dashboard","Workspace","Workflow Action Master","Workflow State","Website Theme","Role",{"dt": "Custom Field", "filters": [["module", "in", ["Building Construction Manufacturing Service"]]]},]
 
-# Each item in the list will be shown as an app in the apps page
 add_to_apps_screen = [
 	{
 		"name": "bcms",
