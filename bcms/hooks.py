@@ -147,7 +147,11 @@ doc_events = {
 # 		# "on_update": "method",
 # 		# "on_cancel": "method",
 # 		# "on_trash": "method"
-	}
+	},
+	"User": {
+        "after_insert": "bcms.building_construction_manufacturing_service.customization.project.user.enqueue_user_permission",
+        "on_update": "bcms.building_construction_manufacturing_service.customization.project.user.enqueue_user_permission"
+    }
 }
 
 # Scheduled Tasks
