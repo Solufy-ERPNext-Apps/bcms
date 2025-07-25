@@ -2,6 +2,107 @@
  "Project": [
   {
    "dt": "Project",
+   "fieldname": "custom_section_break_4etbj",
+   "fieldtype": "Section Break",
+   "insert_after": "sales_order",
+   "is_system_generated": 1,
+   "label": "Project Deatils",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_project_manager",
+   "fieldtype": "Link",
+   "insert_after": "custom_section_break_4etbj",
+   "is_system_generated": 1,
+   "label": "Project Manager",
+   "module": "Building Construction Manufacturing Service",
+   "options": "User"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_vmrvs",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_remaining_total_hrs",
+   "is_system_generated": 1,
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_based_on_hrs_package",
+   "fieldtype": "Check",
+   "insert_after": "custom_column_break_vmrvs",
+   "is_system_generated": 1,
+   "label": "Based on Hrs Package",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_resources_based_project",
+   "fieldtype": "Check",
+   "insert_after": "custom_based_on_hrs_package",
+   "is_system_generated": 1,
+   "label": "Resources Based Project",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_is_under_amc",
+   "fieldtype": "Check",
+   "insert_after": "custom_resources_based_project",
+   "is_system_generated": 1,
+   "label": "Is Under AMC",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_renewal_date",
+   "fieldtype": "Date",
+   "insert_after": "custom_is_under_amc",
+   "is_system_generated": 1,
+   "label": "Renewal Date",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_key_person_email",
+   "fieldtype": "Data",
+   "insert_after": "custom_renewal_date",
+   "is_system_generated": 1,
+   "label": "Key Person Email",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_project_allocation_total_hrs",
+   "fieldtype": "Float",
+   "insert_after": "custom_project_manager",
+   "is_system_generated": 1,
+   "label": "Project Allocation Total Hrs",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_supported_total_hrs",
+   "fieldtype": "Float",
+   "insert_after": "custom_project_allocation_total_hrs",
+   "is_system_generated": 1,
+   "label": "Supported Total Hrs",
+   "module": "Building Construction Manufacturing Service",
+   "read_only": 1
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_remaining_total_hrs",
+   "fieldtype": "Float",
+   "insert_after": "custom_supported_total_hrs",
+   "is_system_generated": 1,
+   "label": "Remaining Total Hrs",
+   "module": "Building Construction Manufacturing Service",
+   "read_only": 1
+  },
+  {
+   "dt": "Project",
    "fieldname": "custom_column_break_an6cx",
    "fieldtype": "Column Break",
    "insert_after": "project_type",
@@ -164,7 +265,7 @@
    "dt": "Project",
    "fieldname": "custom_additional_require_amount",
    "fieldtype": "Currency",
-   "insert_after": "custom_remaining_amount",
+   "insert_after": "custom_column_break_nnjnj",
    "label": "Additional Require Amount",
    "module": "Building Construction Manufacturing Service"
   },
@@ -172,7 +273,7 @@
    "dt": "Project",
    "fieldname": "custom_column_break_nnjnj",
    "fieldtype": "Column Break",
-   "insert_after": "custom_disbursement_amount",
+   "insert_after": "custom_remaining_amount",
    "module": "Building Construction Manufacturing Service"
   },
   {
@@ -300,7 +401,7 @@
    "dt": "Project",
    "fieldname": "custom_remaining_amount",
    "fieldtype": "Currency",
-   "insert_after": "custom_column_break_nnjnj",
+   "insert_after": "custom_disbursement_amount",
    "label": "Remaining Amount",
    "module": "Building Construction Manufacturing Service"
   },
