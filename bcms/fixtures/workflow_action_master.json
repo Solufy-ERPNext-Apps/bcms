@@ -618,13 +618,6 @@
  {
   "docstatus": 0,
   "doctype": "Workflow Action Master",
-  "modified": "2025-07-22 15:43:59.873402",
-  "name": "Approved by Secretary",
-  "workflow_action_name": "Approved by Secretary"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow Action Master",
   "modified": "2025-07-21 23:16:58.703483",
   "name": "Drawing Approvaled",
   "workflow_action_name": "Drawing Approvaled"
@@ -653,13 +646,6 @@
  {
   "docstatus": 0,
   "doctype": "Workflow Action Master",
-  "modified": "2025-07-11 15:13:16.134313",
-  "name": "Financial Approval",
-  "workflow_action_name": "Financial Approval"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow Action Master",
   "modified": "2025-07-11 15:18:44.666639",
   "name": "Confirm Fund Transfer",
   "workflow_action_name": "Confirm Fund Transfer"
@@ -677,6 +663,20 @@
   "modified": "2025-07-11 16:32:49.088900",
   "name": "Approve Recommendation",
   "workflow_action_name": "Approve Recommendation"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-22 15:43:59.873402",
+  "name": "Approved by Secretary",
+  "workflow_action_name": "Approved by Secretary"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-11 15:13:16.134313",
+  "name": "Financial Approval",
+  "workflow_action_name": "Financial Approval"
  },
  {
   "docstatus": 0,

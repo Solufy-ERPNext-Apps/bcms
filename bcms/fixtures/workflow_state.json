@@ -759,15 +759,6 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-07-21 17:49:34.369262",
-  "name": "Project Request",
-  "style": "",
-  "workflow_state_name": "Project Request"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
   "modified": "2025-07-21 19:04:58.788286",
   "name": "100% Fund Transfer",
   "style": "",
@@ -795,15 +786,6 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-07-21 18:15:17.166571",
-  "name": "Land Clearance",
-  "style": "",
-  "workflow_state_name": "Land Clearance"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
   "modified": "2025-07-22 16:34:02.053991",
   "name": "Planning & Designing",
   "style": "Primary",
@@ -822,18 +804,36 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-07-21 18:31:01.469525",
-  "name": "Member Incharge A&F(Financial Approval)",
+  "modified": "2025-07-21 18:57:23.783507",
+  "name": "Financial Approval",
   "style": "",
-  "workflow_state_name": "Member Incharge A&F(Financial Approval)"
+  "workflow_state_name": "Financial Approval"
  },
  {
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-07-21 18:57:23.783507",
-  "name": "Financial Approval",
+  "modified": "2025-07-21 17:49:34.369262",
+  "name": "Project Request",
   "style": "",
-  "workflow_state_name": "Financial Approval"
+  "workflow_state_name": "Project Request"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-21 18:15:17.166571",
+  "name": "Land Clearance",
+  "style": "",
+  "workflow_state_name": "Land Clearance"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-21 18:31:01.469525",
+  "name": "Member Incharge A&F(Financial Approval)",
+  "style": "",
+  "workflow_state_name": "Member Incharge A&F(Financial Approval)"
  }
 ]
