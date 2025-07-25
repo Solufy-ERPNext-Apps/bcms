@@ -57,13 +57,15 @@
   },
   {
    "fieldname": "bank_name",
-   "fieldtype": "Data",
-   "label": "Bank Name\t"
+   "fieldtype": "Link",
+   "label": "Bank Name\t",
+   "options": "Bank"
   },
   {
    "fieldname": "bank_account_no",
-   "fieldtype": "Data",
-   "label": "Bank Account No\t"
+   "fieldtype": "Link",
+   "label": "Bank Account No\t",
+   "options": "Bank"
   },
   {
    "fieldname": "ifsc_code",
@@ -172,7 +174,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-07-22 10:25:55.198777",
+ "modified": "2025-07-23 16:15:24.582794",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Disbursement",

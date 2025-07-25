@@ -2,163 +2,27 @@
  "Project": [
   {
    "dt": "Project",
-   "fieldname": "custom_attach_image_of_work_completion_certificate",
+   "fieldname": "custom_additional_request_details",
    "fieldtype": "Table",
-   "insert_after": "custom_work_completion",
-   "label": "Attach Image of Work Completion Certificate",
+   "insert_after": "custom_disbursement_detail",
+   "label": "Additional Request Details",
    "module": "Building Construction Manufacturing Service",
-   "options": "Attach Image of Work Completion Certificate"
-  },
-  {
-   "depends_on": "eval:doc.custom_is_form_committee",
-   "dt": "Project",
-   "fieldname": "custom_attach_image_for_construction_committee_form",
-   "fieldtype": "Table",
-   "insert_after": "custom_is_form_committee",
-   "label": "Attach Image for Construction Committee Form",
-   "module": "Building Construction Manufacturing Service",
-   "options": "Attach Image for Construction Committee Form"
-  },
-  {
-   "depends_on": "eval:doc.custom_is_form_financial",
-   "dt": "Project",
-   "fieldname": "custom_attach_image_for_financial_approval_form",
-   "fieldtype": "Table",
-   "insert_after": "custom_is_form_financial",
-   "label": "Attach Image for Financial Approval Form",
-   "module": "Building Construction Manufacturing Service",
-   "options": "Attach Image for Financial Approval Form"
+   "options": "Additional Request Details"
   },
   {
    "dt": "Project",
-   "fieldname": "custom_attach_image_for_govt_approved_drawing_file",
-   "fieldtype": "Table",
-   "insert_after": "custom_attach_image_for_govt_approval_letter",
-   "label": "Attach Image for Govt. Approved Drawing File",
-   "module": "Building Construction Manufacturing Service",
-   "options": "Attach Image for Govt Drawing File"
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_attach_image_for_govt_approval_letter",
-   "fieldtype": "Table",
-   "insert_after": "custom_drawing_approval_procedure",
-   "label": "Attach Image for Govt. Approval Letter",
-   "module": "Building Construction Manufacturing Service",
-   "options": "Attach Image for Govt Approval"
-  },
-  {
-   "depends_on": "eval:doc.custom_is_form_boq",
-   "dt": "Project",
-   "fieldname": "custom_attach_image_for_boq_estimate",
-   "fieldtype": "Table",
-   "insert_after": "custom_section_break_hkqxb",
-   "label": "Attach Image for BOQ/ Estimate",
-   "module": "Building Construction Manufacturing Service",
-   "options": "Attach Image for BOQ"
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_section_break_hkqxb",
-   "fieldtype": "Section Break",
-   "insert_after": "custom_column_break_eg4wq",
-   "module": "Building Construction Manufacturing Service"
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_attach_image_for_drawing",
-   "fieldtype": "Table",
-   "insert_after": "custom_section_break_jkqbs",
-   "label": "Attach Image for Drawing",
-   "module": "Building Construction Manufacturing Service",
-   "options": "Attach Image for Drawing"
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_section_break_jkqbs",
-   "fieldtype": "Section Break",
-   "insert_after": "custom_attach_image_for_drawing_file_all_blocks",
-   "module": "Building Construction Manufacturing Service"
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_attach_image_for_drawing_file_all_blocks",
-   "fieldtype": "Table",
-   "insert_after": "custom_section_break_zbnzw",
-   "label": "Attach Image for Drawing File (All Blocks)",
-   "module": "Building Construction Manufacturing Service",
-   "options": "Drawing Covering Letter"
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_section_break_zbnzw",
-   "fieldtype": "Section Break",
-   "insert_after": "custom_attach_image_for_standard_planning__designing",
-   "module": "Building Construction Manufacturing Service"
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_attach_image_for_standard_planning__designing",
-   "fieldtype": "Table",
-   "insert_after": "custom_section_break_iocmq",
-   "label": "Attach Image for Standard Planning & Designing",
-   "module": "Building Construction Manufacturing Service",
-   "options": "Standard Planning and Designing"
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_section_break_iocmq",
-   "fieldtype": "Section Break",
-   "insert_after": "custom_boq_estimates",
-   "module": "Building Construction Manufacturing Service"
-  },
-  {
-   "depends_on": "eval:doc.custom_is_form_financial",
-   "dt": "Project",
-   "fieldname": "custom_attach_image_",
-   "fieldtype": "Table",
-   "insert_after": "custom_section_break_so7gy",
-   "label": "Attach Image For Land Details",
-   "module": "Building Construction Manufacturing Service",
-   "options": "Land Details Attach"
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_section_break_so7gy",
-   "fieldtype": "Section Break",
-   "insert_after": "custom_column_break_r9goc",
-   "module": "Building Construction Manufacturing Service"
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_remark",
-   "fieldtype": "Small Text",
-   "insert_after": "custom_remarks",
-   "label": "Remark",
-   "module": "Building Construction Manufacturing Service"
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_remarks",
-   "fieldtype": "Section Break",
-   "insert_after": "custom_recommendation_of_members",
-   "label": "Remark",
-   "module": "Building Construction Manufacturing Service"
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_disbursement_statusss",
-   "fieldtype": "Table",
-   "insert_after": "custom_disbursement_status_deatils",
+   "fieldname": "custom_disbursement_status",
+   "fieldtype": "Link",
+   "insert_after": "custom_section_break_dkbjm",
    "label": "Disbursement Status",
    "module": "Building Construction Manufacturing Service",
    "options": "Disbursement Status"
   },
   {
    "dt": "Project",
-   "fieldname": "custom_disbursement_status_deatils",
+   "fieldname": "custom_section_break_dkbjm",
    "fieldtype": "Section Break",
-   "insert_after": "custom_disbursement",
+   "insert_after": "custom_remaining_amount",
    "label": "Disbursement Status",
    "module": "Building Construction Manufacturing Service"
   },
@@ -166,30 +30,285 @@
    "dt": "Project",
    "fieldname": "custom_project_allocated_amount",
    "fieldtype": "Currency",
-   "insert_after": "custom_remaining_amount",
+   "insert_after": "custom_total_allocated_amount",
    "label": "Project Allocated Amount",
    "module": "Building Construction Manufacturing Service"
   },
   {
    "dt": "Project",
-   "fieldname": "custom_column_break_xjfj7",
-   "fieldtype": "Column Break",
-   "insert_after": "custom_additional_request_amount",
+   "fieldname": "custom_disbursement_detail",
+   "fieldtype": "Table",
+   "insert_after": "custom_disbursement_information",
+   "label": "Disbursement Detail",
+   "module": "Building Construction Manufacturing Service",
+   "options": "Disbursement Detail"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_disbursement_information",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_disbursement",
+   "label": "Disbursement Information",
    "module": "Building Construction Manufacturing Service"
   },
   {
    "dt": "Project",
-   "fieldname": "custom_additional_request_amount",
-   "fieldtype": "Currency",
-   "insert_after": "custom_disbursement_amount",
-   "label": "Additional request Amount",
+   "fieldname": "custom_column_break_an6cx",
+   "fieldtype": "Column Break",
+   "insert_after": "project_type",
    "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_details_data",
+   "fieldtype": "Tab Break",
+   "hidden": 1,
+   "label": "Details data",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_details",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_recommendation_letter_and_sites_plansss",
+   "label": "Details",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_attach_image_for_work_completion_certificate",
+   "fieldtype": "Check",
+   "insert_after": "custom_work_completion_certificate",
+   "label": "Attach Image For Work Completion Certificate",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_remark8",
+   "fieldtype": "Small Text",
+   "insert_after": "custom_remark88",
+   "label": "Remark",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_remark88",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_work_completion_certificate11",
+   "label": "Remark",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_remark7",
+   "fieldtype": "Small Text",
+   "insert_after": "custom_remark77",
+   "label": "Remark",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_remark77",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_construction_committee_form11",
+   "label": "Remark",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_remark33",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_total_amount",
+   "label": "Remark",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_remark11",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_recommendation_of_members",
+   "label": "Remark",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_section_break_hvll2",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_land_level_should_be_mentioned_in_letter",
+   "label": "Remark",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_remark44",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_govt_approved_drawing_file11",
+   "label": "Remark",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_remark5",
+   "fieldtype": "Small Text",
+   "insert_after": "custom_remark",
+   "label": "Remark",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_remark",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_suggested_by_member_incharge_a__f",
+   "label": "Remark",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_remark4",
+   "fieldtype": "Small Text",
+   "insert_after": "custom_remark44",
+   "label": "Remark",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_remark3",
+   "fieldtype": "Small Text",
+   "insert_after": "custom_remark33",
+   "label": "Remark",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_remark1",
+   "fieldtype": "Small Text",
+   "insert_after": "custom_section_break_hvll2",
+   "label": "Remark",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_remarks",
+   "fieldtype": "Small Text",
+   "insert_after": "custom_remark11",
+   "label": "Remarks",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_additional_require_amount",
+   "fieldtype": "Currency",
+   "insert_after": "custom_project_allocated_amount",
+   "label": "Additional Require Amount",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_nnjnj",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_additional_require_amount",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "depends_on": "eval:doc.workflow_state==\"custom_work_completions\"",
+   "dt": "Project",
+   "fieldname": "custom_work_completion_certificate11",
+   "fieldtype": "Table",
+   "insert_after": "custom_attach_image_for_work_completion_certificate",
+   "label": "Work Completion Certificate",
+   "module": "Building Construction Manufacturing Service",
+   "options": "Attach Image of Work Completion Certificate"
+  },
+  {
+   "depends_on": "eval:doc.custom_is_form_committee",
+   "dt": "Project",
+   "fieldname": "custom_construction_committee_form11",
+   "fieldtype": "Table",
+   "insert_after": "custom_expenditure_preview",
+   "label": "Construction Committee Form",
+   "module": "Building Construction Manufacturing Service",
+   "options": "Attach Image for Construction Committee Form"
+  },
+  {
+   "depends_on": "eval:doc.custom_is_form_financial",
+   "dt": "Project",
+   "fieldname": "custom_financial_approval_form111",
+   "fieldtype": "Table",
+   "insert_after": "custom_financial_approval_form",
+   "label": "Financial Approval Form",
+   "module": "Building Construction Manufacturing Service",
+   "options": "Attach Image for Financial Approval Form"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_govt_approved_drawing_file11",
+   "fieldtype": "Table",
+   "insert_after": "custom_govt_approval_letter11111",
+   "label": "Govt. Approved Drawing File",
+   "module": "Building Construction Manufacturing Service",
+   "options": "Attach Image for Govt Drawing File"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_govt_approval_letter11111",
+   "fieldtype": "Table",
+   "insert_after": "custom_govt_approved_drawing_file",
+   "label": "Govt. Approval Letter",
+   "module": "Building Construction Manufacturing Service",
+   "options": "Attach Image for Govt Approval"
+  },
+  {
+   "depends_on": "eval:doc.custom_is_form_boq",
+   "dt": "Project",
+   "fieldname": "custom_boq_estimate11",
+   "fieldtype": "Table",
+   "insert_after": "custom_boqestimates",
+   "label": "BOQ/ Estimate",
+   "module": "Building Construction Manufacturing Service",
+   "options": "Attach Image for BOQ"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_drawing_file_all_blocks11",
+   "fieldtype": "Table",
+   "insert_after": "custom_drawing_covering_letter11111",
+   "label": "Drawing File (All Blocks)",
+   "module": "Building Construction Manufacturing Service",
+   "options": "Attach Image for Govt Drawing File"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_drawing_covering_letter11111",
+   "fieldtype": "Table",
+   "insert_after": "custom_standard_planning_and_designing111111",
+   "label": "Drawing Covering Letter",
+   "module": "Building Construction Manufacturing Service",
+   "options": "Drawing Covering Letter"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_standard_planning_and_designing111111",
+   "fieldtype": "Table",
+   "insert_after": "custom_column_break_wozmg",
+   "label": "Standard Planning and Designing",
+   "module": "Building Construction Manufacturing Service",
+   "options": "Standard Planning and Designing"
+  },
+  {
+   "depends_on": "eval:doc.custom_is_form_land_details",
+   "dt": "Project",
+   "fieldname": "custom_land_details1",
+   "fieldtype": "Table",
+   "insert_after": "custom_land_details_forms",
+   "label": "Land Details",
+   "module": "Building Construction Manufacturing Service",
+   "options": "Land Details Attach"
   },
   {
    "dt": "Project",
    "fieldname": "custom_remaining_amount",
    "fieldtype": "Currency",
-   "insert_after": "custom_column_break_xjfj7",
+   "insert_after": "custom_disbursement_amount",
    "label": "Remaining Amount",
    "module": "Building Construction Manufacturing Service"
   },
@@ -197,7 +316,7 @@
    "dt": "Project",
    "fieldname": "custom_disbursement_amount",
    "fieldtype": "Currency",
-   "insert_after": "custom_total_allocated_amount",
+   "insert_after": "custom_column_break_nnjnj",
    "label": "Disbursement Amount",
    "module": "Building Construction Manufacturing Service"
   },
@@ -213,7 +332,7 @@
    "dt": "Project",
    "fieldname": "custom_disbursement_details",
    "fieldtype": "Section Break",
-   "insert_after": "custom_disbursement_statusss",
+   "insert_after": "custom_additional_request_details",
    "label": "Disbursement Detail's",
    "module": "Building Construction Manufacturing Service"
   },
@@ -221,7 +340,7 @@
    "dt": "Project",
    "fieldname": "custom_disbursement",
    "fieldtype": "Tab Break",
-   "insert_after": "custom_attach_image_for_construction_committee_form",
+   "insert_after": "custom_remark7",
    "label": "Disbursement",
    "module": "Building Construction Manufacturing Service"
   },
@@ -229,7 +348,7 @@
    "dt": "Project",
    "fieldname": "custom_financiallll_approval",
    "fieldtype": "Table",
-   "insert_after": "custom_financial_approvals",
+   "insert_after": "custom_financial_approval_preview",
    "label": "Financial Approval",
    "module": "Building Construction Manufacturing Service",
    "options": "Financial Approval"
@@ -270,7 +389,7 @@
    "dt": "Project",
    "fieldname": "custom_section_break_evxno",
    "fieldtype": "Section Break",
-   "insert_after": "custom_attach_image_for_financial_approval_form",
+   "insert_after": "custom_financial_approval_form111",
    "label": "Proposal for FInancial Approval for the Construction  Work of Satsang bhavan At",
    "module": "Building Construction Manufacturing Service"
   },
@@ -353,7 +472,7 @@
    "dt": "Project",
    "fieldname": "custom_proforma_for_sadh_sangat_deatils",
    "fieldtype": "Section Break",
-   "insert_after": "custom_column_break_guii0",
+   "insert_after": "custom_sadh_sangat_previewss",
    "label": "Proforma for Sadh Sangat Deatils",
    "module": "Building Construction Manufacturing Service"
   },
@@ -361,7 +480,7 @@
    "dt": "Project",
    "fieldname": "custom_recommendation_letter",
    "fieldtype": "Section Break",
-   "insert_after": "custom_recommendation_letter_and_sites_plansss",
+   "insert_after": "project_name",
    "label": "Recommendation Letter",
    "module": "Building Construction Manufacturing Service"
   },
@@ -386,10 +505,10 @@
    "dt": "Project",
    "fieldname": "custom_estimate_for_construction",
    "fieldtype": "Link",
-   "insert_after": "custom_boqestimate_form",
-   "label": "Estimate for Construction work of Satsang Bhawan at ",
+   "insert_after": "custom_boqestimate_previous",
+   "label": "Estimate for Construction",
    "module": "Building Construction Manufacturing Service",
-   "options": "Bhavan"
+   "options": "Bank"
   },
   {
    "dt": "Project",

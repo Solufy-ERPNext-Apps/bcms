@@ -31,8 +31,8 @@ def validate_pro(doc, method=None):
 		frappe.throw("Please Attach Progress Photo")
 	# elif doc.workflow_state == "Fund Transfer Completed" and not doc.custom_expenditure_form:
 	#     frappe.throw("Please Attach Expenditure Form")
-	elif doc.workflow_state == "Work Completion Started" and not doc.custom_work_completion_certificate:
-		frappe.throw("Please Attach Fund Transfer Completed")
+	# elif doc.workflow_state == "Work Completion Started" and not doc.custom_work_completion_certificate:
+	# 	frappe.throw("Please Attach Fund Transfer Completed")
 
 # @frappe.whitelist()
 # def create_or_update_land_details_doc(data):
@@ -55,3 +55,14 @@ def validate_pro(doc, method=None):
 # 		"doctype": doc.doctype
 # 	}
 
+
+
+# def validate(self,method = None):
+# 	dates_validation(self):
+
+# def Amount_validation(self):
+#         if len(self.custom_disbursement_detail) > 0:
+#             for row in self.custom_disbursement_detail:
+#                 if row.requested_amount and row.approved_amount:
+#                     if(row.requested_amount) >= (row.approved_amount):
+#                         frappe.throw(("Requested Amount cannot be greater than or equal to Approved Amount."))

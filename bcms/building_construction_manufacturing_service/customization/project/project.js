@@ -1,139 +1,15 @@
 frappe.ui.form.on("Project", {
-    refresh: function(frm) {
-        cur_frm.remove_custom_button('Duplicate Project with Tasks', 'Actions');
-        cur_frm.remove_custom_button('Update Total Purchase Cost', 'Actions'); 
-        cur_frm.remove_custom_button('Set Project Status', 'Actions');
-    }
+	refresh: function(frm) {
+		cur_frm.remove_custom_button('Set Project Status','Actions')
+		cur_frm.remove_custom_button('Duplicate Project with Tasks', 'Actions');
+		cur_frm.remove_custom_button('Update Total Purchase Cost', 'Actions'); 
+		cur_frm.remove_custom_button('Set Project Status', 'Actions');
+		cur_frm.remove_custom_button('Gantt Chart', 'View');
+		cur_frm.remove_custom_button('Kanban Board', 'View');
+	}
 });
 
 
-
-// frappe.ui.form.on('Project', {
-// 	custom_land_details_forms(frm) {
-// 		const dialog = new frappe.ui.Dialog({
-// 			title: 'Create / Update Land Details Document',
-// 			fields: [
-// 				{ label: 'Document Name', fieldname: 'docname', fieldtype: 'Data', hidden: true, default: '' },
-// 				{ label: 'Land in the Name of Sant Nirankari Mandal', fieldname: 'land_in_the_name_of_sant_nirankari_mandal', fieldtype: 'Check' },
-// 				{ label: 'Boundary Wall Construction Work Completed', fieldname: 'boundary_wall_construction_work_completed', fieldtype: 'Check' },
-// 				{ label: 'Setback for Bhavan', fieldname: 'setback_for_bhavan', fieldtype: 'Check' },
-// 				{ label: 'NOC Approval', fieldname: 'noc_approval', fieldtype: 'Check' },
-// 				{ label: 'Land Inspection by Supervisor', fieldname: 'land_inspection_ion_by_supervisor', fieldtype: 'Check' },
-// 				{ label: 'Drawing Approval', fieldname: 'drawing_approval', fieldtype: 'Check' },
-// 				{ label: 'Any River', fieldname: 'any_river', fieldtype: 'Check' },
-// 				{ label: 'Temporary Electricity', fieldname: 'temporary_electricity', fieldtype: 'Check' },
-// 				{ label: 'Type of Soil', fieldname: 'type_of_soil', fieldtype: 'Check' },
-// 				{ label: 'Land Level Should Be Mentioned in Letter', fieldname: 'land_level_should_be_mentioned_in_letter', fieldtype: 'Check' },
-// 				// { label: 'Signature', fieldname: 'signature_wjjv', fieldtype: 'Signature' }
-// 				{label:"User Name",fieldname:"user_name",fieldtype:"data"},
-// 				{label:"Date",fieldname:"date",fieldtype:"date"},
-
-// 			],
-// 			primary_action_label: 'Save',
-// 			primary_action(values) {
-// 				frappe.call({
-// 					method: 'bcms.building_construction_manufacturing_service.customization.project.project.create_or_update_land_details_doc',
-// 					args: { data: values },
-// 					callback: (r) => {
-// 						if (!r.exc) {
-// 							const docname = r.message.name;
-// 							frm.set_value('custom_land_details_form', docname);
-
-// 							// Render preview HTML
-// 							const table_html = `
-// 								<style>
-// 									.custom-details-table {
-// 										width: 100%;
-// 										border-collapse: collapse;
-// 										font-family: Arial, sans-serif;
-// 										font-size: 14px;
-// 									}
-// 									.custom-details-table th, .custom-details-table td {
-// 										border: 1px solid #ccc;
-// 										padding: 10px 12px;
-// 									}
-// 									.custom-details-table thead tr {
-// 										background-color: #f7f7f7;
-// 										font-weight: bold;
-// 										text-align: left;
-// 									}
-// 									.custom-details-table tbody tr:nth-child(even) {
-// 										background-color: #fafafa;
-// 									}
-// 									.custom-details-table td {
-// 										vertical-align: middle;
-// 									}
-// 									.custom-details-table td img {
-// 										max-height: 80px;
-// 									}
-// 								</style>
-// 								<table class="custom-details-table">
-// 									<tbody>
-// 										<tr><td>Land in the Name of Sant Nirankari Mandal</td><td style="text-align:center;">${values.land_in_the_name_of_sant_nirankari_mandal ? 'Yes' : 'No'}</td></tr>
-// 										<tr><td>Boundary Wall Construction Work Completed</td><td style="text-align:center;">${values.boundary_wall_construction_work_completed ? 'Yes' : 'No'}</td></tr>
-// 										<tr><td>Setback for Bhavan</td><td style="text-align:center;">${values.setback_for_bhavan ? 'Yes' : 'No'}</td></tr>
-// 										<tr><td>NOC Approval</td><td style="text-align:center;">${values.noc_approval ? 'Yes' : 'No'}</td></tr>
-// 										<tr><td>Land Inspection by Supervisor</td><td style="text-align:center;">${values.land_inspection_ion_by_supervisor ? 'Yes' : 'No'}</td></tr>
-// 										<tr><td>Drawing Approval</td><td style="text-align:center;">${values.drawing_approval ? 'Yes' : 'No'}</td></tr>
-// 										<tr><td>Any River</td><td style="text-align:center;">${values.any_river ? 'Yes' : 'No'}</td></tr>
-// 										<tr><td>Temporary Electricity</td><td style="text-align:center;">${values.temporary_electricity ? 'Yes' : 'No'}</td></tr>
-// 										<tr><td>Type of Soil</td><td style="text-align:center;">${values.type_of_soil ? 'Yes' : 'No'}</td></tr>
-// 										<tr><td>Land Level Should Be Mentioned in Letter</td><td style="text-align:center;">${values.land_level_should_be_mentioned_in_letter ? 'Yes' : 'No'}</td></tr>
-// 										<tr><td>Zonal Incharge</td><td style="text-align:center;">${values.signature_wjjv ? `<img src="${values.signature_wjjv}" alt="Signature" />` : 'No'}</td></tr>
-// 									</tbody>
-// 								</table>`;
-
-// 							frm.set_value('custom_land_details_preview', table_html);
-// 							frm.refresh_fields(['custom_land_details_form', 'custom_land_details_preview']);
-
-// 							setTimeout(() => {
-// 								fix_text_editor_style(frm);
-// 							}, 300);
-
-// 							dialog.hide();
-// 						}
-// 					}
-// 				});
-// 			}
-// 		});
-
-// 		dialog.show();
-// 	},
-
-// 	refresh(frm) {
-// 		setTimeout(() => {
-// 			fix_text_editor_style(frm);
-// 		}, 300);
-// 	}
-// });
-
-// function fix_text_editor_style(frm) {
-// 	if (!frm.fields_dict.custom_land_details_preview) return;
-
-// 	const wrapper = frm.fields_dict.custom_land_details_preview.$wrapper;
-// 	wrapper.find('.ql-toolbar').hide();
-
-// 	const editor = wrapper.find('.ql-container');
-// 	editor.css({
-// 		'pointer-events': 'none',
-// 		'background-color': 'transparent',
-// 		'border': '1px solid #ccc',
-// 		'box-shadow': 'none',
-// 		'max-height': '600px',
-// 		'height': 'auto',
-// 		'overflow-y': 'auto',
-// 		'width': '100%',
-// 		'resize': 'vertical',
-// 		'min-height': '300px'
-// 	});
-
-// 	wrapper.find('.ql-editor').css({
-// 		'height': 'auto',
-// 		'min-height': '300px',
-// 		'max-height': '600px',
-// 		'overflow': 'visible'
-// 	});
-// }
 
 
 
@@ -1077,45 +953,6 @@ frappe.ui.form.on("Project", {
 // }
 
 
-frappe.ui.form.on('Project', {
-    refresh(frm) {
-        customize_attach_field(frm);
-    },
-    custom_recommendation_letter(frm) {
-        customize_attach_field(frm);
-    },
-    after_save(frm) {
-        customize_attach_field(frm);
-    }
-});
-
-function customize_attach_field(frm) {
-    const fieldname = 'custom_recommendation_letter';
-    const field = frm.fields_dict[fieldname];
-    const file_url = frm.doc[fieldname];
-
-    if (!field || !file_url) return;
-
-    const wrapper = field.$wrapper;
-
-    setTimeout(() => {
-        const file_name = file_url.split('/').pop();
-        const attach_date = frappe.datetime.str_to_user(frappe.datetime.now_datetime());
-
-        const link_element = wrapper.find('.attached-file-link');
-        if (link_element.length) {
-            link_element.text(`${file_name} (${attach_date})`);
-        }
-
-        const clear_btn = wrapper.find('.btn-remove');
-        if (clear_btn.length) {
-            clear_btn.html('<i class="fa fa-times-circle" style="color: red; font-size: 16px;"></i>');
-            clear_btn.attr('title', 'Clear Attachment');
-        }
-    }, 300);
-}
-
-
 // frappe.ui.form.on('Project', {
 //     refresh(frm) {
 //         // Mapping of workflow_state to allowed role
@@ -1157,80 +994,854 @@ function customize_attach_field(frm) {
 //         }
 //     }
 // });
-
 frappe.ui.form.on('Project', {
     onload(frm) {
-        frm.no_timeline = true; 
+        frm.no_timeline = true;
     },
-
     refresh(frm) {
-        if (frm.timeline && frm.timeline.wrapper) {
-            frm.timeline.wrapper.hide();
-        }
-        if (frm.fields_dict.__connections__) {
-            frm.fields_dict.__connections__.wrapper.hide();
+        const admin = frappe.user.has_role('System Manager');
+        if (!admin) {
+            if (frm.timeline && frm.timeline.wrapper) {
+                frm.timeline.wrapper.hide();
+            }
+            if (frm.fields_dict.__connections__) {
+                frm.fields_dict.__connections__.wrapper.hide();
+            }
+            $('.form-sidebar .sidebar-label:contains("Connections")').hide();
+            $('.form-sidebar .sidebar-item:contains("Connections")').hide();
         }
     }
 });
-
 frappe.ui.form.on('Project', {
-    refresh: function(frm) {
-        frappe.after_ajax(() => {
-            setTimeout(() => {
-                if (frm.page.sidebar) {
-                    const sidebar = frm.page.sidebar;
-                    
-                    sidebar.find('.sidebar-menu a:contains("See on Website")').hide();
-                    sidebar.find('.form-stats-likes').hide();
-                    sidebar.find('.comment-icon').hide();
-                    sidebar.find('.ml-2').hide();
-                    sidebar.find('.modified-by').hide();
-                    sidebar.find('.mx-2').hide();
-                    sidebar.find('.created-by').hide();
-                    sidebar.find('.comments').hide();
-                    sidebar.find('.form-tags').hide();
-                    sidebar.find('.form-shared').hide();
-                    sidebar.find('.form-follow').hide();
-                    frm.page.wrapper.find(".comment-box").css({'display':'none'});
-                    $(".form-assignments").hide()
-                    frm.page.wrapper.find('.scroll-to-top btn btn-default icon-btn').css({'display':'none'})
-                    frm.page.wrapper.find('button.btn.btn-primary:visible').first().css({'display':'none'});
-                }   
+	refresh: function(frm) {
+		frappe.after_ajax(() => {
+			setTimeout(() => {
+				if (frm.page.sidebar) {
+					const sidebar = frm.page.sidebar;
+					
+					sidebar.find('.sidebar-menu a:contains("See on Website")').hide();
+					sidebar.find('.form-stats-likes').hide();
+					sidebar.find('.comment-icon').hide();
+					sidebar.find('.ml-2').hide();
+					sidebar.find('.modified-by').hide();
+					sidebar.find('.mx-2').hide();
+					sidebar.find('.created-by').hide();
+					sidebar.find('.comments').hide();
+					sidebar.find('.form-tags').hide();
+					sidebar.find('.form-shared').hide();
+					sidebar.find('.form-follow').hide();
+					frm.page.wrapper.find(".comment-box").css({'display':'none'});
+					$(".form-assignments").hide()
+					frm.page.wrapper.find('.scroll-to-top btn btn-default icon-btn').css({'display':'none'})
+					frm.page.wrapper.find('button.btn.btn-primary:visible').first().css({'display':'none'});
+				}   
 
-            }, 0); 
-        });
-    }
+			}, 0); 
+		});
+	}
 });
 
 
 
 frappe.ui.form.on('Project',{
-    refresh:function(frm){
-        if (!frm.is_new()) {
-            rj_btn=frm.add_custom_button(__("Reject"), function () {
-
-});
-apr_btn=frm.add_custom_button(__("Approve"), function () {
-});
-            r_review_btn=frm.add_custom_button(__("Request For Review"), function () {
-});
-}
-        rj_btn.css({
-'background-color':'Red',
-'color':'White  ',
-'font-weight': 'bold'
-});
-        apr_btn.css({
-'background-color':'Green',
-'color':'White  ',
-'font-weight': 'bold'
-});
-        r_review_btn.css({
-'background-color':'DarkBlue',
-'color':'White  ',
-'font-weight': 'bold'
-});
+	refresh:function(frm){
+		if (!frm.is_new()) {
+			rj_btn=frm.add_custom_button(__("Reject"), function () {
+			});
+			apr_btn=frm.add_custom_button(__("Approve"), function () {
+				if (frm.doc.workflow_state === "Draft") {
+                    frm.set_value('workflow_state', 'Sent For Recommendation');
+                    frm.save();
+                } 
+				else if (frm.doc.workflow_state === "Sent For Recommendation") {
+                    frm.set_value('workflow_state', 'Approved Recommendation');
+                    frm.save();
+                } 
+			});
+			r_review_btn=frm.add_custom_button(__("Request For Review"), function () {
+			
+			});
+			}
+		rj_btn.css({
+				'background-color':'Red',
+				'color':'White  ',
+				'font-weight': 'bold'
+				});
+						apr_btn.css({
+				'background-color':'Green',
+				'color':'White  ',
+				'font-weight': 'bold'
+				});
+						r_review_btn.css({
+				'background-color':'DarkBlue',
+				'color':'White  ',
+				'font-weight': 'bold'
+				});
  
-    }
+			}
 })
 
+
+
+// frappe.ui.form.on('Project', {
+//     validate: function(frm) {
+//         (frm.doc.custom_disbursement_detail || []).forEach(row => {
+//             if ((row.approved_amount || 0) > (row.requested_amount || 0)) {
+//                 frappe.throw(`Row ${row.idx}: Approved Amount cannot be greater than Requested Amount.`);
+//             }
+//         });
+
+//         // Calculate total disbursement amount
+//         let total_disbursement = 0;
+//         (frm.doc.custom_disbursement_detail || []).forEach(row => {
+//             total_disbursement += row.approved_amount || 0;
+//         });
+
+//         frm.set_value("custom_disbursement_amount", total_disbursement);
+
+//         let total_allocated = frm.doc.custom_total_allocated_amount || 0;
+//         let additional_required = frm.doc.custom_additional_require_amount || 0;
+
+//         let remaining = total_allocated - total_disbursement - additional_required;
+//         frm.set_value("custom_remaining_amount", remaining);
+//     }
+// });
+
+
+// frappe.ui.form.on('Project', {
+//     onload: function (frm) {
+//         setup_disbursement_events(frm);
+//     },
+//     refresh: function (frm) {
+//         setup_disbursement_events(frm);
+//     },
+//     validate: function (frm) {
+//         calculate_disbursement_and_remaining(frm, true);
+//     }
+// });
+
+// function setup_disbursement_events(frm) {
+//     if (!frm.custom_disbursement_events_setup) {
+//         frm.fields_dict.custom_disbursement_detail.grid.wrapper.on('change', function () {
+//             calculate_disbursement_and_remaining(frm, false);
+//         });
+
+//         // Prevent adding rows if total allocated amount is not filled
+//         frm.fields_dict.custom_disbursement_detail.grid.add_btn.on('click', function (e) {
+//             if (!frm.doc.custom_total_allocated_amount) {
+//                 frappe.throw("Please enter 'Total Allocated Amount' before adding disbursement details.");
+//             }
+//         });
+
+//         frm.custom_disbursement_events_setup = true;
+//     }
+// }
+
+// function calculate_disbursement_and_remaining(frm, validate_rows) {
+//     let total_approved = 0;
+//     let total_allocated = frm.doc.custom_total_allocated_amount || 0;
+//     let additional_required = frm.doc.custom_additional_require_amount || 0;
+
+//     (frm.doc.custom_disbursement_detail || []).forEach(row => {
+//         let approved = row.approved_amount || 0;
+//         let requested = row.requested_amount || 0;
+
+//         if (validate_rows && approved > requested) {
+//             frappe.throw(`Row ${row.idx}: Approved Amount cannot be greater than Requested Amount.`);
+//         } else if (!validate_rows && approved > requested) {
+//             frappe.msgprint(`Row ${row.idx}: Approved Amount > Requested Amount. Resetting to 0.`);
+//             row.approved_amount = 0;
+//         }
+
+//         total_approved += row.approved_amount || 0;
+//     });
+
+//     // Check approved amount does not exceed allocated
+//     if (validate_rows && total_approved > total_allocated) {
+//         frappe.throw(`Total Approved Amount (${total_approved}) cannot be more than Total Allocated Amount (${total_allocated}).`);
+//     }
+
+//     frm.set_value("custom_disbursement_amount", total_approved);
+
+//     let remaining = total_allocated - total_approved - additional_required;
+//     frm.set_value("custom_remaining_amount", remaining);
+// }
+
+
+
+	// frappe.ui.form.on('Project', {
+	//     onload: function (frm) {
+	//         setup_disbursement_events(frm);
+	//     },
+	//     refresh: function (frm) {
+	//         setup_disbursement_events(frm);
+	//     },
+	//     validate: function (frm) {
+	//         calculate_disbursement_and_remaining(frm, true);
+	//     },
+	//     custom_total_allocated_amount: function (frm) {
+	//         // Whenever total allocated amount is changed, recalculate
+	//         calculate_disbursement_and_remaining(frm, false);
+	//     },
+	//     custom_additional_require_amount: function (frm) {
+	//         // Whenever additional required amount is changed, recalculate
+	//         calculate_disbursement_and_remaining(frm, false);
+	//     }
+	// });
+
+	// function setup_disbursement_events(frm) {
+	//     if (!frm.custom_disbursement_events_setup) {
+	//         frm.fields_dict.custom_disbursement_detail.grid.wrapper.on('change', function () {
+	//             calculate_disbursement_and_remaining(frm, false);
+	//         });
+	//         frm.custom_disbursement_events_setup = true;
+	//     }
+
+	//     frm.fields_dict.custom_disbursement_detail.grid.get_field("approved_amount").onchange = function () {
+	//         calculate_disbursement_and_remaining(frm, false);
+	//     };
+	// }
+
+	// function calculate_disbursement_and_remaining(frm, validate_rows) {
+	//     let total_approved = 0;
+
+	//     // Must enter total allocated amount first
+	//     let total_allocated = frm.doc.custom_total_allocated_amount || 0;
+	//     if (!total_allocated) {
+	//         frappe.msgprint("Please enter Total Allocated Amount before adding Disbursement Details.");
+	//         return;
+	//     }
+
+	//     (frm.doc.custom_disbursement_detail || []).forEach(row => {
+	//         let approved = row.approved_amount || 0;
+	//         let requested = row.requested_amount || 0;
+
+	//         // Row-wise validation
+	//         if (validate_rows && approved > requested) {
+	//             frappe.throw(`Row ${row.idx}: Approved Amount cannot be greater than Requested Amount.`);
+	//         } else if (!validate_rows && approved > requested) {
+	//             frappe.msgprint(`Row ${row.idx}: Approved > Requested. Resetting to 0.`);
+	//             row.approved_amount = 0;
+	//         }
+
+	//         total_approved += row.approved_amount || 0;
+	//     });
+
+	//     // Set total disbursement amount
+	//     frm.set_value("custom_disbursement_amount", total_approved);
+
+	//     let additional_required = frm.doc.custom_additional_require_amount || 0;
+
+	//     // Check that (approved + additional) doesn't exceed total allocated
+	//     if ((total_approved + additional_required) > total_allocated) {
+	//         if (validate_rows) {
+	//             frappe.throw(`Total (Approved + Additional Required) exceeds Total Allocated Amount.`);
+	//         } else {
+	//             frappe.msgprint(`(Approved + Additional) exceeds Allocated. Please correct.`);
+	//         }
+	//     }
+
+	//     // Calculate remaining
+	//     let remaining = total_allocated - (total_approved + additional_required);
+	//     frm.set_value("custom_remaining_amount", remaining);
+	// }
+
+
+//     frappe.ui.form.on('Project', {
+//     onload: function (frm) {
+//         setup_disbursement_events(frm);
+//     },
+//     refresh: function (frm) {
+//         setup_disbursement_events(frm);
+//     },
+//     validate: function (frm) {
+//         calculate_disbursement_and_remaining(frm, true);
+//     },
+//     custom_total_allocated_amount: function (frm) {
+//         calculate_disbursement_and_remaining(frm, false);
+//     },
+//     custom_additional_require_amount: function (frm) {
+//         calculate_disbursement_and_remaining(frm, false);
+//     }
+// });
+
+// function setup_disbursement_events(frm) {
+//     if (!frm.custom_disbursement_events_setup) {
+//         frm.fields_dict.custom_disbursement_detail.grid.wrapper.on('change', function () {
+//             calculate_disbursement_and_remaining(frm, false);
+//         });
+//         frm.custom_disbursement_events_setup = true;
+//     }
+
+//     frm.fields_dict.custom_disbursement_detail.grid.get_field("approved_amount").onchange = function () {
+//         calculate_disbursement_and_remaining(frm, false);
+//     };
+// }
+
+// function calculate_disbursement_and_remaining(frm, validate_rows) {
+//     let total_approved = 0;
+
+//     let total_allocated = frm.doc.custom_total_allocated_amount || 0;
+//     if (!total_allocated) {
+//         frappe.msgprint("Please enter Total Allocated Amount before adding Disbursement Details.");
+//         return;
+//     }
+
+//     (frm.doc.custom_disbursement_detail || []).forEach(row => {
+//         let approved = row.approved_amount || 0;
+//         let requested = row.requested_amount || 0;
+
+//         if (validate_rows && approved > requested) {
+//             frappe.throw(`Row ${row.idx}: Approved Amount cannot be greater than Requested Amount.`);
+//         } else if (!validate_rows && approved > requested) {
+//             frappe.msgprint(`Row ${row.idx}: Approved > Requested. Resetting to 0.`);
+//             row.approved_amount = 0;
+//         }
+
+//         total_approved += row.approved_amount || 0;
+//     });
+
+//     frm.set_value("custom_disbursement_amount", total_approved);
+
+//     let additional_required = frm.doc.custom_additional_require_amount || 0;
+
+//     // 🔴 Do NOT add here: just subtract later.
+//     if ((total_approved) > total_allocated) {
+//         if (validate_rows) {
+//             frappe.throw(`Total Approved Amount exceeds Total Allocated Amount.`);
+//         } else {
+//             frappe.msgprint(`Approved exceeds Allocated. Please correct.`);
+//         }
+//     }
+
+//     // ✅ Correct Remaining Calculation:
+//     let remaining = total_allocated - total_approved - additional_required;
+
+//     if (remaining < 0) {
+//         if (validate_rows) {
+//             frappe.throw("Remaining amount cannot be negative. Check Approved and Additional Required Amount.");
+//         } else {
+//             frappe.msgprint("Remaining amount negative. Please correct values.");
+//         }
+//     }
+
+//     frm.set_value("custom_remaining_amount", remaining);
+// }
+
+
+
+// frappe.ui.form.on('Project', {
+// 	onload: function (frm) {
+// 		setup_disbursement_events(frm);
+// 	},
+// 	refresh: function (frm) {
+// 		setup_disbursement_events(frm);
+// 	},
+// 	validate: function (frm) {
+// 		calculate_disbursement_and_remaining(frm, true);
+// 	},
+// 	custom_total_allocated_amount: function (frm) {
+// 		calculate_disbursement_and_remaining(frm, false);
+// 	},
+// 	custom_additional_require_amount: function (frm) {
+// 		calculate_disbursement_and_remaining(frm, false);
+// 	}
+// });
+
+// function setup_disbursement_events(frm) {
+// 	if (!frm.custom_disbursement_events_setup) {
+// 		frm.fields_dict.custom_disbursement_detail.grid.wrapper.on('change', function () {
+// 			calculate_disbursement_and_remaining(frm, false);
+// 		});
+// 		frm.custom_disbursement_events_setup = true;
+// 	}
+
+// 	frm.fields_dict.custom_disbursement_detail.grid.get_field("approved_amount").onchange = function () {
+// 		calculate_disbursement_and_remaining(frm, false);
+// 	};
+// }
+
+// function calculate_disbursement_and_remaining(frm, validate_rows) {
+// 	let total_allocated = frm.doc.custom_total_allocated_amount || 0;
+// 	let additional_required = frm.doc.custom_additional_require_amount || 0;
+// 	let total_approved = 0;
+
+// 	if (!total_allocated) {
+// 		frappe.msgprint("Please enter Total Allocated Amount before adding Disbursement Details.");
+// 		return;
+// 	}
+// 	(frm.doc.custom_disbursement_detail || []).forEach(row => {
+// 		let approved = row.approved_amount || 0;
+// 		let requested = row.requested_amount || 0;
+
+// 		if (validate_rows && approved > requested) {
+// 			frappe.throw(`Row ${row.idx}: Approved Amount cannot be greater than Requested Amount.`);
+// 		} else if (!validate_rows && approved > requested) {
+// 			frappe.msgprint(`Row ${row.idx}: Approved > Requested. Resetting to 0.`);
+// 			row.approved_amount = 0;
+// 		}
+
+// 		total_approved += row.approved_amount || 0;
+// 	});
+
+// 	frm.set_value("custom_disbursement_amount", total_approved);
+// 	if ((total_approved + additional_required) > total_allocated) {
+// 		if (validate_rows) {
+// 			frappe.throw("Total of Disbursement + Additional Required exceeds Total Allocated Amount.");
+// 		} else {
+// 			frappe.msgprint("Disbursement + Additional Required exceeds Allocated. Please adjust values.");
+// 		}
+// 	}
+// 	let remaining = total_allocated - total_approved - additional_required;
+
+// 	frm.set_value("custom_remaining_amount", remaining);
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// frappe.ui.form.on('Project', {
+// 	onload: function (frm) {
+// 		setup_disbursement_events(frm);
+// 		setup_additional_request_events(frm);
+// 	},
+
+// 	refresh: function (frm) {
+// 		setup_disbursement_events(frm);
+// 		setup_additional_request_events(frm);
+
+		
+// 		calculate_total_allocate_amount(frm);
+// 	},
+
+// 	validate: function (frm) {
+// 		calculate_additional_required_amount(frm);
+// 		calculate_total_allocate_amount(frm);
+// 		calculate_disbursement_and_remaining(frm, true);
+// 	},
+
+	
+// 	custom_total_allocated_amount: function (frm) {
+// 		calculate_disbursement_and_remaining(frm, false);
+// 	},
+
+	
+// 	custom_project_allocated_amount: function (frm) {
+// 		calculate_total_allocate_amount(frm);
+// 	},
+
+
+// 	custom_additional_require_amount: function (frm) {
+// 		calculate_disbursement_and_remaining(frm, false);
+// 		calculate_total_allocate_amount(frm);
+// 	}
+// });
+
+
+// function setup_disbursement_events(frm) {
+// 	if (!frm.custom_disbursement_events_setup) {
+// 		frm.fields_dict.custom_disbursement_detail.grid.wrapper.on('change', function () {
+// 			calculate_disbursement_and_remaining(frm, false);
+// 		});
+
+// 		frm.fields_dict.custom_disbursement_detail.grid.get_field("approved_amount").onchange = function () {
+// 			calculate_disbursement_and_remaining(frm, false);
+// 		};
+
+// 		frm.custom_disbursement_events_setup = true;
+// 	}
+// }
+
+
+// function setup_additional_request_events(frm) {
+// 	if (!frm.custom_additional_events_setup) {
+// 		frm.fields_dict.custom_additional_request_details.grid.wrapper.on('change', function () {
+// 			calculate_additional_required_amount(frm);
+// 			calculate_disbursement_and_remaining(frm, false);
+// 		});
+
+// 		frm.fields_dict.custom_additional_request_details.grid.get_field("approved_amount").onchange = function () {
+// 			calculate_additional_required_amount(frm);
+// 			calculate_disbursement_and_remaining(frm, false);
+// 		};
+
+// 		frm.custom_additional_events_setup = true;
+// 	}
+// }
+
+
+// function calculate_additional_required_amount(frm) {
+// 	let total_additional_required = 0;
+
+// 	(frm.doc.custom_additional_request_details || []).forEach(row => {
+// 		total_additional_required += row.approved_amount || 0;
+// 	});
+
+// 	frm.set_value("custom_additional_require_amount", total_additional_required);
+
+// 	calculate_total_allocate_amount(frm);
+// }
+
+
+// function calculate_total_allocate_amount(frm) {
+// 	let base_amount = frm.doc.custom_project_allocated_amount || 0;
+// 	let additional_required = frm.doc.custom_additional_require_amount || 0;
+// 	let total_allocate_amount = base_amount + additional_required;
+
+// 	frm.set_value("custom_total_allocated_amount", total_allocate_amount).then(() => {
+// 		calculate_disbursement_and_remaining(frm, false);
+// 	});
+// }
+
+
+// function calculate_disbursement_and_remaining(frm, validate_rows) {
+// 	let total_allocated = frm.doc.custom_total_allocated_amount || 0;
+// 	let total_approved = 0;
+
+// 	if (!total_allocated) {
+// 		frappe.msgprint("Please enter Total Allocated Amount before adding Disbursement Details.");
+// 		return;
+// 	}
+
+// 	(frm.doc.custom_disbursement_detail || []).forEach(row => {
+// 		let approved = row.approved_amount || 0;
+// 		let requested = row.requested_amount || 0;
+
+// 		if (validate_rows && approved > requested) {
+// 			frappe.throw(`Row ${row.idx}: Approved Amount cannot be greater than Requested Amount.`);
+// 		} else if (!validate_rows && approved > requested) {
+// 			frappe.msgprint(`Row ${row.idx}: Approved > Requested. Resetting to 0.`);
+// 			row.approved_amount = 0;
+// 		}
+
+// 		total_approved += row.approved_amount || 0;
+// 	});
+
+// 	frm.set_value("custom_disbursement_amount", total_approved);
+
+// 	if (total_approved > total_allocated) {
+// 		if (validate_rows) {
+// 			frappe.throw("Total Disbursement exceeds Total Allocated Amount.");
+// 		} else {
+// 			frappe.msgprint("Disbursement exceeds Allocated. Please adjust values.");
+// 		}
+// 	}
+
+// 	let remaining = total_allocated - total_approved;
+// 	frm.set_value("custom_remaining_amount", remaining);
+// }
+
+
+
+// frappe.ui.form.on('Project', {
+// 	onload: function (frm) {
+// 		setup_disbursement_events(frm);
+// 		setup_additional_request_events(frm);
+// 	},
+
+// 	refresh: function (frm) {
+// 		setup_disbursement_events(frm);
+// 		setup_additional_request_events(frm);
+
+// 		calculate_total_allocate_amount(frm);
+// 		update_disbursement_status_from_last_row(frm);
+// 	},
+
+// 	validate: function (frm) {
+// 		calculate_additional_required_amount(frm);
+// 		calculate_total_allocate_amount(frm);
+// 		calculate_disbursement_and_remaining(frm, true);
+// 		update_disbursement_status_from_last_row(frm);
+// 	},
+
+// 	custom_total_allocated_amount: function (frm) {
+// 		calculate_disbursement_and_remaining(frm, false);
+// 	},
+
+// 	custom_project_allocated_amount: function (frm) {
+// 		calculate_total_allocate_amount(frm);
+// 	},
+
+// 	custom_additional_require_amount: function (frm) {
+// 		calculate_disbursement_and_remaining(frm, false);
+// 		calculate_total_allocate_amount(frm);
+// 	}
+// });
+
+
+// function setup_disbursement_events(frm) {
+// 	if (!frm.custom_disbursement_events_setup) {
+// 		frm.fields_dict.custom_disbursement_detail.grid.wrapper.on('change', function () {
+// 			calculate_disbursement_and_remaining(frm, false);
+// 			update_disbursement_status_from_last_row(frm);
+// 		});
+
+// 		frm.fields_dict.custom_disbursement_detail.grid.get_field("approved_amount").onchange = function () {
+// 			calculate_disbursement_and_remaining(frm, false);
+// 			update_disbursement_status_from_last_row(frm);
+// 		};
+
+// 		frm.fields_dict.custom_disbursement_detail.grid.get_field("current_state").onchange = function () {
+// 			update_disbursement_status_from_last_row(frm);
+// 		};
+
+// 		frm.custom_disbursement_events_setup = true;
+// 	}
+// }
+
+
+// function setup_additional_request_events(frm) {
+// 	if (!frm.custom_additional_events_setup) {
+// 		frm.fields_dict.custom_additional_request_details.grid.wrapper.on('change', function () {
+// 			calculate_additional_required_amount(frm);
+// 			calculate_disbursement_and_remaining(frm, false);
+// 		});
+
+// 		frm.fields_dict.custom_additional_request_details.grid.get_field("approved_amount").onchange = function () {
+// 			calculate_additional_required_amount(frm);
+// 			calculate_disbursement_and_remaining(frm, false);
+// 		};
+
+// 		frm.custom_additional_events_setup = true;
+// 	}
+// }
+
+
+// function calculate_additional_required_amount(frm) {
+// 	let total_additional_required = 0;
+
+// 	(frm.doc.custom_additional_request_details || []).forEach(row => {
+// 		total_additional_required += row.approved_amount || 0;
+// 	});
+
+// 	frm.set_value("custom_additional_require_amount", total_additional_required);
+// 	calculate_total_allocate_amount(frm);
+// }
+
+
+// function calculate_total_allocate_amount(frm) {
+// 	let base_amount = frm.doc.custom_project_allocated_amount || 0;
+// 	let additional_required = frm.doc.custom_additional_require_amount || 0;
+// 	let total_allocate_amount = base_amount + additional_required;
+
+// 	frm.set_value("custom_total_allocated_amount", total_allocate_amount).then(() => {
+// 		calculate_disbursement_and_remaining(frm, false);
+// 	});
+// }
+
+
+// function calculate_disbursement_and_remaining(frm, validate_rows) {
+// 	let total_allocated = frm.doc.custom_total_allocated_amount || 0;
+// 	let total_approved = 0;
+
+// 	if (!total_allocated) {
+// 		frappe.msgprint("Please enter Total Allocated Amount before adding Disbursement Details.");
+// 		return;
+// 	}
+
+// 	(frm.doc.custom_disbursement_detail || []).forEach(row => {
+// 		let approved = row.approved_amount || 0;
+// 		let requested = row.requested_amount || 0;
+
+// 		if (validate_rows && approved > requested) {
+// 			frappe.throw(`Row ${row.idx}: Approved Amount cannot be greater than Requested Amount.`);
+// 		} else if (!validate_rows && approved > requested) {
+// 			frappe.msgprint(`Row ${row.idx}: Approved > Requested. Resetting to 0.`);
+// 			row.approved_amount = 0;
+// 		}
+
+// 		total_approved += row.approved_amount || 0;
+// 	});
+
+// 	frm.set_value("custom_disbursement_amount", total_approved);
+
+// 	if (total_approved > total_allocated) {
+// 		if (validate_rows) {
+// 			frappe.throw("Total Disbursement exceeds Total Allocated Amount.");
+// 		} else {
+// 			frappe.msgprint("Disbursement exceeds Allocated. Please adjust values.");
+// 		}
+// 	}
+
+// 	let remaining = total_allocated - total_approved;
+// 	frm.set_value("custom_remaining_amount", remaining);
+// }
+
+
+// function update_disbursement_status_from_last_row(frm) {
+// 	let disbursements = frm.doc.custom_disbursement_detail || [];
+// 	if (disbursements.length > 0) {
+// 		let last_row = disbursements[disbursements.length - 1];
+// 		let status = last_row.current_state || "";
+// 		frm.set_value("custom_disbursement_status", status);
+// 	} else {
+// 		frm.set_value("custom_disbursement_status", "");
+// 	}
+// }
+
+
+frappe.ui.form.on('Project', {
+	onload(frm) {
+		setup_disbursement_events(frm);
+		setup_additional_request_events(frm);
+	},
+
+	refresh(frm) {
+		setup_disbursement_events(frm);
+		setup_additional_request_events(frm);
+
+		calculate_total_allocate_amount(frm);
+		update_disbursement_status_from_last_row(frm);
+	},
+
+	validate(frm) {
+		calculate_additional_required_amount(frm);
+		calculate_total_allocate_amount(frm);
+		calculate_disbursement_and_remaining(frm, true);
+		update_disbursement_status_from_last_row(frm);
+	},
+
+	custom_project_allocated_amount(frm) {
+		calculate_total_allocate_amount(frm);
+	},
+
+	custom_additional_require_amount(frm) {
+		calculate_additional_required_amount(frm);
+		calculate_total_allocate_amount(frm);
+		calculate_disbursement_and_remaining(frm, false);
+	},
+
+	custom_suggested_by_member_incharge_a__f(frm) {
+		update_project_allocated_from_suggestion(frm);
+	}
+});
+
+
+function setup_disbursement_events(frm) {
+	if (!frm.custom_disbursement_events_setup) {
+		setTimeout(() => {
+			const field = frm.fields_dict.custom_disbursement_detail;
+			if (field && field.grid && typeof field.grid.on === 'function') {
+				field.grid.on('child_change', () => {
+					calculate_disbursement_and_remaining(frm, false);
+					update_disbursement_status_from_last_row(frm);
+					frm.dirty();
+				});
+				frm.custom_disbursement_events_setup = true;
+			}
+		}, 300); 
+	}
+}
+
+function setup_additional_request_events(frm) {
+	if (!frm.custom_additional_events_setup) {
+		setTimeout(() => {
+			const field = frm.fields_dict.custom_additional_request_details;
+			if (field && field.grid && typeof field.grid.on === 'function') {
+				field.grid.on('child_change', () => {
+					calculate_additional_required_amount(frm);
+					calculate_disbursement_and_remaining(frm, false);
+					frm.dirty();
+				});
+				frm.custom_additional_events_setup = true;
+			}
+		}, 300); 
+	}
+}
+
+function calculate_additional_required_amount(frm) {
+	let total = 0;
+	(frm.doc.custom_additional_request_details || []).forEach(row => {
+		total += flt(row.approved_amount);
+	});
+
+	if (frm.doc.custom_additional_require_amount !== total) {
+		frm.set_value("custom_additional_require_amount", total).then(() => frm.dirty());
+	}
+}
+
+function calculate_total_allocate_amount(frm) {
+	const base = flt(frm.doc.custom_project_allocated_amount);
+	const additional = flt(frm.doc.custom_additional_require_amount);
+	const total = base + additional;
+
+	if (frm.doc.custom_total_allocated_amount !== total) {
+		frm.set_value("custom_total_allocated_amount", total).then(() => frm.dirty());
+	}
+
+	calculate_disbursement_and_remaining(frm, false);
+}
+
+function calculate_disbursement_and_remaining(frm, validate_rows) {
+	const total_allocated = flt(frm.doc.custom_total_allocated_amount);
+	let total_approved = 0;
+
+	for (const row of (frm.doc.custom_disbursement_detail || [])) {
+		const approved = flt(row.approved_amount);
+		const requested = flt(row.requested_amount);
+
+		if (validate_rows && approved > requested) {
+			frappe.throw(`Row ${row.idx}: Approved Amount (${approved}) cannot be greater than Requested Amount (${requested}).`);
+		} else if (!validate_rows && approved > requested) {
+			frappe.msgprint(`Row ${row.idx}: Approved > Requested. Resetting approved_amount to 0.`);
+			row.approved_amount = 0;
+		}
+
+		total_approved += row.approved_amount;
+	}
+
+	if (frm.doc.custom_disbursement_amount !== total_approved) {
+		frm.set_value("custom_disbursement_amount", total_approved).then(() => frm.dirty());
+	}
+
+	if (total_approved > total_allocated) {
+		const msg = "Total Disbursement exceeds Total Allocated Amount.";
+		if (validate_rows) {
+			frappe.throw(msg);
+		} else {
+			frappe.msgprint(msg);
+		}
+	}
+
+	const remaining = total_allocated - total_approved;
+
+	if (frm.doc.custom_remaining_amount !== remaining) {
+		frm.set_value("custom_remaining_amount", remaining).then(() => frm.dirty());
+	}
+}
+
+function update_disbursement_status_from_last_row(frm) {
+	const disbursements = frm.doc.custom_disbursement_detail || [];
+
+	if (disbursements.length > 0) {
+		const last_row = disbursements[disbursements.length - 1];
+		const status = last_row.current_state || "";
+
+		if (frm.doc.custom_disbursement_status !== status) {
+			frm.set_value("custom_disbursement_status", status).then(() => frm.dirty());
+		}
+	} else {
+		if (frm.doc.custom_disbursement_status) {
+			frm.set_value("custom_disbursement_status", "").then(() => frm.dirty());
+		}
+	}
+}
+
+function update_project_allocated_from_suggestion(frm) {
+	const value = flt(frm.doc.custom_suggested_by_member_incharge_a__f);
+	if (frm.doc.custom_project_allocated_amount !== value) {
+		frm.set_value("custom_project_allocated_amount", value).then(() => frm.dirty());
+	}
+}
