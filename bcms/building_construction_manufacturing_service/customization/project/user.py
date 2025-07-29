@@ -14,7 +14,7 @@ def sync_user_workflow_permissions(user):
 
 	old_permissions = frappe.get_all("User Permission", 
 		filters={
-			"user": user,
+			"user": user.name,
 			"allow": "Workflow State"
 		},
 		pluck="name"

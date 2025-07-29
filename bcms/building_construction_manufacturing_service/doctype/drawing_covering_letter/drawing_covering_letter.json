@@ -12,14 +12,15 @@
   {
    "fieldname": "attach_image_for_drawing_covering_letter",
    "fieldtype": "Attach",
-   "label": "Attach Image for Drawing Covering Letter"
+   "in_list_view": 1,
+   "label": "Drawing Covering Letter"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-22 18:43:12.866383",
+ "modified": "2025-07-28 14:10:55.220374",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Drawing Covering Letter",

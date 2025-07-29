@@ -12,14 +12,15 @@
   {
    "fieldname": "attach_image_for_construction_committee_form",
    "fieldtype": "Attach",
-   "label": "Attach Image for Construction Committee Form"
+   "in_list_view": 1,
+   "label": "Construction Committee Form"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-22 19:07:18.661416",
+ "modified": "2025-07-28 14:12:31.081407",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Attach Image for Construction Committee Form",

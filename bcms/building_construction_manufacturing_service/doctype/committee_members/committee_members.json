@@ -3,15 +3,13 @@
  "allow_rename": 1,
  "creation": "2025-07-16 15:59:21.001593",
  "doctype": "DocType",
- "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "image",
-  "name1",
+  "adhikari",
+  "adhikari_name",
   "fathers_name",
   "address",
-  "education",
-  "age",
   "occupation",
   "signature"
  ],
@@ -22,35 +20,20 @@
    "label": "Image"
   },
   {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Name"
-  },
-  {
+   "fetch_from": "adhikari.middle_name",
    "fieldname": "fathers_name",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Father's Name"
   },
   {
+   "fetch_from": "adhikari.current_address",
    "fieldname": "address",
    "fieldtype": "Small Text",
    "label": "Address"
   },
   {
-   "fieldname": "education",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Education"
-  },
-  {
-   "fieldname": "age",
-   "fieldtype": "Int",
-   "in_list_view": 1,
-   "label": "Age"
-  },
-  {
+   "fetch_from": "adhikari.custom_occupation",
    "fieldname": "occupation",
    "fieldtype": "Data",
    "label": "Occupation"
@@ -59,13 +42,27 @@
    "fieldname": "signature",
    "fieldtype": "Signature",
    "label": "Signature"
+  },
+  {
+   "fieldname": "adhikari",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Adhikari",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "adhikari.first_name",
+   "fieldname": "adhikari_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Adhikari Name"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-16 16:46:15.282972",
+ "modified": "2025-07-28 17:08:04.283034",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Committee Members",

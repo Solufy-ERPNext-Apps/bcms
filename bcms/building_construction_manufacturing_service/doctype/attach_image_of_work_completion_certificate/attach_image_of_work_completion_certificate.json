@@ -12,14 +12,14 @@
   {
    "fieldname": "attach_image_of_work_completion_certificate",
    "fieldtype": "Attach",
-   "label": "Attach Image of Work Completion Certificate"
+   "label": "Work Completion Certificate"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-22 19:11:26.117257",
+ "modified": "2025-07-28 14:12:53.515395",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Attach Image of Work Completion Certificate",

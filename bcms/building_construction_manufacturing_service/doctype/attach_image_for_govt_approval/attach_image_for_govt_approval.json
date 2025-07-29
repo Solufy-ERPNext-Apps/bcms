@@ -11,14 +11,15 @@
   {
    "fieldname": "attach_image_for_govt_approval_letter",
    "fieldtype": "Attach",
-   "label": "Attach Image for Govt. Approval Letter"
+   "in_list_view": 1,
+   "label": "Govt. Approval Letter"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-22 18:54:48.539691",
+ "modified": "2025-07-28 14:10:22.260317",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Attach Image for Govt Approval",

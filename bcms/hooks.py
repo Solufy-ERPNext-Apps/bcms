@@ -142,12 +142,12 @@ doctype_js = {"Land Purchase" : "public/js/land_purchase.js",
 # Hook on document methods and events
 
 doc_events = {
-	"Project": {
-        "before_save":"bcms.building_construction_manufacturing_service.customization.project.project.validate_pro"
-# 		# "on_update": "method",
-# 		# "on_cancel": "method",
-# 		# "on_trash": "method"
-	},
+# 	"Project": {
+#         "before_save":"bcms.building_construction_manufacturing_service.customization.project.project.validate_pro"
+# # 		# "on_update": "method",
+# # 		# "on_cancel": "method",
+# # 		# "on_trash": "method"
+# 	},
 	"User": {
         "after_insert": "bcms.building_construction_manufacturing_service.customization.project.user.enqueue_user_permission",
         "on_update": "bcms.building_construction_manufacturing_service.customization.project.user.enqueue_user_permission"

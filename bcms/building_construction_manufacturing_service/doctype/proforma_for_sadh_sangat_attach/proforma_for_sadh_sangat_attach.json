@@ -12,6 +12,7 @@
   {
    "fieldname": "proforma_for_sadh_sangat",
    "fieldtype": "Attach",
+   "in_list_view": 1,
    "label": "Proforma for Sadh Sangat"
   }
  ],
@@ -19,7 +20,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-23 11:50:39.582665",
+ "modified": "2025-07-26 15:36:06.081053",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Proforma for Sadh Sangat attach",

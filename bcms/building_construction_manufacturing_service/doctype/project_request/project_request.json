@@ -81,13 +81,15 @@
    "reqd": 1
   },
   {
+   "fetch_from": "zone.zonal_incharge_name",
    "fieldname": "zonal_incharge_name",
    "fieldtype": "Data",
    "label": "Zonal Incharge Name",
-   "link_filters": "[[\"User\",\"role\",\"=\",\"PP\"]]"
+   "link_filters": "[[\"User\",\"role\",\"=\",\"PP\"]]",
+   "options": "Zone"
   },
   {
-   "fetch_from": "zone.abbreviation",
+   "fetch_from": "zone.zone_abbreviation",
    "fieldname": "zone_abbreviation",
    "fieldtype": "Data",
    "label": "Zone Abbreviation",
@@ -108,6 +110,7 @@
    "reqd": 1
   },
   {
+   "fetch_from": "zone.zonal_incharge_mobile_no",
    "fieldname": "zonal_incharge_mobile_no",
    "fieldtype": "Phone",
    "label": "Zonal Incharge Mobile No"
@@ -117,6 +120,7 @@
    "fieldtype": "Section Break"
   },
   {
+   "fetch_from": "branch.custom_mukhi_name",
    "fieldname": "branch_mukhisanyojak_name",
    "fieldtype": "Link",
    "label": "Branch Mukhi/Sanyojak Name",
@@ -126,7 +130,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-25 16:53:32.705820",
+ "modified": "2025-07-25 19:42:34.571566",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Project Request",

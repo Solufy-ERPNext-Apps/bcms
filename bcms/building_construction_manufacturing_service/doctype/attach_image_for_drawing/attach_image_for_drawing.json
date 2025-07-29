@@ -12,14 +12,14 @@
   {
    "fieldname": "attach_image_for_drawing_file",
    "fieldtype": "Image",
-   "label": "Attach Image for Drawing File "
+   "label": "Drawing File "
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-22 18:44:58.888661",
+ "modified": "2025-07-28 14:11:12.297579",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Attach Image for Drawing",

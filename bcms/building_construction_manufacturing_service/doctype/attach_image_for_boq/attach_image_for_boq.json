@@ -12,14 +12,15 @@
   {
    "fieldname": "attach_image_for_boq_estimate",
    "fieldtype": "Attach",
-   "label": "Attach Image for BOQ/ Estimate"
+   "in_list_view": 1,
+   "label": "BOQ/ Estimate"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-22 18:49:09.835796",
+ "modified": "2025-07-28 14:11:41.473358",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Attach Image for BOQ",

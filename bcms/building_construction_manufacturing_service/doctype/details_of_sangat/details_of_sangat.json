@@ -15,38 +15,52 @@
  ],
  "fields": [
   {
+   "columns": 1,
    "fieldname": "normal_sangat",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "Normal Sangat\t"
   },
   {
+   "columns": 1,
    "fieldname": "special_sangat",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "Special Sangat\t"
   },
   {
+   "columns": 1,
    "fieldname": "ladies_sangat",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "Ladies Sangat\t"
   },
   {
+   "columns": 2,
    "fieldname": "average_monthly",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "Average Monthly\t"
   },
   {
+   "columns": 2,
    "fieldname": "monthly_building",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "Monthly Building\t"
   },
   {
+   "columns": 1,
    "fieldname": "bal_sangat",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "Bal Sangat"
   },
   {
+   "columns": 2,
    "fieldname": "english_sangat",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "English Sangat\t"
   }
  ],
@@ -54,7 +68,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-17 10:46:57.722192",
+ "modified": "2025-07-26 15:32:23.949797",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "DETAILS OF SANGAT",
