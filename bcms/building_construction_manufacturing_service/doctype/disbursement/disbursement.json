@@ -8,12 +8,10 @@
  "field_order": [
   "project_details_section",
   "project",
-  "state",
-  "khetra",
   "column_break_zmta",
   "project_type",
-  "zone",
-  "unit",
+  "expenditure_details_section",
+  "table_jxqd",
   "bank_and_account_details_section",
   "bank_name",
   "ifsc_code",
@@ -103,33 +101,9 @@
    "label": "Project Category"
   },
   {
-   "fieldname": "zone",
-   "fieldtype": "Link",
-   "label": "Zone",
-   "options": "Zone"
-  },
-  {
-   "fieldname": "unit",
-   "fieldtype": "Link",
-   "label": "Unit",
-   "options": "Unit"
-  },
-  {
-   "fieldname": "khetra",
-   "fieldtype": "Link",
-   "label": "Khetra",
-   "options": "Khetra"
-  },
-  {
    "fieldname": "total_expense",
    "fieldtype": "Currency",
    "label": "Total expense"
-  },
-  {
-   "fieldname": "state",
-   "fieldtype": "Link",
-   "label": "State",
-   "options": "State"
   },
   {
    "fieldname": "project_details_section",
@@ -168,13 +142,24 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "expenditure_details_section",
+   "fieldtype": "Section Break",
+   "label": "Expenditure Details"
+  },
+  {
+   "fieldname": "table_jxqd",
+   "fieldtype": "Table",
+   "options": "Expenditure Details",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-07-23 16:15:24.582794",
+ "modified": "2025-07-31 17:34:40.733154",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Disbursement",

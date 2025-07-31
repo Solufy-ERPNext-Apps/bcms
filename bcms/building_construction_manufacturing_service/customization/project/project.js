@@ -42,7 +42,9 @@ frappe.ui.form.on("Estimate", {
 			return sum + (flt(item.quantity) * flt(item.rate));
 		}, 0);
 		frm.refresh_field("custom_total_amount");
-	}
+	},
+	
+	
 })
 frappe.ui.form.on("Financial Approval", {
 	estimated_cost: function(frm, cdt, cdn) {
@@ -195,7 +197,22 @@ frappe.ui.form.on('Project', {
 				'color': 'White',
 				'font-weight': 'bold'
 			});
-		
+		if (!frm.is_new() && frm.doc.workflow_state !== "Project Request" && frm.doc.workflow_state !== "Work completion Certificate") {
+			const dis_btn = frm.add_custom_button(__('Additional Fund Request'), function () {
+				frappe.new_doc("Additional Fund Request", {
+					project:frm.doc.name,
+					project_name: frm.doc.project_name,
+					project_type:frm.doc.project_type,
+					branch:frm.doc.custom_branch,
+					status:frm.doc.status
+				});
+			});
+			dis_btn.css({
+				'background-color': 'Black',
+				'color': 'White',
+				'font-weight': 'bold'
+			});
+		}
 
 			
 
@@ -402,12 +419,10 @@ function calculate_disbursement_and_remaining(frm, validate_rows) {
 	if (frm.doc.custom_remaining_amount !== remaining) {
 		frm.set_value("custom_remaining_amount", remaining).then(() => frm.dirty());
 	}
-
-	// ✅ Auto change workflow if remaining becomes 0 and current state is 'Under Disbursement'
 	if (
 		remaining === 0 &&
 		frm.doc.workflow_state === "Under Disbursement" &&
-		frm.doc.__islocal !== 1 // not a new unsaved doc
+		frm.doc.__islocal !== 1 
 	) {
 		frm.set_value("workflow_state", "Work completion Certificate").then(() => {
 			frm.dirty();
@@ -460,50 +475,216 @@ function update_project_allocated_from_suggestion(frm) {
 });
 
 
+frappe.ui.form.on('Project', {
+    onload_post_render: function(frm) {
+        set_all_in_words(frm);
+    },
+    refresh: function(frm) {
+        set_all_in_words(frm);
+    },
+
+    custom_estimate_cost: function(frm) {
+        get_in_words(frm, 'custom_estimate_cost', 'custom_estimate_cost_in_the_words');
+    },
+    custom_total_estimated_cost: function(frm) {
+        get_in_words(frm, 'custom_total_estimated_cost', 'custom_total_estimated_cost_in_site');
+    },
+    custom_total_amount: function(frm) {
+        get_in_words(frm, 'custom_total_amount', 'custom_total_amount_in_words');
+    },
+    custom_suggested_by_member_incharge_pp: function(frm) {
+        get_in_words(frm, 'custom_suggested_by_member_incharge_pp', 'custom_amount_in_words_in_pp');
+    },
+    custom_suggested_by_secretory_snm: function(frm) {
+        get_in_words(frm, 'custom_suggested_by_secretory_snm', 'custom_amount_in_words_snm');
+    },
+    custom_suggested_by_member_incharge_a__f: function(frm) {
+        get_in_words(frm, 'custom_suggested_by_member_incharge_a__f', 'custom_amount_in_words_a__f');
+    },
+    custom_project_allocated_amount: function(frm) {
+        get_in_words(frm, 'custom_project_allocated_amount', 'custom_project_allocated_amount_in_words');
+    },
+    custom_total_allocated_amount: function(frm) {
+        get_in_words(frm, 'custom_total_allocated_amount', 'custom_total_allocated_amount_in_words');
+    },
+    custom_disbursement_amount: function(frm) {
+        get_in_words(frm, 'custom_disbursement_amount', 'custom_disbursement_amount_in_words');
+    },
+    custom_remaining_amount: function(frm) {
+        get_in_words(frm, 'custom_remaining_amount', 'custom_remaining_amount_in_words');
+    },
+    custom_additional_require_amount: function(frm) {
+        get_in_words(frm, 'custom_additional_require_amount', 'custom_additional_require_amount_in_words');
+    }
+});
+
+function get_in_words(frm, source_field, target_field) {
+    const value = frm.doc[source_field];
+    if (value) {
+        frappe.call({
+            method: "bcms.building_construction_manufacturing_service.customization.project.project.get_amount_in_words",
+            args: { amount: value },
+            callback: function(r) {
+                if (r.message) {
+                    frm.set_value(target_field, r.message);
+
+                }
+            }
+        });
+    } else {
+        frm.set_value(target_field, "");
+    }
+}
+
+// ✅ Helper function to call on form load
+function set_all_in_words(frm) {
+    const field_map = {
+        'custom_estimate_cost': 'custom_estimate_cost_in_the_words',
+        'custom_total_estimated_cost': 'custom_total_estimated_cost_in_site',
+        'custom_total_amount': 'custom_total_amount_in_words',
+        'custom_suggested_by_member_incharge_pp': 'custom_amount_in_words_in_pp',
+        'custom_suggested_by_secretory_snm': 'custom_amount_in_words_snm',
+        'custom_suggested_by_member_incharge_a__f': 'custom_amount_in_words_a__f',
+        'custom_project_allocated_amount': 'custom_project_allocated_amount_in_words',
+        'custom_total_allocated_amount': 'custom_total_allocated_amount_in_words',
+        'custom_disbursement_amount': 'custom_disbursement_amount_in_words',
+        'custom_remaining_amount': 'custom_remaining_amount_in_words',
+        'custom_additional_require_amount': 'custom_additional_require_amount_in_words'
+    };
+
+    for (let source in field_map) {
+        let target = field_map[source];
+        get_in_words(frm, source, target);
+    }
+}
 
 
 
+frappe.ui.form.on('Project', {
+    onload: function (frm) {
+        if (!frm.is_new()) return;
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const fields = [
+            "land", "custom_bhavan", "custom_branch", "custom_branch_code", "custom_estimate_cost",
+            "project_name", "custom_zone", "custom_zone_no", "custom_zone_name",
+            "custom_zonal_incharge", "custom_mobile_no"
+        ];
+
+        fields.forEach(field => {
+            const value = urlParams.get(field);
+            if (value) frm.set_value(field, value);
+        });
+    },
+
+    refresh: function (frm) {
+        if (!frm.is_new()) return;
+
+        const fields_to_display = [
+            "land", "custom_bhavan", "custom_branch", "custom_branch_code", "custom_estimate_cost",
+            "project_name", "custom_zone", "custom_zone_no", "custom_zone_name",
+            "custom_zonal_incharge", "custom_mobile_no"
+        ];
+
+        let html = `<h4><b>Land Details Summary</b></h4><table class="table table-bordered"><tr><th>Field</th><th>Value</th></tr>`;
+
+        fields_to_display.forEach(field => {
+            html += `<tr><td>${frappe.model.unscrub(field)}</td><td>${frm.doc[field] || ''}</td></tr>`;
+        });
+
+        html += `</table>`;
+
+        frm.fields_dict.land_summary.$wrapper.html(html);
+    }
+});
 
 
+frappe.ui.form.on('Project', {
+    onload: function (frm) {
+        if (!frm.is_new()) return;
 
+        const urlParams = new URLSearchParams(window.location.search);
+        const land_id = urlParams.get("land_id");
 
+        if (land_id) {
+            // Set land_id to custom_land field
+            frm.set_value("custom_land", land_id);
 
+            // Fetch land details from server
+            frappe.call({
+                method: "frappe.client.get",
+                args: {
+                    doctype: "Land Details",
+                    name: land_id
+                },
+                callback: function (r) {
+                    if (r.message) {
+                        const land = r.message;
 
+                        // Save data to display in HTML summary
+                        frm.land_details_data = {
+                            "Land ID": land.name,
+                            "Branch": land.custom_branch,
+                            "State": land.state,
+                            "Zone": land.custom_zone,
+                            "Zone No": land.custom_zone_no,
+                            "Zone Name": land.custom_zone_name,
+                            "Bhavan": land.custom_bhavan,
+                            "Branch Code": land.custom_branch_code,
+                            "Estimate Cost": land.custom_estimate_cost,
+                            "Project Name": land.project_name,
+                            "Zonal Incharge": land.custom_zonal_incharge,
+                            "Mobile No": land.custom_mobile_no
+                        };
 
+                        // Optional: also set some fields if you want
+                        frm.set_value("project_name", land.project_name || "");
+                        frm.set_value("custom_branch", land.custom_branch || "");
 
+                        render_land_summary(frm);
+                    }
+                }
+            });
+        }
+    },
 
+    refresh: function (frm) {
+        if (frm.is_new() && frm.land_details_data) {
+            render_land_summary(frm);
+        }
+    }
+});
 
+function render_land_summary(frm) {
+    const data = frm.land_details_data || {};
+    if (!Object.keys(data).length) return;
 
+    let html = `
+        <h4><b>Land Details Summary</b></h4>
+        <table class="table table-bordered" style="margin-top: 10px;">
+            <thead>
+                <tr><th>Field</th><th>Value</th></tr>
+            </thead>
+            <tbody>
+    `;
 
+    Object.entries(data).forEach(([key, value]) => {
+        html += `<tr><td>${key}</td><td>${value || ''}</td></tr>`;
+    });
 
+    html += `</tbody></table>`;
+    frm.fields_dict.custom_land_summarys.$wrapper.html(html);  // 👈 Renders in HTML field
+}
 
+frappe.ui.form.on('Project', {
+    onload: function (frm) {
+        if (!frm.is_new()) return;
 
+        const urlParams = new URLSearchParams(window.location.search);
+        const land_id = urlParams.get("land_id");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        if (land_id) {
+            frm.set_value("custom_land", land_id);
+        }
+    }
+});

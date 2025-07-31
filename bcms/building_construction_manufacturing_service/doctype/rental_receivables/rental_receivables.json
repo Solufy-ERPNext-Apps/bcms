@@ -9,8 +9,9 @@
   "rental_receivables_details_section",
   "rental_receivable_from_date",
   "rental_receivable_to_date",
-  "rental_value",
   "tds",
+  "column_break_omxv",
+  "rental_value",
   "receiavble"
  ],
  "fields": [
@@ -43,13 +44,17 @@
    "fieldname": "receiavble",
    "fieldtype": "Data",
    "label": "Receiavble"
+  },
+  {
+   "fieldname": "column_break_omxv",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-08 21:49:31.244937",
+ "modified": "2025-08-01 12:28:34.107101",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Rental Receivables",

@@ -1,0 +1,113 @@
+{
+ "Branch": [
+  {
+   "dt": "Branch",
+   "fieldname": "custom_branch_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "insert_after": "branch",
+   "label": "Branch No.",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Branch",
+   "fetch_from": "custom_mukhi.employee_name",
+   "fieldname": "custom_mukhi_name",
+   "fieldtype": "Data",
+   "insert_after": "custom_mukhi",
+   "label": "Mukhi Incharge",
+   "module": "Building Construction Manufacturing Service",
+   "read_only": 1
+  },
+  {
+   "dt": "Branch",
+   "fetch_from": "custom_zone.zonal_incharge",
+   "fieldname": "custom_mukhi",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "insert_after": "custom_zone_name",
+   "label": "Mukhi",
+   "module": "Building Construction Manufacturing Service",
+   "options": "Employee"
+  },
+  {
+   "dt": "Branch",
+   "fetch_from": "custom_zone.zone_name",
+   "fieldname": "custom_zone_name",
+   "fieldtype": "Data",
+   "insert_after": "custom_zone",
+   "is_system_generated": 1,
+   "label": "Zone Name",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Branch",
+   "fieldname": "custom_abbreviation",
+   "fieldtype": "Data",
+   "insert_after": "custom_branch_code",
+   "label": "Abbreviation",
+   "module": "Building Construction Manufacturing Service",
+   "reqd": 1
+  },
+  {
+   "dt": "Branch",
+   "fieldname": "custom_zone",
+   "fieldtype": "Link",
+   "insert_after": "custom_state",
+   "label": "Zone",
+   "module": "Building Construction Manufacturing Service",
+   "options": "Zone"
+  },
+  {
+   "dt": "Branch",
+   "fieldname": "custom_country",
+   "fieldtype": "Link",
+   "insert_after": "custom_branch_code",
+   "label": "Country",
+   "module": "Building Construction Manufacturing Service",
+   "options": "Country"
+  },
+  {
+   "dt": "Branch",
+   "fieldname": "custom_khetra",
+   "fieldtype": "Link",
+   "insert_after": "custom_district",
+   "label": "Khetra",
+   "module": "Building Construction Manufacturing Service",
+   "options": "Khetra"
+  },
+  {
+   "dt": "Branch",
+   "fieldname": "custom_state",
+   "fieldtype": "Link",
+   "insert_after": "branch",
+   "label": "State",
+   "module": "Building Construction Manufacturing Service",
+   "options": "State"
+  },
+  {
+   "dt": "Branch",
+   "fieldname": "custom_column_break_lyaqs",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_mukhi_name",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Branch",
+   "fieldname": "custom_district",
+   "fieldtype": "Link",
+   "insert_after": "custom_country",
+   "label": "District",
+   "module": "Building Construction Manufacturing Service",
+   "options": "District"
+  },
+  {
+   "dt": "Branch",
+   "fieldname": "custom_branch_code",
+   "fieldtype": "Data",
+   "insert_after": "custom_column_break_lyaqs",
+   "label": "Branch Code",
+   "module": "Building Construction Manufacturing Service"
+  }
+ ]
+}

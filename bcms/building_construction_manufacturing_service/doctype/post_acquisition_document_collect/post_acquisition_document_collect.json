@@ -7,10 +7,11 @@
  "engine": "InnoDB",
  "field_order": [
   "post_acquisition_document_collect_section",
-  "document_list",
-  "original_received",
   "no_of_pages",
-  "uploaded"
+  "uploaded",
+  "column_break_byai",
+  "original_received",
+  "document_list"
  ],
  "fields": [
   {
@@ -38,13 +39,17 @@
    "fieldname": "uploaded",
    "fieldtype": "Attach",
    "label": "Uploaded"
+  },
+  {
+   "fieldname": "column_break_byai",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-08 21:13:19.670576",
+ "modified": "2025-08-01 12:29:15.137743",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Post Acquisition Document Collect",

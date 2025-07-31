@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-31 12:33:42.223379",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_kock",
+  "branch_name",
+  "distance_from_branch_kms"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_kock",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "branch_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Branch Name",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "distance_from_branch_kms",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Distance From Branch (KMs)"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-31 12:35:45.399041",
+ "modified_by": "Administrator",
+ "module": "Building Construction Manufacturing Service",
+ "name": "Nearest Branch Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

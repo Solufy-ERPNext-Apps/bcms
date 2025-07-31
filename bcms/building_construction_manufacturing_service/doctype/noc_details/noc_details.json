@@ -1,0 +1,38 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-31 11:29:58.243053",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_hl2u",
+  "noc_approval_procedure_from_national_highway_authorities"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_hl2u",
+   "fieldtype": "Section Break",
+   "label": "NOC approval procedure from National Highway Authorities."
+  },
+  {
+   "fieldname": "noc_approval_procedure_from_national_highway_authorities",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "NOC approval procedure from National Highway Authorities."
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-31 11:46:08.427101",
+ "modified_by": "Administrator",
+ "module": "Building Construction Manufacturing Service",
+ "name": "NOC details",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
