@@ -3,7 +3,6 @@
  "allow_rename": 1,
  "creation": "2025-07-22 19:07:03.100672",
  "doctype": "DocType",
- "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "attach_image_for_construction_committee_form"
@@ -20,7 +19,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-28 14:12:31.081407",
+ "modified": "2025-07-29 12:52:34.831202",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Attach Image for Construction Committee Form",

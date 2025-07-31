@@ -3,7 +3,6 @@
  "allow_rename": 1,
  "creation": "2025-07-22 11:14:26.894210",
  "doctype": "DocType",
- "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "recommendation_letter_section",
@@ -27,7 +26,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-22 17:51:52.410134",
+ "modified": "2025-07-31 11:31:38.108124",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Recommendation Letter",

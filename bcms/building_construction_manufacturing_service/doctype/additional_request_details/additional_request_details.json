@@ -7,11 +7,12 @@
  "engine": "InnoDB",
  "field_order": [
   "posted_on",
-  "requested_amount",
   "requested_by",
-  "approved_amount",
+  "requested_amount",
+  "column_break_odoc",
   "approved_on",
-  "current_state"
+  "current_state",
+  "approved_amount"
  ],
  "fields": [
   {
@@ -60,13 +61,17 @@
    "label": "Current State",
    "mandatory_depends_on": "eval: doc.fieldname == \"current_state\";",
    "options": "Additional Request"
+  },
+  {
+   "fieldname": "column_break_odoc",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-28 00:43:47.215745",
+ "modified": "2025-08-01 12:27:22.206783",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Additional Request Details",

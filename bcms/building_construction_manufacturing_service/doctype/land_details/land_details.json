@@ -24,12 +24,19 @@
   "user_name",
   "column_break_g4ou",
   "zonal_incharge",
-  "date"
+  "date",
+  "section_break_niie",
+  "state",
+  "zone",
+  "column_break_xvvi",
+  "branch",
+  "bhavan"
  ],
  "fields": [
   {
    "fieldname": "land_details_section",
    "fieldtype": "Section Break",
+   "hidden": 1,
    "label": "Land Details"
   },
   {
@@ -106,7 +113,8 @@
   },
   {
    "fieldname": "section_break_mdk0",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "hidden": 1
   },
   {
    "fieldname": "column_break_g4ou",
@@ -133,12 +141,44 @@
    "fieldname": "date",
    "fieldtype": "Date",
    "label": "Date"
+  },
+  {
+   "fieldname": "section_break_niie",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Link",
+   "label": "State",
+   "options": "State"
+  },
+  {
+   "fieldname": "zone",
+   "fieldtype": "Link",
+   "label": "Zone",
+   "options": "Zone"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "column_break_xvvi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bhavan",
+   "fieldtype": "Link",
+   "label": "Bhavan",
+   "options": "Bhavan"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-21 20:06:19.484974",
+ "modified": "2025-07-30 16:07:05.562820",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Land Details",

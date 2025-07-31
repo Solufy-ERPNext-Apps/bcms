@@ -9,12 +9,13 @@
   "cost_estimation_section",
   "total_cost_of_land",
   "govt_value__circle_rate",
+  "cost_of_material_stored",
+  "grand_total_cost",
+  "column_break_jamj",
   "stamp_duty",
   "cost_of_plant_and_machinery",
-  "cost_of_material_stored",
   "registration_expenses",
-  "other_costs",
-  "grand_total_cost"
+  "other_costs"
  ],
  "fields": [
   {
@@ -61,13 +62,17 @@
    "fieldname": "cost_estimation_section",
    "fieldtype": "Section Break",
    "label": "Cost Estimation"
+  },
+  {
+   "fieldname": "column_break_jamj",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-02 10:40:39.619181",
+ "modified": "2025-08-01 12:35:30.350239",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Land Cost Estimation",

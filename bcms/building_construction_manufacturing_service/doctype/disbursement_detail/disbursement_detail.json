@@ -7,11 +7,13 @@
  "engine": "InnoDB",
  "field_order": [
   "posted_on",
-  "requested_amount",
   "requested_by",
-  "approved_amount",
+  "requested_amount",
+  "precentage",
+  "column_break_wsnp",
   "approved_on",
-  "current_state"
+  "current_state",
+  "approved_amount"
  ],
  "fields": [
   {
@@ -58,12 +60,21 @@
    "fieldtype": "Date",
    "in_list_view": 1,
    "label": "Approved On"
+  },
+  {
+   "fieldname": "column_break_wsnp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "precentage",
+   "fieldtype": "Data",
+   "label": "Precentage"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-24 15:16:52.311158",
+ "modified": "2025-07-30 17:15:20.328787",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Disbursement Detail",

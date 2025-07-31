@@ -3,7 +3,6 @@
  "allow_rename": 1,
  "creation": "2025-07-22 11:21:10.841258",
  "doctype": "DocType",
- "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "site_plans"
@@ -20,7 +19,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-22 16:39:57.920110",
+ "modified": "2025-07-29 12:46:03.980838",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Site Plan",

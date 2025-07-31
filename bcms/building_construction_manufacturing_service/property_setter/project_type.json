@@ -1,0 +1,21 @@
+{
+ "Project Type": [
+  {
+   "doctype": "Project Type",
+   "doctype_or_field": "DocType",
+   "module": "Building Construction Manufacturing Service",
+   "property": "field_order",
+   "property_type": "Data",
+   "value": "[\"project_type\", \"custom_abbrivation\", \"custom_column_break_lfzuo\", \"custom_section_break_nmm0l\", \"custom_percentage\", \"description\"]"
+  },
+  {
+   "doctype": "Project Type",
+   "doctype_or_field": "DocField",
+   "field_name": "project_type",
+   "module": "Building Construction Manufacturing Service",
+   "property": "unique",
+   "property_type": "Check",
+   "value": "1"
+  }
+ ]
+}

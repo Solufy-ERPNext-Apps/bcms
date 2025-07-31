@@ -1,0 +1,35 @@
+{
+ "Project Type": [
+  {
+   "dt": "Project Type",
+   "fieldname": "custom_percentage",
+   "fieldtype": "Table",
+   "insert_after": "custom_section_break_nmm0l",
+   "label": "Percentage",
+   "module": "Building Construction Manufacturing Service",
+   "options": "Disbursement Percentage"
+  },
+  {
+   "dt": "Project Type",
+   "fieldname": "custom_section_break_nmm0l",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_column_break_lfzuo",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project Type",
+   "fieldname": "custom_abbrivation",
+   "fieldtype": "Data",
+   "insert_after": "project_type",
+   "label": "Abbreviation",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project Type",
+   "fieldname": "custom_column_break_lfzuo",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_abbrivation",
+   "module": "Building Construction Manufacturing Service"
+  }
+ ]
+}

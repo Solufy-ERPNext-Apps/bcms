@@ -8,9 +8,10 @@
  "field_order": [
   "unit",
   "strength_of_sewadal",
-  "no_of_males",
+  "no_of_bal_sewadal",
+  "column_break_vosl",
   "no_of_females",
-  "no_of_bal_sewadal"
+  "no_of_males"
  ],
  "fields": [
   {
@@ -43,13 +44,17 @@
    "in_list_view": 1,
    "label": "Unit",
    "options": "Unit"
+  },
+  {
+   "fieldname": "column_break_vosl",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-28 14:28:29.196140",
+ "modified": "2025-08-01 12:24:00.094429",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "DETAILS OF SEWADAL",
