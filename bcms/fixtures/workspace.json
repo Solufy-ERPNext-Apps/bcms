@@ -1751,7 +1751,7 @@
  },
  {
   "charts": [],
-  "content": "[{\"id\":\"VORZBEuqDi\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Member Incharge (Land Clearence)</span>\",\"col\":12}},{\"id\":\"2M3_IMNHVJ\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Land Clearance\",\"col\":12}}]",
+  "content": "[{\"id\":\"VORZBEuqDi\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Member Incharge (Land Clearence)</span>\",\"col\":12}},{\"id\":\"CE3WoKP59F\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Create a Project\",\"col\":3}},{\"id\":\"0ByQ-k2bIb\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"hn9adBCRvY\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"To Do\",\"col\":4}},{\"id\":\"VzkZ1RAx0C\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Ongoing Project\",\"col\":4}},{\"id\":\"5PNY--IMdl\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Completed Projects\",\"col\":4}},{\"id\":\"73YjBP8qiC\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"WcpypSFvc7\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"To Do\",\"col\":4}},{\"id\":\"M14qLG-xJI\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Ongoing Project\",\"col\":4}},{\"id\":\"wdRPErie6c\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Completed\",\"col\":4}}]",
   "custom_blocks": [],
   "docstatus": 0,
   "doctype": "Workspace",
@@ -1762,7 +1762,7 @@
   "is_hidden": 0,
   "label": "Member Incharge (Land Clearence)",
   "links": [],
-  "modified": "2025-07-28 11:55:41.755246",
+  "modified": "2025-08-01 18:04:18.820469",
   "module": null,
   "name": "Member Incharge (Land Clearence)",
   "number_cards": [],
@@ -1771,11 +1771,27 @@
   "quick_lists": [
    {
     "document_type": "Project",
-    "label": "Land Clearance",
+    "label": "To Do",
     "parent": "Member Incharge (Land Clearence)",
     "parentfield": "quick_lists",
     "parenttype": "Workspace",
     "quick_list_filter": "[[\"Project\",\"workflow_state\",\"=\",\"Land Clearance\",false]]"
+   },
+   {
+    "document_type": "Project",
+    "label": "Ongoing Project",
+    "parent": "Member Incharge (Land Clearence)",
+    "parentfield": "quick_lists",
+    "parenttype": "Workspace",
+    "quick_list_filter": "[[\"Project\",\"workflow_state\",\"not in\",[\"Work Completion Certificate\",\"Land Clearance\"],false]]"
+   },
+   {
+    "document_type": "Project",
+    "label": "Completed",
+    "parent": "Member Incharge (Land Clearence)",
+    "parentfield": "quick_lists",
+    "parenttype": "Workspace",
+    "quick_list_filter": "[[\"Project\",\"workflow_state\",\"=\",\"Work completion Certificate\",false]]"
    }
   ],
   "restrict_to_domain": null,
@@ -1788,7 +1804,76 @@
    }
   ],
   "sequence_id": 41.0,
-  "shortcuts": [],
+  "shortcuts": [
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Create a Project",
+    "link_to": null,
+    "parent": "Member Incharge (Land Clearence)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": null,
+    "type": "URL",
+    "url": "/app/land-details"
+   },
+   {
+    "color": "Red",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "To Do",
+    "link_to": "Project",
+    "parent": "Member Incharge (Land Clearence)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Project\",\"workflow_state\",\"=\",\"Land Clearance\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Blue",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Ongoing Project",
+    "link_to": "Project",
+    "parent": "Member Incharge (Land Clearence)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Project\",\"workflow_state\",\"not in\",[\"Work Completion Certificate\",\"Land Clearance\"],false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Green",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Completed Projects",
+    "link_to": "Project",
+    "parent": "Member Incharge (Land Clearence)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Project\",\"workflow_state\",\"=\",\"Work completion Certificate\",false]]",
+    "type": "DocType",
+    "url": null
+   }
+  ],
   "title": "Member Incharge (Land Clearence)"
  },
  {

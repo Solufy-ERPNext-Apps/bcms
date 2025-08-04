@@ -18,10 +18,12 @@
    "label": "Expenditure Details"
   },
   {
+   "default": "Form",
    "fieldname": "particular",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "in_list_view": 1,
-   "label": "Particular"
+   "label": "Particular",
+   "options": "Form\nVoucher\nBill\nMuster Roll"
   },
   {
    "fieldname": "attachment",
@@ -40,7 +42,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-31 17:32:55.551612",
+ "modified": "2025-08-01 14:07:49.031045",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Expenditure Details",

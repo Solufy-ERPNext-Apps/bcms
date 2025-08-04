@@ -1,0 +1,12 @@
+{
+ "Project": [
+  {
+   "doctype": "Project",
+   "doctype_or_field": "DocType",
+   "module": "Building Construction Manufacturing Service",
+   "property": "field_order",
+   "property_type": "Data",
+   "value": "[\"naming_series\", \"project_name\", \"status\", \"project_type\", \"is_active\", \"percent_complete_method\", \"percent_complete\", \"column_break_5\", \"project_template\", \"expected_start_date\", \"expected_end_date\", \"priority\", \"department\", \"customer_details\", \"customer\", \"column_break_14\", \"sales_order\", \"custom_section_break_4etbj\", \"custom_project_manager\", \"custom_project_allocation_total_hrs\", \"custom_supported_total_hrs\", \"custom_remaining_total_hrs\", \"custom_column_break_vmrvs\", \"custom_based_on_hrs_package\", \"custom_resources_based_project\", \"custom_is_under_amc\", \"custom_renewal_date\", \"custom_key_person_email\", \"users_section\", \"users\", \"copied_from\", \"section_break0\", \"notes\", \"section_break_18\", \"actual_start_date\", \"actual_time\", \"column_break_20\", \"actual_end_date\", \"project_details\", \"estimated_costing\", \"total_costing_amount\", \"total_purchase_cost\", \"company\", \"column_break_28\", \"total_sales_amount\", \"total_billable_amount\", \"total_billed_amount\", \"total_consumed_material_cost\", \"cost_center\", \"margin\", \"gross_margin\", \"column_break_37\", \"per_gross_margin\", \"monitor_progress\", \"collect_progress\", \"holiday_list\", \"frequency\", \"from_time\", \"to_time\", \"first_email\", \"second_email\", \"daily_time_to_send\", \"day_to_send\", \"weekly_time_to_send\", \"column_break_45\", \"message\"]"
+  }
+ ]
+}

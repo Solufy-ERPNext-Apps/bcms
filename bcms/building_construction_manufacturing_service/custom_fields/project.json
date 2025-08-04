@@ -2,6 +2,1024 @@
  "Project": [
   {
    "dt": "Project",
+   "fieldname": "custom_actual_work_completion_certificate",
+   "fieldtype": "Table",
+   "insert_after": "custom_work_completion_certificate11",
+   "label": "Actual Work Completion Certificate",
+   "module": "Building Construction Manufacturing Service",
+   "options": "Attach Image of Work Completion Certificate"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_m8ia5",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_yzhto",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_remarks_miaf",
+   "fieldtype": "Small Text",
+   "insert_after": "custom_amount_in_words_a__f",
+   "label": "Remarks [MI(A&F)]",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_remarks_secretary",
+   "fieldtype": "Small Text",
+   "insert_after": "custom_amount_in_words_snm",
+   "label": "Remarks [Secretary]",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_remarks_mipp",
+   "fieldtype": "Small Text",
+   "insert_after": "custom_amount_in_words_in_pp",
+   "label": "Remarks [MI(PP)]",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_land_detail_lc",
+   "fieldtype": "Table",
+   "insert_after": "custom_section_break_e3rmm",
+   "label": "Land Details",
+   "module": "Building Construction Manufacturing Service",
+   "options": "Land Details Form"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_4lkf9",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_approved6",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_eup16",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_b3pnm",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_b3pnm",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_mfgmy",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_mfgmy",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_8dmvr",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_8dmvr",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_aidth",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_ercii",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_section_break_uchvf",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_geibe",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_approved5",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_0k6p5",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_bkhr6",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_bkhr6",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_blwsr",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_blwsr",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_o9ttr",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_o9ttr",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_nphpg",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_nphpg",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_sujrc",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_cgoes",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_iv8uf",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_iv8uf",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_m8ia5",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_yzhto",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_ij5ig",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_ij5ig",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_eeane",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_eeane",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_section_break_fstlm",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_ovnnq",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_x4u7a",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_x4u7a",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_0sjsd",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_0sjsd",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_hzcuq",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_hzcuq",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_umqia",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_umqia",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_ppwrd",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_ppwrd",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_section_break_lm2go",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_qxsdx",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_y3lkz",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_y3lkz",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_vluul",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_vluul",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_ucwaw",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_ucwaw",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_2fgsy",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_2fgsy",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_cyo7c",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_cyo7c",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_section_break_3l55h",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_50mlr",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_approved1",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_mkyqc",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_fcy9g",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_fcy9g",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_0vbrn",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_0vbrn",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_y7tvs",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_y7tvs",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_rzdc4",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_rzdc4",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_ony0u",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_ov0ta",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_qv0s6",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_u7spt",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_approved",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_cdviv",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_qx5an",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_qx5an",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_ov0ta",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_qv0s6",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_ucsy1",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_97dhm",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_approval_section",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_2o0an",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_approved4",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "depends_on": "eval: in_list([\"Member Incharge BM (Finance Approval)\", \"Member Incharge PP (Financial Approval)\", \"Secretary (Financial Approval)\",\"Member Incharge A&F(Financial Approval)\"], doc.workflow_state);",
+   "dt": "Project",
+   "fieldname": "custom_section_break_fstlm",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_fin_submission_date",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_reject7",
+   "fieldtype": "Button",
+   "insert_after": "custom_column_break_zcz8k",
+   "label": "Reject",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_zcz8k",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_approved7",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_approved7",
+   "fieldtype": "Button",
+   "insert_after": "custom_section_break_fcl4q",
+   "label": "Approve",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_section_break_fcl4q",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "insert_after": "custom_work_submission_date",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_reject6",
+   "fieldtype": "Button",
+   "insert_after": "custom_column_break_4lkf9",
+   "label": "Reject",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_aidth",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_ercii",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_approved6",
+   "fieldtype": "Button",
+   "insert_after": "custom_column_break_eup16",
+   "label": "Approve",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_section_break_uchvf",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "insert_after": "custom_additional_require_amount_in_words",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_reject5",
+   "fieldtype": "Button",
+   "insert_after": "custom_column_break_geibe",
+   "label": "Reject",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_sujrc",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_section_break_4qwmm",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_approved5",
+   "fieldtype": "Button",
+   "insert_after": "custom_column_break_0k6p5",
+   "label": "Approve",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "depends_on": "eval: doc.workflow_state==\"Construction Committee Formed\";",
+   "dt": "Project",
+   "fieldname": "custom_section_break_4qwmm",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_commitee_submission_date",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_reject4",
+   "fieldtype": "Button",
+   "insert_after": "custom_column_break_2o0an",
+   "label": "Reject",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_approved4",
+   "fieldtype": "Button",
+   "insert_after": "custom_column_break_cgoes",
+   "label": "Approve",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_reject3",
+   "fieldtype": "Button",
+   "insert_after": "custom_column_break_qrlyh",
+   "label": "Reject",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_qrlyh",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_approved3",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_approved3",
+   "fieldtype": "Button",
+   "insert_after": "custom_column_break_ovnnq",
+   "label": "Approve",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_section_break_lm2go",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_approval_submission_date",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_reject2",
+   "fieldtype": "Button",
+   "insert_after": "custom_column_break_5rhsj",
+   "label": "Reject",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_5rhsj",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_approved2",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_approved2",
+   "fieldtype": "Button",
+   "insert_after": "custom_column_break_qxsdx",
+   "label": "Approve",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "depends_on": "eval: doc.workflow_state==\"Planning & Designing\";",
+   "dt": "Project",
+   "fieldname": "custom_section_break_3l55h",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_planing_submission_date",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_reject1",
+   "fieldtype": "Button",
+   "insert_after": "custom_column_break_50mlr",
+   "label": "Reject",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_ony0u",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_section_break_amrub",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_approved1",
+   "fieldtype": "Button",
+   "insert_after": "custom_column_break_mkyqc",
+   "label": "Approve",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "depends_on": "eval: doc.workflow_state==\"Land Clearance\";",
+   "dt": "Project",
+   "fieldname": "custom_section_break_amrub",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_land_purchase_submission_date",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_reject",
+   "fieldtype": "Button",
+   "insert_after": "custom_column_break_u7spt",
+   "label": "Reject",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_ucsy1",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_column_break_97dhm",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_approved",
+   "fieldtype": "Button",
+   "insert_after": "custom_column_break_cdviv",
+   "label": "Approve",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "depends_on": "eval: doc.workflow_state==\"Project Request\";",
+   "dt": "Project",
+   "fieldname": "custom_approval_section",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_submission_date",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_preview_disbursement_details",
+   "fieldtype": "Text Editor",
+   "insert_after": "custom_disbursement_and_additional_request_details",
+   "label": "Disbursement Details",
+   "module": "Building Construction Manufacturing Service",
+   "read_only": 1
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_disbursement_and_additional_request_details",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_disbursement",
+   "label": "Disbursement and Additional Request Details",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_branch_bank_account_number",
+   "fieldtype": "Data",
+   "insert_after": "custom_column_break_vgxq5",
+   "label": "Branch Bank Account Number",
+   "module": "Building Construction Manufacturing Service",
+   "read_only_depends_on": "eval: doc.workflow_state != \"Construction Committee Formed\";"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_civil_engineerdraftsmanarchitect_number",
+   "fieldtype": "Data",
+   "insert_after": "custom_branch_bank_account_name",
+   "label": "Civil Engineer/Draftsman/Architect Number",
+   "module": "Building Construction Manufacturing Service",
+   "read_only_depends_on": "eval: doc.workflow_state != \"Construction Committee Formed\";"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_section_break_9tse3",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_boq_estimate11",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "depends_on": "eval:doc.project_type !== 'Maintenance';",
+   "dt": "Project",
+   "fieldname": "custom_section_break_zmfon",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_proforma_for_sadh_sangat_attach",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_end_date",
+   "fieldtype": "Date",
+   "insert_after": "custom_start_date_",
+   "label": "End Date",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_start_date_",
+   "fieldtype": "Date",
+   "insert_after": "custom_actual_work_completion_certificate",
+   "label": "Start Date ",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "default": "To Do",
+   "dt": "Project",
+   "fieldname": "custom_list_view",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "insert_after": "custom_user",
+   "label": "List View",
+   "module": "Building Construction Manufacturing Service",
+   "options": "To Do\nOngoing\nCompleted"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_user",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "insert_after": "custom_remark4",
+   "label": "User",
+   "module": "Building Construction Manufacturing Service",
+   "options": "User"
+  },
+  {
+   "depends_on": "eval:doc.project_type !== 'Building Construction' && doc.project_type !== 'Boundary Wall';",
+   "dt": "Project",
+   "fieldname": "custom_bhavan",
+   "fieldtype": "Link",
+   "insert_after": "custom_project_type_abbr",
+   "label": "Bhavan",
+   "module": "Building Construction Manufacturing Service",
+   "options": "Bhavan"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_additional_fund_request_detail",
+   "fieldtype": "Text Editor",
+   "insert_after": "custom_preview_disbursement_details",
+   "label": "Additional Fund Request Detail",
+   "module": "Building Construction Manufacturing Service",
+   "read_only": 1
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_duration",
+   "fieldtype": "Data",
+   "insert_after": "custom_end_date",
+   "label": "Duration",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fetch_from": "custom_zone.zone_no",
+   "fieldname": "custom_zone_no",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "insert_after": "custom_branch",
+   "label": "Zone No.",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fetch_from": "custom_land.branch",
+   "fieldname": "custom_branch",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "insert_after": "custom_zone",
+   "label": "Branch",
+   "module": "Building Construction Manufacturing Service",
+   "options": "Branch"
+  },
+  {
+   "dt": "Project",
+   "fetch_from": "custom_land.zone",
+   "fieldname": "custom_zone",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "insert_after": "custom_branch_code",
+   "label": "Zone",
+   "module": "Building Construction Manufacturing Service",
+   "options": "Zone"
+  },
+  {
+   "dt": "Project",
+   "fetch_from": "custom_branch.custom_branch_code",
+   "fieldname": "custom_branch_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "insert_after": "custom_project_type_abbreviation",
+   "label": "Branch Code",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fetch_from": "project_type.custom_abbrivation",
+   "fieldname": "custom_project_type_abbreviation",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "insert_after": "project_name",
+   "label": "Project Type Abbreviation",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_land_details_forms",
+   "fieldtype": "Table",
+   "insert_after": "custom_land_detail_form",
+   "label": "Land Details Form",
+   "module": "Building Construction Manufacturing Service",
+   "options": "Land Details Form"
+  },
+  {
+   "depends_on": "eval:!doc.custom_is_from_checkbox__ && doc.custom_receipt_book_received_ == 'Branch';",
+   "dt": "Project",
+   "fieldname": "custom_which_branch",
+   "fieldtype": "Link",
+   "insert_after": "custom_receipt_book_received_",
+   "label": "Branch",
+   "module": "Building Construction Manufacturing Service",
+   "options": "Branch"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_land_summarys",
+   "fieldtype": "Text Editor",
+   "insert_after": "custom_land_details_form",
+   "label": "Land Summury",
+   "module": "Building Construction Manufacturing Service",
+   "read_only": 1
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_land_details_form",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_zone_no",
+   "label": "Land Details Form",
+   "module": "Building Construction Manufacturing Service",
+   "read_only": 1
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_work_submission_date",
+   "fieldtype": "Datetime",
+   "insert_after": "custom_column_break_1i6r9",
+   "label": "Submission Date",
+   "module": "Building Construction Manufacturing Service",
+   "read_only": 1
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_1i6r9",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_work_approved_by",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_work_approved_by",
+   "fieldtype": "Link",
+   "insert_after": "custom_section_break_fqzhq",
+   "label": "Approved By",
+   "module": "Building Construction Manufacturing Service",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_section_break_fqzhq",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_remark8",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_commitee_submission_date",
+   "fieldtype": "Datetime",
+   "insert_after": "custom_column_break_wojay",
+   "label": "Submission Date",
+   "module": "Building Construction Manufacturing Service",
+   "read_only": 1
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_wojay",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_commitee_approved_by",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_commitee_approved_by",
+   "fieldtype": "Link",
+   "insert_after": "custom_section_break_66tvs",
+   "label": "Approved By",
+   "module": "Building Construction Manufacturing Service",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_section_break_66tvs",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_remark7",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_fin_submission_date",
+   "fieldtype": "Date",
+   "insert_after": "custom_column_break_gympf",
+   "label": "Submission Date",
+   "module": "Building Construction Manufacturing Service",
+   "read_only": 1
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_gympf",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_fin_approved_by",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_fin_approved_by",
+   "fieldtype": "Link",
+   "insert_after": "custom_section_break_llq4x",
+   "label": "Approved By",
+   "module": "Building Construction Manufacturing Service",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_section_break_llq4x",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_remark5",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_approval_submission_date",
+   "fieldtype": "Datetime",
+   "insert_after": "custom_column_break_t2cz7",
+   "label": "Submission Date",
+   "module": "Building Construction Manufacturing Service",
+   "read_only": 1
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_t2cz7",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_approval_approved_by",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_approval_approved_by",
+   "fieldtype": "Link",
+   "insert_after": "custom_section_break_gsmth",
+   "label": "Approved By",
+   "module": "Building Construction Manufacturing Service",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_section_break_gsmth",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_list_view",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_submission_date",
+   "fieldtype": "Datetime",
+   "insert_after": "custom_column_break_u6zer",
+   "label": "Submission Date",
+   "module": "Building Construction Manufacturing Service",
+   "read_only": 1
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_planing_submission_date",
+   "fieldtype": "Datetime",
+   "insert_after": "custom_column_break_743et",
+   "label": "Submission Date",
+   "module": "Building Construction Manufacturing Service",
+   "read_only": 1
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_743et",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_planing_approved_by",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_planing_approved_by",
+   "fieldtype": "Link",
+   "insert_after": "custom_section_break_jnldu",
+   "label": "Approved By",
+   "module": "Building Construction Manufacturing Service",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_section_break_jnldu",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_remark3",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_land_purchase_submission_date",
+   "fieldtype": "Datetime",
+   "insert_after": "custom_column_break_3ywg1",
+   "label": "Submission Date",
+   "module": "Building Construction Manufacturing Service",
+   "read_only": 1
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_3ywg1",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_land_purchase_approved_by",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_land_purchase_approved_by",
+   "fieldtype": "Link",
+   "insert_after": "custom_section_break_bptwe",
+   "label": "Approved By",
+   "module": "Building Construction Manufacturing Service",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_section_break_bptwe",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_remark1",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_column_break_u6zer",
+   "fieldtype": "Column Break",
+   "insert_after": "custom_approved_by",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_approved_by",
+   "fieldtype": "Link",
+   "insert_after": "custom_section_break_cttzu",
+   "label": "Approved By",
+   "module": "Building Construction Manufacturing Service",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "dt": "Project",
+   "fieldname": "custom_section_break_cttzu",
+   "fieldtype": "Section Break",
+   "insert_after": "custom_remarks",
+   "module": "Building Construction Manufacturing Service"
+  },
+  {
+   "depends_on": "eval:doc.project_type !== 'Maintenance';",
+   "dt": "Project",
    "fieldname": "custom_land_detail_form",
    "fieldtype": "Section Break",
    "insert_after": "custom_boq_estimates",
@@ -9,58 +1027,20 @@
    "module": "Building Construction Manufacturing Service"
   },
   {
-   "dt": "Project",
-   "fieldname": "total_expense_claim",
-   "fieldtype": "Currency",
-   "insert_after": "total_costing_amount",
-   "is_system_generated": 1,
-   "label": "Total Expense Claim (via Expense Claims)",
-   "module": "Building Construction Manufacturing Service",
-   "read_only": 1
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_boundary_wall_construction_work_completed",
-   "fieldtype": "Check",
-   "insert_after": "custom_column_break_z4sgt",
-   "label": "Boundary Wall Construction work completed.",
-   "module": "Building Construction Manufacturing Service",
-   "read_only_depends_on": "eval: doc.workflow_state != \"Land Clearance\";"
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_land_is_free_from_the_court_case__other_dispute",
-   "fieldtype": "Check",
-   "insert_after": "custom_land_in_the_name_of_sant_nirankari_mandal",
-   "label": "Land is free from the court case & other dispute.",
-   "module": "Building Construction Manufacturing Service",
-   "read_only_depends_on": "eval: doc.workflow_state != \"Land Clearance\";"
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_land_in_the_name_of_sant_nirankari_mandal",
-   "fieldtype": "Check",
-   "insert_after": "custom_section_break_e3rmm",
-   "label": "Land possession of Sant Nirankari Mandal.",
-   "module": "Building Construction Manufacturing Service",
-   "read_only_depends_on": "eval: doc.workflow_state != \"Land Clearance\";"
-  },
-  {
    "depends_on": "eval:!doc.custom_is_form_land_details",
    "dt": "Project",
    "fieldname": "custom_section_break_e3rmm",
    "fieldtype": "Section Break",
    "insert_after": "custom_land_details1",
-   "label": "Land Details Form",
    "module": "Building Construction Manufacturing Service"
   },
   {
-   "depends_on": "eval:!doc.custom_is_from_checkbox__",
    "dt": "Project",
    "fieldname": "custom_recommendation_letters",
    "fieldtype": "Table",
    "insert_after": "custom_recommendation_letterss",
    "label": "Recommendation Letters",
+   "mandatory_depends_on": "eval: doc.project_type != \"Maintainance\";",
    "module": "Building Construction Manufacturing Service",
    "options": "Recommendation Letter",
    "read_only_depends_on": "eval: doc.workflow_state != \"Project Request\""
@@ -84,7 +1064,7 @@
    "dt": "Project",
    "fieldname": "custom_standard_planning_and_designing",
    "fieldtype": "Section Break",
-   "insert_after": "custom_noc_details",
+   "insert_after": "custom_setback_for_bhavan_construction",
    "label": "Standard Planning and Designing",
    "module": "Building Construction Manufacturing Service"
   },
@@ -97,20 +1077,20 @@
    "module": "Building Construction Manufacturing Service"
   },
   {
-   "depends_on": "eval: in_list([ \"Planning & Designing\", \"Drawing Approval\", \"Member Incharge PP (Financial Approval)\", \"Secretary (Financial Approval)\", \"Member Incharge A&F(Financial Approval)\", \"Construction Committee Formed\", \"Under Disbursement\", \"Work completion Certificate\"], doc.workflow_state)",
+   "depends_on": "eval: in_list([ \"Planning & Designing\", \"Drawing Approval\", \"Member Incharge BM (Finance Approval)\", \"Member Incharge PP (Financial Approval)\", \"Secretary (Financial Approval)\", \"Member Incharge A&F(Financial Approval)\", \"Construction Committee Formed\", \"Under Disbursement\", \"Work completion Certificate\"], doc.workflow_state)",
    "dt": "Project",
    "fieldname": "custom_boq_estimates",
    "fieldtype": "Tab Break",
-   "insert_after": "custom_remark1",
+   "insert_after": "custom_reject1",
    "label": "Planning & Design",
    "module": "Building Construction Manufacturing Service"
   },
   {
-   "depends_on": "eval: in_list([\"Land Clearance\", \"Planning & Designing\", \"Drawing Approval\", \"Member Incharge PP (Financial Approval)\", \"Secretary (Financial Approval)\", \"Member Incharge A&F(Financial Approval)\", \"Construction Committee Formed\", \"Under Disbursement\", \"Work completion Certificate\"], doc.workflow_state)",
+   "depends_on": "eval: in_list([\"Land Clearance\", \"Planning & Designing\", \"Drawing Approval\", \"Member Incharge BM (Finance Approval)\", \"Member Incharge PP (Financial Approval)\", \"Secretary (Financial Approval)\", \"Member Incharge A&F(Financial Approval)\", \"Construction Committee Formed\", \"Under Disbursement\", \"Work completion Certificate\"], doc.workflow_state) && doc.project_type !== 'Maintenance';",
    "dt": "Project",
    "fieldname": "custom_land_deatils",
    "fieldtype": "Tab Break",
-   "insert_after": "custom_remarks",
+   "insert_after": "custom_reject",
    "label": "Land Clearance",
    "module": "Building Construction Manufacturing Service"
   },
@@ -123,11 +1103,11 @@
    "module": "Building Construction Manufacturing Service"
   },
   {
-   "depends_on": "eval: in_list([\"Drawing Approval\", \"Member Incharge PP (Financial Approval)\", \"Secretary (Financial Approval)\", \"Member Incharge A&F(Financial Approval)\", \"Construction Committee Formed\", \"Under Disbursement\", \"Work completion Certificate\"], doc.workflow_state)",
+   "depends_on": "eval: in_list([\"Drawing Approval\", \"Member Incharge BM (Finance Approval)\", \"Member Incharge PP (Financial Approval)\", \"Secretary (Financial Approval)\", \"Member Incharge A&F(Financial Approval)\", \"Construction Committee Formed\", \"Under Disbursement\", \"Work completion Certificate\"], doc.workflow_state) && doc.project_type == 'Building Construction';",
    "dt": "Project",
    "fieldname": "custom_drawing_approval",
    "fieldtype": "Tab Break",
-   "insert_after": "custom_remark3",
+   "insert_after": "custom_reject2",
    "label": "Drawing Approval",
    "module": "Building Construction Manufacturing Service"
   },
@@ -136,16 +1116,16 @@
    "dt": "Project",
    "fieldname": "custom_work_completions",
    "fieldtype": "Tab Break",
-   "insert_after": "custom_additional_request_status",
+   "insert_after": "custom_reject6",
    "label": "Work Completion",
    "module": "Building Construction Manufacturing Service"
   },
   {
-   "depends_on": "eval: in_list([\"Construction Committee Formed\", \"Under Disbursement\", \"Work completion Certificate\"], doc.workflow_state)",
+   "depends_on": "eval: in_list([\"Construction Committee Formed\", \"Under Disbursement\", \"Work completion Certificate\"], doc.workflow_state);",
    "dt": "Project",
    "fieldname": "custom_construction_committee",
    "fieldtype": "Tab Break",
-   "insert_after": "custom_remark5",
+   "insert_after": "custom_reject4",
    "label": "Construction Committee",
    "module": "Building Construction Manufacturing Service"
   },
@@ -157,11 +1137,11 @@
    "module": "Building Construction Manufacturing Service"
   },
   {
-   "depends_on": "eval: in_list([\"Member Incharge PP (Financial Approval)\", \"Secretary (Financial Approval)\", \"Member Incharge A&F(Financial Approval)\", \"Construction Committee Formed\", \"Under Disbursement\", \"Work completion Certificate\"], doc.workflow_state)",
+   "depends_on": "eval: in_list([\"Member Incharge BM (Finance Approval)\", \"Member Incharge PP (Financial Approval)\", \"Secretary (Financial Approval)\", \"Member Incharge A&F(Financial Approval)\", \"Construction Committee Formed\", \"Under Disbursement\", \"Work completion Certificate\"], doc.workflow_state);",
    "dt": "Project",
    "fieldname": "custom_financial_approval",
    "fieldtype": "Tab Break",
-   "insert_after": "custom_remark4",
+   "insert_after": "custom_reject3",
    "label": "Financial Approval",
    "module": "Building Construction Manufacturing Service"
   },
@@ -181,7 +1161,7 @@
    "insert_after": "custom_progress_tracking",
    "label": "Attach Image Financial Approval Form",
    "module": "Building Construction Manufacturing Service",
-   "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge (Financial Approval)\" || doc.workflow_state == \"Secretary (Financial Approval)\" || doc.workflow_state == \"Member Incharge A&F(Financial Approval)\";"
+   "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge BM (Finance Approval)\";"
   },
   {
    "dt": "Project",
@@ -248,8 +1228,7 @@
    "fieldtype": "Section Break",
    "insert_after": "custom_financial_approval",
    "label": "Financial Approval",
-   "module": "Building Construction Manufacturing Service",
-   "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge PP (Financial Approval)\" || doc.workflow_state == \"Secretary (Financial Approval)\" || doc.workflow_state == \"Member Incharge A&F(Financial Approval)\";"
+   "module": "Building Construction Manufacturing Service"
   },
   {
    "dt": "Project",
@@ -266,6 +1245,7 @@
    "module": "Building Construction Manufacturing Service"
   },
   {
+   "depends_on": "eval:doc.project_type !== 'Maintenance';\r\n",
    "dt": "Project",
    "fieldname": "custom_planning__approval_documents",
    "fieldtype": "Section Break",
@@ -286,53 +1266,7 @@
    "options": "Workflow State"
   },
   {
-   "dt": "Project",
-   "fieldname": "custom_land_inspection_ion_by_supervisor",
-   "fieldtype": "Check",
-   "insert_after": "custom_temporary_electricity_connection_install_at_site_",
-   "label": "Land inspection ion by supervisor /Engineer of Building Department & Demarcation done by Supervisor /Engineer.",
-   "module": "Building Construction Manufacturing Service",
-   "read_only_depends_on": "eval: doc.workflow_state != \"Planning & Designing\";"
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_drawing_approvals",
-   "fieldtype": "Check",
-   "insert_after": "custom_land_inspection_ion_by_supervisor",
-   "label": "Drawing approval procedure from local Garam Panchayat/ Municipal Council/ Town Planner & other government departments.",
-   "module": "Building Construction Manufacturing Service",
-   "read_only_depends_on": "eval: doc.workflow_state != \"Planning & Designing\";"
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_any_river__",
-   "fieldtype": "Check",
-   "insert_after": "custom_land_detail_form",
-   "label": "Any River , Nalla, Railway lines, HT electricity line in KVA.",
-   "module": "Building Construction Manufacturing Service",
-   "read_only_depends_on": "eval: doc.workflow_state != \"Planning & Designing\";"
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_type_of_soil",
-   "fieldtype": "Select",
-   "insert_after": "custom_drawing_approvals",
-   "label": "Type of Soil.",
-   "module": "Building Construction Manufacturing Service",
-   "options": "\nSandy Soil\nClay Soil",
-   "read_only_depends_on": "eval: doc.workflow_state != \"Planning & Designing\";"
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_land_level_should_be_mentioned_in_letter",
-   "fieldtype": "Int",
-   "insert_after": "custom_boundary_wall_construction_work_completed",
-   "label": "Land level should be mentioned in letter",
-   "module": "Building Construction Manufacturing Service",
-   "read_only_depends_on": "eval: doc.workflow_state != \"Land Clearance\";"
-  },
-  {
-   "depends_on": "eval:!doc.custom_is_from_checkbox__",
+   "depends_on": "eval:doc.project_type !== 'Maintenance';",
    "dt": "Project",
    "fieldname": "custom_site_plans",
    "fieldtype": "Section Break",
@@ -341,7 +1275,7 @@
    "module": "Building Construction Manufacturing Service"
   },
   {
-   "depends_on": "eval:!doc.custom_is_from_checkbox__",
+   "depends_on": "eval:doc.project_type != \"Maintainance\";",
    "dt": "Project",
    "fieldname": "custom_site_plan",
    "fieldtype": "Table",
@@ -352,48 +1286,17 @@
    "read_only_depends_on": "eval: doc.workflow_state != \"Project Request\""
   },
   {
-   "dt": "Project",
-   "fetch_from": "custom_land.branch",
-   "fetch_if_empty": 1,
-   "fieldname": "custom_branch",
-   "fieldtype": "Link",
-   "insert_after": "custom_bhavan",
-   "label": "Branch\t",
-   "module": "Building Construction Manufacturing Service",
-   "options": "Branch",
-   "read_only_depends_on": "eval: doc.workflow_state != \"Project Request\"",
-   "reqd": 1
-  },
-  {
-   "dt": "Project",
-   "fetch_from": "custom_zone.zone_no",
-   "fieldname": "custom_zone_no",
-   "fieldtype": "Data",
-   "insert_after": "custom_zone",
-   "label": "Zone No.\t",
-   "module": "Building Construction Manufacturing Service",
-   "read_only": 1
-  },
-  {
-   "dt": "Project",
-   "fetch_from": "custom_branch.custom_branch_code",
-   "fieldname": "custom_branch_code",
-   "fieldtype": "Data",
-   "insert_after": "custom_branch",
-   "label": "Branch Code\t",
-   "module": "Building Construction Manufacturing Service",
-   "read_only": 1
-  },
-  {
+   "depends_on": "eval:!doc.custom_is_from_checkbox__",
    "dt": "Project",
    "fieldname": "custom_in_which_year_sadh_sangat_started_there",
    "fieldtype": "Date",
-   "insert_after": "custom_proforma_for_sadh_sangat_deatils",
+   "insert_after": "custom_section_break_zmfon",
    "label": "In Which Year Sadh Sangat Started There?\t",
    "module": "Building Construction Manufacturing Service",
    "read_only_depends_on": "eval: doc.workflow_state != \"Project Request\""
   },
   {
+   "depends_on": "eval:!doc.custom_is_from_checkbox__",
    "dt": "Project",
    "fieldname": "custom_whether_branch_is_registered_if_so_since_when",
    "fieldtype": "Check",
@@ -413,6 +1316,7 @@
    "read_only_depends_on": "eval: doc.workflow_state != \"Project Request\""
   },
   {
+   "depends_on": "eval:!doc.custom_is_from_checkbox__",
    "dt": "Project",
    "fieldname": "custom_strength_of_sadh_sangat_from_urban_area_and_rural_area",
    "fieldtype": "Small Text",
@@ -422,6 +1326,7 @@
    "read_only_depends_on": "eval: doc.workflow_state != \"Project Request\""
   },
   {
+   "depends_on": "eval:!doc.custom_is_from_checkbox__",
    "dt": "Project",
    "fieldname": "custom_details_of_sangat_",
    "fieldtype": "Table",
@@ -432,6 +1337,7 @@
    "read_only_depends_on": "eval: doc.workflow_state != \"Project Request\""
   },
   {
+   "depends_on": "eval:!doc.custom_is_from_checkbox__",
    "dt": "Project",
    "fieldname": "custom_no_of_receipt_books_used_during_this_year",
    "fieldtype": "Int",
@@ -441,16 +1347,18 @@
    "read_only_depends_on": "eval: doc.workflow_state != \"Project Request\""
   },
   {
+   "depends_on": "eval:!doc.custom_is_from_checkbox__",
    "dt": "Project",
    "fieldname": "custom_details_of_sewadal_details",
    "fieldtype": "Table",
-   "insert_after": "custom_receipt_book_received_",
+   "insert_after": "custom_which_branch",
    "label": "DETAILS OF SEWADAL DETAILS",
    "module": "Building Construction Manufacturing Service",
    "options": "DETAILS OF SEWADAL",
    "read_only_depends_on": "eval: doc.workflow_state != \"Project Request\""
   },
   {
+   "depends_on": "eval:!doc.custom_is_from_checkbox__",
    "dt": "Project",
    "fieldname": "custom_recommendation_of_members",
    "fieldtype": "Table",
@@ -461,10 +1369,11 @@
    "read_only_depends_on": "eval: doc.workflow_state != \"Project Request\""
   },
   {
+   "depends_on": "eval:!doc.custom_is_form_boq",
    "dt": "Project",
    "fieldname": "custom_bill_of_quantity",
    "fieldtype": "Table",
-   "insert_after": "custom_boqestimate_form",
+   "insert_after": "custom_section_break_9tse3",
    "label": "Bill of Quantity",
    "module": "Building Construction Manufacturing Service",
    "options": "Estimate",
@@ -477,32 +1386,14 @@
    "insert_after": "custom_bill_of_quantity",
    "label": "Total Amount",
    "module": "Building Construction Manufacturing Service",
-   "read_only": 1
+   "read_only_depends_on": "eval:!doc.custom_is_form_boq"
   },
   {
    "dt": "Project",
    "fieldname": "custom_recommendation_letter",
    "fieldtype": "Section Break",
-   "insert_after": "custom_zone_abbreviation",
+   "insert_after": "custom_land_summarys",
    "label": "Recommendation Letter",
-   "module": "Building Construction Manufacturing Service"
-  },
-  {
-   "depends_on": "eval:!doc.custom_is_from_checkbox__",
-   "dt": "Project",
-   "fieldname": "custom_proforma_for_sadh_sangat_deatils",
-   "fieldtype": "Section Break",
-   "insert_after": "custom_proforma_for_sadh_sangat_attach",
-   "label": "Proforma for Sadh Sangat Details",
-   "module": "Building Construction Manufacturing Service"
-  },
-  {
-   "depends_on": "eval:!doc.custom_is_form_boq",
-   "dt": "Project",
-   "fieldname": "custom_boqestimate_form",
-   "fieldtype": "Section Break",
-   "insert_after": "custom_boq_estimate11",
-   "label": "BOQ/Estimate Form",
    "module": "Building Construction Manufacturing Service"
   },
   {
@@ -533,7 +1424,6 @@
    "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge A&F(Financial Approval)\";"
   },
   {
-   "depends_on": "eval:!doc.custom_is_form_financial",
    "dt": "Project",
    "fieldname": "custom_allocation_details",
    "fieldtype": "Section Break",
@@ -542,64 +1432,28 @@
    "module": "Building Construction Manufacturing Service"
   },
   {
-   "depends_on": "eval:!doc.custom_is_form_financial",
-   "dt": "Project",
-   "fieldname": "custom_section_break_evxno",
-   "fieldtype": "Section Break",
-   "insert_after": "custom_financial_approval_form111",
-   "label": "Proposal for FInancial Approval for the Construction  Work of Satsang bhavan At",
-   "module": "Building Construction Manufacturing Service"
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_financial_ref_no",
-   "fieldtype": "Data",
-   "insert_after": "custom_section_break_evxno",
-   "label": " Ref. No.",
-   "module": "Building Construction Manufacturing Service",
-   "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge (Financial Approval)\" || doc.workflow_state == \"Secretary (Financial Approval)\" || doc.workflow_state == \"Member Incharge A&F(Financial Approval)\";"
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_column_break_jxjok",
-   "fieldtype": "Column Break",
-   "insert_after": "custom_financial_ref_no",
-   "module": "Building Construction Manufacturing Service"
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_datess",
-   "fieldtype": "Date",
-   "insert_after": "custom_column_break_jxjok",
-   "label": "Date",
-   "module": "Building Construction Manufacturing Service",
-   "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge (Financial Approval)\" || doc.workflow_state == \"Secretary (Financial Approval)\" || doc.workflow_state == \"Member Incharge A&F(Financial Approval)\";"
-  },
-  {
-   "depends_on": "eval:!doc.custom_is_form_financial",
    "dt": "Project",
    "fieldname": "custom_financial_approvals",
    "fieldtype": "Section Break",
-   "insert_after": "custom_datess",
-   "label": "Financial Approval's",
+   "insert_after": "custom_financial_approval_form111",
    "module": "Building Construction Manufacturing Service"
   },
   {
+   "depends_on": "eval: !doc.custom_is_form_financial",
    "dt": "Project",
    "fieldname": "custom_financiallll_approval",
    "fieldtype": "Table",
    "insert_after": "custom_column_break_lcnvn",
    "label": "Financial Approval",
    "module": "Building Construction Manufacturing Service",
-   "options": "Financial Approval",
-   "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge PP (Financial Approval)\" || doc.workflow_state == \"Secretary (Financial Approval)\" || doc.workflow_state == \"Member Incharge A&F(Financial Approval)\";"
+   "options": "Financial Approval"
   },
   {
    "depends_on": "eval: in_list([\"Under Disbursement\", \"Work completion Certificate\"], doc.workflow_state)",
    "dt": "Project",
    "fieldname": "custom_disbursement",
    "fieldtype": "Tab Break",
-   "insert_after": "custom_remark7",
+   "insert_after": "custom_reject5",
    "label": "Disbursement",
    "module": "Building Construction Manufacturing Service"
   },
@@ -607,7 +1461,7 @@
    "dt": "Project",
    "fieldname": "custom_disbursement_details",
    "fieldtype": "Section Break",
-   "insert_after": "custom_disbursement_detail",
+   "insert_after": "custom_additional_fund_request_detail",
    "label": "Disbursement Detail's",
    "module": "Building Construction Manufacturing Service"
   },
@@ -691,6 +1545,7 @@
    "read_only_depends_on": "eval: doc.workflow_state != \"Planning & Designing\";"
   },
   {
+   "depends_on": "eval:doc.custom_is_form_boq",
    "dt": "Project",
    "fieldname": "custom_boq_estimate11",
    "fieldtype": "Table",
@@ -729,7 +1584,7 @@
    "label": "Financial Approval Form",
    "module": "Building Construction Manufacturing Service",
    "options": "Attach Image for Financial Approval Form",
-   "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge (Financial Approval)\" || doc.workflow_state == \"Secretary (Financial Approval)\" || doc.workflow_state == \"Member Incharge A&F(Financial Approval)\";"
+   "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge BM (Finance Approval)\";"
   },
   {
    "depends_on": "eval:doc.custom_is_form_committee",
@@ -742,12 +1597,11 @@
    "options": "Attach Image for Construction Committee Form"
   },
   {
-   "depends_on": "eval:doc.custom_attach_image_for_work_completion_certificate",
    "dt": "Project",
    "fieldname": "custom_work_completion_certificate11",
    "fieldtype": "Table",
-   "insert_after": "custom_attach_image_for_work_completion_certificate",
-   "label": "Work Completion Certificate",
+   "insert_after": "custom_work_completion",
+   "label": "Virtual Work Completion Certificate",
    "module": "Building Construction Manufacturing Service",
    "options": "Attach Image of Work Completion Certificate"
   },
@@ -798,7 +1652,7 @@
    "dt": "Project",
    "fieldname": "custom_remark",
    "fieldtype": "Section Break",
-   "insert_after": "custom_amount_in_words_a__f",
+   "insert_after": "custom_remarks_miaf",
    "label": "Remark",
    "module": "Building Construction Manufacturing Service"
   },
@@ -823,7 +1677,7 @@
    "dt": "Project",
    "fieldname": "custom_section_break_hvll2",
    "fieldtype": "Section Break",
-   "insert_after": "custom_land_level_should_be_mentioned_in_letter",
+   "insert_after": "custom_land_detail_lc",
    "label": "Remark",
    "module": "Building Construction Manufacturing Service"
   },
@@ -864,7 +1718,7 @@
    "dt": "Project",
    "fieldname": "custom_remark88",
    "fieldtype": "Section Break",
-   "insert_after": "custom_work_completion_certificate11",
+   "insert_after": "custom_duration",
    "label": "Remark",
    "module": "Building Construction Manufacturing Service"
   },
@@ -874,14 +1728,6 @@
    "fieldtype": "Small Text",
    "insert_after": "custom_remark88",
    "label": "Remark",
-   "module": "Building Construction Manufacturing Service"
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_attach_image_for_work_completion_certificate",
-   "fieldtype": "Check",
-   "insert_after": "custom_work_completion",
-   "label": "Attach Image For Work Completion Certificate",
    "module": "Building Construction Manufacturing Service"
   },
   {
@@ -1010,125 +1856,29 @@
    "read_only": 1
   },
   {
-   "dt": "Project",
-   "fieldname": "custom_section_break_xztpe",
-   "fieldtype": "Section Break",
-   "insert_after": "custom_additional_require_amount_in_words",
-   "label": "Disbursement Status",
-   "module": "Building Construction Manufacturing Service"
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_disbursement_status",
-   "fieldtype": "Link",
-   "insert_after": "custom_section_break_xztpe",
-   "label": "Disbursement Status",
-   "module": "Building Construction Manufacturing Service",
-   "options": "Disbursement Status",
-   "read_only": 1
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_disbursement_detail",
-   "fieldtype": "Table",
-   "insert_after": "custom_disbursement_information",
-   "label": "Disbursement Detail",
-   "module": "Building Construction Manufacturing Service",
-   "options": "Disbursement Detail"
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_disbursement_information",
-   "fieldtype": "Section Break",
-   "insert_after": "custom_disbursement",
-   "label": "Disbursement Information",
-   "module": "Building Construction Manufacturing Service"
-  },
-  {
-   "dt": "Project",
-   "fetch_from": "custom_zone.zone_name",
-   "fieldname": "custom_zone_name",
-   "fieldtype": "Data",
-   "insert_after": "custom_zone_no",
-   "label": "Zone Name",
-   "module": "Building Construction Manufacturing Service",
-   "read_only": 1
-  },
-  {
    "default": "now",
    "dt": "Project",
    "fieldname": "custom_time",
    "fieldtype": "Datetime",
    "insert_after": "custom_column_break_an6cx",
-   "label": "Posting Date & Time",
+   "label": "Submission Date & Time",
    "module": "Building Construction Manufacturing Service",
+   "read_only": 1,
    "read_only_depends_on": "eval: doc.workflow_state != \"Project Request\""
-  },
-  {
-   "dt": "Project",
-   "fetch_from": "custom_zone.zone_abbreviation",
-   "fieldname": "custom_zone_abbreviation",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "insert_after": "custom_mobile_no",
-   "label": "Zone Abbreviation",
-   "module": "Building Construction Manufacturing Service"
-  },
-  {
-   "dt": "Project",
-   "fetch_from": "custom_zone.custom_zonal_incharges_mobile_no",
-   "fieldname": "custom_mobile_no",
-   "fieldtype": "Data",
-   "insert_after": "custom_zonal_incharge",
-   "label": "Mobile No.",
-   "module": "Building Construction Manufacturing Service",
-   "options": "Phone"
   },
   {
    "dt": "Project",
    "fieldname": "custom_estimate_cost",
    "fieldtype": "Currency",
    "in_list_view": 1,
-   "insert_after": "custom_branch_abbreviation",
+   "insert_after": "custom_land",
    "label": "Estimate Cost",
    "module": "Building Construction Manufacturing Service",
    "read_only_depends_on": "eval: doc.workflow_state != \"Project Request\"",
    "reqd": 1
   },
   {
-   "dt": "Project",
-   "fetch_from": "custom_branch.custom_abbreviation",
-   "fieldname": "custom_branch_abbreviation",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "insert_after": "custom_branch_code",
-   "label": "Branch Abbreviation",
-   "module": "Building Construction Manufacturing Service",
-   "read_only": 1
-  },
-  {
-   "dt": "Project",
-   "fetch_from": "custom_branch.custom_zone",
-   "fieldname": "custom_zone",
-   "fieldtype": "Link",
-   "insert_after": "project_name",
-   "label": "Zone",
-   "module": "Building Construction Manufacturing Service",
-   "options": "Zone",
-   "read_only": 1
-  },
-  {
-   "dt": "Project",
-   "fetch_from": "custom_zone.zonal_incharge",
-   "fieldname": "custom_zonal_incharge",
-   "fieldtype": "Link",
-   "insert_after": "custom_zone_name",
-   "label": "Zonal Incharge",
-   "module": "Building Construction Manufacturing Service",
-   "options": "Employee",
-   "read_only": 1
-  },
-  {
+   "depends_on": "eval: in_list([ \"Project Request\",\"Land Clearance\",\"Planning & Designing\", \"Drawing Approval\", \"Member Incharge BM (Finance Approval)\", \"Member Incharge PP (Financial Approval)\", \"Secretary (Financial Approval)\", \"Member Incharge A&F(Financial Approval)\", \"Construction Committee Formed\", \"Under Disbursement\", \"Work completion Certificate\"], doc.workflow_state);",
    "dt": "Project",
    "fieldname": "custom_project_details",
    "fieldtype": "Tab Break",
@@ -1139,14 +1889,14 @@
    "dt": "Project",
    "fieldname": "custom_column_break_h8sxh",
    "fieldtype": "Column Break",
-   "insert_after": "custom_amount_in_words_in_pp",
+   "insert_after": "custom_remarks_mipp",
    "module": "Building Construction Manufacturing Service"
   },
   {
    "dt": "Project",
    "fieldname": "custom_column_break_iwb9z",
    "fieldtype": "Column Break",
-   "insert_after": "custom_amount_in_words_snm",
+   "insert_after": "custom_remarks_secretary",
    "module": "Building Construction Manufacturing Service"
   },
   {
@@ -1156,43 +1906,25 @@
    "insert_after": "custom_section_break_pxbs8",
    "label": "Branch Bank Account Name",
    "module": "Building Construction Manufacturing Service",
-   "read_only_depends_on": "eval: doc.workflow_state == \"Construction Committee Formed\";"
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_branch_bank_account_no",
-   "fieldtype": "Int",
-   "insert_after": "custom_column_break_vgxq5",
-   "label": "Branch Bank Account No",
-   "module": "Building Construction Manufacturing Service",
-   "read_only_depends_on": "eval: doc.workflow_state == \"Construction Committee Formed\";"
+   "read_only_depends_on": "eval: doc.workflow_state != \"Construction Committee Formed\";"
   },
   {
    "dt": "Project",
    "fieldname": "custom_civil_engineerdraftsmanarchitect_name",
    "fieldtype": "Data",
-   "insert_after": "custom_branch_bank_account_no",
+   "insert_after": "custom_branch_bank_account_number",
    "label": "Civil Engineer/Draftsman/Architect Name",
    "module": "Building Construction Manufacturing Service",
-   "read_only_depends_on": "eval: doc.workflow_state == \"Construction Committee Formed\";"
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_civil_engineerdraftsmanarchitect_no",
-   "fieldtype": "Int",
-   "insert_after": "custom_branch_bank_account_name",
-   "label": "Civil Engineer/Draftsman/Architect No",
-   "module": "Building Construction Manufacturing Service",
-   "read_only_depends_on": "eval: doc.workflow_state == \"Construction Committee Formed\";"
+   "read_only_depends_on": "eval: doc.workflow_state != \"Construction Committee Formed\";"
   },
   {
    "dt": "Project",
    "fieldname": "custom_branch_bank_account_names",
    "fieldtype": "Data",
-   "insert_after": "custom_civil_engineerdraftsmanarchitect_no",
+   "insert_after": "custom_civil_engineerdraftsmanarchitect_number",
    "label": "Branch Bank Account Name",
    "module": "Building Construction Manufacturing Service",
-   "read_only_depends_on": "eval: doc.workflow_state == \"Construction Committee Formed\";"
+   "read_only_depends_on": "eval: doc.workflow_state != \"Construction Committee Formed\";"
   },
   {
    "dt": "Project",
@@ -1209,8 +1941,8 @@
    "insert_after": "custom_civil_engineerdraftsmanarchitect_name",
    "label": "Verified By Zonal Incharge",
    "module": "Building Construction Manufacturing Service",
-   "options": "User",
-   "read_only_depends_on": "eval: doc.workflow_state == \"Construction Committee Formed\";"
+   "options": "Employee",
+   "read_only_depends_on": "eval: doc.workflow_state != \"Construction Committee Formed\";"
   },
   {
    "depends_on": "eval:!doc.custom_is_form_committee",
@@ -1227,18 +1959,9 @@
    "fieldtype": "Currency",
    "insert_after": "custom_financiallll_approval",
    "label": "Total Estimated Cost",
+   "mandatory_depends_on": "eval: doc.workflow_state == \"Member Incharge BM (Finance Approval)\"",
    "module": "Building Construction Manufacturing Service",
-   "read_only": 1
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_additional_request_status",
-   "fieldtype": "Link",
-   "insert_after": "custom_disbursement_status",
-   "label": "Additional Request Status",
-   "module": "Building Construction Manufacturing Service",
-   "options": "Additional Request",
-   "read_only": 1
+   "read_only_depends_on": "eval: !doc.custom_is_form_financial"
   },
   {
    "dt": "Project",
@@ -1300,6 +2023,7 @@
    "read_only": 1
   },
   {
+   "depends_on": "eval:!doc.custom_is_from_checkbox__",
    "dt": "Project",
    "fieldname": "custom_blood_donation_record",
    "fieldtype": "Table",
@@ -1311,43 +2035,19 @@
   },
   {
    "dt": "Project",
-   "fieldname": "custom_temporary_electricity_connection_install_at_site_",
-   "fieldtype": "Check",
-   "insert_after": "custom_any_river__",
-   "label": "Temporary Electricity Connection install at site ",
-   "module": "Building Construction Manufacturing Service",
-   "read_only_depends_on": "eval: doc.workflow_state != \"Planning & Designing\";"
-  },
-  {
-   "dt": "Project",
+   "fetch_from": "custom_bhavan.land",
    "fieldname": "custom_land",
    "fieldtype": "Link",
-   "insert_after": "custom_project_type_abbr",
+   "insert_after": "custom_bhavan",
    "label": "Land",
    "module": "Building Construction Manufacturing Service",
    "options": "Land Details"
   },
   {
    "dt": "Project",
-   "fieldname": "custom_bhavan",
-   "fieldtype": "Link",
-   "insert_after": "custom_land",
-   "label": "Bhavan",
-   "module": "Building Construction Manufacturing Service",
-   "options": "Bhavan"
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_column_break_z4sgt",
-   "fieldtype": "Column Break",
-   "insert_after": "custom_land_is_free_from_the_court_case__other_dispute",
-   "module": "Building Construction Manufacturing Service"
-  },
-  {
-   "dt": "Project",
    "fieldname": "custom_noc_details",
    "fieldtype": "Table",
-   "insert_after": "custom_setback_for_bhavan_construction",
+   "insert_after": "custom_land_details_forms",
    "label": "NOC Details.",
    "module": "Building Construction Manufacturing Service",
    "options": "NOC details"
@@ -1356,17 +2056,10 @@
    "dt": "Project",
    "fieldname": "custom_setback_for_bhavan_construction",
    "fieldtype": "Table",
-   "insert_after": "custom_column_break_3xxxy",
+   "insert_after": "custom_noc_details",
    "label": "Setback for Bhavan Construction.",
    "module": "Building Construction Manufacturing Service",
    "options": "Setback for Bhavan Construction"
-  },
-  {
-   "dt": "Project",
-   "fieldname": "custom_column_break_3xxxy",
-   "fieldtype": "Column Break",
-   "insert_after": "custom_type_of_soil",
-   "module": "Building Construction Manufacturing Service"
   },
   {
    "dt": "Project",
@@ -1450,22 +2143,26 @@
    "read_only": 1
   },
   {
+   "depends_on": "eval:!doc.custom_is_from_checkbox__",
    "dt": "Project",
    "fieldname": "custom_nearest_branch_details",
    "fieldtype": "Table",
    "insert_after": "custom_registration_year",
    "label": "Nearest Branch Details",
    "module": "Building Construction Manufacturing Service",
-   "options": "Nearest Branch Details"
+   "options": "Nearest Branch Details",
+   "read_only_depends_on": "eval: doc.workflow_state != \"Project Request\""
   },
   {
+   "depends_on": "eval:!doc.custom_is_from_checkbox__; ",
    "dt": "Project",
    "fieldname": "custom_receipt_book_received_",
    "fieldtype": "Select",
    "insert_after": "custom_no_of_receipt_books_used_during_this_year",
    "label": "Receipt book received \t",
    "module": "Building Construction Manufacturing Service",
-   "options": "\nHeadquarters\nBranch"
+   "options": "\nHeadquarters\nBranch",
+   "read_only_depends_on": "eval: doc.workflow_state != \"Project Request\""
   },
   {
    "dt": "Project",
@@ -1478,6 +2175,16 @@
    "module": "Building Construction Manufacturing Service",
    "read_only": 1,
    "read_only_depends_on": "eval: doc.workflow_state != \"Project Request\""
+  },
+  {
+   "dt": "Project",
+   "fieldname": "total_expense_claim",
+   "fieldtype": "Currency",
+   "insert_after": "total_costing_amount",
+   "is_system_generated": 1,
+   "label": "Total Expense Claim (via Expense Claims)",
+   "module": "Building Construction Manufacturing Service",
+   "read_only": 1
   }
  ]
 }

@@ -16,14 +16,14 @@
   "ignored_apps": [],
   "js": "document.addEventListener(\"DOMContentLoaded\", function () {\r\n    if (document.querySelector('[frappe-session-status=\"logged-out\"]')) {\r\n        document.body.classList.add('logged-out');\r\n    }\r\n});",
   "light_color": null,
-  "modified": "2025-07-15 18:50:04.635650",
+  "modified": "2025-08-04 12:40:50.244474",
   "module": "Website",
   "name": "BCMS",
   "primary_color": null,
   "text_color": null,
   "theme": "BCMS",
   "theme_scss": "$enable-shadows: false;\n$enable-gradients: false;\n$enable-rounded: true;\n\n// Bootstrap Variable Overrides\n\n\n// Import themes from installed apps\n@import \"frappe/public/scss/website.bundle\";\n@import \"erpnext/public/scss/website\";\n\n\n\n// Custom Theme\n\r\n.btn.btn-primary{\r\n    background-color: #1071b6 !important\r\n}\r\n.page-card-head .app-logo{\r\n    max-height: 135px !important;\r\n}\r\n.navbar-light{\r\n    background: linear-gradient(to right, #00c5fb 0%, #0253cc 100%);\r\n}\r\nbody.logged-out{\r\n    background-size: cover;\r\n    background-image: url(\"http://localhost:8000/files/image.png\");\r\n}\r\n@media (max-width: 768px) {\r\n  body {\r\n    background-image:none;\r\n    font-size: 18px;\r\n    background-color: #f0f0f0;\r\n  }\r\n} \n\n:root {\n\t}\n",
-  "theme_url": "/files/website_theme/bcms_59a49e2f.css"
+  "theme_url": "/files/website_theme/bcms_7acf2fe2.css"
  },
  {
   "background_color": null,
