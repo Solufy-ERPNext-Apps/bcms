@@ -9,7 +9,7 @@ app_license = "mit"
 # ------------------
 
 # required_apps = []
-# after_migrate = "bcms.migrate.after_migrate"
+after_migrate = "bcms.migrate.after_migrate"
 fixtures=["Workflow","Dashboard","Workspace","Workflow Action Master","Workflow State","Website Theme","Role"]
 
 # Each item in the list will be shown as an app in the apps page
