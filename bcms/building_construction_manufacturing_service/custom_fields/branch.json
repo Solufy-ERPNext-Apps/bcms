@@ -2,6 +2,17 @@
  "Branch": [
   {
    "dt": "Branch",
+   "fetch_from": "custom_zone.zonal_incharge",
+   "fieldname": "custom_mukhi",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "insert_after": "custom_zone",
+   "label": "Mukhi",
+   "module": "Building Construction Manufacturing Service",
+   "options": "Employee"
+  },
+  {
+   "dt": "Branch",
    "fieldname": "custom_branch_no",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -18,17 +29,6 @@
    "label": "Mukhi Incharge",
    "module": "Building Construction Manufacturing Service",
    "read_only": 1
-  },
-  {
-   "dt": "Branch",
-   "fetch_from": "custom_zone.zonal_incharge",
-   "fieldname": "custom_mukhi",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "insert_after": "custom_zone_name",
-   "label": "Mukhi",
-   "module": "Building Construction Manufacturing Service",
-   "options": "Employee"
   },
   {
    "dt": "Branch",

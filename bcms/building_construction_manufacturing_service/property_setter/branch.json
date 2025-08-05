@@ -33,6 +33,33 @@
    "property": "field_order",
    "property_type": "Data",
    "value": "[\"custom_branch_no\", \"branch\", \"custom_state\", \"custom_zone\", \"custom_mukhi\", \"custom_mukhi_name\", \"custom_column_break_lyaqs\", \"custom_branch_code\", \"custom_country\", \"custom_district\", \"custom_khetra\"]"
+  },
+  {
+   "doctype": "Branch",
+   "doctype_or_field": "DocField",
+   "field_name": "branch",
+   "module": "Building Construction Manufacturing Service",
+   "property": "in_list_view",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Branch",
+   "doctype_or_field": "DocField",
+   "field_name": "custom_mukhi",
+   "module": "Building Construction Manufacturing Service",
+   "property": "in_list_view",
+   "property_type": "Check",
+   "value": "1"
+  },
+  {
+   "doctype": "Branch",
+   "doctype_or_field": "DocField",
+   "field_name": "custom_branch_no",
+   "module": "Building Construction Manufacturing Service",
+   "property": "in_list_view",
+   "property_type": "Check",
+   "value": "1"
   }
  ]
 }

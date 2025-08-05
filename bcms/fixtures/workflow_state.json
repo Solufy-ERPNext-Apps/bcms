@@ -120,15 +120,6 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-07-22 10:30:48.605330",
-  "name": "Prepare Transfer Order",
-  "style": "",
-  "workflow_state_name": "Prepare Transfer Order"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
   "modified": "2025-07-22 10:31:40.958382",
   "name": "Account & Finance",
   "style": "",
@@ -507,15 +498,6 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-07-02 18:35:17.521036",
-  "name": "Rejected By HQ",
-  "style": "",
-  "workflow_state_name": "Rejected By HQ"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
   "modified": "2025-07-02 19:18:33.139139",
   "name": "Approved By HQ",
   "style": "",
@@ -848,15 +830,6 @@
  {
   "docstatus": 0,
   "doctype": "Workflow State",
-  "icon": "question-sign",
-  "modified": "2025-06-18 15:35:25.690132",
-  "name": "Pending",
-  "style": "",
-  "workflow_state_name": "Pending"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
   "icon": "",
   "modified": "2025-08-01 12:47:47.992636",
   "name": "Forwarded to Secretary (Financial Approval)",
@@ -930,24 +903,6 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-07-30 15:44:21.534718",
-  "name": "Construction Committee Formed",
-  "style": "Danger",
-  "workflow_state_name": "Construction Committee Formed"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
-  "modified": "2025-07-30 15:44:07.790573",
-  "name": "Member Incharge A&F(Financial Approval)",
-  "style": "Warning",
-  "workflow_state_name": "Member Incharge A&F(Financial Approval)"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
   "modified": "2025-07-30 15:42:50.370950",
   "name": "Project Request",
   "style": "Primary",
@@ -988,15 +943,6 @@
   "name": "Disbursement",
   "style": "",
   "workflow_state_name": "Disbursement"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
-  "modified": "2025-07-30 15:43:55.886778",
-  "name": "Secretary (Financial Approval)",
-  "style": "Warning",
-  "workflow_state_name": "Secretary (Financial Approval)"
  },
  {
   "docstatus": 0,
@@ -1060,5 +1006,59 @@
   "name": "Member Incharge PP (Financial Approval)",
   "style": "Warning",
   "workflow_state_name": "Member Incharge PP (Financial Approval)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-22 10:30:48.605330",
+  "name": "Prepare Transfer Order",
+  "style": "",
+  "workflow_state_name": "Prepare Transfer Order"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-02 18:35:17.521036",
+  "name": "Rejected By HQ",
+  "style": "",
+  "workflow_state_name": "Rejected By HQ"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-30 15:44:21.534718",
+  "name": "Construction Committee Formed",
+  "style": "Danger",
+  "workflow_state_name": "Construction Committee Formed"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-30 15:44:07.790573",
+  "name": "Member Incharge A&F(Financial Approval)",
+  "style": "Warning",
+  "workflow_state_name": "Member Incharge A&F(Financial Approval)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-30 15:43:55.886778",
+  "name": "Secretary (Financial Approval)",
+  "style": "Warning",
+  "workflow_state_name": "Secretary (Financial Approval)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "question-sign",
+  "modified": "2025-06-18 15:35:25.690132",
+  "name": "Pending",
+  "style": "",
+  "workflow_state_name": "Pending"
  }
 ]

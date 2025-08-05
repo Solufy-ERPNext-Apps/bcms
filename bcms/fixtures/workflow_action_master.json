@@ -457,13 +457,6 @@
  {
   "docstatus": 0,
   "doctype": "Workflow Action Master",
-  "modified": "2025-07-02 19:17:32.806514",
-  "name": "Rejection By BCM",
-  "workflow_action_name": "Rejection By BCM"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow Action Master",
   "modified": "2025-07-02 19:25:36.742148",
   "name": "Send For Finance Approval",
   "workflow_action_name": "Send For Finance Approval"
@@ -513,13 +506,6 @@
  {
   "docstatus": 0,
   "doctype": "Workflow Action Master",
-  "modified": "2025-07-02 19:09:51.763661",
-  "name": "Approval By BCM",
-  "workflow_action_name": "Approval By BCM"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow Action Master",
   "modified": "2025-07-02 19:24:07.314431",
   "name": "Approval By HQ",
   "workflow_action_name": "Approval By HQ"
@@ -544,13 +530,6 @@
   "modified": "2025-07-02 19:11:10.552617",
   "name": "Approval By PP",
   "workflow_action_name": "Approval By PP"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow Action Master",
-  "modified": "2025-07-02 19:11:31.405307",
-  "name": "Rejection By PP",
-  "workflow_action_name": "Rejection By PP"
  },
  {
   "docstatus": 0,
@@ -730,13 +709,6 @@
  {
   "docstatus": 0,
   "doctype": "Workflow Action Master",
-  "modified": "2025-08-02 00:28:48.016204",
-  "name": "Fill The Form",
-  "workflow_action_name": "Fill The Form"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow Action Master",
   "modified": "2025-07-11 15:15:49.754852",
   "name": "Approve Committee",
   "workflow_action_name": "Approve Committee"
@@ -768,5 +740,33 @@
   "modified": "2025-07-11 15:13:16.134313",
   "name": "Financial Approval",
   "workflow_action_name": "Financial Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 19:17:32.806514",
+  "name": "Rejection By BCM",
+  "workflow_action_name": "Rejection By BCM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 19:09:51.763661",
+  "name": "Approval By BCM",
+  "workflow_action_name": "Approval By BCM"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-02 19:11:31.405307",
+  "name": "Rejection By PP",
+  "workflow_action_name": "Rejection By PP"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-08-02 00:28:48.016204",
+  "name": "Fill The Form",
+  "workflow_action_name": "Fill The Form"
  }
 ]
