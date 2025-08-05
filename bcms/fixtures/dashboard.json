@@ -635,7 +635,7 @@
   "dashboard_name": "Payroll",
   "docstatus": 0,
   "doctype": "Dashboard",
-  "is_default": 1,
+  "is_default": 0,
   "is_standard": 0,
   "modified": "2022-08-22 14:21:33.653983",
   "module": "Payroll",
@@ -1068,5 +1068,61 @@
   "modified": "2024-01-08 14:06:32.104261",
   "module": "HR",
   "name": "Human Resource"
+ },
+ {
+  "cards": [],
+  "chart_options": null,
+  "charts": [
+   {
+    "chart": "Project Planning & Designing",
+    "parent": "BCMS Dashboard",
+    "parentfield": "charts",
+    "parenttype": "Dashboard",
+    "width": "Half"
+   },
+   {
+    "chart": "Project Work completion Certificate",
+    "parent": "BCMS Dashboard",
+    "parentfield": "charts",
+    "parenttype": "Dashboard",
+    "width": "Half"
+   },
+   {
+    "chart": "Boundary Wall",
+    "parent": "BCMS Dashboard",
+    "parentfield": "charts",
+    "parenttype": "Dashboard",
+    "width": "Half"
+   },
+   {
+    "chart": "Project Building Construction",
+    "parent": "BCMS Dashboard",
+    "parentfield": "charts",
+    "parenttype": "Dashboard",
+    "width": "Half"
+   },
+   {
+    "chart": "Project Drawing Approval",
+    "parent": "BCMS Dashboard",
+    "parentfield": "charts",
+    "parenttype": "Dashboard",
+    "width": "Full"
+   },
+   {
+    "chart": "Project Maintenance",
+    "parent": "BCMS Dashboard",
+    "parentfield": "charts",
+    "parenttype": "Dashboard",
+    "width": "Full"
+   }
+  ],
+  "dashboard_name": "BCMS Dashboard",
+  "docstatus": 0,
+  "doctype": "Dashboard",
+  "is_default": 1,
+  "is_standard": 1,
+  "modified": "2025-08-04 16:08:23.151217",
+  "module": "Building Construction Manufacturing Service",
+  "name": "BCMS Dashboard"
  }
 ]

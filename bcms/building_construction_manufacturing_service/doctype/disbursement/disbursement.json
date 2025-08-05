@@ -13,9 +13,11 @@
   "column_break_zmta",
   "project_type",
   "request_on",
+  "sequence",
   "requested_by",
   "disbursement_details_section",
   "disbursement_date",
+  "disbursed_by",
   "column_break_qblr",
   "disbursement_amount",
   "disbursement_amount_in_words",
@@ -25,7 +27,6 @@
   "column_break_rhyg",
   "payment_voucher_no",
   "utr__transaction_reference_no",
-  "disbursed_by",
   "expenditure_details_section",
   "expenditure_details",
   "total_expense",
@@ -84,6 +85,7 @@
    "label": "Remarks\t"
   },
   {
+   "default": "__user",
    "fieldname": "disbursed_by",
    "fieldtype": "Link",
    "label": "Disbursed By\t",
@@ -113,7 +115,7 @@
    "label": "Project Details"
   },
   {
-   "depends_on": "eval: in_list([\"Prepare Transfer Order\", \"Member Incharge A&F(Financial Approval)\", \"Expenditure\", \"Completed\"], doc.workflow_state);",
+   "depends_on": "eval: in_list([\"Disbursement\", \"Member Incharge A&F(Financial Approval)\", \"Expenditure\", \"Completed\"], doc.workflow_state);",
    "fieldname": "bank_and_account_details_section",
    "fieldtype": "Section Break",
    "label": "Bank and Account Details"
@@ -123,7 +125,7 @@
    "fieldtype": "Column Break"
   },
   {
-   "depends_on": "eval: in_list([\"Prepare Transfer Order\", \"Member Incharge A&F(Financial Approval)\", \"Expenditure\", \"Completed\"], doc.workflow_state);",
+   "depends_on": "eval: in_list([\"Disbursement\", \"Member Incharge A&F(Financial Approval)\", \"Expenditure\", \"Completed\"], doc.workflow_state);",
    "fieldname": "disbursement_details_section",
    "fieldtype": "Section Break",
    "label": "Disbursement Details"
@@ -164,7 +166,8 @@
    "fieldname": "requested_amount",
    "fieldtype": "Currency",
    "label": "Requested Amount",
-   "mandatory_depends_on": "eval: doc.workflow_state == \"Fund Request\";"
+   "mandatory_depends_on": "eval: doc.workflow_state == \"Fund Request\";",
+   "read_only_depends_on": "eval: doc.workflow_state != \"Fund Request\";"
   },
   {
    "default": "Today",
@@ -198,6 +201,11 @@
    "fieldtype": "Data",
    "label": "Requested Amount In Words",
    "read_only": 1
+  },
+  {
+   "fieldname": "sequence",
+   "fieldtype": "Data",
+   "label": "Sequence"
   }
  ],
  "grid_page_length": 50,
@@ -205,7 +213,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-08-04 14:51:30.947835",
+ "modified": "2025-08-05 16:23:47.276689",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Disbursement",

@@ -17,15 +17,15 @@
   "status",
   "zone",
   "additional_fund_details_section",
-  "posting_date",
   "requested_by",
   "amended_from",
+  "requested_amount",
+  "posting_date",
   "column_break_locn",
   "current_state",
-  "requested_amount",
+  "suggested_by_building_department_in_words",
   "requested_amount_in_words",
   "suggested_by_building_department",
-  "suggested_by_building_department_in_words",
   "section_break_kcoe",
   "suggested_by_member_incharge_pp",
   "suggested_by_member_incharge_pp_in_words",
@@ -49,8 +49,7 @@
   {
    "fieldname": "requested_amount",
    "fieldtype": "Currency",
-   "label": "Requested Amount",
-   "read_only_depends_on": "eval: doc.workflow_state != \"Pending\";"
+   "label": "Requested Amount"
   },
   {
    "default": "__user",
@@ -173,7 +172,8 @@
    "fieldname": "requested_amount_in_words",
    "fieldtype": "Data",
    "label": "Requested Amount in Words",
-   "read_only": 1
+   "read_only": 1,
+   "read_only_depends_on": "eval: !doc.workflow_state ||  doc.workflow_state != \"Fund Request\";"
   },
   {
    "fieldname": "suggested_by_building_department_in_words",
@@ -239,7 +239,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-08-04 14:15:46.933464",
+ "modified": "2025-08-05 16:32:36.704039",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Additional Fund Request",

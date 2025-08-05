@@ -153,6 +153,7 @@ doctype_list_js = {"Land Details" :["public/js/list_view.js",
 doc_events = {
 	"Project": {
 		"validate": "bcms.building_construction_manufacturing_service.customization.project.project.validate"
+		
 	},
 	"User": {
         "after_insert": "bcms.building_construction_manufacturing_service.customization.project.user.enqueue_user_permission",

@@ -3,6 +3,7 @@
  "allow_rename": 1,
  "creation": "2025-08-01 12:44:08.580088",
  "doctype": "DocType",
+ "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "section_break_0q6d",
@@ -32,7 +33,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-08-03 14:01:26.331904",
+ "modified": "2025-08-04 16:49:33.647147",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Land Details Form",

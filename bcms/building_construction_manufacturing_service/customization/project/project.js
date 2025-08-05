@@ -37,7 +37,7 @@ frappe.ui.form.on("Estimate", {
     }
     frm.doc.custom_total_amount = frm.doc.custom_bill_of_quantity.reduce(
       (sum, item) => {
-        return sum + flt(item.quantity) * flt(item.rate);
+        return sum + flt(item.amount);
       },
       0
     );
@@ -51,13 +51,63 @@ frappe.ui.form.on("Estimate", {
     }
     frm.doc.custom_total_amount = frm.doc.custom_bill_of_quantity.reduce(
       (sum, item) => {
-        return sum + flt(item.quantity) * flt(item.rate);
+        return sum + flt(item.amount);
       },
       0
     );
     frm.refresh_field("custom_total_amount");
   },
+  amount: function (frm, cdt, cdn) {
+    frm.doc.custom_total_amount = frm.doc.custom_bill_of_quantity.reduce(
+      (sum, item) => {
+        return sum + flt(item.amount);
+      },
+      0
+    );
+    frm.refresh_field("custom_total_amount");
+  }
 });
+
+frappe.ui.form.on("Estimate", {
+      quantity: function (frm, cdt, cdn) {
+      const row = locals[cdt][cdn];
+          if (row.quantity && row.rate) {
+          row.amount = flt(row.quantity) * flt(row.rate);
+          frm.refresh_field("estimate_items");
+          }
+          frm.doc.custom_total_boq_amount = frm.doc.custom_bill_of_quantities.reduce(
+          (sum, item) => {
+          return sum + flt(item.amount);
+          },
+          0
+          );
+          frm.refresh_field("custom_total_boq_amount");
+          },
+          rate: function (frm, cdt, cdn) {
+          const row = locals[cdt][cdn];
+          if (row.quantity && row.rate) {
+          row.amount = flt(row.quantity) * flt(row.rate);
+          frm.refresh_field("estimate_items");
+          }
+          frm.doc.custom_total_boq_amount= frm.doc.custom_bill_of_quantities.reduce(
+          (sum, item) => {
+          return sum + flt(item.amount);
+          },
+          0
+          );
+          frm.refresh_field("custom_total_boq_amount");
+          },
+          amount: function (frm, cdt, cdn) {
+          frm.doc.custom_total_boq_amount = frm.doc.custom_bill_of_quantities.reduce(
+          (sum, item) => {
+          return sum + flt(item.amount);
+      },
+      0
+);
+frm.refresh_field("custom_total_boq_amount");
+}
+});
+
 frappe.ui.form.on("Financial Approval", {
   estimated_cost: function (frm, cdt, cdn) {
     frm.doc.custom_total_estimated_cost =
@@ -67,6 +117,7 @@ frappe.ui.form.on("Financial Approval", {
     frm.refresh_field("custom_total_estimated_cost");
   },
 });
+
 frappe.ui.form.on("Custom Disbursement Detail", {
   custom_disbursement_detail_add: function (frm, cdt, cdn) {
     let row = locals[cdt][cdn];
@@ -146,7 +197,7 @@ function approve_button_fun(frm) {
       workflow_state: frm.doc.workflow_state,
     },
     callback: function (r) {
-		console.log(r)
+      console.log(r);
       if (r.message) {
         frappe.msgprint(__("Project Approved"));
         frm.reload_doc();
@@ -177,6 +228,7 @@ function reject_button_fun(frm) {
 
 frappe.ui.form.on("Project", {
   refresh: function (frm) {
+    frm.set_df_property('custom_land_detail_lc', 'cannot_add_rows', true);
     const approved_fields = [
       "custom_approved",
       "custom_approved1",
@@ -187,7 +239,6 @@ frappe.ui.form.on("Project", {
       "custom_approved6",
       "custom_approved7",
     ];
-
     const reject_fields = [
       "custom_reject",
       "custom_reject1",
@@ -200,55 +251,52 @@ frappe.ui.form.on("Project", {
     ];
 
     setTimeout(() => {
-      if (
-        frm.doc.workflow_state !== "Project Request" &&
-        frm.doc.workflow_state !== "Work completion Certificate"
-      ) {
-        approved_fields.forEach((field) => {
-          let btn = frm
-            .get_field(field)
-            .$wrapper.find("button.btn.btn-xs.btn-default");
+      approved_fields.forEach((field) => {
+        let btn = frm
+          .get_field(field)
+          .$wrapper.find("button.btn.btn-xs.btn-default");
 
-          if (btn.length) {
-            btn.css({
-              "background-color": "#008000",
-              "border-color": "#008000",
-              color: "white",
-              "font-weight": "bold",
-            });
-            btn.off("click");
-            btn.on("click", () => {
-              approve_button_fun(frm);
-            });
-          }
-        });
+        if (btn.length) {
+          btn.css({
+            "background-color": "#008000",
+            "border-color": "#008000",
+            color: "white",
+            "font-weight": "bold",
+          });
+          btn.off("click");
+          btn.on("click", () => {
+            approve_button_fun(frm);
+          });
+        }
+      });
 
-        reject_fields.forEach((field) => {
-          let btn = frm
-            .get_field(field)
-            .$wrapper.find("button.btn.btn-xs.btn-default");
+      reject_fields.forEach((field) => {
+        let btn = frm
+          .get_field(field)
+          .$wrapper.find("button.btn.btn-xs.btn-default");
 
-          if (btn.length) {
-            btn.css({
-              "background-color": "#ff0000",
-              "border-color": "#ff0000",
-              color: "white",
-              "font-weight": "bold",
-            });
-            btn.off("click");
-            btn.on("click", () => {
-              reject_button_fun(frm);
-            });
-          }
-        });
-      }
+        if (btn.length) {
+          btn.css({
+            "background-color": "#ff0000",
+            "border-color": "#ff0000",
+            color: "white",
+            "font-weight": "bold",
+          });
+          btn.off("click");
+          btn.on("click", () => {
+            reject_button_fun(frm);
+          });
+        }
+      });
     }, 500);
 
-    if (
-      !frm.is_new() &&
-      frm.doc.workflow_state !== "Work completion Certificate"
-    ) {
+    if (!frm.is_new() && frm.doc.workflow_state !== "Work completion Certificate") 
+    {  
+  
       const apr_btn = frm.add_custom_button(__("Approve"), function () {
+        if (frm.is_dirty()) {
+						frm.save()
+				}
         frappe.call({
           method:
             "bcms.building_construction_manufacturing_service.customization.project.project.workflow_state",
@@ -337,7 +385,8 @@ frappe.ui.form.on("Project", {
         !frm.is_new() &&
         frm.doc.workflow_state !== "Project Request" &&
         frm.doc.workflow_state !== "Work completion Certificate"
-      ) {
+      ) 
+      {
         const dis_btn = frm.add_custom_button(
           __("Additional Fund Request"),
           function () {
@@ -353,18 +402,6 @@ frappe.ui.form.on("Project", {
         dis_btn.css({
           "background-color": "Black",
           color: "White",
-          "font-weight": "bold",
-        });
-      }
-      if (!frm.is_new() && frm.doc.workflow_state == "Under Disbursement") {
-        const dis_btn = frm.add_custom_button(__("Disbursement"), function () {
-          frappe.new_doc("Disbursement", {
-            project: frm.doc.name,
-          });
-        });
-        dis_btn.css({
-          "background-color": "Blue",
-          color: "white",
           "font-weight": "bold",
         });
       }
@@ -739,6 +776,13 @@ frappe.ui.form.on("Project", {
       "custom_additional_require_amount_in_words"
     );
   },
+  custom_total_boq_amount: function (frm) {
+    get_in_words(
+      frm,
+      "custom_total_boq_amount",
+      "custom_total_amount_in_word"
+    );
+  },
 });
 function get_in_words(frm, source_field, target_field) {
   const value = frm.doc[source_field];
@@ -928,4 +972,127 @@ function get_duration_detail(start, end) {
   if (days > 0) parts.push(`${days} day${days > 1 ? "s" : ""}`);
 
   return parts.length > 0 ? parts.join(" ") : "0 days";
+}
+
+frappe.ui.form.on("Project", {
+  onload: function (frm) {
+    if (
+      frm.doc.custom_total_estimated_cost && !frm.doc.custom_suggested_by_member_incharge_pp && !frm.doc.custom_suggested_by_secretory_snm &&
+      !frm.doc.custom_suggested_by_member_incharge_a__f
+    ) {
+      frm.set_value(
+        "custom_suggested_by_member_incharge_pp",
+        frm.doc.custom_total_estimated_cost
+      );
+      frm.set_value(
+        "custom_suggested_by_secretory_snm",
+        frm.doc.custom_total_estimated_cost
+      );
+      frm.set_value(
+        "custom_suggested_by_member_incharge_a__f",
+        frm.doc.custom_total_estimated_cost
+      );
+    }
+    if(frm.doc.custom_total_amount && !frm.doc.custom_total_boq_amount){
+      frm.set_value(
+        "custom_total_boq_amount",
+        frm.doc.custom_total_amount
+      )
+    }
+  },
+  custom_total_estimated_cost: function (frm) {
+    if (frm.doc.custom_total_estimated_cost) {
+      frm.set_value(
+        "custom_suggested_by_member_incharge_pp",
+        frm.doc.custom_total_estimated_cost
+      );
+      frm.set_value(
+        "custom_suggested_by_secretory_snm",
+        frm.doc.custom_total_estimated_cost
+      );
+      frm.set_value(
+        "custom_suggested_by_member_incharge_a__f",
+        frm.doc.custom_total_estimated_cost
+      );
+    }
+  },
+  custom_total_amount: function (frm) {
+    if (frm.doc.custom_total_amount) {
+      frm.set_value(
+        "custom_total_boq_amount",
+        frm.doc.custom_total_amount
+      );
+    }
+  },
+});
+
+
+frappe.ui.form.on('Project', {
+    onload(frm) {
+        if (!frm.doc.custom_bill_of_quantities || frm.doc.custom_bill_of_quantities.length === 0) {
+            if (frm.doc.custom_bill_of_quantity && frm.doc.custom_bill_of_quantity.length > 0) {
+                bill_of_qty(frm);
+            }
+        }
+    }
+});
+
+function bill_of_qty(frm) {
+    frm.clear_table('custom_bill_of_quantities');
+
+    frm.doc.custom_bill_of_quantity.forEach(row => {
+        const new_row = frm.add_child("custom_bill_of_quantities");
+        new_row.area = row.area;
+        new_row.unit = row.unit;
+        new_row.rate = row.rate;
+        new_row.work = row.work;
+        new_row.quantity = row.quantity;
+        new_row.amount = row.amount;
+    });
+
+    frm.refresh_fields("custom_bill_of_quantities");
+}
+
+
+frappe.ui.form.on('Project', {
+    refresh: function(frm) {
+        fill_stages(frm);
+    },
+    custom_suggested_by_member_incharge_a__f: function(frm) {
+        fill_stages(frm);
+    },
+    project_type: function(frm) {
+        fill_stages(frm);
+    }
+});
+
+function fill_stages(frm) {
+    if (!frm.doc.project_type || !frm.doc.custom_suggested_by_member_incharge_a__f) return;
+
+    frappe.call({
+        method: 'frappe.client.get',
+        args: {
+            doctype: 'Project Type',
+            name: frm.doc.project_type
+        },
+        callback: function(r) {
+            if (r.message && Array.isArray(r.message.custom_percentage)) {
+                const total_amount = frm.doc.custom_suggested_by_member_incharge_a__f;
+                frm.clear_table('custom_disbursement_planning');
+
+                r.message.custom_percentage.forEach(row => {
+                    if (row.stages && row.percentage != null) {
+                        const amount = (parseFloat(row.percentage) / 100) * total_amount;
+                        frm.add_child('custom_disbursement_planning', {
+                            state: row.stages,  
+                            percentage: row.percentage,
+                            amount: amount.toFixed(2)
+                        });
+                    }
+                });
+
+                frm.refresh_field('custom_disbursement_planning');
+            }
+        }
+    });
 }

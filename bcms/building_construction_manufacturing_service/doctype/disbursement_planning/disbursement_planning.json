@@ -1,36 +1,36 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-07-17 13:49:47.894375",
+ "creation": "2025-08-05 11:05:29.710494",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "name_of_station",
-  "estimated_cost",
-  "description_of_works",
-  "column_break_noae",
-  "duration_month",
+  "state",
+  "expected_start_date",
+  "expected_end_date",
+  "percentage",
+  "amount",
   "remark"
  ],
  "fields": [
   {
-   "fieldname": "name_of_station",
+   "fieldname": "state",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Name of Station"
+   "label": "Stages"
   },
   {
-   "fieldname": "description_of_works",
-   "fieldtype": "Data",
+   "fieldname": "percentage",
+   "fieldtype": "Percent",
    "in_list_view": 1,
-   "label": "Description of Works"
+   "label": "Percentage"
   },
   {
-   "fieldname": "estimated_cost",
-   "fieldtype": "Currency",
+   "fieldname": "amount",
+   "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Estimated Cost"
+   "label": "Amount"
   },
   {
    "fieldname": "remark",
@@ -39,24 +39,26 @@
    "label": "Remark"
   },
   {
-   "fieldname": "column_break_noae",
-   "fieldtype": "Column Break"
+   "fieldname": "expected_start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": " Expected Start Date"
   },
   {
-   "fieldname": "duration_month",
-   "fieldtype": "Int",
+   "fieldname": "expected_end_date",
+   "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "Project Completion Time(In Month)"
+   "label": "Expected End Date"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-08-04 17:11:37.353600",
+ "modified": "2025-08-05 15:05:01.918294",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
- "name": "Financial Approval",
+ "name": "Disbursement Planning",
  "owner": "Administrator",
  "permissions": [],
  "row_format": "Dynamic",

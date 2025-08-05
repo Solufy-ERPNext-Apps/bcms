@@ -8,6 +8,8 @@ from frappe.utils import get_link_to_form, format_date
 class AdditionalFundRequest(Document):
 	def validate(self):
 		self.update_additional_fund_details()
+		if self.requested_amount:
+			self.validate_allocation_amount()
 		if self.workflow_state == "Approved":
 			project_doc = frappe.get_doc("Project", self.project)
 			if project_doc.custom_additional_require_amount:
@@ -17,6 +19,17 @@ class AdditionalFundRequest(Document):
 			if project_doc.workflow_state == "Work completion Certificate":
 				project_doc.workflow_state = "Under Disbursement"
 			project_doc.save()
+
+	def validate_allocation_amount(self):
+		currency = frappe.db.get_value("Global Defaults","Global Defaults","default_currency")
+		if self.requested_amount:
+			if self.suggested_by_member_incharge_pp and self.suggested_by_member_incharge_pp > self.requested_amount:
+				frappe.throw(f"Suggested Amount cannot be exceed {currency} {self.requested_amount}")
+			if self.suggested_by_secretory_snm and self.suggested_by_secretory_snm > self.requested_amount:
+				frappe.throw(f"Suggested Amount cannot be exceed {currency} {self.requested_amount}")
+			if self.amount_approved_by_member_incharge and self.amount_approved_by_member_incharge > self.requested_amount:
+				frappe.throw(f"Suggested Amount cannot be exceed {currency} {self.requested_amount}")
+			
 	def update_additional_fund_details(self):
 		additional_fund_data = frappe.db.get_all("Additional Fund Request", {"project": self.project}, ["name", "requested_by", "requested_amount", "amount_approved_by_member_incharge", "workflow_state", "posting_date"], order_by = "posting_date")
 		if not additional_fund_data:
@@ -30,6 +43,7 @@ class AdditionalFundRequest(Document):
 					<td><b>Requested Amount</b></td>
 					<td><b>Approved Amount</b></td>
 					<td><b>Approved By</b></td>
+					<td><b>Button</b></td>
 				</tr>
 		"""
 		for row in additional_fund_data:
@@ -41,6 +55,7 @@ class AdditionalFundRequest(Document):
 					<td>{row.requested_amount}</td>
 					<td>{row.amount_approved_by_member_incharge}</td>
 					<td>{row.workflow_state}</td>
+					<td><button class = "btn btn-primary btn-sm primary-action"><a style="color: white; font-weight: bold;" href="/app/additional-fund-request/{row.name}">Details</a></button></td>
 				</tr>
 			"""
 		custom_html += "</table>"

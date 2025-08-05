@@ -8,14 +8,14 @@ from frappe.utils import get_link_to_form, format_date, money_in_words
 class Disbursement(Document):
 	def validate(self):
 		self.update_disbursement_details()
-		if self.workflow_state == "Completed":
+		if self.workflow_state == "Disbursement":
 			project_doc = frappe.get_doc("Project", self.project)
 			if project_doc.custom_disbursement_amount:
 				project_doc.custom_disbursement_amount += self.disbursement_amount
 			else:
 				project_doc.custom_disbursement_amount = self.disbursement_amount
 			project_doc.save()
-		
+
 		if self.workflow_state == "Expenditure":
 			self.total_expense = sum(row.get('amount_manually') for row in self.expenditure_details)
 
@@ -23,7 +23,7 @@ class Disbursement(Document):
 				frappe.throw("Total expense cannot be greater than the disbursement amount.")
 
 	def update_disbursement_details(self):
-		disbursement_data = frappe.db.get_all("Disbursement", {"project": self.project}, ["name", "requested_by", "disbursement_amount", "workflow_state", "request_on"], order_by = "request_on")
+		disbursement_data = frappe.db.get_all("Disbursement", {"project": self.project}, ["name", "requested_by", "requested_amount", "disbursement_amount", "workflow_state", "request_on"], order_by = "request_on")
 		if not disbursement_data:
 			return
 		custom_html =  """
@@ -34,7 +34,8 @@ class Disbursement(Document):
 					<td><b>Requested On</b></td>
 					<td><b>Requested Amount</b></td>
 					<td><b>Disbursed Amount</b></td>
-					<td><b>Disbursed By</b></td>
+					<td><b>Status</b></td>
+					<td><b>Button</b></td>
 				</tr>
 		"""
 		for row in disbursement_data:
@@ -43,13 +44,17 @@ class Disbursement(Document):
 					<td>{get_link_to_form("Disbursement", row.name)}</td>
 					<td>{row.requested_by}</td>
 					<td>{format_date(row.request_on)}</td>
-					<td>{row.disbursement_amount}</td>
+					<td>{row.requested_amount}</td>
 					<td>{row.disbursement_amount}</td>
 					<td>{row.workflow_state}</td>
+					<td><button class = "btn btn-primary btn-sm primary-action"><a style="color: white; font-weight: bold;" href="/app/disbursement/{row.name}">Fund Transfer</a></button> <button class = "btn btn-primary btn-sm primary-action"><a style="color: white; font-weight: bold;" href="/app/disbursement/{row.name}">Details</a></button> </td>
 				</tr>
 			"""
 		custom_html += "</table>"
 		frappe.db.set_value("Project", self.project, "custom_preview_disbursement_details", custom_html)
+
+
+
 @frappe.whitelist()
 def get_amount_in_words(amount):
 	try:
