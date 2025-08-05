@@ -6,23 +6,30 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "previous_requests",
+  "section_break_oivr",
   "project_type",
-  "zone",
-  "zone_abbreviation",
-  "zonal_incharge_name",
-  "zonal_incharge_mobile_no",
+  "branch",
+  "requested_by",
+  "mukhisanyojak_name",
+  "rank",
   "location",
   "column_break_btdk",
   "posting_date",
-  "requested_by",
-  "branch",
-  "branch_abbreviation",
-  "branch_mukhisanyojak_name",
+  "zone",
+  "zonal_incharge_name",
+  "zonal_incharge_email",
+  "fiscal_year",
   "workflow_state",
-  "section_break_upv2",
-  "description",
+  "section_break_cskr",
+  "total_expense_limit",
   "estimated_budget",
-  "estimated_amount_in_words"
+  "estimated_amount_in_words",
+  "column_break_wkup",
+  "remaining_amount",
+  "approved_amount",
+  "section_break_upv2",
+  "description"
  ],
  "fields": [
   {
@@ -51,7 +58,8 @@
   {
    "fieldname": "estimated_budget",
    "fieldtype": "Currency",
-   "label": "Estimated Amount"
+   "label": "Estimated Amount",
+   "reqd": 1
   },
   {
    "fieldname": "description",
@@ -75,6 +83,7 @@
    "label": "Posting Date & Time"
   },
   {
+   "fetch_from": "branch.custom_zone",
    "fieldname": "zone",
    "fieldtype": "Link",
    "label": "Zone",
@@ -86,15 +95,7 @@
    "fieldname": "zonal_incharge_name",
    "fieldtype": "Data",
    "label": "Zonal Incharge Name",
-   "link_filters": "[[\"User\",\"role\",\"=\",\"PP\"]]",
-   "options": "Zone"
-  },
-  {
-   "fetch_from": "zone.zone_abbreviation",
-   "fieldname": "zone_abbreviation",
-   "fieldtype": "Data",
-   "label": "Zone Abbreviation",
-   "reqd": 1
+   "link_filters": "[[\"User\",\"role\",\"=\",\"PP\"]]"
   },
   {
    "fieldname": "branch",
@@ -104,40 +105,81 @@
    "reqd": 1
   },
   {
-   "fetch_from": "branch.custom_abbreviation",
-   "fieldname": "branch_abbreviation",
-   "fieldtype": "Data",
-   "label": "Branch Abbreviation",
-   "reqd": 1
-  },
-  {
-   "fetch_from": "zone.zonal_incharge_mobile_no",
-   "fieldname": "zonal_incharge_mobile_no",
-   "fieldtype": "Phone",
-   "label": "Zonal Incharge Mobile No"
-  },
-  {
    "fieldname": "section_break_upv2",
    "fieldtype": "Section Break"
-  },
-  {
-   "fetch_from": "branch.custom_mukhi_name",
-   "fieldname": "branch_mukhisanyojak_name",
-   "fieldtype": "Link",
-   "label": "Branch Mukhi/Sanyojak Name",
-   "options": "User"
   },
   {
    "fieldname": "estimated_amount_in_words",
    "fieldtype": "Data",
    "label": "Estimated Amount In Words",
    "read_only": 1
+  },
+  {
+   "fetch_from": "zone.zone_email",
+   "fieldname": "zonal_incharge_email",
+   "fieldtype": "Data",
+   "label": "Zonal InCharge Email"
+  },
+  {
+   "fieldname": "previous_requests",
+   "fieldtype": "HTML Editor",
+   "label": "Previous Requests",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_oivr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rank",
+   "fieldtype": "Link",
+   "label": "Rank",
+   "options": "Request Member",
+   "reqd": 1
+  },
+  {
+   "fieldname": "remaining_amount",
+   "fieldtype": "Currency",
+   "label": "Remaining Amount"
+  },
+  {
+   "fetch_from": "rank.expense_limit",
+   "fieldname": "total_expense_limit",
+   "fieldtype": "Currency",
+   "label": "Total Expense Limit"
+  },
+  {
+   "fieldname": "section_break_cskr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_wkup",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fiscal_year",
+   "fieldtype": "Link",
+   "label": "Fiscal Year",
+   "options": "Fiscal Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "approved_amount",
+   "fieldtype": "Currency",
+   "label": "Approved Amount"
+  },
+  {
+   "fetch_from": "branch.custom_mukhi_name",
+   "fieldname": "mukhisanyojak_name",
+   "fieldtype": "Data",
+   "label": "Mukhi/Sanyojak Name",
+   "options": "Employee"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-05 16:15:26.386760",
+ "modified": "2025-08-05 23:35:22.374338",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Project Request",

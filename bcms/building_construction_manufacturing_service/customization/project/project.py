@@ -132,13 +132,16 @@ def validate_allocation_amount(self):
         if self.custom_suggested_by_member_incharge_a__f and self.custom_suggested_by_member_incharge_a__f > self.custom_total_estimated_cost:
             frappe.throw(f"Amount Approved by Member Incharge (A & F) cannot exceed {currency} {self.custom_total_estimated_cost}")
 
-
+@frappe.whitelist()
 def create_disbursement(doc):
-    if len(doc.custom_disbursement_planning) > 0:
-        for row in doc.custom_disbursement_planning:
+    docname = frappe.get_doc("Project",doc)
+    if len(docname.custom_disbursement_planning) > 0:
+        for row in docname.custom_disbursement_planning:
             disbursement = frappe.new_doc("Disbursement")
-            disbursement.project = doc.name
-            disbursement.project_type = doc.project_type
+            disbursement.project = docname.name
+            disbursement.project_type = docname.project_type
             disbursement.requested_amount  = row.amount
             disbursement.requested_by = frappe.session.user
+            disbursement.workflow_state = "Pending"
+            disbursement.insert(ignore_mandatory=True)
             disbursement.save()

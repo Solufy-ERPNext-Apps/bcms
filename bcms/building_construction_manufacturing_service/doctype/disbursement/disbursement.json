@@ -159,8 +159,8 @@
    "fieldname": "expenditure_details",
    "fieldtype": "Table",
    "label": "Expenditure Details",
-   "options": "Expenditure Details",
-   "reqd": 1
+   "mandatory_depends_on": "eval: doc.workflow_state==\"Expenditure\"",
+   "options": "Expenditure Details"
   },
   {
    "fieldname": "requested_amount",
@@ -213,7 +213,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-08-05 16:23:47.276689",
+ "modified": "2025-08-05 19:36:50.117351",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Disbursement",

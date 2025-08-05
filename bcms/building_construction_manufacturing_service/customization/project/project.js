@@ -188,6 +188,7 @@ frappe.ui.form.on("Project", {
 });
 
 function approve_button_fun(frm) {
+  frm.doc.save()
   frappe.call({
     method:
       "bcms.building_construction_manufacturing_service.customization.project.project.workflow_state",
@@ -208,6 +209,7 @@ function approve_button_fun(frm) {
 }
 
 function reject_button_fun(frm) {
+  frm.doc.save()
   frappe.call({
     method:
       "bcms.building_construction_manufacturing_service.customization.project.project.reject_project",
@@ -290,13 +292,13 @@ frappe.ui.form.on("Project", {
       });
     }, 500);
 
-    if (!frm.is_new() && frm.doc.workflow_state !== "Work completion Certificate") 
-    {  
-  
+    if (!frm.is_new() && frm.doc.workflow_state !== "Work completion Certificate"
+) 
+{
       const apr_btn = frm.add_custom_button(__("Approve"), function () {
         if (frm.is_dirty()) {
-						frm.save()
-				}
+          frm.save()
+        }
         frappe.call({
           method:
             "bcms.building_construction_manufacturing_service.customization.project.project.workflow_state",
@@ -313,6 +315,15 @@ frappe.ui.form.on("Project", {
             }
           },
         });
+        if (frm.doc.workflow_state === "Final Project Planning"){
+          console.log(frm.doc.name)
+          frappe.call({
+            method:"bcms.building_construction_manufacturing_service.customization.project.project.create_disbursement",
+            args:{
+              doc:frm.doc.name,
+            }
+          })
+        }
       });
       apr_btn.css({
         "background-color": "Green",
