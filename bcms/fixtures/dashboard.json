@@ -2,6 +2,40 @@
  {
   "cards": [
    {
+    "card": "Khetras",
+    "parent": "Khetra",
+    "parentfield": "cards",
+    "parenttype": "Dashboard"
+   },
+   {
+    "card": "Khetriya Sanchalak",
+    "parent": "Khetra",
+    "parentfield": "cards",
+    "parenttype": "Dashboard"
+   }
+  ],
+  "chart_options": null,
+  "charts": [
+   {
+    "chart": "Khetra Chart",
+    "parent": "Khetra",
+    "parentfield": "charts",
+    "parenttype": "Dashboard",
+    "width": "Full"
+   }
+  ],
+  "dashboard_name": "Khetra",
+  "docstatus": 0,
+  "doctype": "Dashboard",
+  "is_default": 0,
+  "is_standard": 0,
+  "modified": "2025-07-10 11:53:34.053128",
+  "module": "SNM Sewadal",
+  "name": "Khetra"
+ },
+ {
+  "cards": [
+   {
     "card": "Monthly Total Work Order",
     "parent": "Manufacturing",
     "parentfield": "cards",
@@ -89,7 +123,7 @@
   "docstatus": 0,
   "doctype": "Dashboard",
   "is_default": 0,
-  "is_standard": 1,
+  "is_standard": 0,
   "modified": "2020-07-09 12:39:39.455039",
   "module": "Manufacturing",
   "name": "Manufacturing"
@@ -143,7 +177,7 @@
   "docstatus": 0,
   "doctype": "Dashboard",
   "is_default": 0,
-  "is_standard": 1,
+  "is_standard": 0,
   "modified": "2020-07-21 18:14:25.078929",
   "module": "Assets",
   "name": "Asset"
@@ -231,7 +265,7 @@
   "docstatus": 0,
   "doctype": "Dashboard",
   "is_default": 0,
-  "is_standard": 1,
+  "is_standard": 0,
   "modified": "2020-07-22 13:07:34.540574",
   "module": "Accounts",
   "name": "Accounts"
@@ -319,7 +353,7 @@
   "docstatus": 0,
   "doctype": "Dashboard",
   "is_default": 0,
-  "is_standard": 1,
+  "is_standard": 0,
   "modified": "2020-07-21 18:56:47.230053",
   "module": "CRM",
   "name": "CRM"
@@ -340,7 +374,7 @@
   "docstatus": 0,
   "doctype": "Dashboard",
   "is_default": 0,
-  "is_standard": 1,
+  "is_standard": 0,
   "modified": "2020-07-22 17:17:03.780625",
   "module": "Projects",
   "name": "Project"
@@ -407,7 +441,7 @@
   "docstatus": 0,
   "doctype": "Dashboard",
   "is_default": 0,
-  "is_standard": 1,
+  "is_standard": 0,
   "modified": "2020-07-22 15:31:22.299903",
   "module": "Selling",
   "name": "Selling"
@@ -474,7 +508,7 @@
   "docstatus": 0,
   "doctype": "Dashboard",
   "is_default": 0,
-  "is_standard": 1,
+  "is_standard": 0,
   "modified": "2020-07-22 12:48:38.112744",
   "module": "Buying",
   "name": "Buying"
@@ -542,7 +576,7 @@
   "docstatus": 0,
   "doctype": "Dashboard",
   "is_default": 0,
-  "is_standard": 1,
+  "is_standard": 0,
   "modified": "2020-07-22 13:09:33.096694",
   "module": "Stock",
   "name": "Stock"
@@ -601,8 +635,8 @@
   "dashboard_name": "Payroll",
   "docstatus": 0,
   "doctype": "Dashboard",
-  "is_default": 1,
-  "is_standard": 1,
+  "is_default": 0,
+  "is_standard": 0,
   "modified": "2022-08-22 14:21:33.653983",
   "module": "Payroll",
   "name": "Payroll"
@@ -728,7 +762,7 @@
   "docstatus": 0,
   "doctype": "Dashboard",
   "is_default": 0,
-  "is_standard": 1,
+  "is_standard": 0,
   "modified": "2022-08-29 23:28:26.765572",
   "module": "HR",
   "name": "Recruitment"
@@ -801,7 +835,7 @@
   "docstatus": 0,
   "doctype": "Dashboard",
   "is_default": 0,
-  "is_standard": 1,
+  "is_standard": 0,
   "modified": "2022-08-22 11:05:25.627559",
   "module": "HR",
   "name": "Employee Lifecycle"
@@ -868,7 +902,7 @@
   "docstatus": 0,
   "doctype": "Dashboard",
   "is_default": 0,
-  "is_standard": 1,
+  "is_standard": 0,
   "modified": "2022-08-21 18:12:38.531243",
   "module": "HR",
   "name": "Attendance"
@@ -929,7 +963,7 @@
   "docstatus": 0,
   "doctype": "Dashboard",
   "is_default": 0,
-  "is_standard": 1,
+  "is_standard": 0,
   "modified": "2022-09-16 11:36:44.704033",
   "module": "HR",
   "name": "Expense Claims"
@@ -1030,9 +1064,65 @@
   "docstatus": 0,
   "doctype": "Dashboard",
   "is_default": 0,
-  "is_standard": 1,
+  "is_standard": 0,
   "modified": "2024-01-08 14:06:32.104261",
   "module": "HR",
   "name": "Human Resource"
+ },
+ {
+  "cards": [],
+  "chart_options": null,
+  "charts": [
+   {
+    "chart": "Project Planning & Designing",
+    "parent": "BCMS Dashboard",
+    "parentfield": "charts",
+    "parenttype": "Dashboard",
+    "width": "Half"
+   },
+   {
+    "chart": "Project Work completion Certificate",
+    "parent": "BCMS Dashboard",
+    "parentfield": "charts",
+    "parenttype": "Dashboard",
+    "width": "Half"
+   },
+   {
+    "chart": "Boundary Wall",
+    "parent": "BCMS Dashboard",
+    "parentfield": "charts",
+    "parenttype": "Dashboard",
+    "width": "Half"
+   },
+   {
+    "chart": "Project Building Construction",
+    "parent": "BCMS Dashboard",
+    "parentfield": "charts",
+    "parenttype": "Dashboard",
+    "width": "Half"
+   },
+   {
+    "chart": "Project Drawing Approval",
+    "parent": "BCMS Dashboard",
+    "parentfield": "charts",
+    "parenttype": "Dashboard",
+    "width": "Full"
+   },
+   {
+    "chart": "Project Maintenance",
+    "parent": "BCMS Dashboard",
+    "parentfield": "charts",
+    "parenttype": "Dashboard",
+    "width": "Full"
+   }
+  ],
+  "dashboard_name": "BCMS Dashboard",
+  "docstatus": 0,
+  "doctype": "Dashboard",
+  "is_default": 1,
+  "is_standard": 1,
+  "modified": "2025-08-04 16:08:23.151217",
+  "module": "Building Construction Manufacturing Service",
+  "name": "BCMS Dashboard"
  }
 ]

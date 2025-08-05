@@ -8,18 +8,20 @@
  "field_order": [
   "document_list_section",
   "certificate_of_registration_of_company",
-  "memorandum_of_association",
-  "articles_of_association",
-  "site_plan_in_sq_ft",
-  "gram_sabha_committee_resolution",
   "letter_from_gram_sabha_for_snm",
-  "khasra__khatauni__faraza_for_agricultural_land",
-  "registration_document_with_history",
   "partnership_deed",
-  "authorized_signatory_and_kyc_documents",
-  "photocopy_of_khatoni_registry",
   "site_map_of_proposed_land",
-  "copy_of_sizra"
+  "copy_of_sizra",
+  "column_break_dhhc",
+  "memorandum_of_association",
+  "site_plan_in_sq_ft",
+  "khasra__khatauni__faraza_for_agricultural_land",
+  "authorized_signatory_and_kyc_documents",
+  "column_break_vmpv",
+  "articles_of_association",
+  "gram_sabha_committee_resolution",
+  "registration_document_with_history",
+  "photocopy_of_khatoni_registry"
  ],
  "fields": [
   {
@@ -91,13 +93,21 @@
    "fieldname": "copy_of_sizra",
    "fieldtype": "Attach",
    "label": "Copy of Sizra"
+  },
+  {
+   "fieldname": "column_break_dhhc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_vmpv",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-02 11:05:29.933847",
+ "modified": "2025-08-01 12:36:20.607829",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Land Document List",

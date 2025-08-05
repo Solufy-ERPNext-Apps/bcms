@@ -6,7 +6,6 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "adhikari",
   "name1",
   "designation",
   "address",
@@ -20,7 +19,7 @@
    "fieldname": "designation",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Designation\t"
+   "label": "Position"
   },
   {
    "columns": 2,
@@ -53,21 +52,13 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Email"
-  },
-  {
-   "columns": 2,
-   "fieldname": "adhikari",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Adhikari",
-   "options": "Employee"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-27 22:48:24.817814",
+ "modified": "2025-08-04 15:44:19.037847",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Recommendation of Members",

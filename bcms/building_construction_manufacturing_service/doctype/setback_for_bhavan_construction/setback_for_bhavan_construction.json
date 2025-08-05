@@ -1,0 +1,45 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-31 11:34:54.618485",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_nh1p",
+  "setback_for_bhavan_construction_as_per_lga_and_nsh",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_nh1p",
+   "fieldtype": "Section Break",
+   "label": "Setback for Bhavan Construction as per local Government authorities & National-State highway."
+  },
+  {
+   "fieldname": "setback_for_bhavan_construction_as_per_lga_and_nsh",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Setback for Bhavan Construction as per LGA and NSH"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Remarks"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-08-01 11:49:49.603558",
+ "modified_by": "Administrator",
+ "module": "Building Construction Manufacturing Service",
+ "name": "Setback for Bhavan Construction",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

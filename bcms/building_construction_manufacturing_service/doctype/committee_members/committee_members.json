@@ -5,13 +5,14 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "image",
   "adhikari",
   "adhikari_name",
   "fathers_name",
   "address",
-  "occupation",
-  "signature"
+  "column_break_eduh",
+  "image",
+  "signature",
+  "occupation"
  ],
  "fields": [
   {
@@ -56,13 +57,17 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Adhikari Name"
+  },
+  {
+   "fieldname": "column_break_eduh",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-28 17:08:04.283034",
+ "modified": "2025-08-01 12:25:20.222243",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Committee Members",

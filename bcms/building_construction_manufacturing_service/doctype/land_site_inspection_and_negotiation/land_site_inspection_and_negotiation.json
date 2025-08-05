@@ -8,12 +8,13 @@
  "field_order": [
   "inspection_and_negotiation_section",
   "advance_amount_to_be",
+  "visited_by__role",
+  "negotiated_by_role",
+  "visited_by_mobile_no",
+  "column_break_oqkm",
   "tentative_date",
   "visited_by_name",
-  "visited_by__role",
-  "visited_by_mobile_no",
   "negotiated_by_name",
-  "negotiated_by_role",
   "negotiated_by_mobile_no"
  ],
  "fields": [
@@ -61,13 +62,17 @@
    "fieldname": "inspection_and_negotiation_section",
    "fieldtype": "Section Break",
    "label": "Inspection and Negotiation"
+  },
+  {
+   "fieldname": "column_break_oqkm",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-02 11:21:32.035339",
+ "modified": "2025-08-01 12:32:17.241285",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Land Site Inspection and Negotiation",

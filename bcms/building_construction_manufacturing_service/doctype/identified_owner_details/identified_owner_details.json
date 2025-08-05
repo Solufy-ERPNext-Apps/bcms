@@ -9,17 +9,19 @@
   "idenfified_owner_details_section",
   "name1",
   "father_name",
-  "address",
-  "pin_code",
   "mobile_number",
-  "aadhaar_upload",
-  "pan_card_upload",
-  "_of_share_of_land",
+  "address",
+  "column_break_jhev",
   "share_of_amount_inr",
   "bank_account_number",
   "bank_name",
   "bank_branch",
   "ifsc_code",
+  "pin_code",
+  "column_break_ieau",
+  "_of_share_of_land",
+  "aadhaar_upload",
+  "pan_card_upload",
   "cancelled_cheque_upload"
  ],
  "fields": [
@@ -97,13 +99,21 @@
    "fieldname": "idenfified_owner_details_section",
    "fieldtype": "Section Break",
    "label": "Identified Owner Details"
+  },
+  {
+   "fieldname": "column_break_jhev",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_ieau",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-02 11:22:02.438833",
+ "modified": "2025-08-01 12:34:21.240488",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Identified Owner Details",

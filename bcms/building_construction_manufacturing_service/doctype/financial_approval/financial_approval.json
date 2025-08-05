@@ -3,11 +3,14 @@
  "allow_rename": 1,
  "creation": "2025-07-17 13:49:47.894375",
  "doctype": "DocType",
+ "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "name_of_station",
-  "description_of_works",
   "estimated_cost",
+  "description_of_works",
+  "column_break_noae",
+  "duration_month",
   "remark"
  ],
  "fields": [
@@ -34,13 +37,23 @@
    "fieldtype": "Small Text",
    "in_list_view": 1,
    "label": "Remark"
+  },
+  {
+   "fieldname": "column_break_noae",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "duration_month",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Project Completion Time(In Month)"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-28 14:54:29.214237",
+ "modified": "2025-08-04 17:11:37.353600",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Financial Approval",

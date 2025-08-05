@@ -8,10 +8,11 @@
  "field_order": [
   "financial_details_section",
   "average_monthly_offeringnamaskar",
-  "monthly_building_fund",
   "no_of_receipt_books_used_during_the_year",
-  "do_your_get_receipt_book_from_headquarter_or_branch",
-  "average_yearly_offeringnamaskar"
+  "average_yearly_offeringnamaskar",
+  "column_break_sbuv",
+  "monthly_building_fund",
+  "do_your_get_receipt_book_from_headquarter_or_branch"
  ],
  "fields": [
   {
@@ -43,13 +44,17 @@
    "fieldname": "financial_details_section",
    "fieldtype": "Section Break",
    "label": "Financial Details"
+  },
+  {
+   "fieldname": "column_break_sbuv",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-01 16:57:06.665482",
+ "modified": "2025-08-01 12:34:49.494344",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Financial Information",

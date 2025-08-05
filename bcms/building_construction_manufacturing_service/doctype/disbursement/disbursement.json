@@ -1,33 +1,36 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:project",
+ "autoname": "format:DIS-{####}",
  "creation": "2025-07-16 12:48:18.333827",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "project_details_section",
   "project",
-  "state",
-  "khetra",
+  "requested_amount",
+  "requested_amount_in_words",
   "column_break_zmta",
   "project_type",
-  "zone",
-  "unit",
-  "bank_and_account_details_section",
-  "bank_name",
-  "ifsc_code",
-  "utr__transaction_reference_no",
-  "column_break_rhyg",
-  "bank_account_no",
-  "payment_voucher_no",
-  "disbursed_by",
+  "request_on",
+  "sequence",
+  "requested_by",
   "disbursement_details_section",
-  "disbursement_amount",
-  "remaining_amount",
-  "column_break_qblr",
   "disbursement_date",
+  "disbursed_by",
+  "column_break_qblr",
+  "disbursement_amount",
+  "disbursement_amount_in_words",
+  "bank_and_account_details_section",
+  "bank_account_no",
+  "ifsc_code",
+  "column_break_rhyg",
+  "payment_voucher_no",
+  "utr__transaction_reference_no",
+  "expenditure_details_section",
+  "expenditure_details",
   "total_expense",
+  "total_expense_in_words",
   "additional_info_section",
   "remarks",
   "amended_from"
@@ -38,17 +41,21 @@
    "fieldtype": "Link",
    "label": "Project",
    "options": "Project",
-   "unique": 1
+   "read_only_depends_on": "eval: doc.workflow_state != \"Fund Request\";",
+   "reqd": 1
   },
   {
    "fieldname": "disbursement_date",
    "fieldtype": "Date",
-   "label": "Disbursement Date\t"
+   "label": "Disbursement Date\t",
+   "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge A&F(Financial Approval)\";"
   },
   {
    "fieldname": "disbursement_amount",
    "fieldtype": "Currency",
-   "label": "Disbursement Amount\t"
+   "label": "Disbursement Amount\t",
+   "mandatory_depends_on": "eval: doc.workflow_state == \"Member Incharge A&F(Financial Approval)\";",
+   "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge A&F(Financial Approval)\";"
   },
   {
    "fieldname": "utr__transaction_reference_no",
@@ -56,18 +63,13 @@
    "label": "UTR / Transaction Reference No\t"
   },
   {
-   "fieldname": "bank_name",
-   "fieldtype": "Link",
-   "label": "Bank Name\t",
-   "options": "Bank"
-  },
-  {
    "fieldname": "bank_account_no",
    "fieldtype": "Link",
    "label": "Bank Account No\t",
-   "options": "Bank"
+   "options": "Bank Account"
   },
   {
+   "fetch_from": "bank_account_no.custom_ifsc_code",
    "fieldname": "ifsc_code",
    "fieldtype": "Data",
    "label": "IFSC Code\t"
@@ -83,53 +85,29 @@
    "label": "Remarks\t"
   },
   {
+   "default": "__user",
    "fieldname": "disbursed_by",
    "fieldtype": "Link",
    "label": "Disbursed By\t",
    "options": "User"
   },
   {
-   "fieldname": "remaining_amount",
-   "fieldtype": "Currency",
-   "label": "Remaining Amount\t"
-  },
-  {
    "fieldname": "column_break_zmta",
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "project.project_type",
    "fieldname": "project_type",
    "fieldtype": "Data",
-   "label": "Project Category"
-  },
-  {
-   "fieldname": "zone",
-   "fieldtype": "Link",
-   "label": "Zone",
-   "options": "Zone"
-  },
-  {
-   "fieldname": "unit",
-   "fieldtype": "Link",
-   "label": "Unit",
-   "options": "Unit"
-  },
-  {
-   "fieldname": "khetra",
-   "fieldtype": "Link",
-   "label": "Khetra",
-   "options": "Khetra"
+   "in_list_view": 1,
+   "label": "Project Type",
+   "read_only": 1
   },
   {
    "fieldname": "total_expense",
    "fieldtype": "Currency",
-   "label": "Total expense"
-  },
-  {
-   "fieldname": "state",
-   "fieldtype": "Link",
-   "label": "State",
-   "options": "State"
+   "label": "Total expense",
+   "read_only": 1
   },
   {
    "fieldname": "project_details_section",
@@ -137,6 +115,7 @@
    "label": "Project Details"
   },
   {
+   "depends_on": "eval: in_list([\"Disbursement\", \"Member Incharge A&F(Financial Approval)\", \"Expenditure\", \"Completed\"], doc.workflow_state);",
    "fieldname": "bank_and_account_details_section",
    "fieldtype": "Section Break",
    "label": "Bank and Account Details"
@@ -146,6 +125,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "depends_on": "eval: in_list([\"Disbursement\", \"Member Incharge A&F(Financial Approval)\", \"Expenditure\", \"Completed\"], doc.workflow_state);",
    "fieldname": "disbursement_details_section",
    "fieldtype": "Section Break",
    "label": "Disbursement Details"
@@ -168,17 +148,76 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "depends_on": "eval: in_list([\"Expenditure\", \"Completed\"], doc.workflow_state);",
+   "fieldname": "expenditure_details_section",
+   "fieldtype": "Section Break",
+   "label": "Expenditure Details"
+  },
+  {
+   "fieldname": "expenditure_details",
+   "fieldtype": "Table",
+   "label": "Expenditure Details",
+   "options": "Expenditure Details",
+   "reqd": 1
+  },
+  {
+   "fieldname": "requested_amount",
+   "fieldtype": "Currency",
+   "label": "Requested Amount",
+   "mandatory_depends_on": "eval: doc.workflow_state == \"Fund Request\";",
+   "read_only_depends_on": "eval: doc.workflow_state != \"Fund Request\";"
+  },
+  {
+   "default": "Today",
+   "fieldname": "request_on",
+   "fieldtype": "Date",
+   "label": "Requested On",
+   "read_only": 1
+  },
+  {
+   "default": "__user",
+   "fieldname": "requested_by",
+   "fieldtype": "Link",
+   "label": "Requested By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "disbursement_amount_in_words",
+   "fieldtype": "Data",
+   "label": "Disbursement Amount In Words",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_expense_in_words",
+   "fieldtype": "Data",
+   "label": "Total Expense in Words ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "requested_amount_in_words",
+   "fieldtype": "Data",
+   "label": "Requested Amount In Words",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sequence",
+   "fieldtype": "Data",
+   "label": "Sequence"
   }
  ],
  "grid_page_length": 50,
+ "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-07-23 16:15:24.582794",
+ "modified": "2025-08-05 16:23:47.276689",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Disbursement",
- "naming_rule": "By fieldname",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

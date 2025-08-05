@@ -10,7 +10,7 @@ app_license = "mit"
 
 # required_apps = []
 # after_migrate = "bcms.migrate.after_migrate"
-fixtures=["Workflow","Dashboard","Workspace","Workflow Action Master","Workflow State","Website Theme","Role","Custom Field"]
+fixtures=["Workflow","Dashboard","Workspace","Workflow Action Master","Workflow State","Website Theme","Role"]
 
 # Each item in the list will be shown as an app in the apps page
 add_to_apps_screen = [
@@ -20,6 +20,13 @@ add_to_apps_screen = [
 		"title": "BCMS",
 		"route": "/app/bcms",
 		"has_permission": "bcms.check_app_permission"
+	},
+	{
+		"name": "erpnext",
+		"logo": "/assets/erpnext/images/erpnext-logo-blue.png",
+		"title": "ERPNext",
+		"route": "/app/home",
+		"has_permission": "bcms.check_app_permissions",
 	}
 ]
 
@@ -48,7 +55,9 @@ add_to_apps_screen = [
 doctype_js = {"Land Purchase" : "public/js/land_purchase.js",
 			"Project":"building_construction_manufacturing_service/customization/project/project.js"
 }
-# doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
+doctype_list_js = {"Land Details" :["public/js/list_view.js",
+									"public/js/land_detail.js"]
+			}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
@@ -142,16 +151,18 @@ doctype_js = {"Land Purchase" : "public/js/land_purchase.js",
 # Hook on document methods and events
 
 doc_events = {
-# 	"Project": {
-#         "before_save":"bcms.building_construction_manufacturing_service.customization.project.project.validate_pro"
-# # 		# "on_update": "method",
-# # 		# "on_cancel": "method",
-# # 		# "on_trash": "method"
-# 	},
+	"Project": {
+		"validate": "bcms.building_construction_manufacturing_service.customization.project.project.validate"
+		
+	},
 	"User": {
         "after_insert": "bcms.building_construction_manufacturing_service.customization.project.user.enqueue_user_permission",
         "on_update": "bcms.building_construction_manufacturing_service.customization.project.user.enqueue_user_permission"
-    }
+    },
+	"Bhavan": {
+    	"after_insert": "bcms.building_construction_manufacturing_service.customization.project.warehouse.create_warehouse_on_bhavan_insert"
+	}
+
 }
 
 # Scheduled Tasks

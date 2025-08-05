@@ -3,12 +3,14 @@
  "allow_rename": 1,
  "creation": "2025-07-16 15:51:08.159354",
  "doctype": "DocType",
+ "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "normal_sangat",
   "special_sangat",
   "ladies_sangat",
   "bal_sangat",
+  "column_break_gzov",
   "english_sangat",
   "average_monthly",
   "monthly_building"
@@ -40,14 +42,14 @@
    "fieldname": "average_monthly",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Average Monthly\t"
+   "label": "Average Monthly Namaskar"
   },
   {
    "columns": 2,
    "fieldname": "monthly_building",
    "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Monthly Building\t"
+   "label": "Monthly Building Fund"
   },
   {
    "columns": 1,
@@ -62,13 +64,17 @@
    "fieldtype": "Int",
    "in_list_view": 1,
    "label": "English Sangat\t"
+  },
+  {
+   "fieldname": "column_break_gzov",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-26 15:32:23.949797",
+ "modified": "2025-08-01 11:25:22.907932",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "DETAILS OF SANGAT",

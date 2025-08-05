@@ -3,7 +3,6 @@
  "allow_rename": 1,
  "creation": "2025-07-22 19:03:40.854266",
  "doctype": "DocType",
- "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "attach_image_for_financial_approval_form"
@@ -20,7 +19,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-28 14:12:14.919113",
+ "modified": "2025-07-29 12:52:09.037289",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Attach Image for Financial Approval Form",

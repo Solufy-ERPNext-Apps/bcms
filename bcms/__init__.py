@@ -10,3 +10,6 @@ def check_app_permission():
 		return True
 
 	return False
+
+def check_app_permissions():
+	return False
