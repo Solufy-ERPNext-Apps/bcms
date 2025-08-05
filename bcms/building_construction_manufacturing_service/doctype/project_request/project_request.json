@@ -21,7 +21,8 @@
   "workflow_state",
   "section_break_upv2",
   "description",
-  "estimated_budget"
+  "estimated_budget",
+  "estimated_amount_in_words"
  ],
  "fields": [
   {
@@ -125,12 +126,18 @@
    "fieldtype": "Link",
    "label": "Branch Mukhi/Sanyojak Name",
    "options": "User"
+  },
+  {
+   "fieldname": "estimated_amount_in_words",
+   "fieldtype": "Data",
+   "label": "Estimated Amount In Words",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-25 19:42:34.571566",
+ "modified": "2025-08-05 16:15:26.386760",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Project Request",

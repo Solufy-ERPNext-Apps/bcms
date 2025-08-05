@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:project_name",
+ "autoname": "format:ADR-{####}",
  "creation": "2025-07-29 15:56:48.614676",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -9,6 +9,7 @@
   "section_break_fsmx",
   "project",
   "project_name",
+  "custom_is_project_updated",
   "column_break_klas",
   "branch",
   "project_type",
@@ -16,18 +17,27 @@
   "status",
   "zone",
   "additional_fund_details_section",
-  "posting_date",
   "requested_by",
+  "amended_from",
+  "requested_amount",
+  "posting_date",
   "column_break_locn",
   "current_state",
-  "requested_amount",
+  "suggested_by_building_department_in_words",
+  "requested_amount_in_words",
   "suggested_by_building_department",
   "section_break_kcoe",
   "suggested_by_member_incharge_pp",
+  "suggested_by_member_incharge_pp_in_words",
+  "remarks_mipp",
   "column_break_edgu",
   "suggested_by_secretory_snm",
+  "suggested_by_secretory_snm_in_words",
+  "remarks_secretary",
   "column_break_vsdu",
-  "amount_approved_by_member_incharge"
+  "amount_approved_by_member_incharge",
+  "amount_approved_by_member_incharge_a_and__f_in_words",
+  "remarks_miaf"
  ],
  "fields": [
   {
@@ -39,8 +49,7 @@
   {
    "fieldname": "requested_amount",
    "fieldtype": "Currency",
-   "label": "Requested Amount",
-   "read_only_depends_on": "eval: doc.workflow_state != \"Pending\";"
+   "label": "Requested Amount"
   },
   {
    "default": "__user",
@@ -69,7 +78,7 @@
    "fieldname": "suggested_by_member_incharge_pp",
    "fieldtype": "Currency",
    "label": "Suggested by Member Incharge (PP)",
-   "read_only_depends_on": "eval: doc.workflow_state != \"Forwarded to Member Incharge PP (Financial Approval)\";"
+   "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge PP (Financial Approval)\";"
   },
   {
    "fieldname": "column_break_edgu",
@@ -79,7 +88,7 @@
    "fieldname": "suggested_by_secretory_snm",
    "fieldtype": "Currency",
    "label": "Suggested by Secretory SNM",
-   "read_only_depends_on": "eval: doc.workflow_state != \"Forwarded to Secretary (Financial Approval)\";"
+   "read_only_depends_on": "eval: doc.workflow_state != \"Secretary (Financial Approval)\";"
   },
   {
    "fieldname": "column_break_vsdu",
@@ -89,7 +98,7 @@
    "fieldname": "amount_approved_by_member_incharge",
    "fieldtype": "Currency",
    "label": "Amount Approved by Member Incharge (A & F)",
-   "read_only_depends_on": "eval: doc.workflow_state != \"Forwarded to Member Incharge A&F(Financial Approval)\";\r\n"
+   "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge A&F(Financial Approval)\";"
   },
   {
    "fieldname": "additional_fund_details_section",
@@ -104,6 +113,7 @@
    "read_only": 1
   },
   {
+   "fetch_from": "project.project_type",
    "fieldname": "project_type",
    "fieldtype": "Link",
    "label": "Project Type",
@@ -111,6 +121,7 @@
    "read_only_depends_on": "eval: doc.workflow_state != \"Pending\";\r\n"
   },
   {
+   "fetch_from": "project.custom_branch",
    "fieldname": "branch",
    "fieldtype": "Link",
    "label": "Branch",
@@ -118,11 +129,11 @@
    "read_only_depends_on": "eval: doc.workflow_state != \"Pending\";\r\n"
   },
   {
+   "fetch_from": "project.project_name",
    "fieldname": "project_name",
    "fieldtype": "Data",
    "label": "Project Name",
-   "read_only_depends_on": "eval: doc.workflow_state != \"Pending\";\r\n",
-   "unique": 1
+   "read_only_depends_on": "eval: doc.workflow_state != \"Pending\";"
   },
   {
    "fieldname": "column_break_klas",
@@ -136,8 +147,9 @@
    "fieldname": "project",
    "fieldtype": "Link",
    "label": "Project",
+   "link_filters": "[[\"Project\",\"workflow_state\",\"=\",\"Under Disbursement\"]]",
    "options": "Project",
-   "read_only_depends_on": "eval: doc.workflow_state != \"Pending\";\r\n"
+   "read_only_depends_on": "eval: doc.workflow_state != \"Pending\";"
   },
   {
    "fieldname": "section_break_fsmx",
@@ -155,16 +167,83 @@
    "fieldtype": "Currency",
    "label": "Suggested by Building Department",
    "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge (BM)\";"
+  },
+  {
+   "fieldname": "requested_amount_in_words",
+   "fieldtype": "Data",
+   "label": "Requested Amount in Words",
+   "read_only": 1,
+   "read_only_depends_on": "eval: !doc.workflow_state ||  doc.workflow_state != \"Fund Request\";"
+  },
+  {
+   "fieldname": "suggested_by_building_department_in_words",
+   "fieldtype": "Data",
+   "label": "Suggested by Building Department in Words",
+   "read_only": 1
+  },
+  {
+   "fieldname": "suggested_by_member_incharge_pp_in_words",
+   "fieldtype": "Data",
+   "label": "Suggested by Member Incharge (PP) In Words",
+   "read_only": 1
+  },
+  {
+   "fieldname": "suggested_by_secretory_snm_in_words",
+   "fieldtype": "Data",
+   "label": "Suggested by Secretory SNM in Words",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amount_approved_by_member_incharge_a_and__f_in_words",
+   "fieldtype": "Data",
+   "label": "Amount Approved by Member Incharge (A and  F) in Words",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "custom_is_project_updated",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "custom_is_project_updated"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Additional Fund Request",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "remarks_mipp",
+   "fieldtype": "Small Text",
+   "label": "Remarks [MI(PP)]",
+   "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge PP (Financial Approval)\";"
+  },
+  {
+   "fieldname": "remarks_secretary",
+   "fieldtype": "Small Text",
+   "label": "Remarks [Secretary]",
+   "read_only_depends_on": "eval: doc.workflow_state != \"Secretary (Financial Approval)\";"
+  },
+  {
+   "fieldname": "remarks_miaf",
+   "fieldtype": "Small Text",
+   "label": "Remarks [MI(AF)]",
+   "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge A&F(Financial Approval)\";"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2025-07-30 16:38:00.445731",
+ "modified": "2025-08-05 16:32:36.704039",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Additional Fund Request",
- "naming_rule": "By fieldname",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

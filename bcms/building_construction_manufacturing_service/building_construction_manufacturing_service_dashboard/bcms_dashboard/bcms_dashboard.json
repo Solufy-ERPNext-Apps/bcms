@@ -1,0 +1,41 @@
+{
+ "cards": [],
+ "charts": [
+  {
+   "chart": "Project Planning & Designing",
+   "width": "Half"
+  },
+  {
+   "chart": "Project Work completion Certificate",
+   "width": "Half"
+  },
+  {
+   "chart": "Boundary Wall",
+   "width": "Half"
+  },
+  {
+   "chart": "Project Building Construction",
+   "width": "Half"
+  },
+  {
+   "chart": "Project Drawing Approval",
+   "width": "Full"
+  },
+  {
+   "chart": "Project Maintenance",
+   "width": "Full"
+  }
+ ],
+ "creation": "2025-08-04 16:00:36.754415",
+ "dashboard_name": "BCMS Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 1,
+ "is_standard": 1,
+ "modified": "2025-08-04 16:08:23.151217",
+ "modified_by": "Administrator",
+ "module": "Building Construction Manufacturing Service",
+ "name": "BCMS Dashboard",
+ "owner": "Administrator"
+}

@@ -1,0 +1,12 @@
+{
+ "Bank Account": [
+  {
+   "dt": "Bank Account",
+   "fieldname": "custom_ifsc_code",
+   "fieldtype": "Data",
+   "insert_after": "company",
+   "label": "IFSC Code",
+   "module": "Building Construction Manufacturing Service"
+  }
+ ]
+}

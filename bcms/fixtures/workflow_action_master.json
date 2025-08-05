@@ -177,20 +177,6 @@
  {
   "docstatus": 0,
   "doctype": "Workflow Action Master",
-  "modified": "2025-06-18 15:35:25.710047",
-  "name": "Review",
-  "workflow_action_name": "Review"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow Action Master",
-  "modified": "2025-06-30 17:31:51.055122",
-  "name": "Approved",
-  "workflow_action_name": "Approved"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow Action Master",
   "modified": "2025-06-30 17:35:24.535453",
   "name": "Send to Approval",
   "workflow_action_name": "Send to Approval"
@@ -369,13 +355,6 @@
   "modified": "2025-07-11 14:38:17.663619",
   "name": "Recommend",
   "workflow_action_name": "Recommend"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow Action Master",
-  "modified": "2025-07-11 14:49:50.416550",
-  "name": "Drawing Approval",
-  "workflow_action_name": "Drawing Approval"
  },
  {
   "docstatus": 0,
@@ -618,13 +597,6 @@
  {
   "docstatus": 0,
   "doctype": "Workflow Action Master",
-  "modified": "2025-07-11 15:18:44.666639",
-  "name": "Confirm Fund Transfer",
-  "workflow_action_name": "Confirm Fund Transfer"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow Action Master",
   "modified": "2025-07-11 15:19:43.910391",
   "name": "Work Completion Initiated",
   "workflow_action_name": "Work Completion Initiated"
@@ -674,44 +646,9 @@
  {
   "docstatus": 0,
   "doctype": "Workflow Action Master",
-  "modified": "2025-07-11 15:15:49.754852",
-  "name": "Approve Committee",
-  "workflow_action_name": "Approve Committee"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow Action Master",
-  "modified": "2025-07-11 15:20:49.128447",
-  "name": "Submit Work Completion Certificate",
-  "workflow_action_name": "Submit Work Completion Certificate"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow Action Master",
-  "modified": "2025-07-18 20:05:00.484828",
-  "name": "Send to Secretary (SNM)",
-  "workflow_action_name": "Send to Secretary (SNM)"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow Action Master",
   "modified": "2025-07-11 16:32:49.088900",
   "name": "Approve Recommendation",
   "workflow_action_name": "Approve Recommendation"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow Action Master",
-  "modified": "2025-07-22 15:43:59.873402",
-  "name": "Approved by Secretary",
-  "workflow_action_name": "Approved by Secretary"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow Action Master",
-  "modified": "2025-07-11 15:13:16.134313",
-  "name": "Financial Approval",
-  "workflow_action_name": "Financial Approval"
  },
  {
   "docstatus": 0,
@@ -730,8 +667,106 @@
  {
   "docstatus": 0,
   "doctype": "Workflow Action Master",
+  "modified": "2025-08-02 00:37:38.670796",
+  "name": "Fund Request",
+  "workflow_action_name": "Fund Request"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-08-02 00:40:47.197254",
+  "name": "Give Suggestion",
+  "workflow_action_name": "Give Suggestion"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-06-18 15:35:25.710047",
+  "name": "Review",
+  "workflow_action_name": "Review"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-22 15:43:59.873402",
+  "name": "Approved by Secretary",
+  "workflow_action_name": "Approved by Secretary"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-08-02 00:15:21.608861",
+  "name": "Project Request",
+  "workflow_action_name": "Project Request"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-18 20:05:00.484828",
+  "name": "Send to Secretary (SNM)",
+  "workflow_action_name": "Send to Secretary (SNM)"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-08-04 11:39:04.437389",
+  "name": "Project Approval",
+  "workflow_action_name": "Project Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-06-30 17:31:51.055122",
+  "name": "Approved",
+  "workflow_action_name": "Approved"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-11 14:49:50.416550",
+  "name": "Drawing Approval",
+  "workflow_action_name": "Drawing Approval"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-08-02 00:28:48.016204",
+  "name": "Fill The Form",
+  "workflow_action_name": "Fill The Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-11 15:15:49.754852",
+  "name": "Approve Committee",
+  "workflow_action_name": "Approve Committee"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-11 15:20:49.128447",
+  "name": "Submit Work Completion Certificate",
+  "workflow_action_name": "Submit Work Completion Certificate"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-11 15:18:44.666639",
+  "name": "Confirm Fund Transfer",
+  "workflow_action_name": "Confirm Fund Transfer"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
   "modified": "2025-07-11 14:59:36.429684",
   "name": "Planning & Designing Approve",
   "workflow_action_name": "Planning & Designing Approve"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow Action Master",
+  "modified": "2025-07-11 15:13:16.134313",
+  "name": "Financial Approval",
+  "workflow_action_name": "Financial Approval"
  }
 ]

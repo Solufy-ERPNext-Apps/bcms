@@ -21,3 +21,24 @@ frappe.ui.form.on('Project Request', {
 	}
 	}
 });
+frappe.ui.form.on('Project Request',{
+	estimated_budget:function(frm){
+		get_in_words(frm,'estimated_budget','estimated_amount_in_words');
+	},
+})
+function get_in_words(frm, source_field, target_field) {
+	const value = frm.doc[source_field];
+	if (value) {
+		frappe.call({
+			method: "bcms.building_construction_manufacturing_service.doctype.project_request.project_request.get_amount_in_words",
+			args: { amount: value },
+			callback: function(r) {
+				if (r.message) {
+					frm.set_value(target_field, r.message);
+				}
+			}
+		});
+	} else {
+		frm.set_value(target_field, "");
+	}
+}

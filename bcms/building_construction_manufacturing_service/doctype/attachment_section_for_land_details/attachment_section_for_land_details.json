@@ -3,32 +3,46 @@
  "allow_rename": 1,
  "creation": "2025-07-31 11:29:58.243053",
  "doctype": "DocType",
+ "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "section_break_hl2u",
-  "noc_approval_procedure_from_national_highway_authorities"
+  "land_detail",
+  "noc_approval_procedure_from_national_highway_authorities",
+  "remark"
  ],
  "fields": [
   {
    "fieldname": "section_break_hl2u",
-   "fieldtype": "Section Break",
-   "label": "NOC approval procedure from National Highway Authorities."
+   "fieldtype": "Section Break"
   },
   {
    "fieldname": "noc_approval_procedure_from_national_highway_authorities",
    "fieldtype": "Attach",
    "in_list_view": 1,
-   "label": "NOC approval procedure from National Highway Authorities."
+   "label": "Attachment for Land details"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "land_detail",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Land Detail"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-31 11:46:08.427101",
+ "modified": "2025-08-05 14:50:52.513151",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
- "name": "NOC details",
+ "name": "Attachment section for Land details",
  "owner": "Administrator",
  "permissions": [],
  "row_format": "Dynamic",

@@ -151,16 +151,18 @@ doctype_list_js = {"Land Details" :["public/js/list_view.js",
 # Hook on document methods and events
 
 doc_events = {
-# 	"Project": {
-#         "before_save":"bcms.building_construction_manufacturing_service.customization.project.project.validate_pro"
-# # 		# "on_update": "method",
-# # 		# "on_cancel": "method",
-# # 		# "on_trash": "method"
-# 	},
+	"Project": {
+		"validate": "bcms.building_construction_manufacturing_service.customization.project.project.validate"
+		
+	},
 	"User": {
         "after_insert": "bcms.building_construction_manufacturing_service.customization.project.user.enqueue_user_permission",
         "on_update": "bcms.building_construction_manufacturing_service.customization.project.user.enqueue_user_permission"
-    }
+    },
+	"Bhavan": {
+    	"after_insert": "bcms.building_construction_manufacturing_service.customization.project.warehouse.create_warehouse_on_bhavan_insert"
+	}
+
 }
 
 # Scheduled Tasks

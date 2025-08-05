@@ -6,6 +6,7 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "disbursement_id",
   "posted_on",
   "requested_by",
   "requested_amount",
@@ -69,12 +70,18 @@
    "fieldname": "precentage",
    "fieldtype": "Data",
    "label": "Precentage"
+  },
+  {
+   "fieldname": "disbursement_id",
+   "fieldtype": "Link",
+   "label": "Disbursement ID",
+   "options": "Disbursement"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-30 17:15:20.328787",
+ "modified": "2025-08-04 00:39:49.783913",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Disbursement Detail",

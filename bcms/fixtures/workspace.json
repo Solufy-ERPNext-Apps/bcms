@@ -687,7 +687,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-07-28 18:14:19.445199",
+  "modified": "2025-08-04 15:20:20.242267",
   "module": "HR",
   "name": "HR",
   "number_cards": [],
@@ -696,7 +696,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 8.0,
+  "sequence_id": 19.0,
   "shortcuts": [
    {
     "color": null,
@@ -932,7 +932,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-07-28 18:14:19.613868",
+  "modified": "2025-08-04 15:20:20.952801",
   "module": "Payroll",
   "name": "Payroll",
   "number_cards": [],
@@ -941,7 +941,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 15.0,
+  "sequence_id": 25.0,
   "shortcuts": [
    {
     "color": null,
@@ -1009,7 +1009,7 @@
   "is_hidden": 0,
   "label": "Sewadal",
   "links": [],
-  "modified": "2025-07-26 13:28:53.607956",
+  "modified": "2025-08-04 15:20:19.095488",
   "module": "SNM Sewadal",
   "name": "Sewadal",
   "number_cards": [
@@ -1068,7 +1068,7 @@
   "quick_lists": [],
   "restrict_to_domain": null,
   "roles": [],
-  "sequence_id": 1.0,
+  "sequence_id": 10.0,
   "shortcuts": [],
   "title": "Sewadal"
  },
@@ -1115,7 +1115,7 @@
   "is_hidden": 0,
   "label": "Adhikari",
   "links": [],
-  "modified": "2025-07-23 18:49:21.012677",
+  "modified": "2025-08-04 15:20:19.187473",
   "module": "SNM Sewadal",
   "name": "Adhikari",
   "number_cards": [
@@ -1160,7 +1160,7 @@
   "quick_lists": [],
   "restrict_to_domain": null,
   "roles": [],
-  "sequence_id": 32.0,
+  "sequence_id": 11.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -1305,7 +1305,7 @@
   "is_hidden": 0,
   "label": "Master Data",
   "links": [],
-  "modified": "2025-07-23 18:49:42.661755",
+  "modified": "2025-08-04 15:20:19.280287",
   "module": "SNM Sewadal",
   "name": "Master Data",
   "number_cards": [],
@@ -1314,7 +1314,7 @@
   "quick_lists": [],
   "restrict_to_domain": null,
   "roles": [],
-  "sequence_id": 33.0,
+  "sequence_id": 12.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -1627,18 +1627,18 @@
  },
  {
   "charts": [],
-  "content": "[{\"id\":\"C92KU1nKsp\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Member Incharge (Prachar Prasar)</span>\",\"col\":12}},{\"id\":\"_BSu9HxnzX\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Project Request\",\"col\":6}},{\"id\":\"Kj2OEinMV6\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Drawing Approval\",\"col\":6}},{\"id\":\"LiiiKyVE0L\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Member InCharge ( PP )-(Financial Approval)\",\"col\":6}},{\"id\":\"hQEJr7ylBp\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Under Disbursement\",\"col\":6}},{\"id\":\"MvZGZ4G89G\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Work completion Certificate\",\"col\":12}}]",
+  "content": "[{\"id\":\"C92KU1nKsp\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Member Incharge (Prachar Prasar)</span>\",\"col\":12}},{\"id\":\"_QnW-3bCVe\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"hTt2HKvX5k\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"To Do\",\"col\":4}},{\"id\":\"8q4KTxDa67\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Ongoing\",\"col\":4}},{\"id\":\"5MYclf7NB8\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Completed\",\"col\":4}},{\"id\":\"DdKTnJ_uFr\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"VKuNmVHgUt\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"To Do\",\"col\":4}},{\"id\":\"E2iByk8Fy5\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Ongoing\",\"col\":4}},{\"id\":\"MvZGZ4G89G\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Completed\",\"col\":4}},{\"id\":\"Ud4miybWgz\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"ySVOMvpJxD\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Additional Fund Requests</b><b></b></span>\",\"col\":12}},{\"id\":\"CDUyPnBucq\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"To Do (AFR)\",\"col\":3}},{\"id\":\"PgEHuHTRsf\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Ongoing (AFR)\",\"col\":3}},{\"id\":\"maT43VcQnc\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Completed (AFR)\",\"col\":3}},{\"id\":\"m43BWMgtdf\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"0vL2K-cbHi\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"To Do (AFR)\",\"col\":4}},{\"id\":\"InvOmgZNRM\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Ongoing (AFR)\",\"col\":4}},{\"id\":\"aB1EXEM71B\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"(AFR) Completed\",\"col\":4}},{\"id\":\"AbNZIkYz6m\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"QmZziAjq9Z\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Disbursement</b></span>\",\"col\":12}},{\"id\":\"j9HK514ozW\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"To Do for Disbursement\",\"col\":3}},{\"id\":\"Yc2Q3njZYp\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Ongoing Disbursement\",\"col\":3}},{\"id\":\"H0_bewzC_6\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Disbursement Completed\",\"col\":3}},{\"id\":\"S0UIg1Cpj-\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"VNE7Gq_SvG\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"To Do for Disbursement\",\"col\":4}},{\"id\":\"9u6jAylBWb\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Ongoing Disbursement\",\"col\":4}},{\"id\":\"DTzejQ_wF6\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Disbursement Completed\",\"col\":4}}]",
   "custom_blocks": [],
   "docstatus": 0,
   "doctype": "Workspace",
   "for_user": "",
   "hide_custom": 0,
-  "icon": null,
-  "indicator_color": "green",
+  "icon": "",
+  "indicator_color": "",
   "is_hidden": 0,
   "label": "Member Incharge (Prachar Prasar)",
   "links": [],
-  "modified": "2025-07-30 11:59:00.196399",
+  "modified": "2025-08-04 17:04:58.923970",
   "module": null,
   "name": "Member Incharge (Prachar Prasar)",
   "number_cards": [],
@@ -1647,43 +1647,75 @@
   "quick_lists": [
    {
     "document_type": "Project",
-    "label": "Under Disbursement",
+    "label": "To Do",
     "parent": "Member Incharge (Prachar Prasar)",
     "parentfield": "quick_lists",
     "parenttype": "Workspace",
-    "quick_list_filter": "[[\"Project\",\"workflow_state\",\"=\",\"Under Disbursement\",false]]"
+    "quick_list_filter": "[[\"Project\",\"workflow_state\",\"in\",[\"Project Request\",\"Drawing Approval\",\"Member Inchaarge PP (Financial Approval)\",\"Under Disbursement\"],false]]"
    },
    {
     "document_type": "Project",
-    "label": "Project Request",
+    "label": "Ongoing",
     "parent": "Member Incharge (Prachar Prasar)",
     "parentfield": "quick_lists",
     "parenttype": "Workspace",
-    "quick_list_filter": "[[\"Project\",\"workflow_state\",\"=\",\"Project Request\",false]]"
+    "quick_list_filter": "[[\"Project\",\"workflow_state\",\"!=\",\"Work completion Certificate\",false]]"
    },
    {
     "document_type": "Project",
-    "label": "Work completion Certificate",
+    "label": "Completed",
     "parent": "Member Incharge (Prachar Prasar)",
     "parentfield": "quick_lists",
     "parenttype": "Workspace",
     "quick_list_filter": "[[\"Project\",\"workflow_state\",\"=\",\"Work completion Certificate\",false]]"
    },
    {
-    "document_type": "Project",
-    "label": "Drawing Approval",
+    "document_type": "Disbursement",
+    "label": "To Do for Disbursement",
     "parent": "Member Incharge (Prachar Prasar)",
     "parentfield": "quick_lists",
     "parenttype": "Workspace",
-    "quick_list_filter": "[[\"Project\",\"workflow_state\",\"=\",\"Drawing Approval\",false]]"
+    "quick_list_filter": "[[\"Disbursement\",\"workflow_state\",\"not in\",[\"Member Incharge BM (Finance Approval)\",\"Member Incharge A&F(Financial Approval)\"],false]]"
    },
    {
-    "document_type": "Project",
-    "label": "Member InCharge ( PP )-(Financial Approval)",
+    "document_type": "Additional Fund Request",
+    "label": "To Do (AFR)",
     "parent": "Member Incharge (Prachar Prasar)",
     "parentfield": "quick_lists",
     "parenttype": "Workspace",
-    "quick_list_filter": "[[\"Project\",\"workflow_state\",\"=\",\"Member Incharge (Financial Approval)\",false]]"
+    "quick_list_filter": "[[\"Additional Fund Request\",\"workflow_state\",\"not in\",[\"Pending\",\"Member Incharge PP (Financial Approval)\"],false]]"
+   },
+   {
+    "document_type": "Disbursement",
+    "label": "Ongoing Disbursement",
+    "parent": "Member Incharge (Prachar Prasar)",
+    "parentfield": "quick_lists",
+    "parenttype": "Workspace",
+    "quick_list_filter": "[[\"Disbursement\",\"workflow_state\",\"!=\",\"Approved\",false]]"
+   },
+   {
+    "document_type": "Additional Fund Request",
+    "label": "Ongoing (AFR)",
+    "parent": "Member Incharge (Prachar Prasar)",
+    "parentfield": "quick_lists",
+    "parenttype": "Workspace",
+    "quick_list_filter": "[[\"Additional Fund Request\",\"workflow_state\",\"not in\",[\"Approved\"],false]]"
+   },
+   {
+    "document_type": "Disbursement",
+    "label": "Disbursement Completed",
+    "parent": "Member Incharge (Prachar Prasar)",
+    "parentfield": "quick_lists",
+    "parenttype": "Workspace",
+    "quick_list_filter": "[[\"Disbursement\",\"workflow_state\",\"=\",\"Approved\",false]]"
+   },
+   {
+    "document_type": "Additional Fund Request",
+    "label": "(AFR) Completed",
+    "parent": "Member Incharge (Prachar Prasar)",
+    "parentfield": "quick_lists",
+    "parenttype": "Workspace",
+    "quick_list_filter": "[[\"Additional Fund Request\",\"workflow_state\",\"in\",[\"Approved\"],false]]"
    }
   ],
   "restrict_to_domain": null,
@@ -1695,24 +1727,178 @@
     "role": "Member Incharge(PP)"
    }
   ],
-  "sequence_id": 39.0,
-  "shortcuts": [],
+  "sequence_id": 6.0,
+  "shortcuts": [
+   {
+    "color": "Red",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "To Do",
+    "link_to": "Project",
+    "parent": "Member Incharge (Prachar Prasar)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Project\",\"workflow_state\",\"in\",[\"Project Request\",\"Drawing Approval\",\"Member Inchaarge PP (Financial Approval)\",\"Under Disbursement\"],false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Green",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Completed (AFR)",
+    "link_to": "Additional Fund Request",
+    "parent": "Member Incharge (Prachar Prasar)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Additional Fund Request\",\"workflow_state\",\"=\",\"Approved\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Ongoing",
+    "link_to": "Project",
+    "parent": "Member Incharge (Prachar Prasar)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Project\",\"workflow_state\",\"=\",\"Work completion Certificate\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Green",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Completed",
+    "link_to": "Project",
+    "parent": "Member Incharge (Prachar Prasar)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Project\",\"workflow_state\",\"=\",\"Work completion Certificate\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Red",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "To Do (AFR)",
+    "link_to": "Disbursement",
+    "parent": "Member Incharge (Prachar Prasar)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Disbursement\",\"workflow_state\",\"not in\",[\"Member Incharge A&F(Financial Approval)\",\"Member Incharge BM (Finance Approval)\"],false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Ongoing (AFR)",
+    "link_to": "Disbursement",
+    "parent": "Member Incharge (Prachar Prasar)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Disbursement\",\"workflow_state\",\"!=\",\"Approved\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Red",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "To Do for Disbursement",
+    "link_to": "Disbursement",
+    "parent": "Member Incharge (Prachar Prasar)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Disbursement\",\"workflow_state\",\"not in\",[\"Member Incharge A&F(Financial Approval)\",\"Member Incharge BM (Finance Approval)\"],false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Ongoing Disbursement",
+    "link_to": "Disbursement",
+    "parent": "Member Incharge (Prachar Prasar)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Disbursement\",\"workflow_state\",\"!=\",\"Approved\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Green",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Disbursement Completed",
+    "link_to": "Disbursement",
+    "parent": "Member Incharge (Prachar Prasar)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Disbursement\",\"workflow_state\",\"=\",\"Approved\",false]]",
+    "type": "DocType",
+    "url": null
+   }
+  ],
   "title": "Member Incharge (Prachar Prasar)"
  },
  {
   "charts": [],
-  "content": "[{\"id\":\"9-jQepmtyf\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Member Incharge (Account &amp; Finance)</span>\",\"col\":12}},{\"id\":\"WLbSHKnD_P\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Member Incharge A&F(Financial Approval)\",\"col\":12}},{\"id\":\"C4q0kWGFp4\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Under Disbursement\",\"col\":12}}]",
+  "content": "[{\"id\":\"9-jQepmtyf\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Member Incharge (Account &amp; Finance)</span>\",\"col\":12}},{\"id\":\"Y83SxisTPW\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"b4twC23yEd\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"To Do\",\"col\":4}},{\"id\":\"Nhewy2-307\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Ongoing\",\"col\":4}},{\"id\":\"gLLxPJgehd\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Completed\",\"col\":4}},{\"id\":\"Gb7w1kN2T9\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"WLbSHKnD_P\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"To Do\",\"col\":4}},{\"id\":\"C4q0kWGFp4\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Ongoing\",\"col\":4}},{\"id\":\"_Mw8o39XsF\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Completed\",\"col\":4}},{\"id\":\"5ZdN2YK37v\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"IZtPcTxXrA\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Additional Fund Request</span>\",\"col\":12}},{\"id\":\"1QAbRkzmx7\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"To Do (AFR)\",\"col\":4}},{\"id\":\"uSUXSXV0xw\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Ongoing (AFR)\",\"col\":4}},{\"id\":\"9N9HJecp0X\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Completed (AFR)\",\"col\":4}},{\"id\":\"He3eWA-ENy\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"hnXvbOBoyB\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"To Do (AFR)\",\"col\":4}},{\"id\":\"ssxFDgk4VH\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Ongoing (AFR)\",\"col\":4}},{\"id\":\"DAF90fC3_z\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Completed (AFR)\",\"col\":4}},{\"id\":\"xmaj4SNlrO\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"hkdT-NNvip\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Disbursement</b></span>\",\"col\":12}},{\"id\":\"foTJfIBmhU\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Disbursement To Do\",\"col\":4}},{\"id\":\"-26P_umUCD\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Ongoing Disbursement\",\"col\":4}},{\"id\":\"lms0WAqwe4\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Completed Disbursement\",\"col\":4}},{\"id\":\"3eupSqNqoM\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"H2irbqoMgw\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Disbursement To Do \",\"col\":4}},{\"id\":\"y8M5rCe4TZ\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Ongoing Disbursement\",\"col\":4}},{\"id\":\"uqwspsltTQ\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Completed Disbursement\",\"col\":4}}]",
   "custom_blocks": [],
   "docstatus": 0,
   "doctype": "Workspace",
   "for_user": "",
   "hide_custom": 0,
-  "icon": null,
-  "indicator_color": "green",
+  "icon": "",
+  "indicator_color": "",
   "is_hidden": 0,
   "label": "Member Incharge (Account & Finance)",
   "links": [],
-  "modified": "2025-07-28 11:56:24.605408",
+  "modified": "2025-08-04 16:30:15.316400",
   "module": null,
   "name": "Member Incharge (Account & Finance)",
   "number_cards": [],
@@ -1720,20 +1906,76 @@
   "public": 1,
   "quick_lists": [
    {
+    "document_type": "Additional Fund Request",
+    "label": "To Do (AFR)",
+    "parent": "Member Incharge (Account & Finance)",
+    "parentfield": "quick_lists",
+    "parenttype": "Workspace",
+    "quick_list_filter": "[[\"Additional Fund Request\",\"workflow_state\",\"=\",\"Member Incharge A&F(Financial Approval)\",false]]"
+   },
+   {
+    "document_type": "Disbursement",
+    "label": "Disbursement To Do ",
+    "parent": "Member Incharge (Account & Finance)",
+    "parentfield": "quick_lists",
+    "parenttype": "Workspace",
+    "quick_list_filter": "[[\"Disbursement\",\"workflow_state\",\"=\",\"Member Incharge A&F(Financial Approval)\",false]]"
+   },
+   {
     "document_type": "Project",
-    "label": "Member Incharge A&F(Financial Approval)",
+    "label": "To Do",
     "parent": "Member Incharge (Account & Finance)",
     "parentfield": "quick_lists",
     "parenttype": "Workspace",
     "quick_list_filter": "[[\"Project\",\"workflow_state\",\"=\",\"Member Incharge A&F(Financial Approval)\",false]]"
    },
    {
-    "document_type": "Project",
-    "label": "Under Disbursement",
+    "document_type": "Additional Fund Request",
+    "label": "Ongoing (AFR)",
     "parent": "Member Incharge (Account & Finance)",
     "parentfield": "quick_lists",
     "parenttype": "Workspace",
-    "quick_list_filter": "[[\"Project\",\"workflow_state\",\"=\",\"Under Disbursement\",false]]"
+    "quick_list_filter": "[[\"Additional Fund Request\",\"workflow_state\",\"!=\",\"Approved\",false]]"
+   },
+   {
+    "document_type": "Disbursement",
+    "label": "Ongoing Disbursement",
+    "parent": "Member Incharge (Account & Finance)",
+    "parentfield": "quick_lists",
+    "parenttype": "Workspace",
+    "quick_list_filter": "[[\"Disbursement\",\"workflow_state\",\"!=\",\"Completed\",false]]"
+   },
+   {
+    "document_type": "Project",
+    "label": "Completed",
+    "parent": "Member Incharge (Account & Finance)",
+    "parentfield": "quick_lists",
+    "parenttype": "Workspace",
+    "quick_list_filter": "[[\"Project\",\"workflow_state\",\"=\",\"Work completion Certificate\",false]]"
+   },
+   {
+    "document_type": "Additional Fund Request",
+    "label": "Completed (AFR)",
+    "parent": "Member Incharge (Account & Finance)",
+    "parentfield": "quick_lists",
+    "parenttype": "Workspace",
+    "quick_list_filter": "[[\"Additional Fund Request\",\"workflow_state\",\"=\",\"Approved\",false]]"
+   },
+   {
+    "document_type": "Disbursement",
+    "label": "Completed Disbursement",
+    "parent": "Member Incharge (Account & Finance)",
+    "parentfield": "quick_lists",
+    "parenttype": "Workspace",
+    "quick_list_filter": "[[\"Disbursement\",\"workflow_state\",\"=\",\"Completed\",false]]"
+   },
+   {
+    "document_type": "Project",
+    "label": "Ongoing",
+    "parent": "Member Incharge (Account & Finance)",
+    "parentfield": "quick_lists",
+    "parenttype": "Workspace",
+    "quick_list_filter": "[[\"Project\",\"workflow_state\",\"!=\",\"Work completion Certificate\",false]]"
    }
   ],
   "restrict_to_domain": null,
@@ -1745,24 +1987,178 @@
     "role": "Member Incharge(A & F)"
    }
   ],
-  "sequence_id": 40.0,
-  "shortcuts": [],
+  "sequence_id": 7.0,
+  "shortcuts": [
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "To Do",
+    "link_to": "Project",
+    "parent": "Member Incharge (Account & Finance)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Project\",\"workflow_state\",\"=\",\"Member Incharge A&F(Financial Approval)\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Blue",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Ongoing",
+    "link_to": "Project",
+    "parent": "Member Incharge (Account & Finance)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Project\",\"workflow_state\",\"!=\",\"Work completion Certificate\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Disbursement To Do",
+    "link_to": "Disbursement",
+    "parent": "Member Incharge (Account & Finance)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Disbursement\",\"workflow_state\",\"=\",\"Member Incharge A&F(Financial Approval)\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "To Do (AFR)",
+    "link_to": "Additional Fund Request",
+    "parent": "Member Incharge (Account & Finance)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Additional Fund Request\",\"workflow_state\",\"=\",\"Member Incharge A&F(Financial Approval)\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Blue",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Ongoing Disbursement",
+    "link_to": "Disbursement",
+    "parent": "Member Incharge (Account & Finance)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Disbursement\",\"workflow_state\",\"!=\",\"Completed\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Blue",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Ongoing (AFR)",
+    "link_to": "Additional Fund Request",
+    "parent": "Member Incharge (Account & Finance)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Additional Fund Request\",\"workflow_state\",\"!=\",\"Approved\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Green",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Completed",
+    "link_to": "Project",
+    "parent": "Member Incharge (Account & Finance)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Project\",\"workflow_state\",\"=\",\"Work completion Certificate\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Green",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Completed Disbursement",
+    "link_to": "Disbursement",
+    "parent": "Member Incharge (Account & Finance)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Disbursement\",\"workflow_state\",\"=\",\"Completed\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Green",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Completed (AFR)",
+    "link_to": "Additional Fund Request",
+    "parent": "Member Incharge (Account & Finance)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Additional Fund Request\",\"workflow_state\",\"=\",\"Approved\",false]]",
+    "type": "DocType",
+    "url": null
+   }
+  ],
   "title": "Member Incharge (Account & Finance)"
  },
  {
   "charts": [],
-  "content": "[{\"id\":\"VORZBEuqDi\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Member Incharge (Land Clearence)</span>\",\"col\":12}},{\"id\":\"2M3_IMNHVJ\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Land Clearance\",\"col\":12}}]",
+  "content": "[{\"id\":\"VORZBEuqDi\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Member Incharge (Land Clearence)</span>\",\"col\":12}},{\"id\":\"CE3WoKP59F\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Create a Project\",\"col\":3}},{\"id\":\"0ByQ-k2bIb\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"hn9adBCRvY\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"To Do\",\"col\":4}},{\"id\":\"VzkZ1RAx0C\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Ongoing Project\",\"col\":4}},{\"id\":\"5PNY--IMdl\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Completed Projects\",\"col\":4}},{\"id\":\"73YjBP8qiC\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"WcpypSFvc7\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"To Do\",\"col\":4}},{\"id\":\"M14qLG-xJI\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Ongoing Project\",\"col\":4}},{\"id\":\"wdRPErie6c\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Completed\",\"col\":4}}]",
   "custom_blocks": [],
   "docstatus": 0,
   "doctype": "Workspace",
   "for_user": "",
   "hide_custom": 0,
-  "icon": null,
-  "indicator_color": "green",
+  "icon": "",
+  "indicator_color": "",
   "is_hidden": 0,
   "label": "Member Incharge (Land Clearence)",
   "links": [],
-  "modified": "2025-07-28 11:55:41.755246",
+  "modified": "2025-08-04 15:25:14.784493",
   "module": null,
   "name": "Member Incharge (Land Clearence)",
   "number_cards": [],
@@ -1771,11 +2167,27 @@
   "quick_lists": [
    {
     "document_type": "Project",
-    "label": "Land Clearance",
+    "label": "To Do",
     "parent": "Member Incharge (Land Clearence)",
     "parentfield": "quick_lists",
     "parenttype": "Workspace",
     "quick_list_filter": "[[\"Project\",\"workflow_state\",\"=\",\"Land Clearance\",false]]"
+   },
+   {
+    "document_type": "Project",
+    "label": "Ongoing Project",
+    "parent": "Member Incharge (Land Clearence)",
+    "parentfield": "quick_lists",
+    "parenttype": "Workspace",
+    "quick_list_filter": "[[\"Project\",\"workflow_state\",\"not in\",[\"Work Completion Certificate\",\"Land Clearance\"],false]]"
+   },
+   {
+    "document_type": "Project",
+    "label": "Completed",
+    "parent": "Member Incharge (Land Clearence)",
+    "parentfield": "quick_lists",
+    "parenttype": "Workspace",
+    "quick_list_filter": "[[\"Project\",\"workflow_state\",\"=\",\"Work completion Certificate\",false]]"
    }
   ],
   "restrict_to_domain": null,
@@ -1787,24 +2199,93 @@
     "role": "Member Incharge ( Land )"
    }
   ],
-  "sequence_id": 41.0,
-  "shortcuts": [],
+  "sequence_id": 2.0,
+  "shortcuts": [
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Create a Project",
+    "link_to": null,
+    "parent": "Member Incharge (Land Clearence)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": null,
+    "type": "URL",
+    "url": "/app/land-details"
+   },
+   {
+    "color": "Red",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "To Do",
+    "link_to": "Project",
+    "parent": "Member Incharge (Land Clearence)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Project\",\"workflow_state\",\"=\",\"Land Clearance\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Blue",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Ongoing Project",
+    "link_to": "Project",
+    "parent": "Member Incharge (Land Clearence)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Project\",\"workflow_state\",\"not in\",[\"Work Completion Certificate\",\"Land Clearance\"],false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Green",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Completed Projects",
+    "link_to": "Project",
+    "parent": "Member Incharge (Land Clearence)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Project\",\"workflow_state\",\"=\",\"Work completion Certificate\",false]]",
+    "type": "DocType",
+    "url": null
+   }
+  ],
   "title": "Member Incharge (Land Clearence)"
  },
  {
   "charts": [],
-  "content": "[{\"id\":\"jL4ivUvOLW\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Member Incharge (Building Management)</span>\",\"col\":12}},{\"id\":\"9fC5SuEOCN\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Planning & Designing\",\"col\":12}},{\"id\":\"Wdv_MbuDkw\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Construction Committee Formed\",\"col\":12}},{\"id\":\"5CCcFB29tA\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Project\",\"col\":12}}]",
+  "content": "[{\"id\":\"jL4ivUvOLW\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Member Incharge (Building Management)</span>\",\"col\":12}},{\"id\":\"rj806HZIQQ\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"ei8ZmXldGA\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"To Do\",\"col\":4}},{\"id\":\"POIq16bV5V\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Ongoing\",\"col\":4}},{\"id\":\"tmLr006cJE\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Completed\",\"col\":4}},{\"id\":\"AShq27JloV\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"9fC5SuEOCN\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"To Do\",\"col\":4}},{\"id\":\"Wdv_MbuDkw\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Ongoing\",\"col\":4}},{\"id\":\"5CCcFB29tA\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Project\",\"col\":4}},{\"id\":\"yexTSKscMD\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"rIjktjRM6D\",\"type\":\"paragraph\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Additional Fund Request</span>\",\"col\":12}},{\"id\":\"qbScrOBC7b\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Additional Fund Request ToDo\",\"col\":4}},{\"id\":\"rDFueSgIX0\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Ongoing Additional Fund Request\",\"col\":4}},{\"id\":\"f0gNxNSA7R\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Completed Additional Fund Request\",\"col\":4}},{\"id\":\"tkqj_wCwD0\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Additional Fund Request ToDo\",\"col\":4}},{\"id\":\"z1SjG9pUfl\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Ongoing Additional Fund Request \",\"col\":4}},{\"id\":\"lkN4zXRe43\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Completed Additional Fund Request \",\"col\":4}},{\"id\":\"0xpkCKa6jw\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"xg3B2DGmfr\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Disbursement</b></span>\",\"col\":12}},{\"id\":\"KerTiTBQ7A\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Disbursement To Do\",\"col\":4}},{\"id\":\"EO1PNClDEm\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Ongoing Disbursement\",\"col\":4}},{\"id\":\"q7ykMC3whT\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Completed Disbursement\",\"col\":4}},{\"id\":\"ujDziHP2Qk\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"10pn_HhISd\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Disbursement To Do \",\"col\":4}},{\"id\":\"9Mu9UwUHZi\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Ongoing Disbursement\",\"col\":4}},{\"id\":\"n4z9tftzxW\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Completed Disbursement\",\"col\":4}}]",
   "custom_blocks": [],
   "docstatus": 0,
   "doctype": "Workspace",
   "for_user": "",
   "hide_custom": 0,
-  "icon": null,
-  "indicator_color": "green",
+  "icon": "",
+  "indicator_color": "",
   "is_hidden": 0,
   "label": "Member Incharge (Building Management)",
   "links": [],
-  "modified": "2025-07-28 11:55:33.820819",
+  "modified": "2025-08-04 17:01:08.282898",
   "module": null,
   "name": "Member Incharge (Building Management)",
   "number_cards": [],
@@ -1812,20 +2293,52 @@
   "public": 1,
   "quick_lists": [
    {
-    "document_type": "Project",
-    "label": "Planning & Designing",
+    "document_type": "Disbursement",
+    "label": "Disbursement To Do ",
     "parent": "Member Incharge (Building Management)",
     "parentfield": "quick_lists",
     "parenttype": "Workspace",
-    "quick_list_filter": "[[\"Project\",\"workflow_state\",\"=\",\"Planning & Designing\",false]]"
+    "quick_list_filter": "[[\"Disbursement\",\"workflow_state\",\"=\",\"Member Incharge (BM)\",false]]"
    },
    {
     "document_type": "Project",
-    "label": "Construction Committee Formed",
+    "label": "To Do",
     "parent": "Member Incharge (Building Management)",
     "parentfield": "quick_lists",
     "parenttype": "Workspace",
-    "quick_list_filter": "[[\"Project\",\"workflow_state\",\"=\",\"Construction Committee Formed\",false]]"
+    "quick_list_filter": "[[\"Project\",\"workflow_state\",\"in\",[\"Planning & Designing\",\"Member Incharge BM (Finance Approval)\",\"Construction Committee Formed\"],false]]"
+   },
+   {
+    "document_type": "Additional Fund Request",
+    "label": "Additional Fund Request ToDo",
+    "parent": "Member Incharge (Building Management)",
+    "parentfield": "quick_lists",
+    "parenttype": "Workspace",
+    "quick_list_filter": "[[\"Additional Fund Request\",\"workflow_state\",\"=\",\"Member Incharge (BM)\",false]]"
+   },
+   {
+    "document_type": "Project",
+    "label": "Ongoing",
+    "parent": "Member Incharge (Building Management)",
+    "parentfield": "quick_lists",
+    "parenttype": "Workspace",
+    "quick_list_filter": "[[\"Project\",\"workflow_state\",\"not in\",[\"Work completion Certificate\"],false]]"
+   },
+   {
+    "document_type": "Additional Fund Request",
+    "label": "Ongoing Additional Fund Request ",
+    "parent": "Member Incharge (Building Management)",
+    "parentfield": "quick_lists",
+    "parenttype": "Workspace",
+    "quick_list_filter": "[[\"Additional Fund Request\",\"workflow_state\",\"!=\",\"Approved\",false]]"
+   },
+   {
+    "document_type": "Disbursement",
+    "label": "Ongoing Disbursement",
+    "parent": "Member Incharge (Building Management)",
+    "parentfield": "quick_lists",
+    "parenttype": "Workspace",
+    "quick_list_filter": "[[\"Disbursement\",\"workflow_state\",\"!=\",\"Completed\",false]]"
    },
    {
     "document_type": "Project",
@@ -1833,7 +2346,23 @@
     "parent": "Member Incharge (Building Management)",
     "parentfield": "quick_lists",
     "parenttype": "Workspace",
-    "quick_list_filter": "[[\"Project\",\"workflow_state\",\"=\",\"Under Disbursement\",false]]"
+    "quick_list_filter": "[[\"Project\",\"workflow_state\",\"=\",\"Work completion Certificate\",false]]"
+   },
+   {
+    "document_type": "Additional Fund Request",
+    "label": "Completed Additional Fund Request ",
+    "parent": "Member Incharge (Building Management)",
+    "parentfield": "quick_lists",
+    "parenttype": "Workspace",
+    "quick_list_filter": "[[\"Additional Fund Request\",\"workflow_state\",\"=\",\"Approved\",false]]"
+   },
+   {
+    "document_type": "Disbursement",
+    "label": "Completed Disbursement",
+    "parent": "Member Incharge (Building Management)",
+    "parentfield": "quick_lists",
+    "parenttype": "Workspace",
+    "quick_list_filter": "[[\"Disbursement\",\"workflow_state\",\"=\",\"Completed\",false]]"
    }
   ],
   "restrict_to_domain": null,
@@ -1845,24 +2374,178 @@
     "role": "Member Incharge (BM)"
    }
   ],
-  "sequence_id": 42.0,
-  "shortcuts": [],
+  "sequence_id": 8.0,
+  "shortcuts": [
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Additional Fund Request ToDo",
+    "link_to": "Additional Fund Request",
+    "parent": "Member Incharge (Building Management)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Additional Fund Request\",\"workflow_state\",\"=\",\"Member Incharge (BM)\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "To Do",
+    "link_to": "Project",
+    "parent": "Member Incharge (Building Management)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Project\",\"workflow_state\",\"in\",[\"Planning & Designing\",\"Member Incharge BM (Finance Approval)\",\"Construction Committee Formed\"],false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Disbursement To Do",
+    "link_to": "Disbursement",
+    "parent": "Member Incharge (Building Management)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Disbursement\",\"workflow_state\",\"=\",\"Member Incharge (BM)\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Blue",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Ongoing Additional Fund Request",
+    "link_to": "Additional Fund Request",
+    "parent": "Member Incharge (Building Management)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Additional Fund Request\",\"workflow_state\",\"!=\",\"Approved\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Blue",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Ongoing",
+    "link_to": "Project",
+    "parent": "Member Incharge (Building Management)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Project\",\"workflow_state\",\"!=\",\"Work completion Certificate\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Blue",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Ongoing Disbursement",
+    "link_to": "Disbursement",
+    "parent": "Member Incharge (Building Management)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Disbursement\",\"workflow_state\",\"!=\",\"Completed\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Green",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Completed Additional Fund Request",
+    "link_to": "Additional Fund Request",
+    "parent": "Member Incharge (Building Management)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Additional Fund Request\",\"workflow_state\",\"=\",\"Approved\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Green",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Completed",
+    "link_to": "Project",
+    "parent": "Member Incharge (Building Management)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Project\",\"workflow_state\",\"=\",\"Work completion Certificate\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Green",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Completed Disbursement",
+    "link_to": "Disbursement",
+    "parent": "Member Incharge (Building Management)",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Disbursement\",\"name\",\"=\",\"Completed\",false]]",
+    "type": "DocType",
+    "url": null
+   }
+  ],
   "title": "Member Incharge (Building Management)"
  },
  {
   "charts": [],
-  "content": "[{\"id\":\"1FzjbkJOzq\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Secretary</span>\",\"col\":12}},{\"id\":\"1XUmGub86z\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Secretary (Financial Approval)\",\"col\":12}},{\"id\":\"6Z2vmOj15t\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Project\",\"col\":12}}]",
+  "content": "[{\"id\":\"1FzjbkJOzq\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Secretary</span>\",\"col\":12}},{\"id\":\"I0v0KJt1ki\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"BzIQZHCLk9\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Project</b></span>\",\"col\":12}},{\"id\":\"DucLmySMHP\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"To Do\",\"col\":4}},{\"id\":\"ztPc7fwzWt\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Ongoing\",\"col\":4}},{\"id\":\"wl1zMwZ9Z4\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Completed\",\"col\":4}},{\"id\":\"O43snKEKEE\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"1XUmGub86z\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"To Do\",\"col\":4}},{\"id\":\"6Z2vmOj15t\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Ongoing\",\"col\":4}},{\"id\":\"svNBNMkuyf\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Completed\",\"col\":4}},{\"id\":\"vWx39hxd2E\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"juSPvdR-rZ\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Additional Fund Requests</b></span>\",\"col\":12}},{\"id\":\"UOTzI82Ad5\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"To Do (AFR)\",\"col\":4}},{\"id\":\"EqkbuzAeDA\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Ongoing (AFR)\",\"col\":4}},{\"id\":\"j5AcSOU2wl\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Completed (AFR)\",\"col\":4}},{\"id\":\"9o7pkgieAX\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"CJ_JLpfayQ\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"To Do (AFR)\",\"col\":4}},{\"id\":\"NW7PXrDRMx\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Ongoing (AFR)\",\"col\":4}},{\"id\":\"xV25cJA6Fo\",\"type\":\"quick_list\",\"data\":{\"quick_list_name\":\"Completed (AFR)\",\"col\":4}},{\"id\":\"OAWgR1qjus\",\"type\":\"spacer\",\"data\":{\"col\":12}}]",
   "custom_blocks": [],
   "docstatus": 0,
   "doctype": "Workspace",
   "for_user": "",
   "hide_custom": 0,
-  "icon": null,
-  "indicator_color": "green",
+  "icon": "",
+  "indicator_color": "",
   "is_hidden": 0,
   "label": "Secretary",
   "links": [],
-  "modified": "2025-07-28 16:27:52.997799",
+  "modified": "2025-08-04 16:59:37.561274",
   "module": null,
   "name": "Secretary",
   "number_cards": [],
@@ -1871,7 +2554,7 @@
   "quick_lists": [
    {
     "document_type": "Project",
-    "label": "Secretary (Financial Approval)",
+    "label": "To Do",
     "parent": "Secretary",
     "parentfield": "quick_lists",
     "parenttype": "Workspace",
@@ -1879,11 +2562,43 @@
    },
    {
     "document_type": "Project",
-    "label": "Project",
+    "label": "Completed",
     "parent": "Secretary",
     "parentfield": "quick_lists",
     "parenttype": "Workspace",
-    "quick_list_filter": "[[\"Project\",\"workflow_state\",\"=\",\"Under Disbursement\",false]]"
+    "quick_list_filter": "[[\"Project\",\"workflow_state\",\"=\",\"Work completion Certificate\",false]]"
+   },
+   {
+    "document_type": "Project",
+    "label": "Ongoing",
+    "parent": "Secretary",
+    "parentfield": "quick_lists",
+    "parenttype": "Workspace",
+    "quick_list_filter": "[[\"Project\",\"workflow_state\",\"not in\",[\"Work Completion Certificate\"],false]]"
+   },
+   {
+    "document_type": "Additional Fund Request",
+    "label": "To Do (AFR)",
+    "parent": "Secretary",
+    "parentfield": "quick_lists",
+    "parenttype": "Workspace",
+    "quick_list_filter": "[[\"Additional Fund Request\",\"workflow_state\",\"=\",\"Secretary (Financial Approval)\",false]]"
+   },
+   {
+    "document_type": "Additional Fund Request",
+    "label": "Ongoing (AFR)",
+    "parent": "Secretary",
+    "parentfield": "quick_lists",
+    "parenttype": "Workspace",
+    "quick_list_filter": "[[\"Additional Fund Request\",\"workflow_state\",\"!=\",\"Approved\",false]]"
+   },
+   {
+    "document_type": "Additional Fund Request",
+    "label": "Completed (AFR)",
+    "parent": "Secretary",
+    "parentfield": "quick_lists",
+    "parenttype": "Workspace",
+    "quick_list_filter": "[[\"Additional Fund Request\",\"workflow_state\",\"=\",\"Approved\",false]]"
    }
   ],
   "restrict_to_domain": null,
@@ -1895,8 +2610,111 @@
     "role": "Secretary HQ"
    }
   ],
-  "sequence_id": 43.0,
-  "shortcuts": [],
+  "sequence_id": 9.0,
+  "shortcuts": [
+   {
+    "color": "Blue",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Ongoing",
+    "link_to": "Project",
+    "parent": "Secretary",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Project\",\"workflow_state\",\"!=\",\"Work completion Certificate\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Red",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "To Do",
+    "link_to": "Project",
+    "parent": "Secretary",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Project\",\"workflow_state\",\"=\",\"Secretary (Financial Approval)\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Green",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Completed",
+    "link_to": "Project",
+    "parent": "Secretary",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Project\",\"workflow_state\",\"=\",\"Work completion Certificate\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Red",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "To Do (AFR)",
+    "link_to": "Additional Fund Request",
+    "parent": "Secretary",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Additional Fund Request\",\"workflow_state\",\"=\",\"Secretary (Financial Approval)\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Green",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Ongoing (AFR)",
+    "link_to": "Additional Fund Request",
+    "parent": "Secretary",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Additional Fund Request\",\"workflow_state\",\"!=\",\"Approved\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Blue",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "Completed (AFR)",
+    "link_to": "Additional Fund Request",
+    "parent": "Secretary",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Additional Fund Request\",\"workflow_state\",\"=\",\"Approved\",false]]",
+    "type": "DocType",
+    "url": null
+   }
+  ],
   "title": "Secretary"
  },
  {
@@ -2291,7 +3109,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-07-09 16:52:52.651954",
+  "modified": "2025-08-04 15:20:19.399459",
   "module": "Setup",
   "name": "Home",
   "number_cards": [],
@@ -2300,7 +3118,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 4.0,
+  "sequence_id": 13.0,
   "shortcuts": [
    {
     "color": null,
@@ -3114,7 +3932,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-07-09 16:52:55.822331",
+  "modified": "2025-08-04 15:20:22.510039",
   "module": "CRM",
   "name": "CRM",
   "number_cards": [],
@@ -3123,7 +3941,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 26.0,
+  "sequence_id": 37.0,
   "shortcuts": [
    {
     "color": "Blue",
@@ -4261,7 +5079,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-07-09 16:52:54.251796",
+  "modified": "2025-08-04 15:20:21.050232",
   "module": "Selling",
   "name": "Selling",
   "number_cards": [],
@@ -4270,7 +5088,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 15.0,
+  "sequence_id": 26.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -5245,7 +6063,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-07-09 16:52:54.019569",
+  "modified": "2025-08-04 15:20:20.721362",
   "module": "Buying",
   "name": "Buying",
   "number_cards": [],
@@ -5254,7 +6072,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 13.0,
+  "sequence_id": 23.0,
   "shortcuts": [
    {
     "color": "Green",
@@ -5770,7 +6588,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-07-09 16:52:56.317276",
+  "modified": "2025-08-04 15:20:22.967472",
   "module": "Website",
   "name": "Website",
   "number_cards": [],
@@ -5779,7 +6597,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 29.0,
+  "sequence_id": 40.0,
   "shortcuts": [
    {
     "color": "Green",
@@ -6441,7 +7259,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-07-09 16:52:56.647413",
+  "modified": "2025-08-04 15:20:23.216300",
   "module": "Automation",
   "name": "Tools",
   "number_cards": [],
@@ -6450,7 +7268,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 31.0,
+  "sequence_id": 42.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -6789,7 +7607,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-07-09 16:52:55.997321",
+  "modified": "2025-08-04 15:20:22.661402",
   "module": "Core",
   "name": "Users",
   "number_cards": [],
@@ -6798,7 +7616,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 27.0,
+  "sequence_id": 38.0,
   "shortcuts": [
    {
     "color": null,
@@ -7262,7 +8080,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-07-09 16:52:56.807063",
+  "modified": "2025-08-04 15:20:23.345065",
   "module": "Integrations",
   "name": "Integrations",
   "number_cards": [],
@@ -7271,7 +8089,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 32.0,
+  "sequence_id": 43.0,
   "shortcuts": [],
   "title": "Integrations"
  },
@@ -8269,7 +9087,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-07-09 16:52:52.937772",
+  "modified": "2025-08-04 15:20:19.726947",
   "module": "Accounts",
   "name": "Accounting",
   "number_cards": [
@@ -8307,7 +9125,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 6.0,
+  "sequence_id": 15.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -9764,7 +10582,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-07-09 16:52:54.543189",
+  "modified": "2025-08-04 15:20:21.372350",
   "module": "Stock",
   "name": "Stock",
   "number_cards": [
@@ -9795,7 +10613,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 17.0,
+  "sequence_id": 28.0,
   "shortcuts": [
    {
     "color": "Green",
@@ -10281,7 +11099,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-07-09 16:52:54.757616",
+  "modified": "2025-08-04 15:20:21.572967",
   "module": "Assets",
   "name": "Assets",
   "number_cards": [],
@@ -10290,7 +11108,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 18.0,
+  "sequence_id": 29.0,
   "shortcuts": [
    {
     "color": null,
@@ -10691,7 +11509,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-07-09 16:52:55.557791",
+  "modified": "2025-08-04 15:20:22.244882",
   "module": "Projects",
   "name": "Projects",
   "number_cards": [],
@@ -10700,7 +11518,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 24.0,
+  "sequence_id": 35.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -11109,7 +11927,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-07-09 16:52:55.677094",
+  "modified": "2025-08-04 15:20:22.368715",
   "module": "Support",
   "name": "Support",
   "number_cards": [],
@@ -11118,7 +11936,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 25.0,
+  "sequence_id": 36.0,
   "shortcuts": [
    {
     "color": "Yellow",
@@ -11854,7 +12672,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-07-09 16:52:52.754109",
+  "modified": "2025-08-04 15:20:19.550432",
   "module": "HR",
   "name": "Overview",
   "number_cards": [],
@@ -11863,7 +12681,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 5.0,
+  "sequence_id": 14.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -12167,7 +12985,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-07-09 16:52:55.176307",
+  "modified": "2025-08-04 15:20:21.913409",
   "module": "Quality Management",
   "name": "Quality",
   "number_cards": [],
@@ -12176,7 +12994,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 21.0,
+  "sequence_id": 32.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -12819,7 +13637,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-07-09 16:52:55.022002",
+  "modified": "2025-08-04 15:20:21.786441",
   "module": "Manufacturing",
   "name": "Manufacturing",
   "number_cards": [],
@@ -12828,7 +13646,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 20.0,
+  "sequence_id": 31.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -13413,7 +14231,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-07-09 16:52:56.473975",
+  "modified": "2025-08-04 15:20:23.103397",
   "module": "ERPNext Integrations",
   "name": "ERPNext Integrations",
   "number_cards": [],
@@ -13422,7 +14240,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 30.0,
+  "sequence_id": 41.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -14196,7 +15014,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-07-09 16:52:56.134878",
+  "modified": "2025-08-04 15:20:22.792253",
   "module": "Setup",
   "name": "ERPNext Settings",
   "number_cards": [],
@@ -14205,7 +15023,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 28.0,
+  "sequence_id": 39.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -14657,7 +15475,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-07-09 16:52:53.710204",
+  "modified": "2025-08-04 15:20:20.503505",
   "module": "HR",
   "name": "Recruitment",
   "number_cards": [],
@@ -14675,7 +15493,7 @@
   ],
   "restrict_to_domain": null,
   "roles": [],
-  "sequence_id": 11.0,
+  "sequence_id": 21.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -15284,7 +16102,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-07-09 16:52:53.585263",
+  "modified": "2025-08-04 15:20:20.385455",
   "module": "HR",
   "name": "Employee Lifecycle",
   "number_cards": [],
@@ -15318,7 +16136,7 @@
   ],
   "restrict_to_domain": null,
   "roles": [],
-  "sequence_id": 10.0,
+  "sequence_id": 20.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -15827,7 +16645,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-07-09 16:52:53.807906",
+  "modified": "2025-08-04 15:20:20.596714",
   "module": "HR",
   "name": "Shift & Attendance",
   "number_cards": [],
@@ -15836,7 +16654,7 @@
   "quick_lists": [],
   "restrict_to_domain": null,
   "roles": [],
-  "sequence_id": 12.0,
+  "sequence_id": 22.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -16264,7 +17082,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-07-09 16:52:54.150881",
+  "modified": "2025-08-04 15:20:20.875504",
   "module": "HR",
   "name": "Leaves",
   "number_cards": [],
@@ -16273,7 +17091,7 @@
   "quick_lists": [],
   "restrict_to_domain": null,
   "roles": [],
-  "sequence_id": 14.0,
+  "sequence_id": 24.0,
   "shortcuts": [
    {
     "color": "Orange",
@@ -16632,7 +17450,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-07-09 16:52:54.879840",
+  "modified": "2025-08-04 15:20:21.678612",
   "module": "HR",
   "name": "Performance",
   "number_cards": [],
@@ -16641,7 +17459,7 @@
   "quick_lists": [],
   "restrict_to_domain": null,
   "roles": [],
-  "sequence_id": 19.0,
+  "sequence_id": 30.0,
   "shortcuts": [
    {
     "color": "Orange",
@@ -17169,7 +17987,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-07-09 16:52:54.403587",
+  "modified": "2025-08-04 15:20:21.229107",
   "module": "HR",
   "name": "Expense Claims",
   "number_cards": [],
@@ -17178,7 +17996,7 @@
   "quick_lists": [],
   "restrict_to_domain": null,
   "roles": [],
-  "sequence_id": 16.0,
+  "sequence_id": 27.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -17922,7 +18740,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-07-09 16:52:55.287600",
+  "modified": "2025-08-04 15:20:22.011495",
   "module": "Payroll",
   "name": "Salary Payout",
   "number_cards": [],
@@ -17931,7 +18749,7 @@
   "quick_lists": [],
   "restrict_to_domain": null,
   "roles": [],
-  "sequence_id": 22.0,
+  "sequence_id": 33.0,
   "shortcuts": [
    {
     "color": "Red",
@@ -18235,7 +19053,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-07-09 16:52:55.435920",
+  "modified": "2025-08-04 15:20:22.156349",
   "module": "Payroll",
   "name": "Tax & Benefits",
   "number_cards": [],
@@ -18244,7 +19062,7 @@
   "quick_lists": [],
   "restrict_to_domain": null,
   "roles": [],
-  "sequence_id": 23.0,
+  "sequence_id": 34.0,
   "shortcuts": [
    {
     "color": "Red",
@@ -18584,7 +19402,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-07-09 16:52:53.182089",
+  "modified": "2025-08-04 15:20:19.920165",
   "module": "Accounts",
   "name": "Payables",
   "number_cards": [],
@@ -18593,7 +19411,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 7.0,
+  "sequence_id": 16.0,
   "shortcuts": [
    {
     "color": null,
@@ -19004,7 +19822,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-07-09 16:52:53.294626",
+  "modified": "2025-08-04 15:20:20.011321",
   "module": "Accounts",
   "name": "Receivables",
   "number_cards": [],
@@ -19013,7 +19831,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 8.0,
+  "sequence_id": 17.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -19548,7 +20366,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-07-09 16:52:53.427415",
+  "modified": "2025-08-04 15:20:20.112532",
   "module": "Accounts",
   "name": "Financial Reports",
   "number_cards": [],
@@ -19557,7 +20375,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 9.0,
+  "sequence_id": 18.0,
   "shortcuts": [],
   "title": "Financial Reports"
  },
@@ -19579,22 +20397,7 @@
    }
   ],
   "content": "[{\"id\":\"0-0QZWz_dU\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Building Construction Management System\",\"col\":12}},{\"id\":\"erAy5sTwcR\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Land Purchase\",\"col\":3}},{\"id\":\"FnoYv8C28i\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Land Purchase List\",\"col\":3}},{\"id\":\"M43QHqkacH\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Report Summary\",\"col\":12}},{\"id\":\"W_BXmgCYaE\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Current Status Free\",\"col\":4}},{\"id\":\"WyJBKEBxlD\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Current Status Lease\",\"col\":4}},{\"id\":\"EYVxM5uTt9\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Current Status Encumbered\",\"col\":4}},{\"id\":\"gb70tM1Lg5\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Ownership Type Private\",\"col\":4}},{\"id\":\"ZhgSUjgFqq\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Ownership Type Government\",\"col\":4}},{\"id\":\"RwWAaPtvjx\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Ownership Type Trust\",\"col\":4}},{\"id\":\"DsTtXBrUpH\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Quality High\",\"col\":4}},{\"id\":\"rPIfbErD23\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Quality Medium\",\"col\":4}},{\"id\":\"rcUAVg1Hru\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Quality Law\",\"col\":4}},{\"id\":\"bNHRK2CujJ\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Ownership Type\",\"col\":12}},{\"id\":\"9MtoqN8Ixr\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Current Status\",\"col\":12}}]",
-  "custom_blocks": [
-   {
-    "custom_block_name": "Building Construction Management System",
-    "label": "Building Construction Management System",
-    "parent": "Land Purchases",
-    "parentfield": "custom_blocks",
-    "parenttype": "Workspace"
-   },
-   {
-    "custom_block_name": "Report Summary",
-    "label": "Report Summary",
-    "parent": "Land Purchases",
-    "parentfield": "custom_blocks",
-    "parenttype": "Workspace"
-   }
-  ],
+  "custom_blocks": [],
   "docstatus": 0,
   "doctype": "Workspace",
   "for_user": "",
@@ -19604,7 +20407,7 @@
   "is_hidden": 0,
   "label": "Land Purchases",
   "links": [],
-  "modified": "2025-07-09 16:52:52.542319",
+  "modified": "2025-08-04 15:25:14.677333",
   "module": "Building Construction Manufacturing Service",
   "name": "Land Purchases",
   "number_cards": [
@@ -19677,7 +20480,7 @@
   "quick_lists": [],
   "restrict_to_domain": null,
   "roles": [],
-  "sequence_id": 2.0,
+  "sequence_id": 4.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -19717,55 +20520,6 @@
   "title": "Land Purchases"
  },
  {
-  "charts": [
-   {
-    "chart_name": "Sewadal Chart",
-    "label": null,
-    "parent": "BCMS",
-    "parentfield": "charts",
-    "parenttype": "Workspace"
-   }
-  ],
-  "content": "[]",
-  "custom_blocks": [],
-  "docstatus": 0,
-  "doctype": "Workspace",
-  "for_user": "",
-  "hide_custom": 0,
-  "icon": "organization",
-  "indicator_color": "",
-  "is_hidden": 0,
-  "label": "BCMS",
-  "links": [],
-  "modified": "2025-07-31 16:36:58.269075",
-  "module": null,
-  "name": "BCMS",
-  "number_cards": [
-   {
-    "label": null,
-    "number_card_name": "Sewadal",
-    "parent": "BCMS",
-    "parentfield": "number_cards",
-    "parenttype": "Workspace"
-   }
-  ],
-  "parent_page": "",
-  "public": 1,
-  "quick_lists": [],
-  "restrict_to_domain": null,
-  "roles": [
-   {
-    "parent": "BCMS",
-    "parentfield": "roles",
-    "parenttype": "Workspace",
-    "role": null
-   }
-  ],
-  "sequence_id": 1.0,
-  "shortcuts": [],
-  "title": "BCMS"
- },
- {
   "charts": [],
   "content": "[{\"id\":\"JnkhtIaJtG\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Project Requests</span>\",\"col\":12}},{\"id\":\"vcDCNm0LPx\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Project Request\",\"col\":3}}]",
   "custom_blocks": [],
@@ -19778,7 +20532,7 @@
   "is_hidden": 1,
   "label": "Project Requests",
   "links": [],
-  "modified": "2025-07-09 16:52:52.607701",
+  "modified": "2025-08-04 15:20:18.828187",
   "module": null,
   "name": "Project Requests",
   "number_cards": [],
@@ -19787,7 +20541,7 @@
   "quick_lists": [],
   "restrict_to_domain": null,
   "roles": [],
-  "sequence_id": 3.0,
+  "sequence_id": 5.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -20363,7 +21117,7 @@
     "type": "Link"
    }
   ],
-  "modified": "2025-07-09 16:52:56.929541",
+  "modified": "2025-08-04 15:20:23.463262",
   "module": "Core",
   "name": "Build",
   "number_cards": [],
@@ -20372,7 +21126,7 @@
   "quick_lists": [],
   "restrict_to_domain": "",
   "roles": [],
-  "sequence_id": 33.0,
+  "sequence_id": 44.0,
   "shortcuts": [
    {
     "color": "Grey",
@@ -20521,5 +21275,129 @@
   "sequence_id": 22.0,
   "shortcuts": [],
   "title": "Welcome Workspace"
+ },
+ {
+  "charts": [
+   {
+    "chart_name": "Project Under Disbursement",
+    "label": "Project Under Disbursement",
+    "parent": "BCMS",
+    "parentfield": "charts",
+    "parenttype": "Workspace"
+   },
+   {
+    "chart_name": "Project Work completion Certificate",
+    "label": "Project Work completion Certificate",
+    "parent": "BCMS",
+    "parentfield": "charts",
+    "parenttype": "Workspace"
+   },
+   {
+    "chart_name": "Project Planning & Designing",
+    "label": "Project Planning & Designing",
+    "parent": "BCMS",
+    "parentfield": "charts",
+    "parenttype": "Workspace"
+   },
+   {
+    "chart_name": "Project Drawing Approval",
+    "label": "Project Drawing Approval",
+    "parent": "BCMS",
+    "parentfield": "charts",
+    "parenttype": "Workspace"
+   }
+  ],
+  "content": "[{\"id\":\"FhJJeVCSea\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">BCMS</span>\",\"col\":12}},{\"id\":\"kwbZ-xtfpG\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"uoJss93YHT\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Project\",\"col\":3}},{\"id\":\"JLrjlx4P8_\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Ongoing Project\",\"col\":3}},{\"id\":\"zFqIlJEbbV\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Completed Project\",\"col\":3}},{\"id\":\"rSCS9fsFuo\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"BCMS Dashboard\",\"col\":3}},{\"id\":\"iSs82cdm7G\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"bbLOPey3um\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Project Under Disbursement\",\"col\":6}},{\"id\":\"gT4WyTTYEa\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Project Work completion Certificate\",\"col\":6}},{\"id\":\"c-dvoGRUFb\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Project Planning & Designing\",\"col\":6}},{\"id\":\"4864wpmPoV\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Project Drawing Approval\",\"col\":6}}]",
+  "custom_blocks": [],
+  "docstatus": 0,
+  "doctype": "Workspace",
+  "for_user": "",
+  "hide_custom": 0,
+  "icon": "organization",
+  "indicator_color": "",
+  "is_hidden": 0,
+  "label": "BCMS",
+  "links": [],
+  "modified": "2025-08-04 16:01:00.343867",
+  "module": null,
+  "name": "BCMS",
+  "number_cards": [],
+  "parent_page": "",
+  "public": 1,
+  "quick_lists": [],
+  "restrict_to_domain": null,
+  "roles": [],
+  "sequence_id": 1.0,
+  "shortcuts": [
+   {
+    "color": "Green",
+    "doc_view": "List",
+    "format": "{}",
+    "icon": null,
+    "kanban_board": null,
+    "label": "Project",
+    "link_to": "Project",
+    "parent": "BCMS",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Red",
+    "doc_view": "List",
+    "format": "{}",
+    "icon": null,
+    "kanban_board": null,
+    "label": "Ongoing Project",
+    "link_to": "Project",
+    "parent": "BCMS",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Project\",\"workflow_state\",\"!=\",\"Work completion Certificate\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Yellow",
+    "doc_view": "List",
+    "format": "{}",
+    "icon": null,
+    "kanban_board": null,
+    "label": "Completed Project",
+    "link_to": "Project",
+    "parent": "BCMS",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": "[[\"Project\",\"workflow_state\",\"=\",\"Work Completed\",false]]",
+    "type": "DocType",
+    "url": null
+   },
+   {
+    "color": "Grey",
+    "doc_view": "List",
+    "format": null,
+    "icon": null,
+    "kanban_board": null,
+    "label": "BCMS Dashboard",
+    "link_to": "BCMS Dashboard",
+    "parent": "BCMS",
+    "parentfield": "shortcuts",
+    "parenttype": "Workspace",
+    "report_ref_doctype": null,
+    "restrict_to_domain": null,
+    "stats_filter": null,
+    "type": "Dashboard",
+    "url": null
+   }
+  ],
+  "title": "BCMS"
  }
 ]
