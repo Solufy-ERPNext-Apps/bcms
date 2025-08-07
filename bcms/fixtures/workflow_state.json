@@ -885,24 +885,6 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-08-04 11:47:00.629655",
-  "name": "Expenditure",
-  "style": "",
-  "workflow_state_name": "Expenditure"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
-  "modified": "2025-07-30 15:43:07.583139",
-  "name": "Land Clearance",
-  "style": "Info",
-  "workflow_state_name": "Land Clearance"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
   "modified": "2025-08-05 11:08:52.208852",
   "name": "Raise Disbursement Request",
   "style": "",
@@ -939,15 +921,6 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-07-22 10:30:48.605330",
-  "name": "Prepare Transfer Order",
-  "style": "",
-  "workflow_state_name": "Prepare Transfer Order"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
   "modified": "2025-07-02 18:35:17.521036",
   "name": "Rejected By HQ",
   "style": "",
@@ -970,6 +943,51 @@
   "name": "Material Transfer",
   "style": "",
   "workflow_state_name": "Material Transfer"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-22 10:30:48.605330",
+  "name": "Prepare Transfer Order",
+  "style": "",
+  "workflow_state_name": "Prepare Transfer Order"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-30 15:46:20.384678",
+  "name": "Work completion Certificate",
+  "style": "Warning",
+  "workflow_state_name": "Work completion Certificate"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-08-04 11:47:00.629655",
+  "name": "Expenditure",
+  "style": "",
+  "workflow_state_name": "Expenditure"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-30 15:42:50.370950",
+  "name": "Project Request",
+  "style": "Primary",
+  "workflow_state_name": "Project Request"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-30 15:43:07.583139",
+  "name": "Land Clearance",
+  "style": "Info",
+  "workflow_state_name": "Land Clearance"
  },
  {
   "docstatus": 0,
@@ -1002,28 +1020,10 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-07-30 15:46:20.384678",
-  "name": "Work completion Certificate",
-  "style": "Warning",
-  "workflow_state_name": "Work completion Certificate"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
-  "modified": "2025-07-30 15:42:50.370950",
-  "name": "Project Request",
-  "style": "Primary",
-  "workflow_state_name": "Project Request"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
-  "modified": "2025-07-22 16:34:02.053991",
-  "name": "Planning & Designing",
-  "style": "Primary",
-  "workflow_state_name": "Planning & Designing"
+  "modified": "2025-07-30 15:45:31.658378",
+  "name": "Under Disbursement",
+  "style": "Info",
+  "workflow_state_name": "Under Disbursement"
  },
  {
   "docstatus": 0,
@@ -1038,19 +1038,10 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-08-02 00:30:51.107018",
-  "name": "Member Incharge BM (Finance Approval)",
-  "style": "",
-  "workflow_state_name": "Member Incharge BM (Finance Approval)"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
-  "modified": "2025-07-30 15:45:31.658378",
-  "name": "Under Disbursement",
-  "style": "Info",
-  "workflow_state_name": "Under Disbursement"
+  "modified": "2025-07-22 16:34:02.053991",
+  "name": "Planning & Designing",
+  "style": "Primary",
+  "workflow_state_name": "Planning & Designing"
  },
  {
   "docstatus": 0,
@@ -1060,6 +1051,15 @@
   "name": "Final Project Planning",
   "style": "",
   "workflow_state_name": "Final Project Planning"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-08-02 00:30:51.107018",
+  "name": "Member Incharge BM (Finance Approval)",
+  "style": "",
+  "workflow_state_name": "Member Incharge BM (Finance Approval)"
  },
  {
   "docstatus": 0,

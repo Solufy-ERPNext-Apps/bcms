@@ -7,6 +7,11 @@ from frappe.utils import get_link_to_form, format_date, money_in_words, flt
 
 class Disbursement(Document):
 	def validate(self):
+		disbursement_details(self)
+		if self.workflow_state == "Member Incharge A&F(Financial Approval)":
+			if not self.disbursement_amount:
+				self.disbursement_amount = self.requested_amount
+
 		if self.flags.from_project and self.flags.update_project:
 			frappe.enqueue(update_disbursement_details, doc = self, queue='long', timeout=600, enqueue_after_commit=True)
 		else:
@@ -26,8 +31,9 @@ class Disbursement(Document):
 			if self.total_expense > self.disbursement_amount:
 				frappe.throw("Total expense cannot be greater than the disbursement amount.")
 
+
 def update_disbursement_details(doc):
-	disbursement_data = frappe.db.get_all("Disbursement", {"project": doc.project}, ["expected_end_date", "expected_start_date","stage", "requested_amount", "disbursement_amount", "workflow_state", "request_on", "sequence"], order_by = "sequence")
+	disbursement_data = frappe.db.get_all("Disbursement", {"project": doc.project}, ["name","expected_end_date", "expected_start_date","stage", "requested_amount", "disbursement_amount", "workflow_state", "request_on", "sequence"], order_by = "sequence")
 	if not disbursement_data:
 		return
 	custom_html =  """
@@ -102,3 +108,40 @@ def reject_project(docname, workflow_state):
 			return f"Cannot reject Disbursement '{docname}' from state '{workflow_state}'."
 	else:
 		return f"Disbursement '{docname}' is not in a valid state for rejection."
+
+
+def disbursement_details(doc):
+	disbursement_data = frappe.db.get_all("Disbursement", {"project": doc.project}, ["name","expected_end_date", "expected_start_date","stage", "requested_amount", "disbursement_amount", "workflow_state", "request_on", "sequence"], order_by = "sequence")
+	if not disbursement_data:
+		return
+	custom_html =  """
+		<table>
+			<tr>
+				<td><b>Stage</b></td>
+				<td><b>Expected Start Date</b></td>
+				<td><b>Expected End Date</b></td>
+				<td><b>Requested On</b></td>
+				<td><b>Requested Amount</b></td>
+				<td><b>Disbursed Amount</b></td>
+				<td><b>Status</b></td>
+				<td><b>Percentage</b></td>
+			</tr>
+	"""
+	current_req = True
+	total_amount = sum(row.requested_amount for row in disbursement_data)
+	for row in disbursement_data:
+		custom_html += f"""
+			<tr>
+				<td>{row.stage}</td>
+				<td>{row.expected_start_date}</td>
+				<td>{row.expected_end_date}</td>
+				<td>{format_date(row.request_on)}</td>
+				<td>{row.requested_amount}</td>
+				<td>{row.disbursement_amount}</td>
+				<td>{row.workflow_state}</td>
+				<td>{flt(row.requested_amount * 100 / total_amount, 2)}</td>
+			</tr>
+		"""
+	custom_html += f"""</table>"""
+	for row in disbursement_data:
+		frappe.db.set_value("Disbursement",row.name,"disbursement_detail",custom_html)

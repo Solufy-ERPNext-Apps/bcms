@@ -1,0 +1,16 @@
+{
+ "Additional Fund Request": [
+  {
+   "allow_on_submit": 1,
+   "dt": "Additional Fund Request",
+   "fieldname": "workflow_state",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "insert_after": "section_break_fsmx",
+   "label": "Workflow State",
+   "module": "Building Construction Manufacturing Service",
+   "no_copy": 1,
+   "options": "Workflow State"
+  }
+ ]
+}
