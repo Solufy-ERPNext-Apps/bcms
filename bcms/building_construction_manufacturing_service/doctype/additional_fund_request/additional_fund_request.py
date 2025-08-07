@@ -3,7 +3,7 @@
 
 import frappe
 from frappe.model.document import Document
-from frappe.utils import get_link_to_form, format_date
+from frappe.utils import get_link_to_form, format_date, money_in_words
 
 class AdditionalFundRequest(Document):
 	def validate(self):
@@ -16,9 +16,23 @@ class AdditionalFundRequest(Document):
 				project_doc.custom_additional_require_amount += self.amount_approved_by_member_incharge
 			else:
 				project_doc.custom_additional_require_amount = self.amount_approved_by_member_incharge
+			project_doc.custom_additional_require_amount_in_words = money_in_words(project_doc.custom_additional_require_amount)
 			if project_doc.workflow_state == "Work completion Certificate":
 				project_doc.workflow_state = "Under Disbursement"
 			project_doc.save()
+			self.create_disbursement()
+
+	def create_disbursement(self):
+		current_sequence = frappe.db.get_value("Disbursement", {"project": self.project}, "max(sequence)") or 0
+		disbursement = frappe.new_doc("Disbursement")
+		disbursement.project = self.project
+		disbursement.project_type = self.project_type
+		disbursement.requested_amount = self.amount_approved_by_member_incharge
+		disbursement.workflow_state = "Pending"
+		disbursement.sequence = int(current_sequence) + 1
+		disbursement.flags.from_project = True
+		disbursement.flags.update_project = True
+		disbursement.save()
 
 	def validate_allocation_amount(self):
 		currency = frappe.db.get_value("Global Defaults","Global Defaults","default_currency")

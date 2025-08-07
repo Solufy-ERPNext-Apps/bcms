@@ -8,28 +8,38 @@
  "field_order": [
   "previous_requests",
   "section_break_oivr",
-  "project_type",
+  "column_break_mapk",
   "branch",
-  "requested_by",
   "mukhisanyojak_name",
   "rank",
+  "request_raised_by",
+  "bhavan",
   "location",
   "column_break_btdk",
+  "fiscal_year",
+  "project_type",
   "posting_date",
   "zone",
   "zonal_incharge_name",
   "zonal_incharge_email",
-  "fiscal_year",
   "workflow_state",
   "section_break_cskr",
   "total_expense_limit",
+  "total_expense_in_words",
   "estimated_budget",
   "estimated_amount_in_words",
   "column_break_wkup",
   "remaining_amount",
+  "remaining_amount_in_words",
   "approved_amount",
-  "section_break_upv2",
-  "description"
+  "approved_amount_in_words",
+  "column_break_yiee",
+  "description",
+  "section_break_rgiq",
+  "column_break_boda",
+  "remark",
+  "column_break_tszm",
+  "remark_1"
  ],
  "fields": [
   {
@@ -39,32 +49,31 @@
    "in_standard_filter": 1,
    "label": "Project Type\t",
    "options": "Project Type",
+   "read_only_depends_on": "eval: !doc.workflow_state || doc.workflow_state != \"Pending\";",
    "reqd": 1
   },
   {
+   "fetch_from": "bhavan.location",
    "fieldname": "location",
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Location",
-   "options": "Location"
-  },
-  {
-   "fieldname": "requested_by",
-   "fieldtype": "Link",
-   "label": "Requested By\t",
-   "options": "Employee",
-   "reqd": 1
+   "options": "Location",
+   "read_only_depends_on": "eval: !doc.workflow_state || doc.workflow_state != \"Pending\";"
   },
   {
    "fieldname": "estimated_budget",
    "fieldtype": "Currency",
    "label": "Estimated Amount",
+   "no_copy": 1,
+   "read_only_depends_on": "eval: !doc.workflow_state || doc.workflow_state != \"Pending\";",
    "reqd": 1
   },
   {
    "fieldname": "description",
    "fieldtype": "Small Text",
-   "label": "Description"
+   "label": "Work Description",
+   "read_only_depends_on": "eval:doc.workflow_state != \"Pending\""
   },
   {
    "fieldname": "column_break_btdk",
@@ -78,9 +87,11 @@
    "read_only": 1
   },
   {
+   "default": "now",
    "fieldname": "posting_date",
    "fieldtype": "Datetime",
-   "label": "Posting Date & Time"
+   "label": "Posting Date & Time",
+   "read_only": 1
   },
   {
    "fetch_from": "branch.custom_zone",
@@ -88,6 +99,7 @@
    "fieldtype": "Link",
    "label": "Zone",
    "options": "Zone",
+   "read_only": 1,
    "reqd": 1
   },
   {
@@ -103,10 +115,6 @@
    "label": "Branch",
    "options": "Branch",
    "reqd": 1
-  },
-  {
-   "fieldname": "section_break_upv2",
-   "fieldtype": "Section Break"
   },
   {
    "fieldname": "estimated_amount_in_words",
@@ -135,18 +143,21 @@
    "fieldtype": "Link",
    "label": "Rank",
    "options": "Request Member",
+   "read_only_depends_on": "eval: !doc.workflow_state || doc.workflow_state != \"Pending\";",
    "reqd": 1
   },
   {
    "fieldname": "remaining_amount",
    "fieldtype": "Currency",
-   "label": "Remaining Amount"
+   "label": "Remaining Amount",
+   "read_only": 1
   },
   {
    "fetch_from": "rank.expense_limit",
    "fieldname": "total_expense_limit",
    "fieldtype": "Currency",
-   "label": "Total Expense Limit"
+   "label": "Total Expense Limit",
+   "read_only": 1
   },
   {
    "fieldname": "section_break_cskr",
@@ -161,25 +172,96 @@
    "fieldtype": "Link",
    "label": "Fiscal Year",
    "options": "Fiscal Year",
+   "read_only": 1,
    "reqd": 1
   },
   {
    "fieldname": "approved_amount",
    "fieldtype": "Currency",
-   "label": "Approved Amount"
+   "label": "Approved Amount",
+   "no_copy": 1,
+   "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge PP (Financial Approval)\""
   },
   {
    "fetch_from": "branch.custom_mukhi_name",
    "fieldname": "mukhisanyojak_name",
    "fieldtype": "Data",
    "label": "Mukhi/Sanyojak Name",
-   "options": "Employee"
+   "read_only": 1
+  },
+  {
+   "fieldname": "request_raised_by",
+   "fieldtype": "Data",
+   "label": "Request Raised By",
+   "read_only_depends_on": "eval: !doc.workflow_state || doc.workflow_state != \"Pending\";",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "rank.expense_limit",
+   "fieldname": "total_expense_in_words",
+   "fieldtype": "Data",
+   "label": "Total Expense in Words",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remaining_amount_in_words",
+   "fieldtype": "Data",
+   "label": "Remaining Amount In Words",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approved_amount_in_words",
+   "fieldtype": "Data",
+   "label": "Approved Amount In Words",
+   "read_only": 1
+  },
+  {
+   "fieldname": "bhavan",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Bhavan",
+   "options": "Bhavan",
+   "read_only_depends_on": "eval: !doc.workflow_state || doc.workflow_state != \"Pending\";"
+  },
+  {
+   "fieldname": "column_break_mapk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_rgiq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remark",
+   "fieldtype": "Small Text",
+   "label": "Remark By Requester",
+   "read_only_depends_on": "eval:doc.workflow_state != \"Pending\""
+  },
+  {
+   "depends_on": "eval:doc.workflow_state != \"Pending\"",
+   "fieldname": "remark_1",
+   "fieldtype": "Small Text",
+   "label": "Remark By Member In-charge(PP)",
+   "read_only_depends_on": "eval:doc.workflow_state == \"Approved\""
+  },
+  {
+   "fieldname": "column_break_tszm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_boda",
+   "fieldtype": "Column Break",
+   "read_only_depends_on": "eval:doc.workflow_state == \"Member Incharge PP (Financial Approval)\""
+  },
+  {
+   "fieldname": "column_break_yiee",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-05 23:35:22.374338",
+ "modified": "2025-08-06 19:22:50.621296",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Project Request",
