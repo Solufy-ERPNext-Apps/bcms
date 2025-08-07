@@ -9,16 +9,17 @@
   "disbursement_detail",
   "project_details_section",
   "project",
-  "requested_amount",
-  "requested_amount_in_words",
+  "project_type",
+  "sequence",
   "column_break_zmta",
   "stage",
   "expected_start_date",
   "expected_end_date",
-  "project_type",
+  "column_break_oiep",
   "request_on",
-  "sequence",
   "requested_by",
+  "requested_amount",
+  "requested_amount_in_words",
   "disbursement_details_section",
   "disbursement_date",
   "disbursed_by",
@@ -96,7 +97,7 @@
    "fieldtype": "Link",
    "label": "Bank Account No\t",
    "options": "Bank Account",
-   "read_only_depends_on": "eval: in_list([\"Completed\",\"Expenditure\",\"Member Incharge A&F(Financial Approval)\",\"Member Incharge PP (Financial Approval)\"], doc.workflow_state);"
+   "read_only_depends_on": "eval: in_list([\"Completed\",\"Expenditure\",\"Member Incharge PP (Financial Approval)\"], doc.workflow_state);"
   },
   {
    "fetch_from": "bank_account_no.custom_ifsc_code",
@@ -198,8 +199,7 @@
    "fieldname": "requested_amount",
    "fieldtype": "Currency",
    "label": "Requested Amount",
-   "mandatory_depends_on": "eval: doc.workflow_state == \"Fund Request\";",
-   "read_only_depends_on": "eval: doc.workflow_state != \"Fund Request\";"
+   "mandatory_depends_on": "eval: doc.workflow_state == \"Fund Request\";"
   },
   {
    "default": "Today",
@@ -386,6 +386,10 @@
    "fieldtype": "Text Editor",
    "label": "Disbursement Detail",
    "read_only": 1
+  },
+  {
+   "fieldname": "column_break_oiep",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
@@ -393,7 +397,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-08-07 13:09:37.562807",
+ "modified": "2025-08-08 00:54:26.483090",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Disbursement",

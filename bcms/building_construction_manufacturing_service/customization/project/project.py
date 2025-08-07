@@ -10,7 +10,7 @@ def validate(self, method=None):
     if self.custom_expected_start_dates and self.custom_expected_end_dates:
         calculate_days(self)
     validate_allocation_amount(self)
-    if self.workflow_state in ["Drawing Approval", "Member Incharge BM (Finance Approval)", "Final Project Planning"]:
+    if self.workflow_state in ["Planning & Designing", "Drawing Approval", "Member Incharge BM (Finance Approval)", "Construction Committee Formed","Final Project Planning"]:
         set_bill_of_qty(self)
     if self.workflow_state == "Under Disbursement":
         if not frappe.db.exists("Disbursement", {"project": self.name}):
@@ -18,8 +18,9 @@ def validate(self, method=None):
         calculate_disbursement_and_remaining(self)
     if self.workflow_state == "Member Incharge PP (Financial Approval)":
         if self.custom_total_estimated_cost:
-            self.db_set("custom_suggested_by_member_incharge_pp", self.custom_total_estimated_cost)
-            self.db_set("custom_amount_in_words_in_pp", money_in_words(self.custom_suggested_by_member_incharge_pp))
+            if not self.custom_total_estimated_cost:
+                self.db_set("custom_suggested_by_member_incharge_pp", self.custom_total_estimated_cost)
+                self.db_set("custom_amount_in_words_in_pp", money_in_words(self.custom_suggested_by_member_incharge_pp))
             self.db_set("custom_suggested_by_secretory_snm", self.custom_total_estimated_cost)
             self.db_set("custom_amount_in_words_snm", money_in_words(self.custom_suggested_by_secretory_snm))
             self.db_set("custom_suggested_by_member_incharge_a__f", self.custom_total_estimated_cost)
@@ -37,7 +38,7 @@ def validate(self, method=None):
 
 def set_bill_of_qty(self):
     total_amount = 0
-    if self.workflow_state == "Member Incharge BM (Finance Approval)" and not self.custom_bill_of_quantity_appoval:
+    if self.workflow_state in ["Member Incharge BM (Finance Approval)", "Planning & Designing", "Drawing Approval"] and not self.custom_bill_of_quantity_appoval:
         self.set("custom_bill_of_quantity_appoval", [])
         for row in self.custom_bill_of_quantity:
             total_amount += row.amount
@@ -51,7 +52,7 @@ def set_bill_of_qty(self):
             })
         self.custom_total_estimated_cost = total_amount
         self.custom_total_estimated_cost_in_site = money_in_words(self.custom_total_estimated_cost)
-    elif self.workflow_state == "Final Project Planning" and not self.custom_bill_of_quantities:
+    elif self.workflow_state in ["Final Project Planning", "Construction Committee Formed"] and not self.custom_bill_of_quantities:
         self.set("custom_bill_of_quantities", [])
         for row in self.custom_bill_of_quantity_appoval:
             total_amount += row.amount
