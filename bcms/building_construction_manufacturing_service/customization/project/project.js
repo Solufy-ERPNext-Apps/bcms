@@ -797,13 +797,6 @@ frappe.ui.form.on("Project", {
       "custom_amount_in_words_in_pp"
     );
   },
-  custom_suggested_by_member_incharge_pp: function (frm) {
-    get_in_words(
-      frm,
-      "custom_suggested_by_member_incharge_pp",
-      "custom_amount_in_words_in_bm"
-    );
-  },
   custom_suggested_by_secretory_snm: function (frm) {
     get_in_words(
       frm,
@@ -1049,11 +1042,6 @@ frappe.ui.form.on("Project", {
         frm.doc.custom_total_estimated_cost
       );
       frm.set_value(
-        "custom_suggested_by_member_incharge_bm",
-        frm.doc.custom_total_estimated_cost
-      );
-
-      frm.set_value(
         "custom_suggested_by_member_incharge_a__f",
         frm.doc.custom_total_estimated_cost
       );
@@ -1151,6 +1139,9 @@ frappe.ui.form.on("Project", {
 
 frappe.ui.form.on("Project", {
   refresh: function (frm) {
+    if (frm.doc.workflow_state == "Final Project Planning" && !frm.doc.custom_disbursement_planning){
+      fill_stages(frm);
+    }
     if (
       (!frm.is_new() && frm.doc.workflow_state == "Under Disbursement") ||
       frm.doc.workflow_state == "Work completion Certificate"

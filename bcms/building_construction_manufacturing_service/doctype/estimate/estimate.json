@@ -7,11 +7,11 @@
  "engine": "InnoDB",
  "field_order": [
   "area",
-  "unit",
+  "quantity",
   "rate",
   "column_break_qtyq",
   "work",
-  "quantity",
+  "unit",
   "amount"
  ],
  "fields": [
@@ -26,7 +26,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Unit",
-   "options": "Unit"
+   "options": "UOM"
   },
   {
    "fieldname": "rate",
@@ -61,7 +61,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-08-05 12:45:56.901773",
+ "modified": "2025-08-08 00:05:05.561855",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Estimate",
