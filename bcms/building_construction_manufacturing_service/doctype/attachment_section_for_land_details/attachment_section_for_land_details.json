@@ -32,14 +32,15 @@
    "fieldname": "land_detail",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Land Detail"
+   "label": "Land Detail",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-08-05 14:50:52.513151",
+ "modified": "2025-08-06 02:06:22.261475",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Attachment section for Land details",

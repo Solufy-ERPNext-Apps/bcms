@@ -11,6 +11,9 @@
   "requested_amount",
   "requested_amount_in_words",
   "column_break_zmta",
+  "stage",
+  "expected_start_date",
+  "expected_end_date",
   "project_type",
   "request_on",
   "sequence",
@@ -31,9 +34,32 @@
   "expenditure_details",
   "total_expense",
   "total_expense_in_words",
+  "remaining_amount",
+  "work_completion_attachments",
   "additional_info_section",
   "remarks",
-  "amended_from"
+  "amended_from",
+  "section_break_hxma",
+  "approved_by",
+  "approved_by_user",
+  "column_break_hynd",
+  "submission_date",
+  "section_break_zchn",
+  "approved_by_bm",
+  "column_break_cace",
+  "submission_date_bm",
+  "section_break_jopm",
+  "approved_by_pp",
+  "column_break_kvrq",
+  "submission_date_pp",
+  "section_break_tgnr",
+  "approved_by_af",
+  "column_break_mtgf",
+  "submission_date_af",
+  "section_break_gdls",
+  "approved_by_disbursed",
+  "column_break_wgps",
+  "submission_date_disbursed"
  ],
  "fields": [
   {
@@ -48,36 +74,41 @@
    "fieldname": "disbursement_date",
    "fieldtype": "Date",
    "label": "Disbursement Date\t",
-   "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge A&F(Financial Approval)\";"
+   "read_only_depends_on": "eval: in_list([\"Expenditure\", \"Completed\"], doc.workflow_state);"
   },
   {
    "fieldname": "disbursement_amount",
    "fieldtype": "Currency",
    "label": "Disbursement Amount\t",
    "mandatory_depends_on": "eval: doc.workflow_state == \"Member Incharge A&F(Financial Approval)\";",
-   "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge A&F(Financial Approval)\";"
+   "read_only_depends_on": "eval: in_list([\"Expenditure\", \"Completed\"], doc.workflow_state);"
   },
   {
    "fieldname": "utr__transaction_reference_no",
    "fieldtype": "Data",
-   "label": "UTR / Transaction Reference No\t"
+   "label": "UTR / Transaction Reference No\t",
+   "read_only_depends_on": "eval: in_list([\"Completed\",\"Expenditure\",\"Member Incharge A&F(Financial Approval)\",\"Member Incharge PP (Financial Approval)\"], doc.workflow_state);"
   },
   {
+   "fetch_from": "project.custom_branch_bank_account_name",
    "fieldname": "bank_account_no",
    "fieldtype": "Link",
    "label": "Bank Account No\t",
-   "options": "Bank Account"
+   "options": "Bank Account",
+   "read_only_depends_on": "eval: in_list([\"Completed\",\"Expenditure\",\"Member Incharge A&F(Financial Approval)\",\"Member Incharge PP (Financial Approval)\"], doc.workflow_state);"
   },
   {
    "fetch_from": "bank_account_no.custom_ifsc_code",
    "fieldname": "ifsc_code",
    "fieldtype": "Data",
-   "label": "IFSC Code\t"
+   "label": "IFSC Code\t",
+   "read_only_depends_on": "eval: in_list([\"Completed\",\"Expenditure\",\"Member Incharge A&F(Financial Approval)\",\"Member Incharge PP (Financial Approval)\"], doc.workflow_state);"
   },
   {
    "fieldname": "payment_voucher_no",
    "fieldtype": "Data",
-   "label": "Payment Voucher No\t"
+   "label": "Payment Voucher No\t",
+   "read_only_depends_on": "eval: in_list([\"Completed\",\"Expenditure\",\"Member Incharge A&F(Financial Approval)\",\"Member Incharge PP (Financial Approval)\"], doc.workflow_state);"
   },
   {
    "fieldname": "remarks",
@@ -89,7 +120,8 @@
    "fieldname": "disbursed_by",
    "fieldtype": "Link",
    "label": "Disbursed By\t",
-   "options": "User"
+   "options": "User",
+   "read_only_depends_on": "eval: in_list([\"Expenditure\", \"Completed\"], doc.workflow_state);"
   },
   {
    "fieldname": "column_break_zmta",
@@ -115,7 +147,6 @@
    "label": "Project Details"
   },
   {
-   "depends_on": "eval: in_list([\"Disbursement\", \"Member Incharge A&F(Financial Approval)\", \"Expenditure\", \"Completed\"], doc.workflow_state);",
    "fieldname": "bank_and_account_details_section",
    "fieldtype": "Section Break",
    "label": "Bank and Account Details"
@@ -125,7 +156,7 @@
    "fieldtype": "Column Break"
   },
   {
-   "depends_on": "eval: in_list([\"Disbursement\", \"Member Incharge A&F(Financial Approval)\", \"Expenditure\", \"Completed\"], doc.workflow_state);",
+   "depends_on": "eval: in_list([\"Member Incharge A&F(Financial Approval)\",\"Expenditure\", \"Completed\"], doc.workflow_state);",
    "fieldname": "disbursement_details_section",
    "fieldtype": "Section Break",
    "label": "Disbursement Details"
@@ -204,8 +235,150 @@
   },
   {
    "fieldname": "sequence",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Sequence",
+   "read_only": 1
+  },
+  {
+   "fieldname": "work_completion_attachments",
+   "fieldtype": "Table",
+   "label": "Work Completion Attachments",
+   "options": "Completion Attachment"
+  },
+  {
+   "fieldname": "section_break_hxma",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved by",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_hynd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "submission_date",
+   "fieldtype": "Datetime",
+   "label": "Submission Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approved_by_user",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_break_zchn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "approved_by_bm",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Approved By",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_cace",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "submission_date_bm",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "label": "Submission Date"
+  },
+  {
+   "fieldname": "section_break_jopm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "approved_by_pp",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Approved By",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_kvrq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "submission_date_pp",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "label": "Submission Date"
+  },
+  {
+   "fieldname": "section_break_tgnr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "approved_by_af",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Approved By",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_mtgf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "submission_date_af",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "label": "Submission Date"
+  },
+  {
+   "fieldname": "section_break_gdls",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "approved_by_disbursed",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Approved By",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_wgps",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "submission_date_disbursed",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "label": "Submission Date"
+  },
+  {
+   "fieldname": "remaining_amount",
+   "fieldtype": "Currency",
+   "label": "Remaining Amount"
+  },
+  {
+   "fieldname": "stage",
    "fieldtype": "Data",
-   "label": "Sequence"
+   "in_list_view": 1,
+   "label": "Stage",
+   "read_only": 1
+  },
+  {
+   "fieldname": "expected_start_date",
+   "fieldtype": "Date",
+   "label": "Expected Start date"
+  },
+  {
+   "fieldname": "expected_end_date",
+   "fieldtype": "Date",
+   "label": "Expected End Date"
   }
  ],
  "grid_page_length": 50,
@@ -213,7 +386,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-08-05 19:36:50.117351",
+ "modified": "2025-08-06 19:39:48.692211",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Disbursement",

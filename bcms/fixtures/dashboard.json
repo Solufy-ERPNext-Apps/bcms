@@ -1120,7 +1120,7 @@
   "docstatus": 0,
   "doctype": "Dashboard",
   "is_default": 1,
-  "is_standard": 0,
+  "is_standard": 1,
   "modified": "2025-08-04 16:08:23.151217",
   "module": "Building Construction Manufacturing Service",
   "name": "BCMS Dashboard"
