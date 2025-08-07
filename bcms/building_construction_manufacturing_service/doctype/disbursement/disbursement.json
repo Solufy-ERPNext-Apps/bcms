@@ -6,6 +6,7 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "disbursement_detail",
   "project_details_section",
   "project",
   "requested_amount",
@@ -379,6 +380,12 @@
    "fieldname": "expected_end_date",
    "fieldtype": "Date",
    "label": "Expected End Date"
+  },
+  {
+   "fieldname": "disbursement_detail",
+   "fieldtype": "Text Editor",
+   "label": "Disbursement Detail",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
@@ -386,7 +393,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-08-06 19:39:48.692211",
+ "modified": "2025-08-07 13:09:37.562807",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Disbursement",

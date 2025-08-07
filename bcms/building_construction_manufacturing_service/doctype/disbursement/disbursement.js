@@ -67,18 +67,23 @@ frappe.ui.form.on("Disbursement", {
 });
 frappe.ui.form.on('Disbursement', {
 	disbursement_amount: function(frm) {
+		calculate_remaining(frm);
 		get_in_words(frm, 'disbursement_amount', 'disbursement_amount_in_words');
 	},
 	remaining_amount: function(frm) {
+		calculate_remaining(frm)
 		get_in_words(frm, 'remaining_amount', 'remaining_amount_in_word');
 	},
 	total_expense:function(frm){
-		get_in_words(frm,'total_expense','total_expense_in_words');
+		calculate_remaining(frm);
+		get_in_words(frm, 'total_expense', 'total_expense_in_words');
 	},
 	requested_amount:function(frm){
-		get_in_words(frm,'requested_amount','requested_amount_in_words')
+		get_in_words(frm,'requested_amount','requested_amount_in_words');
 	}
 });
+
+
 
 function get_in_words(frm, source_field, target_field) {
 	const value = frm.doc[source_field];
