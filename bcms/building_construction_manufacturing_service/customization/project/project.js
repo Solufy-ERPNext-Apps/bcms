@@ -35,13 +35,22 @@ frappe.ui.form.on("Estimate", {
       row.amount = flt(row.quantity) * flt(row.rate);
       frm.refresh_field("estimate_items");
     }
-    frm.doc.custom_total_amount = frm.doc.custom_bill_of_quantity.reduce(
-      (sum, item) => {
-        return sum + flt(item.amount);
-      },
-      0
-    );
-    frm.refresh_field("custom_total_amount");
+    if (frm.doc.workflow_state === "Final Project Planning") {
+      frm.doc.custom_total_boq_amount =
+        frm.doc.custom_bill_of_quantities.reduce((sum, item) => {
+          return sum + flt(item.amount);
+        }, 0);
+      frm.trigger("custom_total_boq_amount");
+      frm.refresh_field("custom_total_boq_amount");
+    } else {
+      frm.doc.custom_total_amount = frm.doc.custom_bill_of_quantity.reduce(
+        (sum, item) => {
+          return sum + flt(item.amount);
+        },
+        0
+      );
+      frm.refresh_field("custom_total_amount");
+    }
   },
   rate: function (frm, cdt, cdn) {
     const row = locals[cdt][cdn];
@@ -49,63 +58,41 @@ frappe.ui.form.on("Estimate", {
       row.amount = flt(row.quantity) * flt(row.rate);
       frm.refresh_field("estimate_items");
     }
-    frm.doc.custom_total_amount = frm.doc.custom_bill_of_quantity.reduce(
-      (sum, item) => {
-        return sum + flt(item.amount);
-      },
-      0
-    );
-    frm.refresh_field("custom_total_amount");
+    if (frm.doc.workflow_state === "Final Project Planning") {
+      frm.doc.custom_total_boq_amount =
+        frm.doc.custom_bill_of_quantities.reduce((sum, item) => {
+          return sum + flt(item.amount);
+        }, 0);
+      frm.trigger("custom_total_boq_amount");
+      frm.refresh_field("custom_total_boq_amount");
+    } else {
+      frm.doc.custom_total_amount = frm.doc.custom_bill_of_quantity.reduce(
+        (sum, item) => {
+          return sum + flt(item.amount);
+        },
+        0
+      );
+      frm.refresh_field("custom_total_amount");
+    }
   },
   amount: function (frm, cdt, cdn) {
-    frm.doc.custom_total_amount = frm.doc.custom_bill_of_quantity.reduce(
-      (sum, item) => {
-        return sum + flt(item.amount);
-      },
-      0
-    );
-    frm.refresh_field("custom_total_amount");
-  }
-});
-
-frappe.ui.form.on("Estimate", {
-      quantity: function (frm, cdt, cdn) {
-      const row = locals[cdt][cdn];
-          if (row.quantity && row.rate) {
-          row.amount = flt(row.quantity) * flt(row.rate);
-          frm.refresh_field("estimate_items");
-          }
-          frm.doc.custom_total_boq_amount = frm.doc.custom_bill_of_quantities.reduce(
-          (sum, item) => {
+    if (frm.doc.workflow_state === "Final Project Planning") {
+      frm.doc.custom_total_boq_amount =
+        frm.doc.custom_bill_of_quantities.reduce((sum, item) => {
           return sum + flt(item.amount);
-          },
-          0
-          );
-          frm.refresh_field("custom_total_boq_amount");
-          },
-          rate: function (frm, cdt, cdn) {
-          const row = locals[cdt][cdn];
-          if (row.quantity && row.rate) {
-          row.amount = flt(row.quantity) * flt(row.rate);
-          frm.refresh_field("estimate_items");
-          }
-          frm.doc.custom_total_boq_amount= frm.doc.custom_bill_of_quantities.reduce(
-          (sum, item) => {
+        }, 0);
+      frm.trigger("custom_total_boq_amount");
+      frm.refresh_field("custom_total_boq_amount");
+    } else {
+      frm.doc.custom_total_amount = frm.doc.custom_bill_of_quantity.reduce(
+        (sum, item) => {
           return sum + flt(item.amount);
-          },
-          0
-          );
-          frm.refresh_field("custom_total_boq_amount");
-          },
-          amount: function (frm, cdt, cdn) {
-          frm.doc.custom_total_boq_amount = frm.doc.custom_bill_of_quantities.reduce(
-          (sum, item) => {
-          return sum + flt(item.amount);
-      },
-      0
-);
-frm.refresh_field("custom_total_boq_amount");
-}
+        },
+        0
+      );
+      frm.refresh_field("custom_total_amount");
+    }
+  },
 });
 
 frappe.ui.form.on("Financial Approval", {
@@ -114,6 +101,7 @@ frappe.ui.form.on("Financial Approval", {
       frm.doc.custom_financiallll_approval.reduce((sum, item) => {
         return sum + flt(item.estimated_cost);
       }, 0);
+    frm.trigger("custom_total_estimated_cost");
     frm.refresh_field("custom_total_estimated_cost");
   },
 });
@@ -130,6 +118,27 @@ frappe.ui.form.on("Custom Disbursement Detail", {
 frappe.ui.form.on("Project", {
   onload(frm) {
     frm.no_timeline = true;
+    document
+      .getElementById("request_transfer")
+      .addEventListener("click", function () {
+        {
+          frappe.call({
+            method:
+              "bcms.building_construction_manufacturing_service.doctype.disbursement.disbursement.change_in_approve",
+            args: {
+              docname: document
+                .getElementById("request_transfer")
+                .getAttribute("data-name"),
+              workflow_state: "Pending",
+            },
+            callback: function (r) {
+              {
+                frm.reload_doc();
+              }
+            },
+          });
+        }
+      });
   },
   refresh(frm) {
     if (frm.timeline && frm.timeline.wrapper) {
@@ -188,7 +197,6 @@ frappe.ui.form.on("Project", {
 });
 
 function approve_button_fun(frm) {
-  frm.doc.save()
   frappe.call({
     method:
       "bcms.building_construction_manufacturing_service.customization.project.project.workflow_state",
@@ -209,7 +217,7 @@ function approve_button_fun(frm) {
 }
 
 function reject_button_fun(frm) {
-  frm.doc.save()
+  frm.doc.save();
   frappe.call({
     method:
       "bcms.building_construction_manufacturing_service.customization.project.project.reject_project",
@@ -230,7 +238,12 @@ function reject_button_fun(frm) {
 
 frappe.ui.form.on("Project", {
   refresh: function (frm) {
-    frm.set_df_property('custom_land_detail_lc', 'cannot_add_rows', true);
+    frm.set_df_property("custom_land_detail_lc", "cannot_add_rows", true);
+    frm.set_df_property(
+      "custom_attachment_section_for_land_details",
+      "cannot_add_rows",
+      true
+    );
     const approved_fields = [
       "custom_approved",
       "custom_approved1",
@@ -240,6 +253,7 @@ frappe.ui.form.on("Project", {
       "custom_approved5",
       "custom_approved6",
       "custom_approved7",
+      "custom_approved_8",
     ];
     const reject_fields = [
       "custom_reject",
@@ -250,9 +264,11 @@ frappe.ui.form.on("Project", {
       "custom_reject5",
       "custom_reject6",
       "custom_reject7",
+      "custom_reject_8",
     ];
 
     setTimeout(() => {
+      console.log(approved_fields);
       approved_fields.forEach((field) => {
         let btn = frm
           .get_field(field)
@@ -292,12 +308,13 @@ frappe.ui.form.on("Project", {
       });
     }, 500);
 
-    if (!frm.is_new() && frm.doc.workflow_state !== "Work completion Certificate"
-) 
-{
+    if (
+      !frm.is_new() &&
+      frm.doc.workflow_state !== "Work completion Certificate"
+    ) {
       const apr_btn = frm.add_custom_button(__("Approve"), function () {
         if (frm.is_dirty()) {
-          frm.save()
+          frm.save();
         }
         frappe.call({
           method:
@@ -315,15 +332,6 @@ frappe.ui.form.on("Project", {
             }
           },
         });
-        if (frm.doc.workflow_state === "Final Project Planning"){
-          console.log(frm.doc.name)
-          frappe.call({
-            method:"bcms.building_construction_manufacturing_service.customization.project.project.create_disbursement",
-            args:{
-              doc:frm.doc.name,
-            }
-          })
-        }
       });
       apr_btn.css({
         "background-color": "Green",
@@ -396,8 +404,7 @@ frappe.ui.form.on("Project", {
         !frm.is_new() &&
         frm.doc.workflow_state !== "Project Request" &&
         frm.doc.workflow_state !== "Work completion Certificate"
-      ) 
-      {
+      ) {
         const dis_btn = frm.add_custom_button(
           __("Additional Fund Request"),
           function () {
@@ -447,13 +454,13 @@ frappe.ui.form.on("Project", {
           );
           frm.refresh_field("custom_disbursement_detail");
           frm.refresh_field("custom_additional_request_details");
-          setup_disbursement_events(frm);
-          setup_additional_request_events(frm);
+          // setup_disbursement_events(frm);
+          // setup_additional_request_events(frm);
         },
 
         refresh(frm) {
-          setup_disbursement_events(frm);
-          setup_additional_request_events(frm);
+          // setup_disbursement_events(frm);
+          // setup_additional_request_events(frm);
 
           calculate_total_allocate_amount(frm);
           update_disbursement_status_from_last_row(frm);
@@ -788,11 +795,7 @@ frappe.ui.form.on("Project", {
     );
   },
   custom_total_boq_amount: function (frm) {
-    get_in_words(
-      frm,
-      "custom_total_boq_amount",
-      "custom_total_amount_in_word"
-    );
+    get_in_words(frm, "custom_total_boq_amount", "custom_total_amount_in_word");
   },
 });
 function get_in_words(frm, source_field, target_field) {
@@ -925,22 +928,6 @@ frappe.ui.form.on("Project", {
   },
 });
 
-frappe.ui.form.on("Project", {
-  // onload: function(frm) {
-  //     // if (!frm.doc.custom_creation_date &&  frm.doc.creation) {
-  //     //     const creation_date = frm.doc.creation.split(" ")[0];
-  //     //     frm.set_value('custom_creation_date', creation_date);
-  //     // }
-  //     handle_work_completion(frm);
-  // },
-  // refresh: function(frm) {
-  //     handle_work_completion(frm);
-  // },
-  // on_workflow_state_change: function(frm) {
-  //     handle_work_completion(frm);
-  // }
-});
-
 function handle_work_completion(frm) {
   if (frm.doc.workflow_state === "Work completion Certificate") {
     if (!frm.doc.custom_completion_date) {
@@ -986,31 +973,6 @@ function get_duration_detail(start, end) {
 }
 
 frappe.ui.form.on("Project", {
-  onload: function (frm) {
-    if (
-      frm.doc.custom_total_estimated_cost && !frm.doc.custom_suggested_by_member_incharge_pp && !frm.doc.custom_suggested_by_secretory_snm &&
-      !frm.doc.custom_suggested_by_member_incharge_a__f
-    ) {
-      frm.set_value(
-        "custom_suggested_by_member_incharge_pp",
-        frm.doc.custom_total_estimated_cost
-      );
-      frm.set_value(
-        "custom_suggested_by_secretory_snm",
-        frm.doc.custom_total_estimated_cost
-      );
-      frm.set_value(
-        "custom_suggested_by_member_incharge_a__f",
-        frm.doc.custom_total_estimated_cost
-      );
-    }
-    if(frm.doc.custom_total_amount && !frm.doc.custom_total_boq_amount){
-      frm.set_value(
-        "custom_total_boq_amount",
-        frm.doc.custom_total_amount
-      )
-    }
-  },
   custom_total_estimated_cost: function (frm) {
     if (frm.doc.custom_total_estimated_cost) {
       frm.set_value(
@@ -1029,81 +991,201 @@ frappe.ui.form.on("Project", {
   },
   custom_total_amount: function (frm) {
     if (frm.doc.custom_total_amount) {
-      frm.set_value(
-        "custom_total_boq_amount",
-        frm.doc.custom_total_amount
-      );
+      frm.set_value("custom_total_boq_amount", frm.doc.custom_total_amount);
+    }
+  },
+});
+
+frappe.ui.form.on("Project", {
+  onload(frm) {
+    if (
+      !frm.doc.custom_bill_of_quantities ||
+      frm.doc.custom_bill_of_quantities.length === 0
+    ) {
+      if (
+        frm.doc.custom_bill_of_quantity &&
+        frm.doc.custom_bill_of_quantity.length > 0
+      ) {
+        bill_of_qty(frm);
+      }
+    }
+  },
+});
+
+function bill_of_qty(frm) {
+  frm.clear_table("custom_bill_of_quantities");
+
+  frm.doc.custom_bill_of_quantity.forEach((row) => {
+    const new_row = frm.add_child("custom_bill_of_quantities");
+    new_row.area = row.area;
+    new_row.unit = row.unit;
+    new_row.rate = row.rate;
+    new_row.work = row.work;
+    new_row.quantity = row.quantity;
+    new_row.amount = row.amount;
+  });
+
+  frm.refresh_fields("custom_bill_of_quantities");
+}
+
+// frappe.ui.form.on('Project', {
+//   refresh: function (frm) {
+//     if (frm.doc.workflow_state == "Final Project Planning"){
+//       fill_stages(frm);
+//     }
+//   },
+
+//   custom_suggested_by_member_incharge_a__f: function (frm) {
+//     if (frm.doc.workflow_state == "Final Project Planning"){
+//       fill_stages(frm);
+//     }
+//   }
+// });
+
+frappe.ui.form.on("Project", {
+  refresh: function (frm) {
+    fill_stages(frm);
+  },
+  custom_suggested_by_member_incharge_a__f: function (frm) {
+    fill_stages(frm);
+  },
+  project_type: function (frm) {
+    fill_stages(frm);
+  },
+});
+
+function fill_stages(frm) {
+  if (
+    !frm.doc.project_type ||
+    !frm.doc.custom_suggested_by_member_incharge_a__f
+  )
+    return;
+
+  frappe.call({
+    method: "frappe.client.get",
+    args: {
+      doctype: "Project Type",
+      name: frm.doc.project_type,
+    },
+    callback: function (r) {
+      if (r.message && Array.isArray(r.message.custom_percentage)) {
+        const total_amount = frm.doc.custom_suggested_by_member_incharge_a__f;
+        frm.clear_table("custom_disbursement_planning");
+
+        r.message.custom_percentage.forEach((row) => {
+          if (row.stages && row.percentage != null) {
+            const amount = (parseFloat(row.percentage) / 100) * total_amount;
+            frm.add_child("custom_disbursement_planning", {
+              state: row.stages,
+              percentage: row.percentage,
+              amount: amount.toFixed(2),
+            });
+          }
+        });
+
+        frm.refresh_field("custom_disbursement_planning");
+      }
+    },
+  });
+}
+
+frappe.ui.form.on("Project", {
+  custom_estimate_cost: function (frm) {
+    frm.set_value("custom_estimate_cost_boq", frm.doc.custom_estimate_cost);
+  },
+});
+
+frappe.ui.form.on("Project", {
+  validate: function (frm) {
+    if (
+      frm.doc.custom_bill_of_quantity &&
+      frm.doc.custom_bill_of_quantity.length > 0
+    ) {
+      frm.clear_table("custom_bill_of_quantity_appoval");
+
+      frm.doc.custom_bill_of_quantity.forEach((row) => {
+        let new_row = frm.add_child("custom_bill_of_quantity_appoval");
+        new_row.work = row.work;
+        new_row.area = row.area;
+        new_row.unit = row.unit;
+        new_row.quantity = row.quantity;
+        new_row.rate = row.rate;
+        new_row.amount = row.amount;
+      });
+
+      frm.refresh_field("custom_bill_of_quantity_appoval");
+    }
+  },
+});
+
+frappe.ui.form.on("Project", {
+  refresh: function (frm) {
+    if (!frm.is_new() && frm.doc.workflow_state == "Under Disbursement" ||frm.doc.workflow_state == "Work completion Certificate") {
+      let html = `<table style="width: 100%; font-size: 14px;" border="1">
+      <tr>
+      <tr>
+      <td style="padding: 8px;"><b>Branch Bank Account Name</b></td>
+      <td style="padding: 8px;"><b>Branch Bank Account Number</b></td>
+      <td style="padding: 8px;"><b>Civil Engineer/Draftsman/Architect Number</b></td>
+      <td style="padding: 8px;"><b>Civil Engineer/Draftsman/Architect Name</b></td>
+      </tr>
+      </tr>
+      <tr>
+      <td style="padding: 8px;">${frm.doc.custom_branch_bank_account_name}</td>
+      <td style="padding: 8px;">${frm.doc.custom_branch_bank_account_number}</td>
+      <td style="padding: 8px;">${frm.doc.custom_civil_engineerdraftsmanarchitect_number || ""}</td>
+      <td style="padding: 8px;">${frm.doc.custom_civil_engineerdraftsmanarchitect_name}</td>
+      </tr>`;
+      html += ` </tbody>
+      </table>`;
+
+      frm.set_value("custom_bank_details", html);
     }
   },
 });
 
 
-frappe.ui.form.on('Project', {
-    onload(frm) {
-        if (!frm.doc.custom_bill_of_quantities || frm.doc.custom_bill_of_quantities.length === 0) {
-            if (frm.doc.custom_bill_of_quantity && frm.doc.custom_bill_of_quantity.length > 0) {
-                bill_of_qty(frm);
-            }
+
+
+frappe.ui.form.on("Labour Details", {
+    amount: function(frm, cdt, cdn) {
+        const row = locals[cdt][cdn];
+        if (row.amount) {
+            frm.refresh_field("custom_labour_details");
         }
+        let total = 0;
+        frm.doc.custom_labour_details.forEach(function(item) {
+            total += flt(item.amount);
+        });
+        frm.doc.custom_labour_total_amount = total;
+        frm.refresh_field('custom_labour_total_amount');
     }
 });
 
-function bill_of_qty(frm) {
-    frm.clear_table('custom_bill_of_quantities');
-
-    frm.doc.custom_bill_of_quantity.forEach(row => {
-        const new_row = frm.add_child("custom_bill_of_quantities");
-        new_row.area = row.area;
-        new_row.unit = row.unit;
-        new_row.rate = row.rate;
-        new_row.work = row.work;
-        new_row.quantity = row.quantity;
-        new_row.amount = row.amount;
-    });
-
-    frm.refresh_fields("custom_bill_of_quantities");
-}
-
-
-frappe.ui.form.on('Project', {
-    refresh: function(frm) {
-        fill_stages(frm);
+frappe.ui.form.on("Disbursement Planning", {
+    expected_start_date: function(frm, cdt, cdn) {
+        update_date(frm);
     },
-    custom_suggested_by_member_incharge_a__f: function(frm) {
-        fill_stages(frm);
-    },
-    project_type: function(frm) {
-        fill_stages(frm);
+    expected_end_date: function(frm, cdt, cdn) {
+        update_date(frm);
     }
 });
 
-function fill_stages(frm) {
-    if (!frm.doc.project_type || !frm.doc.custom_suggested_by_member_incharge_a__f) return;
+function update_date(frm) {
+    let child_table = frm.doc.custom_disbursement_planning || [];
+    child_table.sort((a, b) => (a.idx || 0) - (b.idx || 0));
+    
+    if (child_table.length && child_table[0].expected_start_date) {
+        frm.set_value('custom_expected_start_dates', child_table[0].expected_start_date);
+    }
+    else {
+        frm.set_value('custom_expected_start_dates', null);
+    }
 
-    frappe.call({
-        method: 'frappe.client.get',
-        args: {
-            doctype: 'Project Type',
-            name: frm.doc.project_type
-        },
-        callback: function(r) {
-            if (r.message && Array.isArray(r.message.custom_percentage)) {
-                const total_amount = frm.doc.custom_suggested_by_member_incharge_a__f;
-                frm.clear_table('custom_disbursement_planning');
-
-                r.message.custom_percentage.forEach(row => {
-                    if (row.stages && row.percentage != null) {
-                        const amount = (parseFloat(row.percentage) / 100) * total_amount;
-                        frm.add_child('custom_disbursement_planning', {
-                            state: row.stages,  
-                            percentage: row.percentage,
-                            amount: amount.toFixed(2)
-                        });
-                    }
-                });
-
-                frm.refresh_field('custom_disbursement_planning');
-            }
-        }
-    });
+    if (child_table.length && child_table[child_table.length - 1].expected_end_date) {
+        frm.set_value('custom_expected_end_dates', child_table[child_table.length - 1].expected_end_date);
+    } 
+    else {
+        frm.set_value('custom_expected_end_dates', null);
+    }
 }

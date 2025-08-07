@@ -2285,7 +2285,7 @@
   "is_hidden": 0,
   "label": "Member Incharge (Building Management)",
   "links": [],
-  "modified": "2025-08-04 17:01:08.282898",
+  "modified": "2025-08-06 13:10:08.912885",
   "module": null,
   "name": "Member Incharge (Building Management)",
   "number_cards": [],
@@ -2298,7 +2298,7 @@
     "parent": "Member Incharge (Building Management)",
     "parentfield": "quick_lists",
     "parenttype": "Workspace",
-    "quick_list_filter": "[[\"Disbursement\",\"workflow_state\",\"=\",\"Member Incharge (BM)\",false]]"
+    "quick_list_filter": "[[\"Disbursement\",\"workflow_state\",\"=\",\"Pending\",false]]"
    },
    {
     "document_type": "Project",
@@ -2306,7 +2306,15 @@
     "parent": "Member Incharge (Building Management)",
     "parentfield": "quick_lists",
     "parenttype": "Workspace",
-    "quick_list_filter": "[[\"Project\",\"workflow_state\",\"in\",[\"Planning & Designing\",\"Member Incharge BM (Finance Approval)\",\"Construction Committee Formed\"],false]]"
+    "quick_list_filter": "[[\"Project\",\"workflow_state\",\"in\",[\"Planning & Designing\",\"Member Incharge BM (Finance Approval)\",\"Construction Committee Formed\",\"Under Disbursement\"],false]]"
+   },
+   {
+    "document_type": "Disbursement",
+    "label": "Ongoing Disbursement",
+    "parent": "Member Incharge (Building Management)",
+    "parentfield": "quick_lists",
+    "parenttype": "Workspace",
+    "quick_list_filter": "[[\"Disbursement\",\"workflow_state\",\"not in\",[\"Pending\",\"Completed\"],false]]"
    },
    {
     "document_type": "Additional Fund Request",
@@ -2331,14 +2339,6 @@
     "parentfield": "quick_lists",
     "parenttype": "Workspace",
     "quick_list_filter": "[[\"Additional Fund Request\",\"workflow_state\",\"!=\",\"Approved\",false]]"
-   },
-   {
-    "document_type": "Disbursement",
-    "label": "Ongoing Disbursement",
-    "parent": "Member Incharge (Building Management)",
-    "parentfield": "quick_lists",
-    "parenttype": "Workspace",
-    "quick_list_filter": "[[\"Disbursement\",\"workflow_state\",\"!=\",\"Completed\",false]]"
    },
    {
     "document_type": "Project",
