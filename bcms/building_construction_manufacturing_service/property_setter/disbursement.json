@@ -1,0 +1,21 @@
+{
+ "Disbursement": [
+  {
+   "doctype": "Disbursement",
+   "doctype_or_field": "DocType",
+   "module": "Building Construction Manufacturing Service",
+   "property": "field_order",
+   "property_type": "Data",
+   "value": "[\"workflow_state\", \"project_details_section\", \"project\", \"requested_amount\", \"requested_amount_in_words\", \"column_break_zmta\", \"stage\", \"expected_start_date\", \"expected_end_date\", \"project_type\", \"request_on\", \"sequence\", \"requested_by\", \"disbursement_details_section\", \"disbursement_date\", \"disbursed_by\", \"column_break_qblr\", \"disbursement_amount\", \"disbursement_amount_in_words\", \"bank_and_account_details_section\", \"bank_account_no\", \"ifsc_code\", \"column_break_rhyg\", \"payment_voucher_no\", \"utr__transaction_reference_no\", \"expenditure_details_section\", \"expenditure_details\", \"total_expense\", \"total_expense_in_words\", \"remaining_amount\", \"work_completion_attachments\", \"additional_info_section\", \"remarks\", \"amended_from\", \"section_break_hxma\", \"approved_by\", \"approved_by_user\", \"column_break_hynd\", \"submission_date\", \"section_break_zchn\", \"approved_by_bm\", \"column_break_cace\", \"submission_date_bm\", \"section_break_jopm\", \"approved_by_pp\", \"column_break_kvrq\", \"submission_date_pp\", \"section_break_tgnr\", \"approved_by_af\", \"column_break_mtgf\", \"submission_date_af\", \"section_break_gdls\", \"approved_by_disbursed\", \"column_break_wgps\", \"submission_date_disbursed\"]"
+  },
+  {
+   "doctype": "Disbursement",
+   "doctype_or_field": "DocField",
+   "field_name": "expenditure_details",
+   "module": "Building Construction Manufacturing Service",
+   "property": "mandatory_depends_on",
+   "property_type": "Data",
+   "value": "eval: doc.workflow_state==\"Expenditure\""
+  }
+ ]
+}

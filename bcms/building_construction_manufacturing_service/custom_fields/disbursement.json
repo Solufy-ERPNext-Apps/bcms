@@ -1,0 +1,15 @@
+{
+ "Disbursement": [
+  {
+   "allow_on_submit": 1,
+   "dt": "Disbursement",
+   "fieldname": "workflow_state",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Workflow State",
+   "module": "Building Construction Manufacturing Service",
+   "no_copy": 1,
+   "options": "Workflow State"
+  }
+ ]
+}
