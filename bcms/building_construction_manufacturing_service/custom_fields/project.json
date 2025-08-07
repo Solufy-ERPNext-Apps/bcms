@@ -7,8 +7,7 @@
    "insert_after": "custom_column_break_7djoo",
    "label": "Suggested by Member Incharge (BM)",
    "module": "Building Construction Manufacturing Service",
-   "read_only": 1,
-   "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge BM (Finance Approval)\";"
+   "read_only": 1
   },
   {
    "dt": "Project",
