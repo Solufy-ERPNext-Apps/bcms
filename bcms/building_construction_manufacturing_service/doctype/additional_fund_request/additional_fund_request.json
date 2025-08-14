@@ -18,26 +18,39 @@
   "zone",
   "additional_fund_details_section",
   "requested_by",
-  "amended_from",
-  "requested_amount",
   "posting_date",
+  "amended_from",
   "column_break_locn",
-  "current_state",
-  "suggested_by_building_department_in_words",
+  "requested_amount",
   "requested_amount_in_words",
-  "suggested_by_building_department",
+  "current_state",
   "section_break_kcoe",
+  "column_break_vsdu",
+  "suggested_by_building_department",
+  "suggested_by_building_department_in_words",
+  "remarks_bd",
+  "approved_by_bd",
+  "submission_date_bd",
+  "column_break_rulx",
   "suggested_by_member_incharge_pp",
   "suggested_by_member_incharge_pp_in_words",
   "remarks_mipp",
+  "approved_by_mi_pp",
+  "submission_date_mi_pp",
   "column_break_edgu",
   "suggested_by_secretory_snm",
   "suggested_by_secretory_snm_in_words",
   "remarks_secretary",
-  "column_break_vsdu",
+  "approved_by_secretary",
+  "submission_date_secretary",
+  "section_break_foyf",
   "amount_approved_by_member_incharge",
   "amount_approved_by_member_incharge_a_and__f_in_words",
-  "remarks_miaf"
+  "remarks_miaf",
+  "section_break_cijv",
+  "approved_by_af",
+  "column_break_stgp",
+  "submission_date_af"
  ],
  "fields": [
   {
@@ -49,7 +62,9 @@
   {
    "fieldname": "requested_amount",
    "fieldtype": "Currency",
-   "label": "Requested Amount"
+   "label": "Requested Amount",
+   "mandatory_depends_on": "eval:doc.workflow_state==\"Fund Request\"",
+   "read_only_depends_on": "eval: doc.workflow_state != \"Fund Request\";"
   },
   {
    "default": "__user",
@@ -72,9 +87,10 @@
   {
    "fieldname": "section_break_kcoe",
    "fieldtype": "Section Break",
-   "label": "Allocation Details"
+   "label": "Suggestion  Details"
   },
   {
+   "depends_on": "eval:!in_list([\"Member Incharge BM (Finance Approval)\",\"Fund Request\"],doc.workflow_state);",
    "fieldname": "suggested_by_member_incharge_pp",
    "fieldtype": "Currency",
    "label": "Suggested by Member Incharge (PP)",
@@ -85,16 +101,19 @@
    "fieldtype": "Column Break"
   },
   {
+   "depends_on": "eval:!in_list([\"Member Incharge BM (Finance Approval)\",\"Fund Request\",\"Member Incharge PP (Financial Approval)\"],doc.workflow_state);",
    "fieldname": "suggested_by_secretory_snm",
    "fieldtype": "Currency",
-   "label": "Suggested by Secretory SNM",
+   "label": "Suggested by Secretary SNM",
    "read_only_depends_on": "eval: doc.workflow_state != \"Secretary (Financial Approval)\";"
   },
   {
+   "depends_on": "eval:doc.workflow_state != \"Fund Request\";",
    "fieldname": "column_break_vsdu",
    "fieldtype": "Column Break"
   },
   {
+   "depends_on": "eval:!in_list([\"Member Incharge BM (Finance Approval)\",\"Fund Request\",\"Member Incharge PP (Financial Approval)\",\"Secretary (Financial Approval)\"],doc.workflow_state);",
    "fieldname": "amount_approved_by_member_incharge",
    "fieldtype": "Currency",
    "label": "Amount Approved by Member Incharge (A & F)",
@@ -163,40 +182,47 @@
    "options": "Zone"
   },
   {
+   "depends_on": "eval:doc.workflow_state != \"Fund Request\";",
    "fieldname": "suggested_by_building_department",
    "fieldtype": "Currency",
    "label": "Suggested by Building Department",
-   "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge (BM)\";"
+   "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge BM (Finance Approval)\";"
   },
   {
    "fieldname": "requested_amount_in_words",
    "fieldtype": "Data",
    "label": "Requested Amount in Words",
-   "read_only": 1,
-   "read_only_depends_on": "eval: !doc.workflow_state ||  doc.workflow_state != \"Fund Request\";"
+   "read_only": 1
   },
   {
+   "depends_on": "eval:doc.workflow_state != \"Fund Request\";",
    "fieldname": "suggested_by_building_department_in_words",
    "fieldtype": "Data",
    "label": "Suggested by Building Department in Words",
-   "read_only": 1
+   "read_only": 1,
+   "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge BM (Finance Approval)\";"
   },
   {
+   "depends_on": "eval:!in_list([\"Member Incharge BM (Finance Approval)\",\"Fund Request\"],doc.workflow_state);",
    "fieldname": "suggested_by_member_incharge_pp_in_words",
    "fieldtype": "Data",
    "label": "Suggested by Member Incharge (PP) In Words",
-   "read_only": 1
+   "read_only": 1,
+   "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge PP (Financial Approval)\";"
   },
   {
+   "depends_on": "eval:!in_list([\"Member Incharge BM (Finance Approval)\",\"Fund Request\",\"Member Incharge PP (Financial Approval)\"],doc.workflow_state);",
    "fieldname": "suggested_by_secretory_snm_in_words",
    "fieldtype": "Data",
-   "label": "Suggested by Secretory SNM in Words",
-   "read_only": 1
+   "label": "Suggested by Secretary SNM in Words",
+   "read_only": 1,
+   "read_only_depends_on": "eval: doc.workflow_state != \"Secretary (Financial Approval)\";"
   },
   {
+   "depends_on": "eval:!in_list([\"Member Incharge BM (Finance Approval)\",\"Fund Request\",\"Member Incharge PP (Financial Approval)\",\"Secretary (Financial Approval)\"],doc.workflow_state);",
    "fieldname": "amount_approved_by_member_incharge_a_and__f_in_words",
    "fieldtype": "Data",
-   "label": "Amount Approved by Member Incharge (A and  F) in Words",
+   "label": "Amount Approved by Member Incharge (A &  F) in Words",
    "read_only": 1
   },
   {
@@ -219,13 +245,13 @@
   {
    "fieldname": "remarks_mipp",
    "fieldtype": "Small Text",
-   "label": "Remarks [MI(PP)]",
+   "label": "Remarks",
    "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge PP (Financial Approval)\";"
   },
   {
    "fieldname": "remarks_secretary",
    "fieldtype": "Small Text",
-   "label": "Remarks [Secretary]",
+   "label": "Remarks",
    "read_only_depends_on": "eval: doc.workflow_state != \"Secretary (Financial Approval)\";"
   },
   {
@@ -233,13 +259,101 @@
    "fieldtype": "Small Text",
    "label": "Remarks [MI(AF)]",
    "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge A&F(Financial Approval)\";"
+  },
+  {
+   "fieldname": "remarks_bd",
+   "fieldtype": "Small Text",
+   "label": "Remarks",
+   "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge BM (Finance Approval)\";"
+  },
+  {
+   "fieldname": "column_break_rulx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_foyf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:!in_list([\"Member Incharge BM (Finance Approval)\",\"Fund Request\"],doc.workflow_state);",
+   "fieldname": "approved_by_bd",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "User",
+   "read_only": 1,
+   "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge BM (Finance Approval)\";"
+  },
+  {
+   "depends_on": "eval:!in_list([\"Member Incharge BM (Finance Approval)\",\"Fund Request\"],doc.workflow_state);",
+   "fieldname": "submission_date_bd",
+   "fieldtype": "Datetime",
+   "label": "Submission Date",
+   "read_only": 1,
+   "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge BM (Finance Approval)\";"
+  },
+  {
+   "depends_on": "eval:!in_list([\"Member Incharge BM (Finance Approval)\",\"Fund Request\",\"Member Incharge PP (Financial Approval)\"],doc.workflow_state);",
+   "fieldname": "approved_by_mi_pp",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "User",
+   "read_only": 1,
+   "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge PP (Financial Approval)\";"
+  },
+  {
+   "depends_on": "eval:!in_list([\"Member Incharge BM (Finance Approval)\",\"Fund Request\",\"Member Incharge PP (Financial Approval)\"],doc.workflow_state);",
+   "fieldname": "submission_date_mi_pp",
+   "fieldtype": "Datetime",
+   "label": "Submission Date",
+   "read_only": 1,
+   "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge PP (Financial Approval)\";"
+  },
+  {
+   "depends_on": "eval:!in_list([\"Member Incharge BM (Finance Approval)\",\"Fund Request\",\"Member Incharge PP (Financial Approval)\",\"Secretary (Financial Approval)\"],doc.workflow_state);",
+   "fieldname": "approved_by_secretary",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:!in_list([\"Member Incharge BM (Finance Approval)\",\"Fund Request\",\"Member Incharge PP (Financial Approval)\",\"Secretary (Financial Approval)\"],doc.workflow_state);",
+   "fieldname": "submission_date_secretary",
+   "fieldtype": "Date",
+   "label": "Submission Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_cijv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.workflow_state==\"Approved\"",
+   "fieldname": "approved_by_af",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "User",
+   "read_only": 1,
+   "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge A&F(Financial Approval)\";"
+  },
+  {
+   "fieldname": "column_break_stgp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.workflow_state==\"Approved\"",
+   "fieldname": "submission_date_af",
+   "fieldtype": "Date",
+   "label": "Submission Date",
+   "read_only": 1,
+   "read_only_depends_on": "eval: doc.workflow_state != \"Member Incharge A&F(Financial Approval)\";"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-08-05 16:32:36.704039",
+ "modified": "2025-08-14 17:16:48.287576",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Additional Fund Request",

@@ -10,7 +10,7 @@ frappe.ui.form.on("Disbursement", {
 				}   
 			}, 0); 
 		});
-        if (!frm.is_new() && frm.doc.workflow_state !== "Completed") {
+        if (!frm.is_new() && frm.doc.workflow_state !== "Completed" && frm.doc.disable == 0) {
 			let apr_btn = frm.add_custom_button(__('Approve'), function () {
 					if (frm.is_dirty()) {
 						frm.save()
@@ -67,37 +67,36 @@ frappe.ui.form.on("Disbursement", {
 });
 frappe.ui.form.on('Disbursement', {
 	disbursement_amount: function(frm) {
-		calculate_remaining(frm);
-		get_in_words(frm, 'disbursement_amount', 'disbursement_amount_in_words');
+		// calculate_remaining(frm);
+		get_in_words(frm);
 	},
 	remaining_amount: function(frm) {
-		calculate_remaining(frm)
-		get_in_words(frm, 'remaining_amount', 'remaining_amount_in_word');
+		// calculate_remaining(frm)
+		get_in_words(frm);
 	},
 	total_expense:function(frm){
-		calculate_remaining(frm);
-		get_in_words(frm, 'total_expense', 'total_expense_in_words');
+		// calculate_remaining(frm);
+		get_in_words(frm);
 	},
 	requested_amount:function(frm){
-		get_in_words(frm,'requested_amount','requested_amount_in_words');
+		get_in_words(frm);
 	}
 });
 
 
 
-function get_in_words(frm, source_field, target_field) {
-	const value = frm.doc[source_field];
-	if (value) {
-		frappe.call({
-			method: "bcms.building_construction_manufacturing_service.doctype.disbursement.disbursement.get_amount_in_words",
-			args: { amount: value },
-			callback: function(r) {
-				if (r.message) {
-					frm.set_value(target_field, r.message);
-				}
-			}
-		});
-	} else {
-		frm.set_value(target_field, "");
+function get_in_words(frm) {
+	frm.call({
+		method:"set_amount_in_words",
+		doc:frm.doc,
+	})
 	}
-}
+
+frappe.ui.form.on("Expenditure Details", {
+	amount_manually: function(frm, cdt, cdn) {
+		frm.call({
+			method:"get_total_expense",
+			doc:frm.doc,
+		});
+	}
+});

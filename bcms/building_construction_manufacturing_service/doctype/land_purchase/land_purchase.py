@@ -5,6 +5,7 @@ import frappe
 from frappe.model.document import Document
 import json
 from datetime import date
+from frappe import _
 class LandPurchase(Document):
         def before_save(self):
             # When zone is selected in Land Purchase, fetch zonal incharge
@@ -12,13 +13,13 @@ class LandPurchase(Document):
                 zonal_incharge = frappe.db.get_value("Zone", self.zone, "zonal_incharge")
                 self.zonal_incharge = zonal_incharge or ""
             if not self.zonal_incharge:
-                frappe.throw("Please select a Zonal Incharge before saving the Zone.")
+                frappe.throw(_("Please select a Zonal Incharge before saving the Zone."))
         def validate(self):
             if self.zone:
                 zonal_incharge = frappe.db.get_value("Zone", self.zone, "zonal_incharge")
             email = frappe.db.get_value("Employee", zonal_incharge, "personal_email")
             if not email:
-                frappe.throw(f"Personal Email is not set for Zonal Incharge: {zonal_incharge} in Adhikari (Employee) record.")
+                frappe.throw(_(f"Personal Email is not set for Zonal Incharge: {zonal_incharge} in Adhikari (Employee) record."))
             self.zonal_incharge_email = email
 
 

@@ -813,15 +813,6 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-07-02 13:07:32.381012",
-  "name": "Completed",
-  "style": "",
-  "workflow_state_name": "Completed"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
   "modified": "2025-08-01 12:47:47.992636",
   "name": "Forwarded to Secretary (Financial Approval)",
   "style": "",
@@ -835,15 +826,6 @@
   "name": "Fund Approved",
   "style": "",
   "workflow_state_name": "Fund Approved"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
-  "modified": "2025-07-30 15:46:01.016398",
-  "name": "Work Completed",
-  "style": "Success",
-  "workflow_state_name": "Work Completed"
  },
  {
   "docstatus": 0,
@@ -903,15 +885,6 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-07-22 10:28:38.080978",
-  "name": "Fund Request",
-  "style": "",
-  "workflow_state_name": "Fund Request"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
   "modified": "2025-08-06 18:10:21.146891",
   "name": "Under Process",
   "style": "",
@@ -948,37 +921,10 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-07-22 10:30:48.605330",
-  "name": "Prepare Transfer Order",
-  "style": "",
-  "workflow_state_name": "Prepare Transfer Order"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
   "modified": "2025-07-30 15:46:20.384678",
   "name": "Work completion Certificate",
   "style": "Warning",
   "workflow_state_name": "Work completion Certificate"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
-  "modified": "2025-08-04 11:47:00.629655",
-  "name": "Expenditure",
-  "style": "",
-  "workflow_state_name": "Expenditure"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
-  "modified": "2025-07-30 15:42:50.370950",
-  "name": "Project Request",
-  "style": "Primary",
-  "workflow_state_name": "Project Request"
  },
  {
   "docstatus": 0,
@@ -993,24 +939,6 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-07-30 15:44:21.534718",
-  "name": "Construction Committee Formed",
-  "style": "Danger",
-  "workflow_state_name": "Construction Committee Formed"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
-  "modified": "2025-07-30 15:43:55.886778",
-  "name": "Secretary (Financial Approval)",
-  "style": "Warning",
-  "workflow_state_name": "Secretary (Financial Approval)"
- },
- {
-  "docstatus": 0,
-  "doctype": "Workflow State",
-  "icon": "",
   "modified": "2025-07-30 15:43:28.063830",
   "name": "Drawing Approval",
   "style": "Success",
@@ -1020,10 +948,64 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-07-30 15:45:31.658378",
-  "name": "Under Disbursement",
-  "style": "Info",
-  "workflow_state_name": "Under Disbursement"
+  "modified": "2025-07-02 13:07:32.381012",
+  "name": "Completed",
+  "style": "",
+  "workflow_state_name": "Completed"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-30 15:46:01.016398",
+  "name": "Work Completed",
+  "style": "Success",
+  "workflow_state_name": "Work Completed"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-30 15:42:50.370950",
+  "name": "Project Request",
+  "style": "Primary",
+  "workflow_state_name": "Project Request"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-08-05 12:07:55.678317",
+  "name": "Final Project Planning",
+  "style": "",
+  "workflow_state_name": "Final Project Planning"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-22 10:28:38.080978",
+  "name": "Fund Request",
+  "style": "",
+  "workflow_state_name": "Fund Request"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-22 10:30:48.605330",
+  "name": "Prepare Transfer Order",
+  "style": "",
+  "workflow_state_name": "Prepare Transfer Order"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-30 15:43:55.886778",
+  "name": "Secretary (Financial Approval)",
+  "style": "Warning",
+  "workflow_state_name": "Secretary (Financial Approval)"
  },
  {
   "docstatus": 0,
@@ -1047,10 +1029,28 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-08-05 12:07:55.678317",
-  "name": "Final Project Planning",
+  "modified": "2025-08-04 11:47:00.629655",
+  "name": "Expenditure",
   "style": "",
-  "workflow_state_name": "Final Project Planning"
+  "workflow_state_name": "Expenditure"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-30 15:44:21.534718",
+  "name": "Construction Committee Formed",
+  "style": "Danger",
+  "workflow_state_name": "Construction Committee Formed"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Workflow State",
+  "icon": "",
+  "modified": "2025-07-30 15:44:07.790573",
+  "name": "Member Incharge A&F(Financial Approval)",
+  "style": "Warning",
+  "workflow_state_name": "Member Incharge A&F(Financial Approval)"
  },
  {
   "docstatus": 0,
@@ -1065,10 +1065,10 @@
   "docstatus": 0,
   "doctype": "Workflow State",
   "icon": "",
-  "modified": "2025-07-30 15:44:07.790573",
-  "name": "Member Incharge A&F(Financial Approval)",
-  "style": "Warning",
-  "workflow_state_name": "Member Incharge A&F(Financial Approval)"
+  "modified": "2025-07-30 15:45:31.658378",
+  "name": "Under Disbursement",
+  "style": "Info",
+  "workflow_state_name": "Under Disbursement"
  },
  {
   "docstatus": 0,

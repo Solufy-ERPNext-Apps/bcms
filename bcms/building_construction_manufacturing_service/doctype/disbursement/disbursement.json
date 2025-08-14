@@ -7,6 +7,8 @@
  "engine": "InnoDB",
  "field_order": [
   "disbursement_detail",
+  "updated_value",
+  "disable",
   "project_details_section",
   "project",
   "project_type",
@@ -27,16 +29,23 @@
   "disbursement_amount",
   "disbursement_amount_in_words",
   "bank_and_account_details_section",
+  "bank_account_name",
   "bank_account_no",
   "ifsc_code",
   "column_break_rhyg",
   "payment_voucher_no",
   "utr__transaction_reference_no",
-  "expenditure_details_section",
+  "payable_branch",
+  "section_break_rxdo",
   "expenditure_details",
+  "section_break_dfjj",
   "total_expense",
   "total_expense_in_words",
   "remaining_amount",
+  "column_break_kcny",
+  "additional_amount",
+  "budget",
+  "section_break_rdwm",
   "work_completion_attachments",
   "additional_info_section",
   "remarks",
@@ -73,6 +82,7 @@
    "reqd": 1
   },
   {
+   "default": "Today",
    "fieldname": "disbursement_date",
    "fieldtype": "Date",
    "label": "Disbursement Date\t",
@@ -89,18 +99,16 @@
    "fieldname": "utr__transaction_reference_no",
    "fieldtype": "Data",
    "label": "UTR / Transaction Reference No\t",
-   "read_only_depends_on": "eval: in_list([\"Completed\",\"Expenditure\",\"Member Incharge A&F(Financial Approval)\",\"Member Incharge PP (Financial Approval)\"], doc.workflow_state);"
+   "read_only_depends_on": "eval: in_list([\"Completed\",\"Expenditure\",\"Member Incharge PP (Financial Approval)\",\"Pending\",\"Prepare Transfer Order\"], doc.workflow_state);"
   },
   {
-   "fetch_from": "project.custom_branch_bank_account_name",
+   "fetch_from": "bank_account_name.bank_account_no",
    "fieldname": "bank_account_no",
-   "fieldtype": "Link",
-   "label": "Bank Account No\t",
-   "options": "Bank Account",
-   "read_only_depends_on": "eval: in_list([\"Completed\",\"Expenditure\",\"Member Incharge PP (Financial Approval)\"], doc.workflow_state);"
+   "fieldtype": "Data",
+   "label": "Bank Account No"
   },
   {
-   "fetch_from": "bank_account_no.custom_ifsc_code",
+   "fetch_from": "bank_account_name.custom_ifsc_code",
    "fieldname": "ifsc_code",
    "fieldtype": "Data",
    "label": "IFSC Code\t",
@@ -110,7 +118,7 @@
    "fieldname": "payment_voucher_no",
    "fieldtype": "Data",
    "label": "Payment Voucher No\t",
-   "read_only_depends_on": "eval: in_list([\"Completed\",\"Expenditure\",\"Member Incharge A&F(Financial Approval)\",\"Member Incharge PP (Financial Approval)\"], doc.workflow_state);"
+   "read_only_depends_on": "eval: in_list([\"Completed\",\"Expenditure\",\"Member Incharge PP (Financial Approval)\",\"Pending\",\"Prepare Transfer Order\"], doc.workflow_state);"
   },
   {
    "fieldname": "remarks",
@@ -183,12 +191,7 @@
    "search_index": 1
   },
   {
-   "depends_on": "eval: in_list([\"Expenditure\", \"Completed\"], doc.workflow_state);",
-   "fieldname": "expenditure_details_section",
-   "fieldtype": "Section Break",
-   "label": "Expenditure Details"
-  },
-  {
+   "depends_on": "eval:doc.workflow_state==\"Expenditure\"",
    "fieldname": "expenditure_details",
    "fieldtype": "Table",
    "label": "Expenditure Details",
@@ -199,7 +202,8 @@
    "fieldname": "requested_amount",
    "fieldtype": "Currency",
    "label": "Requested Amount",
-   "mandatory_depends_on": "eval: doc.workflow_state == \"Fund Request\";"
+   "mandatory_depends_on": "eval: doc.workflow_state == \"Fund Request\";",
+   "read_only_depends_on": "eval:doc.workflow_state != \"Pending\""
   },
   {
    "default": "Today",
@@ -242,6 +246,7 @@
    "read_only": 1
   },
   {
+   "depends_on": "eval:doc.workflow_state==\"Expenditure\"",
    "fieldname": "work_completion_attachments",
    "fieldtype": "Table",
    "label": "Work Completion Attachments",
@@ -362,7 +367,8 @@
   {
    "fieldname": "remaining_amount",
    "fieldtype": "Currency",
-   "label": "Remaining Amount"
+   "label": "Remaining Amount",
+   "read_only": 1
   },
   {
    "fieldname": "stage",
@@ -390,6 +396,65 @@
   {
    "fieldname": "column_break_oiep",
    "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "project.custom_branch_bank_account_name",
+   "fieldname": "bank_account_name",
+   "fieldtype": "Link",
+   "label": "Bank Account Name",
+   "options": "Bank Account",
+   "read_only_depends_on": "eval: in_list([\"Completed\",\"Expenditure\",\"Member Incharge PP (Financial Approval)\"], doc.workflow_state);"
+  },
+  {
+   "default": "0",
+   "fieldname": "updated_value",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Updated value"
+  },
+  {
+   "depends_on": "eval: in_list([\"Expenditure\", \"Completed\"], doc.workflow_state);",
+   "fieldname": "section_break_rxdo",
+   "fieldtype": "Section Break",
+   "label": "Expenditure Details"
+  },
+  {
+   "depends_on": "eval: in_list([\"Expenditure\", \"Completed\"], doc.workflow_state);",
+   "fieldname": "section_break_rdwm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval: in_list([\"Expenditure\", \"Completed\"], doc.workflow_state);",
+   "fieldname": "section_break_dfjj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_kcny",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "additional_amount",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Additional Amount"
+  },
+  {
+   "fieldname": "budget",
+   "fieldtype": "Currency",
+   "label": "Budget",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "disable",
+   "fieldtype": "Check",
+   "label": "Disable"
+  },
+  {
+   "fieldname": "payable_branch",
+   "fieldtype": "Link",
+   "label": "Payable Branch",
+   "options": "Account"
   }
  ],
  "grid_page_length": 50,
@@ -397,7 +462,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-08-08 00:54:26.483090",
+ "modified": "2025-08-14 17:36:01.901826",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Disbursement",

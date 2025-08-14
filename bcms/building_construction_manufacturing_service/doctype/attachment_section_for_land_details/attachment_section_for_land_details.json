@@ -20,7 +20,7 @@
    "fieldname": "noc_approval_procedure_from_national_highway_authorities",
    "fieldtype": "Attach",
    "in_list_view": 1,
-   "label": "Attachment for Land details"
+   "label": "Attachments"
   },
   {
    "fieldname": "remark",
@@ -40,7 +40,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-08-06 02:06:22.261475",
+ "modified": "2025-08-13 18:20:36.577700",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Attachment section for Land details",

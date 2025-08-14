@@ -152,8 +152,8 @@ doctype_list_js = {"Land Details" :["public/js/list_view.js",
 
 doc_events = {
 	"Project": {
-		"validate": "bcms.building_construction_manufacturing_service.customization.project.project.validate"
-		
+		"validate": "bcms.building_construction_manufacturing_service.customization.project.project.validate",
+		"before_insert": "bcms.building_construction_manufacturing_service.customization.project.project.before_insert",
 	},
 	"User": {
         "after_insert": "bcms.building_construction_manufacturing_service.customization.project.user.enqueue_user_permission",
@@ -161,6 +161,9 @@ doc_events = {
     },
 	"Bhavan": {
     	"after_insert": "bcms.building_construction_manufacturing_service.customization.project.warehouse.create_warehouse_on_bhavan_insert"
+	},
+    "File":{
+        "before_insert":"bcms.building_construction_manufacturing_service.customization.file.file.before_insert"
 	}
 
 }

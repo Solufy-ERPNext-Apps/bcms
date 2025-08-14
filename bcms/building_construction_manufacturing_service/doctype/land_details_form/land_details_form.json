@@ -34,14 +34,14 @@
    "fieldname": "if_selected_then_yes",
    "fieldtype": "Check",
    "in_list_view": 1,
-   "label": "If Selected then Yes"
+   "label": "Yes"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-08-06 15:08:23.293266",
+ "modified": "2025-08-13 18:18:08.010068",
  "modified_by": "Administrator",
  "module": "Building Construction Manufacturing Service",
  "name": "Land Details Form",
